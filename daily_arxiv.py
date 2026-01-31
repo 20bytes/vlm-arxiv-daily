@@ -253,26 +253,25 @@ def json_to_md(filename,md_filename,
         if (use_title == True) and (to_web == True):
             f.write("---\n" + "layout: default\n" + "---\n\n")
 
-        # if show_badge == True:
-        #     f.write(f"[![Contributors][contributors-shield]][contributors-url]\n")
-        #     f.write(f"[![Forks][forks-shield]][forks-url]\n")
-        #     f.write(f"[![Stargazers][stars-shield]][stars-url]\n")
-        #     f.write(f"[![Issues][issues-shield]][issues-url]\n\n")
-
         if use_title == True:
-            #f.write(("<p align="center"><h1 align="center"><br><ins>CV-ARXIV-DAILY"
-            #         "</ins><br>Automatically Update CV Papers Daily</h1></p>\n"))
-            f.write("## Updated on " + DateNow + "\n")
+            if to_web == False:
+                f.write("<p align=\"center\">\n")
+                f.write("  <h1 align=\"center\">🤖 VLM-Arxiv-Daily</h1>\n")
+                f.write("  <p align=\"center\">\n")
+                f.write("    <img src=\"https://img.shields.io/badge/Robotics-VLA-orange?style=for-the-badge&logo=robotframework\" alt=\"Robotics\">\n")
+                f.write("    <img src=\"https://img.shields.io/badge/Navigation-VLN-blue?style=for-the-badge&logo=googlemaps\" alt=\"Navigation\">\n")
+                f.write("    <img src=\"https://img.shields.io/badge/Vision--Language-VLM-green?style=for-the-badge&logo=openai\" alt=\"VLM\">\n")
+                f.write("  </p>\n")
+                f.write("</p>\n\n")
+                f.write("> 🚀 每日自动追踪 **Vision-Language-Action (VLA)**, **Vision-Language Navigation (VLN)** 和 **Vision-Language Models (VLM)** 的最新 Arxiv 论文。\n\n")
+            f.write("## 📅 Updated on " + DateNow + "\n")
         else:
             f.write("> Updated on " + DateNow + "\n")
-
-        # TODO: add usage
-        f.write("> Usage instructions: [here](./docs/README.md#usage)\n\n")
 
         #Add: table of contents
         if use_tc == True:
             f.write("<details>\n")
-            f.write("  <summary>Table of Contents</summary>\n")
+            f.write("  <summary>点击查看目录 (Table of Contents)</summary>\n")
             f.write("  <ol>\n")
             for keyword in data.keys():
                 day_content = data[keyword]
@@ -288,21 +287,23 @@ def json_to_md(filename,md_filename,
             if not day_content:
                 continue
             # the head of each part
-            f.write(f"## {keyword}\n\n")
+            f.write(f"### 📌 {keyword}\n\n")
 
             if use_title == True :
                 if to_web == False:
-                    f.write("|Publish Date|Title|Authors|PDF|Code|\n" + "|---|---|---|---|---|\n")
+                    f.write("|Publish Date|Title|Authors|PDF|\n" + "|---|---|---|---|\n")
                 else:
-                    f.write("| Publish Date | Title | Authors | PDF | Code |\n")
-                    f.write("|:---------|:-----------------------|:---------|:------|:------|\n")
+                    f.write("| Publish Date | Title | Authors | PDF |\n")
+                    f.write("|:---------|:-----------------------|:---------|:------|\n")
 
             # sort papers by date
             day_content = sort_papers(day_content)
 
             for _,v in day_content.items():
                 if v is not None:
-                    f.write(pretty_math(v)) # make latex pretty
+                    # 去掉表格中的 Code 列（如果有的话）
+                    v_clean = v.replace("|null|", "|")
+                    f.write(pretty_math(v_clean)) # make latex pretty
 
             f.write(f"\n")
 
@@ -315,21 +316,21 @@ def json_to_md(filename,md_filename,
         if show_badge == True:
             # we don't like long string, break it!
             f.write((f"[contributors-shield]: https://img.shields.io/github/"
-                     f"contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge\n"))
-            f.write((f"[contributors-url]: https://github.com/Vincentqyw/"
-                     f"cv-arxiv-daily/graphs/contributors\n"))
-            f.write((f"[forks-shield]: https://img.shields.io/github/forks/Vincentqyw/"
-                     f"cv-arxiv-daily.svg?style=for-the-badge\n"))
-            f.write((f"[forks-url]: https://github.com/Vincentqyw/"
-                     f"cv-arxiv-daily/network/members\n"))
-            f.write((f"[stars-shield]: https://img.shields.io/github/stars/Vincentqyw/"
-                     f"cv-arxiv-daily.svg?style=for-the-badge\n"))
-            f.write((f"[stars-url]: https://github.com/Vincentqyw/"
-                     f"cv-arxiv-daily/stargazers\n"))
-            f.write((f"[issues-shield]: https://img.shields.io/github/issues/Vincentqyw/"
-                     f"cv-arxiv-daily.svg?style=for-the-badge\n"))
-            f.write((f"[issues-url]: https://github.com/Vincentqyw/"
-                     f"cv-arxiv-daily/issues\n\n"))
+                     f"contributors/20bytes/vlm-arxiv-daily.svg?style=for-the-badge\n"))
+            f.write((f"[contributors-url]: https://github.com/20bytes/"
+                     f"vlm-arxiv-daily/graphs/contributors\n"))
+            f.write((f"[forks-shield]: https://img.shields.io/github/forks/20bytes/"
+                     f"vlm-arxiv-daily.svg?style=for-the-badge\n"))
+            f.write((f"[forks-url]: https://github.com/20bytes/"
+                     f"vlm-arxiv-daily/network/members\n"))
+            f.write((f"[stars-shield]: https://img.shields.io/github/stars/20bytes/"
+                     f"vlm-arxiv-daily.svg?style=for-the-badge\n"))
+            f.write((f"[stars-url]: https://github.com/20bytes/"
+                     f"vlm-arxiv-daily/stargazers\n"))
+            f.write((f"[issues-shield]: https://img.shields.io/github/issues/20bytes/"
+                     f"vlm-arxiv-daily.svg?style=for-the-badge\n"))
+            f.write((f"[issues-url]: https://github.com/20bytes/"
+                     f"vlm-arxiv-daily/issues\n\n"))
 
     logging.info(f"{task} finished")
 
