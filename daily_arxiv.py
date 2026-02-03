@@ -36,9 +36,11 @@ def save_translation_cache(cache_path: str, cache: dict) -> None:
     with open(cache_path, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
-def translate_title_deepseek(title: str, api_key: str, base_url: str, model: str) -> str:
+def translate_title_and_abstract_deepseek(
+    title: str, abstract: str, api_key: str, base_url: str, model: str
+) -> dict:
     if not title or not api_key:
-        return ""
+        return {}
     url = base_url.rstrip("/") + "/chat/completions"
     headers = {
         "Content-Type": "application/json",
@@ -47,19 +49,41 @@ def translate_title_deepseek(title: str, api_key: str, base_url: str, model: str
     payload = {
         "model": model,
         "messages": [
-            {"role": "system", "content": "Translate the paper title into Chinese. Output only the translated title."},
-            {"role": "user", "content": title},
+            {
+                "role": "system",
+                "content": (
+                    "Translate the paper title and abstract into Chinese. "
+                    "Return only JSON with keys: title_zh, abstract_zh."
+                ),
+            },
+            {
+                "role": "user",
+                "content": f"Title:\n{title}\n\nAbstract:\n{abstract}",
+            },
         ],
         "stream": False,
     }
     try:
-        resp = requests.post(url, headers=headers, json=payload, timeout=30)
+        resp = requests.post(url, headers=headers, json=payload, timeout=60)
         resp.raise_for_status()
         data = resp.json()
-        return (data.get("choices", [{}])[0].get("message", {}).get("content", "") or "").strip()
+        content = (data.get("choices", [{}])[0].get("message", {}).get("content", "") or "").strip()
+        if not content:
+            return {}
+        # try to parse JSON from response
+        try:
+            return json.loads(content)
+        except Exception:
+            match = re.search(r"\{[\s\S]*\}", content)
+            if match:
+                try:
+                    return json.loads(match.group(0))
+                except Exception:
+                    return {}
+        return {}
     except Exception as exc:
         logging.warning(f"DeepSeek translation failed: {exc}")
-        return ""
+        return {}
 
 def load_config(config_file:str) -> dict:
     '''
@@ -173,24 +197,43 @@ def get_daily_papers(topic,query="slam", max_results=2, translate_opts=None):
 
         # optional title translation
         translated_title = ""
+        translated_abstract = ""
         if translate_opts is not None:
             cache = translate_opts["cache"]
-            if paper_key in cache:
-                translated_title = cache[paper_key]
-            else:
-                translated_title = translate_title_deepseek(
+            cached = cache.get(paper_key)
+            if isinstance(cached, str):
+                cached = {"title_zh": cached, "abstract_zh": ""}
+            if isinstance(cached, dict):
+                translated_title = cached.get("title_zh", "")
+                translated_abstract = cached.get("abstract_zh", "")
+
+            need_abstract = translate_opts.get("translate_abstract", False)
+            if not translated_title or (need_abstract and not translated_abstract):
+                abstract_for_translation = paper_abstract if need_abstract else ""
+                translated = translate_title_and_abstract_deepseek(
                     paper_title,
+                    abstract_for_translation,
                     translate_opts["api_key"],
                     translate_opts["base_url"],
                     translate_opts["model"],
                 )
-                if translated_title:
-                    cache[paper_key] = translated_title
+                if translated:
+                    translated_title = translated.get("title_zh", "").strip()
+                    translated_abstract = translated.get("abstract_zh", "").strip()
+                    cache[paper_key] = {
+                        "title_zh": translated_title,
+                        "abstract_zh": translated_abstract,
+                    }
                     translate_opts["dirty"] = True
 
-        title_cell = paper_title
+        def sanitize_cell(s: str) -> str:
+            return s.replace("|", "&#124;").strip()
+
+        title_cell = sanitize_cell(paper_title)
         if translated_title:
-            title_cell = f"{paper_title}<br>{translated_title}"
+            title_cell = f"{title_cell}<br>{sanitize_cell(translated_title)}"
+        if translated_abstract and translate_opts and translate_opts.get("translate_abstract"):
+            title_cell = f"{title_cell}<br>{sanitize_cell(translated_abstract)}"
 
         # Since PapersWithCode API is deprecated, we no longer fetch code links
         # Papers will be listed without code links
@@ -522,7 +565,8 @@ def json_to_html(filename, html_filename, task = ''):
 
                 f.write(f"          <tr data-arxiv-id=\"{html.escape(arxiv_id)}\">\n")
                 f.write(f"            <td>{html.escape(date)}</td>\n")
-                safe_title = html.escape(title).replace("&lt;br&gt;", "<br>").replace("&lt;br/&gt;", "<br>")
+                safe_title = html.escape(title)
+                safe_title = safe_title.replace("&lt;br&gt;", "<br>").replace("&lt;br/&gt;", "<br>")
                 f.write(f"            <td>{safe_title}</td>\n")
                 f.write(f"            <td>{html.escape(authors)}</td>\n")
                 f.write(f"            <td><a href=\"{html.escape(pdf_url)}\">{html.escape(pdf_text)}</a></td>\n")
@@ -594,6 +638,7 @@ def demo(**config):
                 "cache_path": config.get("translation_cache_path", "./docs/title_translations.json"),
                 "cache": {},
                 "dirty": False,
+                "translate_abstract": config.get("translate_abstract", False),
             }
             translate_opts["cache"] = load_translation_cache(translate_opts["cache_path"])
 

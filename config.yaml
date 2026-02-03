@@ -7,8 +7,9 @@ show_links: True
 show_badge: True
 max_results: 10
 
-# DeepSeek translation (title only)
+# DeepSeek translation
 translate_title: True
+translate_abstract: True
 deepseek_base_url: "https://api.deepseek.com"
 deepseek_model: "deepseek-chat"
 translation_cache_path: "./docs/title_translations.json"
