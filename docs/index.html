@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VLM-Arxiv-Daily</title>
+  <style>
+    :root { --bg: #f7f7f5; --card: #ffffff; --text: #1f2937; --muted: #6b7280; --line: #e5e7eb; --accent: #0f766e; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: var(--text); background: var(--bg); }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 28px 20px 60px; }
+    header { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 24px; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    .sub { color: var(--muted); margin: 0 0 8px; }
+    .updated { font-weight: 600; }
+    .toc { margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+    .toc a { text-decoration: none; color: var(--accent); background: #e7f3f1; padding: 4px 10px; border-radius: 999px; font-size: 13px; }
+    section { margin-top: 24px; }
+    table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+    th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 14px; }
+    th { background: #f3f4f6; text-align: left; white-space: nowrap; }
+    tr:last-child td { border-bottom: none; }
+    .eval { display: inline-flex; gap: 8px; }
+    .eval button { border: 1px solid var(--line); background: #fff; padding: 2px 8px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+    .eval button.active { border-color: var(--accent); background: #e7f3f1; }
+    .legend { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>🤖 VLM-Arxiv-Daily</h1>
+      <p class="sub">每日自动追踪 Vision-Language-Action (VLA)、Vision-Language Navigation (VLN) 和 Vision-Language Models (VLM) 的最新 arXiv 论文。</p>
+      <p class="updated">Updated on 2026.02.03</p>
+      <ul class="toc">
+        <li><a href="#vla">VLA</a></li>
+        <li><a href="#vln">VLN</a></li>
+        <li><a href="#vlm">VLM</a></li>
+      </ul>
+    </header>
+    <section id="vla">
+      <h2>📌 VLA</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Publish Date (YYYY-MM-DD)</th>
+            <th>Title</th>
+            <th>Authors</th>
+            <th>PDF</th>
+            <th>HJFY</th>
+            <th>评估</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-arxiv-id="2602.02459">
+            <td>2026-02-02</td>
+            <td>TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments<br>TIC-VLA：面向动态环境机器人导航的思维控制视觉-语言-动作模型</td>
+            <td>Jiaqi Ma Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02459">2602.02459</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02459v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02454">
+            <td>2026-02-02</td>
+            <td>World-Gymnast: Training Robots with Reinforcement Learning in a World Model<br>世界体操家：在世界模型中通过强化学习训练机器人</td>
+            <td>Sherry Yang Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02454">2602.02454</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02454v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02402">
+            <td>2026-02-02</td>
+            <td>SoMA: A Real-to-Sim Neural Simulator for Robotic Soft-body Manipulation<br>SoMA：面向机器人软体操作的真实到仿真神经模拟器</td>
+            <td>Jiangmiao Pang Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02402">2602.02402</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02402v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02212">
+            <td>2026-02-02</td>
+            <td>MAIN-VLA: Modeling Abstraction of Intention and eNvironment for Vision-Language-Action Models<br>MAIN-VLA：面向视觉-语言-动作模型的意图与环境抽象建模</td>
+            <td>Lemiao Qiu Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02212">2602.02212</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02212v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02142">
+            <td>2026-02-02</td>
+            <td>FD-VLA: Force-Distilled Vision-Language-Action Model for Contact-Rich Manipulation<br>FD-VLA：面向密集接触操作的力蒸馏视觉-语言-动作模型</td>
+            <td>Haiyue Zhu Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02142">2602.02142</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02142v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02063">
+            <td>2026-02-02</td>
+            <td>See2Refine: Vision-Language Feedback Improves LLM-Based eHMI Action Designers<br>See2Refine：视觉语言反馈提升基于大语言模型的外部人机交互动作设计能力</td>
+            <td>Takeo Igarashi Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02063">2602.02063</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02063v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.01834">
+            <td>2026-02-02</td>
+            <td>Concept-Based Dictionary Learning for Inference-Time Safety in Vision Language Action Models<br>基于概念词典学习在视觉语言动作模型中实现推理时安全</td>
+            <td>Di Wang Team</td>
+            <td><a href="http://arxiv.org/abs/2602.01834">2602.01834</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.01834v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.01811">
+            <td>2026-02-02</td>
+            <td>From Knowing to Doing Precisely: A General Self-Correction and Termination Framework for VLA models<br>从认知到精准执行：视觉语言模型通用自校正与终止框架</td>
+            <td>Jianzong Wang Team</td>
+            <td><a href="http://arxiv.org/abs/2602.01811">2602.01811</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.01811v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.01662">
+            <td>2026-02-02</td>
+            <td>AgenticLab: A Real-World Robot Agent Platform that Can See, Think, and Act<br>AgenticLab：一个具备视觉、思维与行动能力的真实世界机器人代理平台</td>
+            <td>Yu She Team</td>
+            <td><a href="http://arxiv.org/abs/2602.01662">2602.01662</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.01662v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.01644">
+            <td>2026-02-02</td>
+            <td>From Perception to Action: Spatial AI Agents and World Models<br>从感知到行动：空间人工智能体与世界模型</td>
+            <td>Esteban Rojas Team</td>
+            <td><a href="http://arxiv.org/abs/2602.01644">2602.01644</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.01644v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.23087">
+            <td>2026-01-30</td>
+            <td>Temporally Coherent Imitation Learning via Latent Action Flow Matching for Robotic Manipulation</td>
+            <td>Wu Songwei et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.23087">2601.23087</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.23065">
+            <td>2026-01-30</td>
+            <td>EAG-PT: Emission-Aware Gaussians and Path Tracing for Indoor Scene Reconstruction and Editing</td>
+            <td>Xijie Yang et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.23065">2601.23065</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22988">
+            <td>2026-01-30</td>
+            <td>Learning Geometrically-Grounded 3D Visual Representations for View-Generalizable Robotic Manipulation</td>
+            <td>Di Zhang et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22988">2601.22988</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22948">
+            <td>2026-01-30</td>
+            <td>Alignment among Language, Vision and Action Representations</td>
+            <td>Nicola Milano et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22948">2601.22948</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22868">
+            <td>2026-01-30</td>
+            <td>When Anomalies Depend on Context: Learning Conditional Compatibility for Anomaly Detection</td>
+            <td>Shashank Mishra et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22868">2601.22868</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22714">
+            <td>2026-01-30</td>
+            <td>Vision-Language Models Unlock Task-Centric Latent Actions</td>
+            <td>Alexander Nikulin et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22714">2601.22714</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22701">
+            <td>2026-01-30</td>
+            <td>Best-of-Q: Improving VLM agents with Q-function Action Ranking at Inference</td>
+            <td>Emilien Biré et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22701">2601.22701</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22467">
+            <td>2026-01-30</td>
+            <td>CARE: Multi-Task Pretraining for Latent Continuous Action Representation in Robot Control</td>
+            <td>Jiaqi Shi et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22467">2601.22467</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22356">
+            <td>2026-01-29</td>
+            <td>PoSafeNet: Safe Learning with Poset-Structured Neural Nets</td>
+            <td>Kiwan Wong et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22356">2601.22356</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22153">
+            <td>2026-01-29</td>
+            <td>DynamicVLA: A Vision-Language-Action Model for Dynamic Object Manipulation</td>
+            <td>Haozhe Xie et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22153">2601.22153</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22046">
+            <td>2026-01-29</td>
+            <td>PLANING: A Loosely Coupled Triangle-Gaussian Framework for Streaming 3D Reconstruction</td>
+            <td>Changjian Jiang et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22046">2601.22046</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22018">
+            <td>2026-01-29</td>
+            <td>PocketDP3: Efficient Pocket-Scale 3D Visuomotor Policy</td>
+            <td>Jinhao Zhang et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22018">2601.22018</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.21998">
+            <td>2026-01-29</td>
+            <td>Causal World Modeling for Robot Control</td>
+            <td>Lin Li et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.21998">2601.21998</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.21971">
+            <td>2026-01-29</td>
+            <td>MoE-ACT: Improving Surgical Imitation Learning Policies through Supervised Mixture-of-Experts</td>
+            <td>Lorenzo Mazza et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.21971">2601.21971</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.21926">
+            <td>2026-01-29</td>
+            <td>Information Filtering via Variational Regularization for Robot Manipulation</td>
+            <td>Jinhao Zhang et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.21926">2601.21926</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.21751">
+            <td>2026-01-29</td>
+            <td>Dynamic Topology Awareness: Breaking the Granularity Rigidity in Vision-Language Navigation</td>
+            <td>Jiankun Peng et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.21751">2601.21751</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.21712">
+            <td>2026-01-29</td>
+            <td>CoFreeVLA: Collision-Free Dual-Arm Manipulation via Vision-Language-Action Model and Risk Estimation</td>
+            <td>Xuanran Zhai et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.21712">2601.21712</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.21602">
+            <td>2026-01-29</td>
+            <td>AIR-VLA: Vision-Language-Action Systems for Aerial Manipulation</td>
+            <td>Jianli Sun et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.21602">2601.21602</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.21570">
+            <td>2026-01-29</td>
+            <td>EmboCoach-Bench: Benchmarking AI Agents on Developing Embodied Robots</td>
+            <td>Zixing Lei et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.21570">2601.21570</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="legend">评估状态保存在浏览器本地（localStorage），换设备/浏览器不会同步。</p>
+    </section>
+    <section id="vln">
+      <h2>📌 VLN</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Publish Date (YYYY-MM-DD)</th>
+            <th>Title</th>
+            <th>Authors</th>
+            <th>PDF</th>
+            <th>HJFY</th>
+            <th>评估</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-arxiv-id="2602.02220">
+            <td>2026-02-02</td>
+            <td>LangMap: A Hierarchical Benchmark for Open-Vocabulary Goal Navigation<br>LangMap：面向开放词汇目标导航的分层基准</td>
+            <td>Anton van den Hengel Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02220">2602.02220</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02220v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.00551">
+            <td>2026-01-31</td>
+            <td>APEX: A Decoupled Memory-based Explorer for Asynchronous Aerial Object Goal Navigation<br>APEX：一种用于异步空中目标导航的解耦记忆型探索器</td>
+            <td>Shuo Yang Team</td>
+            <td><a href="http://arxiv.org/abs/2602.00551">2602.00551</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.00551v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.00222">
+            <td>2026-01-30</td>
+            <td>MapDream: Task-Driven Map Learning for Vision-Language Navigation<br>MapDream：面向视觉语言导航的任务驱动地图学习</td>
+            <td>Zhaoxin Fan Team</td>
+            <td><a href="http://arxiv.org/abs/2602.00222">2602.00222</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.00222v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.21751">
+            <td>2026-01-29</td>
+            <td>Dynamic Topology Awareness: Breaking the Granularity Rigidity in Vision-Language Navigation<br>动态拓扑感知：突破视觉语言导航中的粒度僵化</td>
+            <td>Xiaoming Wang Team</td>
+            <td><a href="http://arxiv.org/abs/2601.21751">2601.21751</a></td>
+            <td><a href="https://hjfy.top/arxiv/2601.21751v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.18492">
+            <td>2026-01-26</td>
+            <td>DV-VLN: Dual Verification for Reliable LLM-Based Vision-and-Language Navigation<br>DV-VLN：基于大语言模型的视觉语言导航双重验证可靠性研究</td>
+            <td>Shoujun Zhou Team</td>
+            <td><a href="http://arxiv.org/abs/2601.18492">2601.18492</a></td>
+            <td><a href="https://hjfy.top/arxiv/2601.18492v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.18188">
+            <td>2026-01-26</td>
+            <td>\textsc{NaVIDA}: Vision-Language Navigation with Inverse Dynamics Augmentation<br>\textsc{NaVIDA}：基于逆动力学增强的视觉语言导航</td>
+            <td>Feng Zheng Team</td>
+            <td><a href="http://arxiv.org/abs/2601.18188">2601.18188</a></td>
+            <td><a href="https://hjfy.top/arxiv/2601.18188v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.15614">
+            <td>2026-01-22</td>
+            <td>AION: Aerial Indoor Object-Goal Navigation Using Dual-Policy Reinforcement Learning<br>AION：基于双策略强化学习的空中室内目标导航</td>
+            <td>Lin Zhao Team</td>
+            <td><a href="http://arxiv.org/abs/2601.15614">2601.15614</a></td>
+            <td><a href="https://hjfy.top/arxiv/2601.15614v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.13976">
+            <td>2026-01-23</td>
+            <td>FantasyVLN: Unified Multimodal Chain-of-Thought Reasoning for Vision-Language Navigation<br>FantasyVLN：面向视觉语言导航的统一多模态思维链推理</td>
+            <td>Yonggang Qi Team</td>
+            <td><a href="http://arxiv.org/abs/2601.13976">2601.13976</a></td>
+            <td><a href="https://hjfy.top/arxiv/2601.13976v2">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.12766">
+            <td>2026-01-19</td>
+            <td>Spatial-VLN: Zero-Shot Vision-and-Language Navigation With Explicit Spatial Perception and Exploration<br>空间视觉语言导航：具备显式空间感知与探索能力的零样本视觉语言导航</td>
+            <td>Feitian Zhang Team</td>
+            <td><a href="http://arxiv.org/abs/2601.12766">2601.12766</a></td>
+            <td><a href="https://hjfy.top/arxiv/2601.12766v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.09111">
+            <td>2026-01-14</td>
+            <td>Towards Open Environments and Instructions: General Vision-Language Navigation via Fast-Slow Interactive Reasoning<br>迈向开放环境与指令：基于快慢交互推理的通用视觉语言导航</td>
+            <td>Yahong Han Team</td>
+            <td><a href="http://arxiv.org/abs/2601.09111">2601.09111</a></td>
+            <td><a href="https://hjfy.top/arxiv/2601.09111v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.08868">
+            <td>2026-01-11</td>
+            <td>Residual Cross-Modal Fusion Networks for Audio-Visual Navigation</td>
+            <td>Yi Wang et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.08868">2601.08868</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.08665">
+            <td>2026-01-13</td>
+            <td>VLingNav: Embodied Navigation with Adaptive Reasoning and Visual-Assisted Linguistic Memory</td>
+            <td>Shaoan Wang et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.08665">2601.08665</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.07375">
+            <td>2026-01-12</td>
+            <td>GROKE: Vision-Free Navigation Instruction Evaluation via Graph Reasoning on OpenStreetMap</td>
+            <td>Farzad Shami et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.07375">2601.07375</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="legend">评估状态保存在浏览器本地（localStorage），换设备/浏览器不会同步。</p>
+    </section>
+    <section id="vlm">
+      <h2>📌 VLM</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Publish Date (YYYY-MM-DD)</th>
+            <th>Title</th>
+            <th>Authors</th>
+            <th>PDF</th>
+            <th>HJFY</th>
+            <th>评估</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-arxiv-id="2602.02468">
+            <td>2026-02-02</td>
+            <td>Avenir-Web: Human-Experience-Imitating Multimodal Web Agents with Mixture of Grounding Experts<br>Avenir-Web：融合多模态专家的人类体验模拟网络代理系统</td>
+            <td>Mengdi Wang Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02468">2602.02468</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02468v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02465">
+            <td>2026-02-02</td>
+            <td>MentisOculi: Revealing the Limits of Reasoning with Mental Imagery<br>MentisOculi：揭示心理意象推理的局限边界</td>
+            <td>Wieland Brendel Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02465">2602.02465</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02465v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02456">
+            <td>2026-02-02</td>
+            <td>Relationship-Aware Hierarchical 3D Scene Graph for Task Reasoning<br>关系感知型分层三维场景图用于任务推理</td>
+            <td>Kostas Alexis Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02456">2602.02456</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02456v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02454">
+            <td>2026-02-02</td>
+            <td>World-Gymnast: Training Robots with Reinforcement Learning in a World Model<br>世界体操家：在世界模型中通过强化学习训练机器人</td>
+            <td>Sherry Yang Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02454">2602.02454</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02454v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02408">
+            <td>2026-02-02</td>
+            <td>ReasonEdit: Editing Vision-Language Models using Human Reasoning<br>《理性编辑：基于人类推理的视觉语言模型编辑》</td>
+            <td>Thomas Hartvigsen Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02408">2602.02408</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02408v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02341">
+            <td>2026-02-02</td>
+            <td>LongVPO: From Anchored Cues to Self-Reasoning for Long-Form Video Preference Optimization<br>长视频偏好优化：从锚定线索到自我推理</td>
+            <td>Limin Wang Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02341">2602.02341</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02341v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02185">
+            <td>2026-02-02</td>
+            <td>Vision-DeepResearch Benchmark: Rethinking Visual and Textual Search for Multimodal Large Language Models<br>视觉深度研究基准：重新思考多模态大语言模型的视觉与文本搜索</td>
+            <td>Shaosheng Cao Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02185">2602.02185</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02185v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02063">
+            <td>2026-02-02</td>
+            <td>See2Refine: Vision-Language Feedback Improves LLM-Based eHMI Action Designers<br>See2Refine：视觉语言反馈提升基于大语言模型的外部人机交互动作设计能力</td>
+            <td>Takeo Igarashi Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02063">2602.02063</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02063v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02043">
+            <td>2026-02-02</td>
+            <td>Auto-Comp: An Automated Pipeline for Scalable Compositional Probing of Contrastive Vision-Language Models<br>Auto-Comp：面向对比视觉语言模型的可扩展组合性探测自动化流程</td>
+            <td>Toshihiko Yamasaki Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02043">2602.02043</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02043v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2602.02033">
+            <td>2026-02-02</td>
+            <td>One Size, Many Fits: Aligning Diverse Group-Wise Click Preferences in Large-Scale Advertising Image Generation<br>一图多面：在大规模广告图像生成中协调多元群体点击偏好</td>
+            <td>Jian Liang Team</td>
+            <td><a href="http://arxiv.org/abs/2602.02033">2602.02033</a></td>
+            <td><a href="https://hjfy.top/arxiv/2602.02033v1">HJFY</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.23281">
+            <td>2026-01-30</td>
+            <td>User Prompting Strategies and Prompt Enhancement Methods for Open-Set Object Detection in XR Environments</td>
+            <td>Junfeng Lin et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.23281">2601.23281</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.23253">
+            <td>2026-01-30</td>
+            <td>Training-Free Test-Time Adaptation with Brownian Distance Covariance in Vision-Language Models</td>
+            <td>Yi Zhang et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.23253">2601.23253</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.23251">
+            <td>2026-01-30</td>
+            <td>Structured Over Scale: Learning Spatial Reasoning from Educational Video</td>
+            <td>Bishoy Galoaa et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.23251">2601.23251</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.23224">
+            <td>2026-01-30</td>
+            <td>Video-o3: Native Interleaved Clue Seeking for Long Video Multi-Hop Reasoning</td>
+            <td>Xiangyu Zeng et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.23224">2601.23224</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.23220">
+            <td>2026-01-30</td>
+            <td>Med-Scout: Curing MLLMs&#x27; Geometric Blindness in Medical Perception via Geometry-Aware RL Post-Training</td>
+            <td>Anglin Liu et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.23220">2601.23220</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.23179">
+            <td>2026-01-30</td>
+            <td>Make Anything Match Your Target: Universal Adversarial Perturbations against Closed-Source MLLMs via Multi-Crop Routed Meta Optimization</td>
+            <td>Hui Lu et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.23179">2601.23179</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.23149">
+            <td>2026-01-30</td>
+            <td>Hearing is Believing? Evaluating and Analyzing Audio Language Model Sycophancy with SYAUDIO</td>
+            <td>Junchi Yao et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.23149">2601.23149</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.23041">
+            <td>2026-01-30</td>
+            <td>One-shot Optimized Steering Vector for Hallucination Mitigation for VLMs</td>
+            <td>Youxu Shi et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.23041">2601.23041</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22959">
+            <td>2026-01-30</td>
+            <td>Triage: Hierarchical Visual Budgeting for Efficient Video Reasoning in Vision-Language Models</td>
+            <td>Anmin Wang et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22959">2601.22959</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22948">
+            <td>2026-01-30</td>
+            <td>Alignment among Language, Vision and Action Representations</td>
+            <td>Nicola Milano et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22948">2601.22948</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22155">
+            <td>2026-01-29</td>
+            <td>UEval: A Benchmark for Unified Multimodal Generation</td>
+            <td>Bo Li et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22155">2601.22155</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22150">
+            <td>2026-01-29</td>
+            <td>Do VLMs Perceive or Recall? Probing Visual Perception vs. Memory with Classic Visual Illusions</td>
+            <td>Xiaoxiao Sun et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22150">2601.22150</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22114">
+            <td>2026-01-29</td>
+            <td>SINA: A Circuit Schematic Image-to-Netlist Generator Using Artificial Intelligence</td>
+            <td>Saoud Aldowaish et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22114">2601.22114</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22069">
+            <td>2026-01-29</td>
+            <td>VTC-R1: Vision-Text Compression for Efficient Long-Context Reasoning</td>
+            <td>Yibo Wang et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22069">2601.22069</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22060">
+            <td>2026-01-29</td>
+            <td>Vision-DeepResearch: Incentivizing DeepResearch Capability in Multimodal Large Language Models</td>
+            <td>Wenxuan Huang et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22060">2601.22060</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22054">
+            <td>2026-01-29</td>
+            <td>MetricAnything: Scaling Metric Depth Pretraining with Noisy Heterogeneous Sources</td>
+            <td>Baorui Ma et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22054">2601.22054</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.22020">
+            <td>2026-01-29</td>
+            <td>Visual-Guided Key-Token Regularization for Multimodal Large Language Model Unlearning</td>
+            <td>Chengyi Cai et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.22020">2601.22020</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.21998">
+            <td>2026-01-29</td>
+            <td>Causal World Modeling for Robot Control</td>
+            <td>Lin Li et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.21998">2601.21998</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.21944">
+            <td>2026-01-29</td>
+            <td>Clarity: The Flexibility-Interpretability Trade-Off in Sparsity-aware Concept Bottleneck Models</td>
+            <td>Konstantinos P. Panousis et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.21944">2601.21944</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+          <tr data-arxiv-id="2601.21915">
+            <td>2026-01-29</td>
+            <td>VideoAesBench: Benchmarking the Video Aesthetics Perception Capabilities of Large Multimodal Models</td>
+            <td>Yunhao Li et.al.</td>
+            <td><a href="http://arxiv.org/abs/2601.21915">2601.21915</a></td>
+            <td><a href="">null</a></td>
+            <td>
+              <div class="eval">
+                <button type="button" data-value="read">✅</button>
+                <button type="button" data-value="skip">❌</button>
+                <button type="button" data-value="star">⭐</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="legend">评估状态保存在浏览器本地（localStorage），换设备/浏览器不会同步。</p>
+    </section>
+  </div>
+  <script>
+    const storageKey = (id) => `vlm_arxiv_daily_eval:${id}`;
+    const rows = document.querySelectorAll('tr[data-arxiv-id]');
+    rows.forEach((row) => {
+      const id = row.getAttribute('data-arxiv-id');
+      const buttons = row.querySelectorAll('button[data-value]');
+      const saved = localStorage.getItem(storageKey(id));
+      if (saved) {
+        buttons.forEach((btn) => {
+          if (btn.dataset.value === saved) btn.classList.add('active');
+        });
+      }
+      buttons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const val = btn.dataset.value;
+          localStorage.setItem(storageKey(id), val);
+          buttons.forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

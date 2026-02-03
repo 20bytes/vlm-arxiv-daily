@@ -9,7 +9,7 @@
 
 > 🚀 每日自动追踪 **Vision-Language-Action (VLA)**, **Vision-Language Navigation (VLN)** 和 **Vision-Language Models (VLM)** 的最新 Arxiv 论文。
 
-## 📅 Updated on 2026.02.02
+## 📅 Updated on 2026.02.03
 <details>
   <summary>点击查看目录 (Table of Contents)</summary>
   <ol>
@@ -21,8 +21,18 @@
 
 ### 📌 VLA
 
-|Publish Date|Title|Authors|PDF|
-|---|---|---|---|
+|Publish Date (YYYY-MM-DD)|Title|Authors|PDF|HJFY|
+|---|---|---|---|---|
+|**2026-02-02**|**TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments<br>TIC-VLA：面向动态环境机器人导航的思维控制视觉-语言-动作模型**|Jiaqi Ma Team|[2602.02459](http://arxiv.org/abs/2602.02459)|[HJFY](https://hjfy.top/arxiv/2602.02459v1)|
+|**2026-02-02**|**World-Gymnast: Training Robots with Reinforcement Learning in a World Model<br>世界体操家：在世界模型中通过强化学习训练机器人**|Sherry Yang Team|[2602.02454](http://arxiv.org/abs/2602.02454)|[HJFY](https://hjfy.top/arxiv/2602.02454v1)|
+|**2026-02-02**|**SoMA: A Real-to-Sim Neural Simulator for Robotic Soft-body Manipulation<br>SoMA：面向机器人软体操作的真实到仿真神经模拟器**|Jiangmiao Pang Team|[2602.02402](http://arxiv.org/abs/2602.02402)|[HJFY](https://hjfy.top/arxiv/2602.02402v1)|
+|**2026-02-02**|**MAIN-VLA: Modeling Abstraction of Intention and eNvironment for Vision-Language-Action Models<br>MAIN-VLA：面向视觉-语言-动作模型的意图与环境抽象建模**|Lemiao Qiu Team|[2602.02212](http://arxiv.org/abs/2602.02212)|[HJFY](https://hjfy.top/arxiv/2602.02212v1)|
+|**2026-02-02**|**FD-VLA: Force-Distilled Vision-Language-Action Model for Contact-Rich Manipulation<br>FD-VLA：面向密集接触操作的力蒸馏视觉-语言-动作模型**|Haiyue Zhu Team|[2602.02142](http://arxiv.org/abs/2602.02142)|[HJFY](https://hjfy.top/arxiv/2602.02142v1)|
+|**2026-02-02**|**See2Refine: Vision-Language Feedback Improves LLM-Based eHMI Action Designers<br>See2Refine：视觉语言反馈提升基于大语言模型的外部人机交互动作设计能力**|Takeo Igarashi Team|[2602.02063](http://arxiv.org/abs/2602.02063)|[HJFY](https://hjfy.top/arxiv/2602.02063v1)|
+|**2026-02-02**|**Concept-Based Dictionary Learning for Inference-Time Safety in Vision Language Action Models<br>基于概念词典学习在视觉语言动作模型中实现推理时安全**|Di Wang Team|[2602.01834](http://arxiv.org/abs/2602.01834)|[HJFY](https://hjfy.top/arxiv/2602.01834v1)|
+|**2026-02-02**|**From Knowing to Doing Precisely: A General Self-Correction and Termination Framework for VLA models<br>从认知到精准执行：视觉语言模型通用自校正与终止框架**|Jianzong Wang Team|[2602.01811](http://arxiv.org/abs/2602.01811)|[HJFY](https://hjfy.top/arxiv/2602.01811v1)|
+|**2026-02-02**|**AgenticLab: A Real-World Robot Agent Platform that Can See, Think, and Act<br>AgenticLab：一个具备视觉、思维与行动能力的真实世界机器人代理平台**|Yu She Team|[2602.01662](http://arxiv.org/abs/2602.01662)|[HJFY](https://hjfy.top/arxiv/2602.01662v1)|
+|**2026-02-02**|**From Perception to Action: Spatial AI Agents and World Models<br>从感知到行动：空间人工智能体与世界模型**|Esteban Rojas Team|[2602.01644](http://arxiv.org/abs/2602.01644)|[HJFY](https://hjfy.top/arxiv/2602.01644v1)|
 |**2026-01-30**|**Temporally Coherent Imitation Learning via Latent Action Flow Matching for Robotic Manipulation**|Wu Songwei et.al.|[2601.23087](http://arxiv.org/abs/2601.23087)|
 |**2026-01-30**|**EAG-PT: Emission-Aware Gaussians and Path Tracing for Indoor Scene Reconstruction and Editing**|Xijie Yang et.al.|[2601.23065](http://arxiv.org/abs/2601.23065)|
 |**2026-01-30**|**Learning Geometrically-Grounded 3D Visual Representations for View-Generalizable Robotic Manipulation**|Di Zhang et.al.|[2601.22988](http://arxiv.org/abs/2601.22988)|
@@ -43,29 +53,42 @@
 |**2026-01-29**|**AIR-VLA: Vision-Language-Action Systems for Aerial Manipulation**|Jianli Sun et.al.|[2601.21602](http://arxiv.org/abs/2601.21602)|
 |**2026-01-29**|**EmboCoach-Bench: Benchmarking AI Agents on Developing Embodied Robots**|Zixing Lei et.al.|[2601.21570](http://arxiv.org/abs/2601.21570)|
 
-<p align=right>(<a href=#updated-on-20260202>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260203>back to top</a>)</p>
 
 ### 📌 VLN
 
-|Publish Date|Title|Authors|PDF|
-|---|---|---|---|
-|**2026-01-29**|**Dynamic Topology Awareness: Breaking the Granularity Rigidity in Vision-Language Navigation**|Jiankun Peng et.al.|[2601.21751](http://arxiv.org/abs/2601.21751)|
-|**2026-01-26**|**DV-VLN: Dual Verification for Reliable LLM-Based Vision-and-Language Navigation**|Zijun Li et.al.|[2601.18492](http://arxiv.org/abs/2601.18492)|
-|**2026-01-26**|**\textsc{NaVIDA}: Vision-Language Navigation with Inverse Dynamics Augmentation**|Weiye Zhu et.al.|[2601.18188](http://arxiv.org/abs/2601.18188)|
-|**2026-01-22**|**AION: Aerial Indoor Object-Goal Navigation Using Dual-Policy Reinforcement Learning**|Zichen Yan et.al.|[2601.15614](http://arxiv.org/abs/2601.15614)|
-|**2026-01-23**|**FantasyVLN: Unified Multimodal Chain-of-Thought Reasoning for Vision-Language Navigation**|Jing Zuo et.al.|[2601.13976](http://arxiv.org/abs/2601.13976)|
-|**2026-01-19**|**Spatial-VLN: Zero-Shot Vision-and-Language Navigation With Explicit Spatial Perception and Exploration**|Lu Yue et.al.|[2601.12766](http://arxiv.org/abs/2601.12766)|
-|**2026-01-14**|**Towards Open Environments and Instructions: General Vision-Language Navigation via Fast-Slow Interactive Reasoning**|Yang Li et.al.|[2601.09111](http://arxiv.org/abs/2601.09111)|
+|Publish Date (YYYY-MM-DD)|Title|Authors|PDF|HJFY|
+|---|---|---|---|---|
+|**2026-02-02**|**LangMap: A Hierarchical Benchmark for Open-Vocabulary Goal Navigation<br>LangMap：面向开放词汇目标导航的分层基准**|Anton van den Hengel Team|[2602.02220](http://arxiv.org/abs/2602.02220)|[HJFY](https://hjfy.top/arxiv/2602.02220v1)|
+|**2026-01-31**|**APEX: A Decoupled Memory-based Explorer for Asynchronous Aerial Object Goal Navigation<br>APEX：一种用于异步空中目标导航的解耦记忆型探索器**|Shuo Yang Team|[2602.00551](http://arxiv.org/abs/2602.00551)|[HJFY](https://hjfy.top/arxiv/2602.00551v1)|
+|**2026-01-30**|**MapDream: Task-Driven Map Learning for Vision-Language Navigation<br>MapDream：面向视觉语言导航的任务驱动地图学习**|Zhaoxin Fan Team|[2602.00222](http://arxiv.org/abs/2602.00222)|[HJFY](https://hjfy.top/arxiv/2602.00222v1)|
+|**2026-01-29**|**Dynamic Topology Awareness: Breaking the Granularity Rigidity in Vision-Language Navigation<br>动态拓扑感知：突破视觉语言导航中的粒度僵化**|Xiaoming Wang Team|[2601.21751](http://arxiv.org/abs/2601.21751)|[HJFY](https://hjfy.top/arxiv/2601.21751v1)|
+|**2026-01-26**|**DV-VLN: Dual Verification for Reliable LLM-Based Vision-and-Language Navigation<br>DV-VLN：基于大语言模型的视觉语言导航双重验证可靠性研究**|Shoujun Zhou Team|[2601.18492](http://arxiv.org/abs/2601.18492)|[HJFY](https://hjfy.top/arxiv/2601.18492v1)|
+|**2026-01-26**|**\textsc{NaVIDA}: Vision-Language Navigation with Inverse Dynamics Augmentation<br>\textsc{NaVIDA}：基于逆动力学增强的视觉语言导航**|Feng Zheng Team|[2601.18188](http://arxiv.org/abs/2601.18188)|[HJFY](https://hjfy.top/arxiv/2601.18188v1)|
+|**2026-01-22**|**AION: Aerial Indoor Object-Goal Navigation Using Dual-Policy Reinforcement Learning<br>AION：基于双策略强化学习的空中室内目标导航**|Lin Zhao Team|[2601.15614](http://arxiv.org/abs/2601.15614)|[HJFY](https://hjfy.top/arxiv/2601.15614v1)|
+|**2026-01-23**|**FantasyVLN: Unified Multimodal Chain-of-Thought Reasoning for Vision-Language Navigation<br>FantasyVLN：面向视觉语言导航的统一多模态思维链推理**|Yonggang Qi Team|[2601.13976](http://arxiv.org/abs/2601.13976)|[HJFY](https://hjfy.top/arxiv/2601.13976v2)|
+|**2026-01-19**|**Spatial-VLN: Zero-Shot Vision-and-Language Navigation With Explicit Spatial Perception and Exploration<br>空间视觉语言导航：具备显式空间感知与探索能力的零样本视觉语言导航**|Feitian Zhang Team|[2601.12766](http://arxiv.org/abs/2601.12766)|[HJFY](https://hjfy.top/arxiv/2601.12766v1)|
+|**2026-01-14**|**Towards Open Environments and Instructions: General Vision-Language Navigation via Fast-Slow Interactive Reasoning<br>迈向开放环境与指令：基于快慢交互推理的通用视觉语言导航**|Yahong Han Team|[2601.09111](http://arxiv.org/abs/2601.09111)|[HJFY](https://hjfy.top/arxiv/2601.09111v1)|
 |**2026-01-11**|**Residual Cross-Modal Fusion Networks for Audio-Visual Navigation**|Yi Wang et.al.|[2601.08868](http://arxiv.org/abs/2601.08868)|
 |**2026-01-13**|**VLingNav: Embodied Navigation with Adaptive Reasoning and Visual-Assisted Linguistic Memory**|Shaoan Wang et.al.|[2601.08665](http://arxiv.org/abs/2601.08665)|
 |**2026-01-12**|**GROKE: Vision-Free Navigation Instruction Evaluation via Graph Reasoning on OpenStreetMap**|Farzad Shami et.al.|[2601.07375](http://arxiv.org/abs/2601.07375)|
 
-<p align=right>(<a href=#updated-on-20260202>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260203>back to top</a>)</p>
 
 ### 📌 VLM
 
-|Publish Date|Title|Authors|PDF|
-|---|---|---|---|
+|Publish Date (YYYY-MM-DD)|Title|Authors|PDF|HJFY|
+|---|---|---|---|---|
+|**2026-02-02**|**Avenir-Web: Human-Experience-Imitating Multimodal Web Agents with Mixture of Grounding Experts<br>Avenir-Web：融合多模态专家的人类体验模拟网络代理系统**|Mengdi Wang Team|[2602.02468](http://arxiv.org/abs/2602.02468)|[HJFY](https://hjfy.top/arxiv/2602.02468v1)|
+|**2026-02-02**|**MentisOculi: Revealing the Limits of Reasoning with Mental Imagery<br>MentisOculi：揭示心理意象推理的局限边界**|Wieland Brendel Team|[2602.02465](http://arxiv.org/abs/2602.02465)|[HJFY](https://hjfy.top/arxiv/2602.02465v1)|
+|**2026-02-02**|**Relationship-Aware Hierarchical 3D Scene Graph for Task Reasoning<br>关系感知型分层三维场景图用于任务推理**|Kostas Alexis Team|[2602.02456](http://arxiv.org/abs/2602.02456)|[HJFY](https://hjfy.top/arxiv/2602.02456v1)|
+|**2026-02-02**|**World-Gymnast: Training Robots with Reinforcement Learning in a World Model<br>世界体操家：在世界模型中通过强化学习训练机器人**|Sherry Yang Team|[2602.02454](http://arxiv.org/abs/2602.02454)|[HJFY](https://hjfy.top/arxiv/2602.02454v1)|
+|**2026-02-02**|**ReasonEdit: Editing Vision-Language Models using Human Reasoning<br>《理性编辑：基于人类推理的视觉语言模型编辑》**|Thomas Hartvigsen Team|[2602.02408](http://arxiv.org/abs/2602.02408)|[HJFY](https://hjfy.top/arxiv/2602.02408v1)|
+|**2026-02-02**|**LongVPO: From Anchored Cues to Self-Reasoning for Long-Form Video Preference Optimization<br>长视频偏好优化：从锚定线索到自我推理**|Limin Wang Team|[2602.02341](http://arxiv.org/abs/2602.02341)|[HJFY](https://hjfy.top/arxiv/2602.02341v1)|
+|**2026-02-02**|**Vision-DeepResearch Benchmark: Rethinking Visual and Textual Search for Multimodal Large Language Models<br>视觉深度研究基准：重新思考多模态大语言模型的视觉与文本搜索**|Shaosheng Cao Team|[2602.02185](http://arxiv.org/abs/2602.02185)|[HJFY](https://hjfy.top/arxiv/2602.02185v1)|
+|**2026-02-02**|**See2Refine: Vision-Language Feedback Improves LLM-Based eHMI Action Designers<br>See2Refine：视觉语言反馈提升基于大语言模型的外部人机交互动作设计能力**|Takeo Igarashi Team|[2602.02063](http://arxiv.org/abs/2602.02063)|[HJFY](https://hjfy.top/arxiv/2602.02063v1)|
+|**2026-02-02**|**Auto-Comp: An Automated Pipeline for Scalable Compositional Probing of Contrastive Vision-Language Models<br>Auto-Comp：面向对比视觉语言模型的可扩展组合性探测自动化流程**|Toshihiko Yamasaki Team|[2602.02043](http://arxiv.org/abs/2602.02043)|[HJFY](https://hjfy.top/arxiv/2602.02043v1)|
+|**2026-02-02**|**One Size, Many Fits: Aligning Diverse Group-Wise Click Preferences in Large-Scale Advertising Image Generation<br>一图多面：在大规模广告图像生成中协调多元群体点击偏好**|Jian Liang Team|[2602.02033](http://arxiv.org/abs/2602.02033)|[HJFY](https://hjfy.top/arxiv/2602.02033v1)|
 |**2026-01-30**|**User Prompting Strategies and Prompt Enhancement Methods for Open-Set Object Detection in XR Environments**|Junfeng Lin et.al.|[2601.23281](http://arxiv.org/abs/2601.23281)|
 |**2026-01-30**|**Training-Free Test-Time Adaptation with Brownian Distance Covariance in Vision-Language Models**|Yi Zhang et.al.|[2601.23253](http://arxiv.org/abs/2601.23253)|
 |**2026-01-30**|**Structured Over Scale: Learning Spatial Reasoning from Educational Video**|Bishoy Galoaa et.al.|[2601.23251](http://arxiv.org/abs/2601.23251)|
@@ -87,7 +110,7 @@
 |**2026-01-29**|**Clarity: The Flexibility-Interpretability Trade-Off in Sparsity-aware Concept Bottleneck Models**|Konstantinos P. Panousis et.al.|[2601.21944](http://arxiv.org/abs/2601.21944)|
 |**2026-01-29**|**VideoAesBench: Benchmarking the Video Aesthetics Perception Capabilities of Large Multimodal Models**|Yunhao Li et.al.|[2601.21915](http://arxiv.org/abs/2601.21915)|
 
-<p align=right>(<a href=#updated-on-20260202>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260203>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/20bytes/vlm-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/20bytes/vlm-arxiv-daily/graphs/contributors
