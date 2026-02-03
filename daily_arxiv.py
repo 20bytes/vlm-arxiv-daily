@@ -465,6 +465,11 @@ def json_to_md(filename,md_filename,
                 if v is not None:
                     # 去掉表格中的 Code 列（如果有的话）
                     v_clean = v.replace("|null|", "|")
+                    if not to_web:
+                        v_clean = v_clean.replace(
+                            "(abstracts/",
+                            "(https://20bytes.github.io/vlm-arxiv-daily/abstracts/",
+                        )
                     f.write(pretty_math(v_clean)) # make latex pretty
 
             f.write(f"\n")
