@@ -567,7 +567,7 @@ def json_to_html(filename, html_filename, task = ''):
         f.write("</body>\n")
         f.write("</html>\n")
 
-    logging.info(f\"{task} finished\")
+    logging.info(f"{task} finished")
 
 def demo(**config):
     # TODO: use config
