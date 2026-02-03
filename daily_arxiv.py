@@ -170,6 +170,7 @@ def get_daily_papers(topic,query="slam", max_results=2, translate_opts=None):
         sort_by = arxiv.SortCriterion.SubmittedDate
     )
 
+    abstracts_map = dict()
     for result in search_engine.results():
 
         paper_id            = result.get_short_id()
@@ -194,6 +195,10 @@ def get_daily_papers(topic,query="slam", max_results=2, translate_opts=None):
             paper_key = paper_id[0:ver_pos]
         paper_url = arxiv_url + 'abs/' + paper_key
         hjfy_link = hjfy_url + paper_id
+        abstracts_map[paper_key] = {
+            "title": paper_title,
+            "abstract_en": paper_abstract,
+        }
 
         # optional title translation
         translated_title = ""
@@ -244,9 +249,8 @@ def get_daily_papers(topic,query="slam", max_results=2, translate_opts=None):
         title_cell = sanitize_cell(paper_title)
         if translated_title:
             title_cell = f"{title_cell}<br>{sanitize_cell(translated_title)}"
-        if translate_opts:
-            abstract_link = f"abstracts/{paper_key}.html"
-            title_cell = f"{title_cell}<br>[摘要]({abstract_link})"
+        abstract_link = f"abstracts/{paper_key}.html"
+        title_cell = f"{title_cell}<br>[摘要]({abstract_link})"
 
         # Since PapersWithCode API is deprecated, we no longer fetch code links
         # Papers will be listed without code links
@@ -264,7 +268,7 @@ def get_daily_papers(topic,query="slam", max_results=2, translate_opts=None):
 
     data = {topic:content}
     data_web = {topic:content_to_web}
-    return data,data_web
+    return data,data_web,abstracts_map
 
 def update_paper_links(filename):
     '''
@@ -333,6 +337,23 @@ def update_json_file(filename,data_dict):
     with open(filename,"w") as f:
         json.dump(json_data,f)
 
+def update_flat_json_file(filename, data_dicts):
+    '''
+    update a flat json dict with multiple dicts
+    '''
+    with open(filename, "r") as f:
+        content = f.read()
+        if not content:
+            m = {}
+        else:
+            m = json.loads(content)
+
+    json_data = m.copy()
+    for data in data_dicts:
+        json_data.update(data)
+
+    with open(filename, "w") as f:
+        json.dump(json_data, f)
 def json_to_md(filename,md_filename,
                task = '',
                to_web = False,
@@ -474,7 +495,7 @@ def json_to_md(filename,md_filename,
 
     logging.info(f"{task} finished")
 
-def json_to_html(filename, html_filename, task = '', translation_cache_path = ''):
+def json_to_html(filename, html_filename, task = '', translation_cache_path = '', abstracts_cache_path = ''):
     """
     Generate an interactive HTML page for GitHub Pages.
     Evaluation states are stored in localStorage per arXiv ID.
@@ -496,6 +517,13 @@ def json_to_html(filename, html_filename, task = '', translation_cache_path = ''
             data = json.loads(content)
 
     translation_cache = load_translation_cache(translation_cache_path) if translation_cache_path else {}
+    abstracts_cache = {}
+    if abstracts_cache_path and os.path.exists(abstracts_cache_path):
+        try:
+            with open(abstracts_cache_path, "r", encoding="utf-8") as af:
+                abstracts_cache = json.load(af) or {}
+        except Exception as exc:
+            logging.warning(f"Failed to load abstracts cache: {exc}")
     abstracts_dir = os.path.join(os.path.dirname(html_filename), "abstracts")
     os.makedirs(abstracts_dir, exist_ok=True)
 
@@ -617,12 +645,15 @@ def json_to_html(filename, html_filename, task = '', translation_cache_path = ''
                 arxiv_id = pdf_text or pdf_url.rsplit("/", 1)[-1]
                 arxiv_id = re.sub(r'v\\d+$', '', arxiv_id)
 
-                cached = translation_cache.get(arxiv_id) or {}
-                if isinstance(cached, dict):
+                abs_cached = abstracts_cache.get(arxiv_id) or {}
+                if isinstance(abs_cached, dict):
+                    cached = translation_cache.get(arxiv_id) or {}
+                    if not isinstance(cached, dict):
+                        cached = {}
                     render_abstract_page(
                         arxiv_id,
-                        title,
-                        cached.get("abstract_en", ""),
+                        abs_cached.get("title", title),
+                        abs_cached.get("abstract_en", ""),
                         cached.get("abstract_zh", ""),
                     )
 
@@ -686,6 +717,7 @@ def demo(**config):
     # TODO: use config
     data_collector = []
     data_collector_web= []
+    data_collector_abstracts = []
 
     keywords = config['kv']
     max_results = config['max_results']
@@ -717,11 +749,12 @@ def demo(**config):
         logging.info(f"GET daily papers begin")
         for topic, keyword in keywords.items():
             logging.info(f"Keyword: {topic}")
-            data, data_web = get_daily_papers(topic, query = keyword,
+            data, data_web, abstracts_map = get_daily_papers(topic, query = keyword,
                                             max_results = max_results,
                                             translate_opts = translate_opts)
             data_collector.append(data)
             data_collector_web.append(data_web)
+            data_collector_abstracts.append(abstracts_map)
             print("\n")
         logging.info(f"GET daily papers end")
         if translate_opts and translate_opts["dirty"]:
@@ -745,17 +778,20 @@ def demo(**config):
     if publish_gitpage:
         json_file = config['json_gitpage_path']
         md_file   = config['md_gitpage_path']
+        abstracts_file = config.get('abstracts_cache_path', './docs/abstracts_en.json')
         # TODO: duplicated update paper links!!!
         if config['update_paper_links']:
             update_paper_links(json_file)
         else:
             update_json_file(json_file,data_collector)
+            update_flat_json_file(abstracts_file, data_collector_abstracts)
         if md_file.endswith(".html"):
             json_to_html(
                 json_file,
                 md_file,
                 task ='Update GitPage',
                 translation_cache_path=config.get("translation_cache_path", "./docs/title_translations.json"),
+                abstracts_cache_path=abstracts_file,
             )
         else:
             json_to_md(json_file, md_file, task ='Update GitPage', \

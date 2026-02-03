@@ -13,6 +13,7 @@ translate_abstract: True
 deepseek_base_url: "https://api.deepseek.com"
 deepseek_model: "deepseek-chat"
 translation_cache_path: "./docs/title_translations.json"
+abstracts_cache_path: "./docs/abstracts_en.json"
 
 publish_readme: True
 publish_gitpage: True
