@@ -341,12 +341,16 @@ def update_flat_json_file(filename, data_dicts):
     '''
     update a flat json dict with multiple dicts
     '''
-    with open(filename, "r") as f:
-        content = f.read()
-        if not content:
-            m = {}
-        else:
-            m = json.loads(content)
+    if not os.path.exists(filename):
+        os.makedirs(os.path.dirname(filename) or ".", exist_ok=True)
+        m = {}
+    else:
+        with open(filename, "r") as f:
+            content = f.read()
+            if not content:
+                m = {}
+            else:
+                m = json.loads(content)
 
     json_data = m.copy()
     for data in data_dicts:
