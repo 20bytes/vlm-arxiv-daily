@@ -198,14 +198,17 @@ def get_daily_papers(topic,query="slam", max_results=2, translate_opts=None):
         # optional title translation
         translated_title = ""
         translated_abstract = ""
+        abstract_en = paper_abstract
         if translate_opts is not None:
             cache = translate_opts["cache"]
             cached = cache.get(paper_key)
             if isinstance(cached, str):
-                cached = {"title_zh": cached, "abstract_zh": ""}
+                cached = {"title_zh": cached, "abstract_zh": "", "abstract_en": ""}
             if isinstance(cached, dict):
                 translated_title = cached.get("title_zh", "")
                 translated_abstract = cached.get("abstract_zh", "")
+                if cached.get("abstract_en"):
+                    abstract_en = cached.get("abstract_en", "")
 
             need_abstract = translate_opts.get("translate_abstract", False)
             if not translated_title or (need_abstract and not translated_abstract):
@@ -223,6 +226,7 @@ def get_daily_papers(topic,query="slam", max_results=2, translate_opts=None):
                     cache[paper_key] = {
                         "title_zh": translated_title,
                         "abstract_zh": translated_abstract,
+                        "abstract_en": paper_abstract,
                     }
                     translate_opts["dirty"] = True
 
@@ -233,7 +237,8 @@ def get_daily_papers(topic,query="slam", max_results=2, translate_opts=None):
         if translated_title:
             title_cell = f"{title_cell}<br>{sanitize_cell(translated_title)}"
         if translated_abstract and translate_opts and translate_opts.get("translate_abstract"):
-            title_cell = f"{title_cell}<br>{sanitize_cell(translated_abstract)}"
+            abstract_link = f"abstracts/{paper_key}.html"
+            title_cell = f"{title_cell}<br>[摘要]({abstract_link})"
 
         # Since PapersWithCode API is deprecated, we no longer fetch code links
         # Papers will be listed without code links
@@ -461,7 +466,7 @@ def json_to_md(filename,md_filename,
 
     logging.info(f"{task} finished")
 
-def json_to_html(filename, html_filename, task = ''):
+def json_to_html(filename, html_filename, task = '', translation_cache_path = ''):
     """
     Generate an interactive HTML page for GitHub Pages.
     Evaluation states are stored in localStorage per arXiv ID.
@@ -481,6 +486,43 @@ def json_to_html(filename, html_filename, task = ''):
             data = {}
         else:
             data = json.loads(content)
+
+    translation_cache = load_translation_cache(translation_cache_path) if translation_cache_path else {}
+    abstracts_dir = os.path.join(os.path.dirname(html_filename), "abstracts")
+    os.makedirs(abstracts_dir, exist_ok=True)
+
+    def render_abstract_page(arxiv_id: str, title: str, abstract_en: str, abstract_zh: str) -> None:
+        page_path = os.path.join(abstracts_dir, f"{arxiv_id}.html")
+        with open(page_path, "w", encoding="utf-8") as af:
+            af.write("<!DOCTYPE html>\n")
+            af.write("<html lang=\"zh-CN\">\n")
+            af.write("<head>\n")
+            af.write("  <meta charset=\"UTF-8\" />\n")
+            af.write("  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n")
+            af.write("  <title>Abstract</title>\n")
+            af.write("  <style>\n")
+            af.write("    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }\n")
+            af.write("    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }\n")
+            af.write("    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }\n")
+            af.write("    h1 { font-size: 20px; margin: 0 0 12px; }\n")
+            af.write("    h2 { font-size: 16px; margin: 20px 0 8px; }\n")
+            af.write("    p { line-height: 1.6; white-space: pre-wrap; }\n")
+            af.write("    a { color: #2563eb; }\n")
+            af.write("  </style>\n")
+            af.write("</head>\n")
+            af.write("<body>\n")
+            af.write("  <div class=\"wrap\">\n")
+            af.write("    <div class=\"card\">\n")
+            af.write(f"      <h1>{html.escape(title)}</h1>\n")
+            af.write("      <h2>Abstract (EN)</h2>\n")
+            af.write(f"      <p>{html.escape(abstract_en)}</p>\n")
+            af.write("      <h2>摘要 (ZH)</h2>\n")
+            af.write(f"      <p>{html.escape(abstract_zh)}</p>\n")
+            af.write("      <p><a href=\"../index.html\">← Back</a></p>\n")
+            af.write("    </div>\n")
+            af.write("  </div>\n")
+            af.write("</body>\n")
+            af.write("</html>\n")
 
     with open(html_filename,"w") as f:
         f.write("<!DOCTYPE html>\n")
@@ -563,10 +605,25 @@ def json_to_html(filename, html_filename, task = ''):
                 arxiv_id = pdf_text or pdf_url.rsplit("/", 1)[-1]
                 arxiv_id = re.sub(r'v\\d+$', '', arxiv_id)
 
+                cached = translation_cache.get(arxiv_id) or {}
+                if isinstance(cached, dict) and cached.get("abstract_en") and cached.get("abstract_zh"):
+                    render_abstract_page(
+                        arxiv_id,
+                        title,
+                        cached.get("abstract_en", ""),
+                        cached.get("abstract_zh", ""),
+                    )
+
                 f.write(f"          <tr data-arxiv-id=\"{html.escape(arxiv_id)}\">\n")
                 f.write(f"            <td>{html.escape(date)}</td>\n")
                 safe_title = html.escape(title)
                 safe_title = safe_title.replace("&lt;br&gt;", "<br>").replace("&lt;br/&gt;", "<br>")
+                # convert markdown links inside title cell to HTML anchors
+                def replace_md_link(match):
+                    text = match.group(1)
+                    url = match.group(2)
+                    return f'<a href="{html.escape(url)}">{html.escape(text)}</a>'
+                safe_title = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", replace_md_link, safe_title)
                 f.write(f"            <td>{safe_title}</td>\n")
                 f.write(f"            <td>{html.escape(authors)}</td>\n")
                 f.write(f"            <td><a href=\"{html.escape(pdf_url)}\">{html.escape(pdf_text)}</a></td>\n")
@@ -682,7 +739,12 @@ def demo(**config):
         else:
             update_json_file(json_file,data_collector)
         if md_file.endswith(".html"):
-            json_to_html(json_file, md_file, task ='Update GitPage')
+            json_to_html(
+                json_file,
+                md_file,
+                task ='Update GitPage',
+                translation_cache_path=config.get("translation_cache_path", "./docs/title_translations.json"),
+            )
         else:
             json_to_md(json_file, md_file, task ='Update GitPage', \
                 to_web = True, show_badge = show_badge, \
