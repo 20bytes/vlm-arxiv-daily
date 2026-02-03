@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Dynamic Topology Awareness: Breaking the Granularity Rigidity in Vision-Language Navigation&lt;br&gt;动态拓扑感知：打破视觉语言导航中的粒度僵化&lt;br&gt;[摘要](abstracts/2601.21751.html)</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language Navigation in Continuous Environments (VLN-CE) presents a core challenge: grounding high-level linguistic instructions into precise, safe, and long-horizon spatial actions. Explicit topological maps have proven to be a vital solution for providing robust spatial memory in such tasks. However, existing topological planning methods suffer from a &quot;Granularity Rigidity&quot; problem. Specifically, these methods typically rely on fixed geometric thresholds to sample nodes, which fails to adapt to varying environmental complexities. This rigidity leads to a critical mismatch: the model tends to over-sample in simple areas, causing computational redundancy, while under-sampling in high-uncertainty regions, increasing collision risks and compromising precision. To address this, we propose DGNav, a framework for Dynamic Topological Navigation, introducing a context-aware mechanism to modulate map density and connectivity on-the-fly. Our approach comprises two core innovations: (1) A Scene-Aware Adaptive Strategy that dynamically modulates graph construction thresholds based on the dispersion of predicted waypoints, enabling &quot;densification on demand&quot; in challenging environments; (2) A Dynamic Graph Transformer that reconstructs graph connectivity by fusing visual, linguistic, and geometric cues into dynamic edge weights, enabling the agent to filter out topological noise and enhancing instruction adherence. Extensive experiments on the R2R-CE and RxR-CE benchmarks demonstrate DGNav exhibits superior navigation performance and strong generalization capabilities. Furthermore, ablation studies confirm that our framework achieves an optimal trade-off between navigation efficiency and safe exploration. The code is available at https://github.com/shannanshouyin/DGNav.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>连续环境下的视觉语言导航（VLN-CE）面临一个核心挑战：将高层语言指令落实到精确、安全且长距离的空间行动中。显式拓扑图已被证明是为此类任务提供鲁棒空间记忆的关键方案。然而，现有拓扑规划方法存在“粒度僵化”问题。具体而言，这些方法通常依赖固定的几何阈值来采样节点，无法适应多变的环境复杂性。这种僵化导致严重的不匹配：模型在简单区域倾向于过度采样，造成计算冗余；而在高不确定性区域则采样不足，增加碰撞风险并损害导航精度。为解决此问题，我们提出了DGNav——一个动态拓扑导航框架，引入上下文感知机制以实时调整地图密度与连通性。我们的方法包含两项核心创新：（1）场景感知自适应策略：基于预测路径点的离散度动态调整图构建阈值，实现在复杂环境中“按需加密”；（2）动态图变换器：通过融合视觉、语言与几何线索为动态边权重，重构图连通性，使智能体能够滤除拓扑噪声并增强指令遵循能力。在R2R-CE和RxR-CE基准上的大量实验表明，DGNav展现出卓越的导航性能和强大的泛化能力。此外，消融研究证实该框架在导航效率与安全探索间实现了最优平衡。代码已开源：https://github.com/shannanshouyin/DGNav。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

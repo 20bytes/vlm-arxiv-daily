@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>DV-VLN: Dual Verification for Reliable LLM-Based Vision-and-Language Navigation&lt;br&gt;DV-VLN：基于大语言模型的视觉与语言导航双重验证可靠框架&lt;br&gt;[摘要](abstracts/2601.18492.html)</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-and-Language Navigation (VLN) requires an embodied agent to navigate in a complex 3D environment according to natural language instructions. Recent progress in large language models (LLMs) has enabled language-driven navigation with improved interpretability. However, most LLM-based agents still rely on single-shot action decisions, where the model must choose one option from noisy, textualized multi-perspective observations. Due to local mismatches and imperfect intermediate reasoning, such decisions can easily deviate from the correct path, leading to error accumulation and reduced reliability in unseen environments. In this paper, we propose DV-VLN, a new VLN framework that follows a generate-then-verify paradigm. DV-VLN first performs parameter-efficient in-domain adaptation of an open-source LLaMA-2 backbone to produce a structured navigational chain-of-thought, and then verifies candidate actions with two complementary channels: True-False Verification (TFV) and Masked-Entity Verification (MEV). DV-VLN selects actions by aggregating verification successes across multiple samples, yielding interpretable scores for reranking. Experiments on R2R, RxR (English subset), and REVERIE show that DV-VLN consistently improves over direct prediction and sampling-only baselines, achieving competitive performance among language-only VLN agents and promising results compared with several cross-modal systems.Code is available at https://github.com/PlumJun/DV-VLN.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉与语言导航任务要求具身智能体根据自然语言指令在复杂三维环境中进行导航。近期大语言模型的发展提升了语言驱动导航的可解释性。然而，大多数基于大语言模型的智能体仍依赖单次动作决策机制，即模型必须从带有噪声的多视角文本化观察结果中选择一个选项。由于局部信息不匹配及中间推理过程的不完善，此类决策极易偏离正确路径，导致误差累积并在未知环境中降低可靠性。本文提出DV-VLN——一种遵循“生成-验证”范式的新型视觉与语言导航框架。该框架首先对开源LLaMA-2主干网络进行参数高效的领域内适配，以生成结构化的导航思维链，随后通过两个互补通道验证候选动作：真伪验证与掩码实体验证。DV-VLN通过聚合多个样本的验证成功次数来选择动作，并生成可解释的分数进行重排序。在R2R、RxR（英文子集）和REVERIE数据集上的实验表明，DV-VLN相较于直接预测和纯采样基线方法均取得稳定提升，在纯语言视觉与语言导航智能体中达到竞争性性能，与多种跨模态系统相比亦展现出有前景的结果。代码已开源：https://github.com/PlumJun/DV-VLN。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

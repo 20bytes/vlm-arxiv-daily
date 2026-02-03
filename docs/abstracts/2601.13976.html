@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>FantasyVLN: Unified Multimodal Chain-of-Thought Reasoning for Vision-Language Navigation&lt;br&gt;FantasyVLN：面向视觉语言导航的统一多模态思维链推理框架&lt;br&gt;[摘要](abstracts/2601.13976.html)</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Achieving human-level performance in Vision-and-Language Navigation (VLN) requires an embodied agent to jointly understand multimodal instructions and visual-spatial context while reasoning over long action sequences. Recent works, such as NavCoT and NavGPT-2, demonstrate the potential of Chain-of-Thought (CoT) reasoning for improving interpretability and long-horizon planning. Moreover, multimodal extensions like OctoNav-R1 and CoT-VLA further validate CoT as a promising pathway toward human-like navigation reasoning. However, existing approaches face critical drawbacks: purely textual CoTs lack spatial grounding and easily overfit to sparse annotated reasoning steps, while multimodal CoTs incur severe token inflation by generating imagined visual observations, making real-time navigation impractical. In this work, we propose FantasyVLN, a unified implicit reasoning framework that preserves the benefits of CoT reasoning without explicit token overhead. Specifically, imagined visual tokens are encoded into a compact latent space using a pretrained Visual AutoRegressor (VAR) during CoT reasoning training, and the model jointly learns from textual, visual, and multimodal CoT modes under a unified multi-CoT strategy. At inference, our model performs direct instruction-to-action mapping while still enjoying reasoning-aware representations. Extensive experiments on LH-VLN show that our approach achieves reasoning-aware yet real-time navigation, improving success rates and efficiency while reducing inference latency by an order of magnitude compared to explicit CoT methods.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在视觉语言导航（VLN）中实现人类水平的表现，要求具身智能体能够同时理解多模态指令与视觉空间上下文，并对长序列动作进行推理。近期研究，如NavCoT与NavGPT-2，展示了思维链（CoT）推理在提升可解释性与长程规划能力方面的潜力。此外，OctoNav-R1和CoT-VLA等多模态扩展进一步验证了CoT作为实现类人导航推理的有效路径。然而，现有方法存在明显缺陷：纯文本CoT缺乏空间基础，易因稀疏标注的推理步骤而过拟合；而多模态CoT通过生成想象的视觉观测导致严重的令牌膨胀，使得实时导航难以实现。本文提出FantasyVLN，一个统一的隐式推理框架，在保留CoT推理优势的同时避免了显式的令牌开销。具体而言，在CoT推理训练中，我们使用预训练的视觉自回归模型（VAR）将想象的视觉令牌编码至紧凑的潜在空间，并通过统一的多CoT策略，使模型能够从文本、视觉及多模态CoT模式中联合学习。在推理阶段，我们的模型直接执行从指令到动作的映射，同时仍受益于推理感知的表征。在LH-VLN数据集上的大量实验表明，该方法实现了兼具推理感知与实时性的导航，不仅提升了成功率与效率，而且相比显式CoT方法，推理延迟降低了一个数量级。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
