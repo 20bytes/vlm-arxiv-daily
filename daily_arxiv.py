@@ -5,6 +5,7 @@ import arxiv
 import yaml
 import logging
 import argparse
+import html
 import datetime
 import requests
 
@@ -14,6 +15,51 @@ logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
 
 github_url = "https://api.github.com/search/repositories"
 arxiv_url = "http://arxiv.org/"
+hjfy_url = "https://hjfy.top/arxiv/"
+
+def load_translation_cache(cache_path: str) -> dict:
+    if not cache_path:
+        return {}
+    if not os.path.exists(cache_path):
+        return {}
+    try:
+        with open(cache_path, "r", encoding="utf-8") as f:
+            return json.load(f) or {}
+    except Exception as exc:
+        logging.warning(f"Failed to load translation cache: {exc}")
+        return {}
+
+def save_translation_cache(cache_path: str, cache: dict) -> None:
+    if not cache_path:
+        return
+    os.makedirs(os.path.dirname(cache_path) or ".", exist_ok=True)
+    with open(cache_path, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+def translate_title_deepseek(title: str, api_key: str, base_url: str, model: str) -> str:
+    if not title or not api_key:
+        return ""
+    url = base_url.rstrip("/") + "/chat/completions"
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {api_key}",
+    }
+    payload = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": "Translate the paper title into Chinese. Output only the translated title."},
+            {"role": "user", "content": title},
+        ],
+        "stream": False,
+    }
+    try:
+        resp = requests.post(url, headers=headers, json=payload, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+        return (data.get("choices", [{}])[0].get("message", {}).get("content", "") or "").strip()
+    except Exception as exc:
+        logging.warning(f"DeepSeek translation failed: {exc}")
+        return ""
 
 def load_config(config_file:str) -> dict:
     '''
@@ -46,12 +92,14 @@ def load_config(config_file:str) -> dict:
         logging.info(f'config = {config}')
     return config
 
-def get_authors(authors, first_author = False):
+def get_authors(authors, first_author = False, last_author = False):
     output = str()
-    if first_author == False:
-        output = ", ".join(str(author) for author in authors)
-    else:
+    if first_author:
         output = authors[0]
+    elif last_author:
+        output = authors[-1]
+    else:
+        output = ", ".join(str(author) for author in authors)
     return output
 def sort_papers(papers):
     output = dict()
@@ -83,7 +131,7 @@ def get_code_link(qword:str) -> str:
         code_link = results["items"][0]["html_url"]
     return code_link
 
-def get_daily_papers(topic,query="slam", max_results=2):
+def get_daily_papers(topic,query="slam", max_results=2, translate_opts=None):
     """
     @param topic: str
     @param query: str
@@ -106,12 +154,13 @@ def get_daily_papers(topic,query="slam", max_results=2):
         paper_abstract      = result.summary.replace("\n"," ")
         paper_authors       = get_authors(result.authors)
         paper_first_author  = get_authors(result.authors,first_author = True)
+        paper_last_author   = get_authors(result.authors,last_author = True)
         primary_category    = result.primary_category
         publish_time        = result.published.date()
         update_time         = result.updated.date()
         comments            = result.comment
 
-        logging.info(f"Time = {update_time} title = {paper_title} author = {paper_first_author}")
+        logging.info(f"Time = {update_time} title = {paper_title} author = {paper_last_author}")
 
         # eg: 2108.09112v1 -> 2108.09112
         ver_pos = paper_id.find('v')
@@ -120,13 +169,35 @@ def get_daily_papers(topic,query="slam", max_results=2):
         else:
             paper_key = paper_id[0:ver_pos]
         paper_url = arxiv_url + 'abs/' + paper_key
+        hjfy_link = hjfy_url + paper_id
+
+        # optional title translation
+        translated_title = ""
+        if translate_opts is not None:
+            cache = translate_opts["cache"]
+            if paper_key in cache:
+                translated_title = cache[paper_key]
+            else:
+                translated_title = translate_title_deepseek(
+                    paper_title,
+                    translate_opts["api_key"],
+                    translate_opts["base_url"],
+                    translate_opts["model"],
+                )
+                if translated_title:
+                    cache[paper_key] = translated_title
+                    translate_opts["dirty"] = True
+
+        title_cell = paper_title
+        if translated_title:
+            title_cell = f"{paper_title}<br>{translated_title}"
 
         # Since PapersWithCode API is deprecated, we no longer fetch code links
         # Papers will be listed without code links
-        content[paper_key] = "|**{}**|**{}**|{} et.al.|[{}]({})|null|\n".format(
-               update_time,paper_title,paper_first_author,paper_key,paper_url)
-        content_to_web[paper_key] = "- {}, **{}**, {} et.al., Paper: [{}]({})".format(
-               update_time,paper_title,paper_first_author,paper_url,paper_url)
+        content[paper_key] = "|**{}**|**{}**|{} Team|[{}]({})|[HJFY]({})|\n".format(
+               update_time,title_cell,paper_last_author,paper_key,paper_url,hjfy_link)
+        content_to_web[paper_key] = "- {}, **{}**, {} Team, Paper: [{}]({}), HJFY: [{}]({})".format(
+               update_time,paper_title,paper_last_author,paper_url,paper_url,hjfy_link,hjfy_link)
 
         # TODO: select useful comments
         comments = None
@@ -149,9 +220,9 @@ def update_paper_links(filename):
         title = parts[2].strip()
         authors = parts[3].strip()
         arxiv_id = parts[4].strip()
-        code = parts[5].strip()
+        hjfy_link = parts[5].strip()
         arxiv_id = re.sub(r'v\d+', '', arxiv_id)
-        return date,title,authors,arxiv_id,code
+        return date,title,authors,arxiv_id,hjfy_link
 
     with open(filename,"r") as f:
         content = f.read()
@@ -167,9 +238,9 @@ def update_paper_links(filename):
             for paper_id,contents in v.items():
                 contents = str(contents)
 
-                update_time, paper_title, paper_first_author, paper_url, code_url = parse_arxiv_string(contents)
+                update_time, paper_title, paper_first_author, paper_url, hjfy_link = parse_arxiv_string(contents)
 
-                contents = "|{}|{}|{}|{}|{}|\n".format(update_time,paper_title,paper_first_author,paper_url,code_url)
+                contents = "|{}|{}|{}|{}|{}|\n".format(update_time,paper_title,paper_first_author,paper_url,hjfy_link)
                 json_data[keywords][paper_id] = str(contents)
                 logging.info(f'paper_id = {paper_id}, contents = {contents}')
 
@@ -270,17 +341,27 @@ def json_to_md(filename,md_filename,
 
         #Add: table of contents
         if use_tc == True:
-            f.write("<details>\n")
-            f.write("  <summary>点击查看目录 (Table of Contents)</summary>\n")
-            f.write("  <ol>\n")
-            for keyword in data.keys():
-                day_content = data[keyword]
-                if not day_content:
-                    continue
-                kw = keyword.replace(' ','-')
-                f.write(f"    <li><a href=#{kw.lower()}>{keyword}</a></li>\n")
-            f.write("  </ol>\n")
-            f.write("</details>\n\n")
+            if to_web:
+                f.write("\n**Table of Contents**\n\n")
+                for keyword in data.keys():
+                    day_content = data[keyword]
+                    if not day_content:
+                        continue
+                    kw = keyword.replace(' ','-')
+                    f.write(f"- [{keyword}](#{kw.lower()})\n")
+                f.write("\n")
+            else:
+                f.write("<details>\n")
+                f.write("  <summary>点击查看目录 (Table of Contents)</summary>\n")
+                f.write("  <ol>\n")
+                for keyword in data.keys():
+                    day_content = data[keyword]
+                    if not day_content:
+                        continue
+                    kw = keyword.replace(' ','-')
+                    f.write(f"    <li><a href=#{kw.lower()}>{keyword}</a></li>\n")
+                f.write("  </ol>\n")
+                f.write("</details>\n\n")
 
         for keyword in data.keys():
             day_content = data[keyword]
@@ -291,10 +372,10 @@ def json_to_md(filename,md_filename,
 
             if use_title == True :
                 if to_web == False:
-                    f.write("|Publish Date|Title|Authors|PDF|\n" + "|---|---|---|---|\n")
+                    f.write("|Publish Date (YYYY-MM-DD)|Title|Authors|PDF|HJFY|\n" + "|---|---|---|---|---|\n")
                 else:
-                    f.write("| Publish Date | Title | Authors | PDF |\n")
-                    f.write("|:---------|:-----------------------|:---------|:------|\n")
+                    f.write("| Publish Date (YYYY-MM-DD) | Title | Authors | PDF | HJFY |\n")
+                    f.write("|:---------|:-----------------------|:---------|:------|:------|\n")
 
             # sort papers by date
             day_content = sort_papers(day_content)
@@ -311,7 +392,10 @@ def json_to_md(filename,md_filename,
             if use_b2t:
                 top_info = f"#Updated on {DateNow}"
                 top_info = top_info.replace(' ','-').replace('.','')
-                f.write(f"<p align=right>(<a href={top_info.lower()}>back to top</a>)</p>\n\n")
+                if to_web:
+                    f.write(f"[back to top]({top_info.lower()})\n\n")
+                else:
+                    f.write(f"<p align=right>(<a href={top_info.lower()}>back to top</a>)</p>\n\n")
 
         if show_badge == True:
             # we don't like long string, break it!
@@ -334,6 +418,157 @@ def json_to_md(filename,md_filename,
 
     logging.info(f"{task} finished")
 
+def json_to_html(filename, html_filename, task = ''):
+    """
+    Generate an interactive HTML page for GitHub Pages.
+    Evaluation states are stored in localStorage per arXiv ID.
+    """
+    def parse_md_link(md: str):
+        match = re.match(r"\[([^\]]+)\]\(([^)]+)\)", md)
+        if match:
+            return match.group(1).strip(), match.group(2).strip()
+        return md.strip(), ""
+
+    DateNow = datetime.date.today()
+    DateNow = str(DateNow).replace('-','.')
+
+    with open(filename,"r") as f:
+        content = f.read()
+        if not content:
+            data = {}
+        else:
+            data = json.loads(content)
+
+    with open(html_filename,"w") as f:
+        f.write("<!DOCTYPE html>\n")
+        f.write("<html lang=\"zh-CN\">\n")
+        f.write("<head>\n")
+        f.write("  <meta charset=\"UTF-8\" />\n")
+        f.write("  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n")
+        f.write("  <title>VLM-Arxiv-Daily</title>\n")
+        f.write("  <style>\n")
+        f.write("    :root { --bg: #f7f7f5; --card: #ffffff; --text: #1f2937; --muted: #6b7280; --line: #e5e7eb; --accent: #0f766e; }\n")
+        f.write("    * { box-sizing: border-box; }\n")
+        f.write("    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: var(--text); background: var(--bg); }\n")
+        f.write("    .wrap { max-width: 1120px; margin: 0 auto; padding: 28px 20px 60px; }\n")
+        f.write("    header { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 24px; }\n")
+        f.write("    h1 { margin: 0 0 8px; font-size: 28px; }\n")
+        f.write("    .sub { color: var(--muted); margin: 0 0 8px; }\n")
+        f.write("    .updated { font-weight: 600; }\n")
+        f.write("    .toc { margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }\n")
+        f.write("    .toc a { text-decoration: none; color: var(--accent); background: #e7f3f1; padding: 4px 10px; border-radius: 999px; font-size: 13px; }\n")
+        f.write("    section { margin-top: 24px; }\n")
+        f.write("    table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }\n")
+        f.write("    th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 14px; }\n")
+        f.write("    th { background: #f3f4f6; text-align: left; white-space: nowrap; }\n")
+        f.write("    tr:last-child td { border-bottom: none; }\n")
+        f.write("    .eval { display: inline-flex; gap: 8px; }\n")
+        f.write("    .eval button { border: 1px solid var(--line); background: #fff; padding: 2px 8px; border-radius: 6px; cursor: pointer; font-size: 14px; }\n")
+        f.write("    .eval button.active { border-color: var(--accent); background: #e7f3f1; }\n")
+        f.write("    .legend { color: var(--muted); font-size: 13px; margin: 8px 0 0; }\n")
+        f.write("    a { color: #2563eb; }\n")
+        f.write("  </style>\n")
+        f.write("</head>\n")
+        f.write("<body>\n")
+        f.write("  <div class=\"wrap\">\n")
+        f.write("    <header>\n")
+        f.write("      <h1>🤖 VLM-Arxiv-Daily</h1>\n")
+        f.write("      <p class=\"sub\">每日自动追踪 Vision-Language-Action (VLA)、Vision-Language Navigation (VLN) 和 Vision-Language Models (VLM) 的最新 arXiv 论文。</p>\n")
+        f.write(f"      <p class=\"updated\">Updated on {DateNow}</p>\n")
+        f.write("      <ul class=\"toc\">\n")
+        for keyword in data.keys():
+            day_content = data[keyword]
+            if not day_content:
+                continue
+            kw = keyword.replace(' ','-').lower()
+            f.write(f"        <li><a href=\"#{kw}\">{html.escape(keyword)}</a></li>\n")
+        f.write("      </ul>\n")
+        f.write("    </header>\n")
+
+        for keyword in data.keys():
+            day_content = data[keyword]
+            if not day_content:
+                continue
+
+            f.write(f"    <section id=\"{keyword.replace(' ','-').lower()}\">\n")
+            f.write(f"      <h2>📌 {html.escape(keyword)}</h2>\n")
+            f.write("      <table>\n")
+            f.write("        <thead>\n")
+            f.write("          <tr>\n")
+            f.write("            <th>Publish Date (YYYY-MM-DD)</th>\n")
+            f.write("            <th>Title</th>\n")
+            f.write("            <th>Authors</th>\n")
+            f.write("            <th>PDF</th>\n")
+            f.write("            <th>HJFY</th>\n")
+            f.write("            <th>评估</th>\n")
+            f.write("          </tr>\n")
+            f.write("        </thead>\n")
+            f.write("        <tbody>\n")
+
+            day_content = sort_papers(day_content)
+            for _, v in day_content.items():
+                if v is None:
+                    continue
+                parts = [p for p in str(v).strip().split("|") if p != ""]
+                if len(parts) < 5:
+                    continue
+                date = parts[0].replace("**","").strip()
+                title = parts[1].replace("**","").strip()
+                authors = parts[2].strip()
+                pdf_text, pdf_url = parse_md_link(parts[3].strip())
+                hjfy_text, hjfy_link = parse_md_link(parts[4].strip())
+                arxiv_id = pdf_text or pdf_url.rsplit("/", 1)[-1]
+                arxiv_id = re.sub(r'v\\d+$', '', arxiv_id)
+
+                f.write(f"          <tr data-arxiv-id=\"{html.escape(arxiv_id)}\">\n")
+                f.write(f"            <td>{html.escape(date)}</td>\n")
+                safe_title = html.escape(title).replace("&lt;br&gt;", "<br>").replace("&lt;br/&gt;", "<br>")
+                f.write(f"            <td>{safe_title}</td>\n")
+                f.write(f"            <td>{html.escape(authors)}</td>\n")
+                f.write(f"            <td><a href=\"{html.escape(pdf_url)}\">{html.escape(pdf_text)}</a></td>\n")
+                f.write(f"            <td><a href=\"{html.escape(hjfy_link)}\">{html.escape(hjfy_text or 'HJFY')}</a></td>\n")
+                f.write("            <td>\n")
+                f.write("              <div class=\"eval\">\n")
+                f.write("                <button type=\"button\" data-value=\"read\">✅</button>\n")
+                f.write("                <button type=\"button\" data-value=\"skip\">❌</button>\n")
+                f.write("                <button type=\"button\" data-value=\"star\">⭐</button>\n")
+                f.write("              </div>\n")
+                f.write("            </td>\n")
+                f.write("          </tr>\n")
+
+            f.write("        </tbody>\n")
+            f.write("      </table>\n")
+            f.write("      <p class=\"legend\">评估状态保存在浏览器本地（localStorage），换设备/浏览器不会同步。</p>\n")
+            f.write("    </section>\n")
+
+        f.write("  </div>\n")
+        f.write("  <script>\n")
+        f.write("    const storageKey = (id) => `vlm_arxiv_daily_eval:${id}`;\n")
+        f.write("    const rows = document.querySelectorAll('tr[data-arxiv-id]');\n")
+        f.write("    rows.forEach((row) => {\n")
+        f.write("      const id = row.getAttribute('data-arxiv-id');\n")
+        f.write("      const buttons = row.querySelectorAll('button[data-value]');\n")
+        f.write("      const saved = localStorage.getItem(storageKey(id));\n")
+        f.write("      if (saved) {\n")
+        f.write("        buttons.forEach((btn) => {\n")
+        f.write("          if (btn.dataset.value === saved) btn.classList.add('active');\n")
+        f.write("        });\n")
+        f.write("      }\n")
+        f.write("      buttons.forEach((btn) => {\n")
+        f.write("        btn.addEventListener('click', () => {\n")
+        f.write("          const val = btn.dataset.value;\n")
+        f.write("          localStorage.setItem(storageKey(id), val);\n")
+        f.write("          buttons.forEach((b) => b.classList.remove('active'));\n")
+        f.write("          btn.classList.add('active');\n")
+        f.write("        });\n")
+        f.write("      });\n")
+        f.write("    });\n")
+        f.write("  </script>\n")
+        f.write("</body>\n")
+        f.write("</html>\n")
+
+    logging.info(f\"{task} finished\")
+
 def demo(**config):
     # TODO: use config
     data_collector = []
@@ -346,6 +581,22 @@ def demo(**config):
     publish_wechat = config['publish_wechat']
     show_badge = config['show_badge']
 
+    translate_opts = None
+    if config.get('translate_title', False):
+        api_key = os.getenv("DEEPSEEK_API_KEY", "").strip()
+        if not api_key:
+            logging.warning("DEEPSEEK_API_KEY is not set; skip title translation.")
+        else:
+            translate_opts = {
+                "api_key": api_key,
+                "base_url": config.get("deepseek_base_url", "https://api.deepseek.com"),
+                "model": config.get("deepseek_model", "deepseek-chat"),
+                "cache_path": config.get("translation_cache_path", "./docs/title_translations.json"),
+                "cache": {},
+                "dirty": False,
+            }
+            translate_opts["cache"] = load_translation_cache(translate_opts["cache_path"])
+
     b_update = config['update_paper_links']
     logging.info(f'Update Paper Link = {b_update}')
     if config['update_paper_links'] == False:
@@ -353,11 +604,14 @@ def demo(**config):
         for topic, keyword in keywords.items():
             logging.info(f"Keyword: {topic}")
             data, data_web = get_daily_papers(topic, query = keyword,
-                                            max_results = max_results)
+                                            max_results = max_results,
+                                            translate_opts = translate_opts)
             data_collector.append(data)
             data_collector_web.append(data_web)
             print("\n")
         logging.info(f"GET daily papers end")
+        if translate_opts and translate_opts["dirty"]:
+            save_translation_cache(translate_opts["cache_path"], translate_opts["cache"])
 
     # 1. update README.md file
     if publish_readme:
@@ -382,9 +636,12 @@ def demo(**config):
             update_paper_links(json_file)
         else:
             update_json_file(json_file,data_collector)
-        json_to_md(json_file, md_file, task ='Update GitPage', \
-            to_web = True, show_badge = show_badge, \
-            use_tc=False, use_b2t=False)
+        if md_file.endswith(".html"):
+            json_to_html(json_file, md_file, task ='Update GitPage')
+        else:
+            json_to_md(json_file, md_file, task ='Update GitPage', \
+                to_web = True, show_badge = show_badge, \
+                use_tc=False, use_b2t=False)
 
     # 3. Update docs/wechat.md file
     if publish_wechat:

@@ -7,6 +7,12 @@ show_links: True
 show_badge: True
 max_results: 10
 
+# DeepSeek translation (title only)
+translate_title: True
+deepseek_base_url: "https://api.deepseek.com"
+deepseek_model: "deepseek-chat"
+translation_cache_path: "./docs/title_translations.json"
+
 publish_readme: True
 publish_gitpage: True
 publish_wechat: False
@@ -17,7 +23,7 @@ json_gitpage_path: './docs/cv-arxiv-daily-web.json'
 json_wechat_path: './docs/cv-arxiv-daily-wechat.json'
 
 md_readme_path: 'README.md'
-md_gitpage_path: './docs/index.md'
+md_gitpage_path: './docs/index.html'
 md_wechat_path: './docs/wechat.md'
 
 # keywords to search

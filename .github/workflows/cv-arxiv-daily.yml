@@ -17,6 +17,7 @@ env:
 
   GITHUB_USER_NAME: 20bytes
   GITHUB_USER_EMAIL: yuanfang_0512@outlook.com
+  DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
   
   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -53,7 +54,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Github Action Automatic Update CV Arxiv Papers"
-          files: README.md docs/cv-arxiv-daily.json docs/cv-arxiv-daily-web.json docs/index.md docs/cv-arxiv-daily-wechat.json docs/wechat.md
+          files: README.md docs/cv-arxiv-daily.json docs/cv-arxiv-daily-web.json docs/index.html docs/title_translations.json docs/cv-arxiv-daily-wechat.json docs/wechat.md
           rebase: 'true'
           name: ${{ env.GITHUB_USER_NAME }}
           email: ${{ env.GITHUB_USER_EMAIL }}
