@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>LEAD: Layer-wise Expert-aligned Decoding for Faithful Radiology Report Generation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Radiology Report Generation (RRG) aims to produce accurate and coherent diagnostics from medical images. Although large vision language models (LVLM) improve report fluency and accuracy, they exhibit hallucinations, generating plausible yet image-ungrounded pathological details. Existing methods primarily rely on external knowledge guidance to facilitate the alignment between generated text and visual information. However, these approaches often ignore the inherent decoding priors and vision-language alignment biases in pretrained models and lack robustness due to reliance on constructed guidance. In this paper, we propose Layer-wise Expert-aligned Decoding (LEAD), a novel method to inherently modify the LVLM decoding trajectory. A multiple experts module is designed for extracting distinct pathological features which are integrated into each decoder layer via a gating mechanism. This layer-wise architecture enables the LLM to consult expert features at every inference step via a learned gating function, thereby dynamically rectifying decoding biases and steering the generation toward factual consistency. Experiments conducted on multiple public datasets demonstrate that the LEAD method yields effective improvements in clinical accuracy metrics and mitigates hallucinations while preserving high generation quality.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>放射学报告生成（RRG）旨在从医学图像中生成准确且连贯的诊断结果。尽管大型视觉语言模型（LVLM）提升了报告的流畅性与准确性，但它们存在幻觉问题，会生成看似合理但缺乏图像依据的病理细节。现有方法主要依赖外部知识引导来促进生成文本与视觉信息的对齐，然而这些方法往往忽视了预训练模型固有的解码先验和视觉-语言对齐偏差，且因依赖构建的引导而缺乏鲁棒性。本文提出层级专家对齐解码（LEAD），一种新颖的方法，旨在从根本上修改LVLM的解码轨迹。我们设计了一个多专家模块，用于提取不同的病理特征，并通过门控机制将其整合到每个解码器层中。这种层级架构使LLM能够在每个推理步骤中通过学习的门控函数咨询专家特征，从而动态纠正解码偏差，并引导生成过程朝向事实一致性。在多个公共数据集上进行的实验表明，LEAD方法在临床准确性指标上实现了有效提升，缓解了幻觉问题，同时保持了高质量生成。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

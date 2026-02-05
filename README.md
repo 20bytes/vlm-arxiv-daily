@@ -9,7 +9,7 @@
 
 > 🚀 每日自动追踪 **Vision-Language-Action (VLA)**, **Vision-Language Navigation (VLN)** 和 **Vision-Language Models (VLM)** 的最新 Arxiv 论文。
 
-## 📅 Updated on 2026.02.03
+## 📅 Updated on 2026.02.05
 <details>
   <summary>点击查看目录 (Table of Contents)</summary>
   <ol>
@@ -23,6 +23,16 @@
 
 |Publish Date (YYYY-MM-DD)|Title|Authors|PDF|HJFY|
 |---|---|---|---|---|
+|**2026-02-04**|**Capturing Visual Environment Structure Correlates with Control Performance<br>捕捉视觉环境结构与控制性能的相关性<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04880.html)**|Yu-Xiong Wang Team|[2602.04880](http://arxiv.org/abs/2602.04880)|[HJFY](https://hjfy.top/arxiv/2602.04880v1)|
+|**2026-02-04**|**CoWTracker: Tracking by Warping instead of Correlation<br>CoWTracker：通过变形而非相关性进行跟踪<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04877.html)**|Andrea Vedaldi Team|[2602.04877](http://arxiv.org/abs/2602.04877)|[HJFY](https://hjfy.top/arxiv/2602.04877v1)|
+|**2026-02-04**|**Relational Scene Graphs for Object Grounding of Natural Language Commands<br>面向自然语言指令中物体定位的关系场景图<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04635.html)**|Ville Kyrki Team|[2602.04635](http://arxiv.org/abs/2602.04635)|[HJFY](https://hjfy.top/arxiv/2602.04635v1)|
+|**2026-02-04**|**Act, Sense, Act: Learning Non-Markovian Active Perception Strategies from Large-Scale Egocentric Human Data<br>行动、感知、再行动：从大规模第一人称人类数据中学习非马尔可夫主动感知策略<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04600.html)**|Wenzhao Lian Team|[2602.04600](http://arxiv.org/abs/2602.04600)|[HJFY](https://hjfy.top/arxiv/2602.04600v1)|
+|**2026-02-04**|**A Unified Complementarity-based Approach for Rigid-Body Manipulation and Motion Prediction<br>基于互补性的统一方法在刚体操作与运动预测中的应用<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04522.html)**|Riddhiman Laha Team|[2602.04522](http://arxiv.org/abs/2602.04522)|[HJFY](https://hjfy.top/arxiv/2602.04522v1)|
+|**2026-02-04**|**EgoActor: Grounding Task Planning into Spatial-aware Egocentric Actions for Humanoid Robots via Visual-Language Models<br>EgoActor：通过视觉语言模型将任务规划落地为具身机器人的空间感知自我中心动作<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04515.html)**|Börje F. Karlsson Team|[2602.04515](http://arxiv.org/abs/2602.04515)|[HJFY](https://hjfy.top/arxiv/2602.04515v1)|
+|**2026-02-04**|**Self-evolving Embodied AI<br>自演化的具身人工智能<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04411.html)**|Wenwu Zhu Team|[2602.04411](http://arxiv.org/abs/2602.04411)|[HJFY](https://hjfy.top/arxiv/2602.04411v1)|
+|**2026-02-04**|**GeneralVLA: Generalizable Vision-Language-Action Models with Knowledge-Guided Trajectory Planning<br>GeneralVLA：具备知识引导轨迹规划的通用视觉-语言-动作模型<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04315.html)**|Hao Tang Team|[2602.04315](http://arxiv.org/abs/2602.04315)|[HJFY](https://hjfy.top/arxiv/2602.04315v1)|
+|**2026-02-04**|**Viewpoint Matters: Dynamically Optimizing Viewpoints with Masked Autoencoder for Visual Manipulation<br>视角至关重要：利用掩码自编码器动态优化视觉操控的视角<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04243.html)**|Wenzhao Lian Team|[2602.04243](http://arxiv.org/abs/2602.04243)|[HJFY](https://hjfy.top/arxiv/2602.04243v1)|
+|**2026-02-04**|**GeoLanG: Geometry-Aware Language-Guided Grasping with Unified RGB-D Multimodal Learning<br>GeoLanG：基于统一RGB-D多模态学习的几何感知语言引导抓取<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04231.html)**|Hongliang Ren Team|[2602.04231](http://arxiv.org/abs/2602.04231)|[HJFY](https://hjfy.top/arxiv/2602.04231v1)|
 |**2026-02-02**|**TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments<br>TIC-VLA：一种用于动态环境中机器人导航的思控一体化视觉-语言-动作模型<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.02459.html)**|Jiaqi Ma Team|[2602.02459](http://arxiv.org/abs/2602.02459)|[HJFY](https://hjfy.top/arxiv/2602.02459v1)|
 |**2026-02-02**|**World-Gymnast: Training Robots with Reinforcement Learning in a World Model<br>世界体操家：在世界模型中通过强化学习训练机器人<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.02454.html)**|Sherry Yang Team|[2602.02454](http://arxiv.org/abs/2602.02454)|[HJFY](https://hjfy.top/arxiv/2602.02454v1)|
 |**2026-02-02**|**SoMA: A Real-to-Sim Neural Simulator for Robotic Soft-body Manipulation<br>SoMA：面向机器人软体操作的真实到仿真神经模拟器<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.02402.html)**|Jiangmiao Pang Team|[2602.02402](http://arxiv.org/abs/2602.02402)|[HJFY](https://hjfy.top/arxiv/2602.02402v1)|
@@ -53,7 +63,7 @@
 |**2026-01-29**|**AIR-VLA: Vision-Language-Action Systems for Aerial Manipulation**|Jianli Sun et.al.|[2601.21602](http://arxiv.org/abs/2601.21602)|
 |**2026-01-29**|**EmboCoach-Bench: Benchmarking AI Agents on Developing Embodied Robots**|Zixing Lei et.al.|[2601.21570](http://arxiv.org/abs/2601.21570)|
 
-<p align=right>(<a href=#updated-on-20260203>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260205>back to top</a>)</p>
 
 ### 📌 VLN
 
@@ -61,7 +71,7 @@
 |---|---|---|---|---|
 |**2026-02-02**|**LangMap: A Hierarchical Benchmark for Open-Vocabulary Goal Navigation<br>LangMap：面向开放词汇目标导航的分层基准<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.02220.html)**|Anton van den Hengel Team|[2602.02220](http://arxiv.org/abs/2602.02220)|[HJFY](https://hjfy.top/arxiv/2602.02220v1)|
 |**2026-01-31**|**APEX: A Decoupled Memory-based Explorer for Asynchronous Aerial Object Goal Navigation<br>APEX：一种用于异步空中目标导航的解耦记忆型探索器<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.00551.html)**|Shuo Yang Team|[2602.00551](http://arxiv.org/abs/2602.00551)|[HJFY](https://hjfy.top/arxiv/2602.00551v1)|
-|**2026-01-30**|**MapDream: Task-Driven Map Learning for Vision-Language Navigation<br>MapDream：面向视觉语言导航的任务驱动地图学习<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.00222.html)**|Zhaoxin Fan Team|[2602.00222](http://arxiv.org/abs/2602.00222)|[HJFY](https://hjfy.top/arxiv/2602.00222v1)|
+|**2026-02-03**|**MapDream: Task-Driven Map Learning for Vision-Language Navigation<br>MapDream：面向视觉语言导航的任务驱动地图学习<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.00222.html)**|Zhaoxin Fan Team|[2602.00222](http://arxiv.org/abs/2602.00222)|[HJFY](https://hjfy.top/arxiv/2602.00222v2)|
 |**2026-01-29**|**Dynamic Topology Awareness: Breaking the Granularity Rigidity in Vision-Language Navigation<br>动态拓扑感知：打破视觉语言导航中的粒度僵化<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2601.21751.html)**|Xiaoming Wang Team|[2601.21751](http://arxiv.org/abs/2601.21751)|[HJFY](https://hjfy.top/arxiv/2601.21751v1)|
 |**2026-01-26**|**DV-VLN: Dual Verification for Reliable LLM-Based Vision-and-Language Navigation<br>DV-VLN：基于大语言模型的视觉与语言导航双重验证可靠框架<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2601.18492.html)**|Shoujun Zhou Team|[2601.18492](http://arxiv.org/abs/2601.18492)|[HJFY](https://hjfy.top/arxiv/2601.18492v1)|
 |**2026-01-26**|**\textsc{NaVIDA}: Vision-Language Navigation with Inverse Dynamics Augmentation<br>NaVIDA：基于逆动力学增强的视觉语言导航<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2601.18188.html)**|Feng Zheng Team|[2601.18188](http://arxiv.org/abs/2601.18188)|[HJFY](https://hjfy.top/arxiv/2601.18188v1)|
@@ -73,12 +83,22 @@
 |**2026-01-13**|**VLingNav: Embodied Navigation with Adaptive Reasoning and Visual-Assisted Linguistic Memory**|Shaoan Wang et.al.|[2601.08665](http://arxiv.org/abs/2601.08665)|
 |**2026-01-12**|**GROKE: Vision-Free Navigation Instruction Evaluation via Graph Reasoning on OpenStreetMap**|Farzad Shami et.al.|[2601.07375](http://arxiv.org/abs/2601.07375)|
 
-<p align=right>(<a href=#updated-on-20260203>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260205>back to top</a>)</p>
 
 ### 📌 VLM
 
 |Publish Date (YYYY-MM-DD)|Title|Authors|PDF|HJFY|
 |---|---|---|---|---|
+|**2026-02-04**|**When LLaVA Meets Objects: Token Composition for Vision-Language-Models<br>当LLaVA遇见物体：视觉语言模型的令牌组合<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04864.html)**|Hilde Kuehne Team|[2602.04864](http://arxiv.org/abs/2602.04864)|[HJFY](https://hjfy.top/arxiv/2602.04864v1)|
+|**2026-02-04**|**El Agente Estructural: An Artificially Intelligent Molecular Editor<br>结构智能体：一种人工智能分子编辑器<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04849.html)**|Varinia Bernales Team|[2602.04849](http://arxiv.org/abs/2602.04849)|[HJFY](https://hjfy.top/arxiv/2602.04849v1)|
+|**2026-02-04**|**VISTA-Bench: Do Vision-Language Models Really Understand Visualized Text as Well as Pure Text?<br>VISTA-Bench：视觉语言模型真的能像理解纯文本一样理解图像中的文本吗？<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04802.html)**|Huchuan Lu Team|[2602.04802](http://arxiv.org/abs/2602.04802)|[HJFY](https://hjfy.top/arxiv/2602.04802v1)|
+|**2026-02-04**|**Alignment Drift in Multimodal LLMs: A Two-Phase, Longitudinal Evaluation of Harm Across Eight Model Releases<br>多模态大语言模型中的对齐漂移：对八个模型版本有害性的两阶段纵向评估<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04739.html)**|Emily Dix Team|[2602.04739](http://arxiv.org/abs/2602.04739)|[HJFY](https://hjfy.top/arxiv/2602.04739v1)|
+|**2026-02-04**|**SAR-RAG: ATR Visual Question Answering by Semantic Search, Retrieval, and MLLM Generation<br>SAR-RAG：通过语义搜索、检索与多模态大语言模型生成的自动目标识别视觉问答<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04712.html)**|Andreas Spanias Team|[2602.04712](http://arxiv.org/abs/2602.04712)|[HJFY](https://hjfy.top/arxiv/2602.04712v1)|
+|**2026-02-04**|**Annotation Free Spacecraft Detection and Segmentation using Vision Language Models<br>基于视觉语言模型的无标注航天器检测与分割<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04699.html)**|Djamila Aouada Team|[2602.04699](http://arxiv.org/abs/2602.04699)|[HJFY](https://hjfy.top/arxiv/2602.04699v1)|
+|**2026-02-04**|**AGILE: Hand-Object Interaction Reconstruction from Video via Agentic Generation<br>AGILE：基于智能体生成从视频重建手-物交互<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04672.html)**|Chunhua Shen Team|[2602.04672](http://arxiv.org/abs/2602.04672)|[HJFY](https://hjfy.top/arxiv/2602.04672v1)|
+|**2026-02-04**|**PIO-FVLM: Rethinking Training-Free Visual Token Reduction for VLM Acceleration from an Inference-Objective Perspective<br>PIO-FVLM：从推理目标视角重新审视用于VLM加速的无训练视觉令牌缩减<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04657.html)**|Chunhua Shen Team|[2602.04657](http://arxiv.org/abs/2602.04657)|[HJFY](https://hjfy.top/arxiv/2602.04657v1)|
+|**2026-02-04**|**Relational Scene Graphs for Object Grounding of Natural Language Commands<br>面向自然语言指令中物体定位的关系场景图<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04635.html)**|Ville Kyrki Team|[2602.04635](http://arxiv.org/abs/2602.04635)|[HJFY](https://hjfy.top/arxiv/2602.04635v1)|
+|**2026-02-04**|**LEAD: Layer-wise Expert-aligned Decoding for Faithful Radiology Report Generation<br>LEAD：面向忠实放射学报告生成的层级专家对齐解码<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.04617.html)**|Yan Song Team|[2602.04617](http://arxiv.org/abs/2602.04617)|[HJFY](https://hjfy.top/arxiv/2602.04617v1)|
 |**2026-02-02**|**Avenir-Web: Human-Experience-Imitating Multimodal Web Agents with Mixture of Grounding Experts<br>Avenir-Web：基于混合定位专家的人类经验模仿式多模态网络代理<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.02468.html)**|Mengdi Wang Team|[2602.02468](http://arxiv.org/abs/2602.02468)|[HJFY](https://hjfy.top/arxiv/2602.02468v1)|
 |**2026-02-02**|**MentisOculi: Revealing the Limits of Reasoning with Mental Imagery<br>MentisOculi：揭示心智意象推理的局限性<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.02465.html)**|Wieland Brendel Team|[2602.02465](http://arxiv.org/abs/2602.02465)|[HJFY](https://hjfy.top/arxiv/2602.02465v1)|
 |**2026-02-02**|**Relationship-Aware Hierarchical 3D Scene Graph for Task Reasoning<br>面向任务推理的关系感知分层三维场景图<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2602.02456.html)**|Kostas Alexis Team|[2602.02456](http://arxiv.org/abs/2602.02456)|[HJFY](https://hjfy.top/arxiv/2602.02456v1)|
@@ -110,7 +130,7 @@
 |**2026-01-29**|**Clarity: The Flexibility-Interpretability Trade-Off in Sparsity-aware Concept Bottleneck Models**|Konstantinos P. Panousis et.al.|[2601.21944](http://arxiv.org/abs/2601.21944)|
 |**2026-01-29**|**VideoAesBench: Benchmarking the Video Aesthetics Perception Capabilities of Large Multimodal Models**|Yunhao Li et.al.|[2601.21915](http://arxiv.org/abs/2601.21915)|
 
-<p align=right>(<a href=#updated-on-20260203>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260205>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/20bytes/vlm-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/20bytes/vlm-arxiv-daily/graphs/contributors

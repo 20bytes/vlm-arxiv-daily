@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>A Unified Complementarity-based Approach for Rigid-Body Manipulation and Motion Prediction</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Robotic manipulation in unstructured environments requires planners to reason jointly about free-space motion and sustained, frictional contact with the environment. Existing (local) planning and simulation frameworks typically separate these regimes or rely on simplified contact representations, particularly when modeling non-convex or distributed contact patches. Such approximations limit the fidelity of contact-mode transitions and hinder the robust execution of contact-rich behaviors in real time. This paper presents a unified discrete-time modeling framework for robotic manipulation that consistently captures both free motion and frictional contact within a single mathematical formalism (Unicomp). Building on complementarity-based rigid-body dynamics, we formulate free-space motion and contact interactions as coupled linear and nonlinear complementarity problems, enabling principled transitions between contact modes without enforcing fixed-contact assumptions. For planar patch contact, we derive a frictional contact model from the maximum power dissipation principle in which the set of admissible contact wrenches is represented by an ellipsoidal limit surface. This representation captures coupled force-moment effects, including torsional friction, while remaining agnostic to the underlying pressure distribution across the contact patch. The resulting formulation yields a discrete-time predictive model that relates generalized velocities and contact wrenches through quadratic constraints and is suitable for real-time optimization-based planning. Experimental results show that the proposed approach enables stable, physically consistent behavior at interactive speeds across tasks, from planar pushing to contact-rich whole-body maneuvers.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在非结构化环境中的机器人操作要求规划器能够同时推理自由空间运动与环境中持续的摩擦接触。现有的（局部）规划与仿真框架通常将这些状态分离，或依赖于简化的接触表示，尤其是在建模非凸或分布式接触区域时。这种近似限制了接触模式转换的保真度，并阻碍了在实时条件下稳健执行富含接触行为的任务。本文提出了一种统一的离散时间建模框架（Unicomp），用于机器人操作，该框架在单一数学形式中一致地捕捉自由运动与摩擦接触。基于互补性的刚体动力学，我们将自由空间运动与接触交互建模为耦合的线性和非线性互补问题，从而在不强制固定接触假设的情况下实现接触模式之间的原则性转换。对于平面区域接触，我们从最大功率耗散原理推导出一个摩擦接触模型，其中可接受的接触力矩集合由椭球极限曲面表示。这种表示捕捉了耦合的力-力矩效应，包括扭转摩擦，同时不依赖于接触区域底层的压力分布。由此产生的公式产生了一个离散时间预测模型，该模型通过二次约束关联广义速度与接触力矩，适用于基于优化的实时规划。实验结果表明，所提出的方法能够在交互速度下实现稳定、物理一致的行为，覆盖从平面推动到富含接触的全身操作等多种任务。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

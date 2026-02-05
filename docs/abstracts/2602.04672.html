@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>AGILE: Hand-Object Interaction Reconstruction from Video via Agentic Generation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Reconstructing dynamic hand-object interactions from monocular videos is critical for dexterous manipulation data collection and creating realistic digital twins for robotics and VR. However, current methods face two prohibitive barriers: (1) reliance on neural rendering often yields fragmented, non-simulation-ready geometries under heavy occlusion, and (2) dependence on brittle Structure-from-Motion (SfM) initialization leads to frequent failures on in-the-wild footage. To overcome these limitations, we introduce AGILE, a robust framework that shifts the paradigm from reconstruction to agentic generation for interaction learning. First, we employ an agentic pipeline where a Vision-Language Model (VLM) guides a generative model to synthesize a complete, watertight object mesh with high-fidelity texture, independent of video occlusions. Second, bypassing fragile SfM entirely, we propose a robust anchor-and-track strategy. We initialize the object pose at a single interaction onset frame using a foundation model and propagate it temporally by leveraging the strong visual similarity between our generated asset and video observations. Finally, a contact-aware optimization integrates semantic, geometric, and interaction stability constraints to enforce physical plausibility. Extensive experiments on HO3D, DexYCB, and in-the-wild videos reveal that AGILE outperforms baselines in global geometric accuracy while demonstrating exceptional robustness on challenging sequences where prior art frequently collapses. By prioritizing physical validity, our method produces simulation-ready assets validated via real-to-sim retargeting for robotic applications.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>从单目视频重建动态的手-物交互对于灵巧操作数据收集以及为机器人与虚拟现实创建逼真的数字孪生至关重要。然而，现有方法面临两大障碍：(1) 依赖神经渲染常导致在严重遮挡下产生碎片化、无法直接用于仿真的几何体；(2) 依赖脆弱的运动恢复结构初始化，导致对野外拍摄视频频繁失败。为克服这些局限，我们提出了AGILE，一个将交互学习范式从重建转向智能体生成的鲁棒框架。首先，我们采用智能体流程，通过视觉语言模型引导生成模型合成完整、封闭的高保真纹理物体网格，不受视频遮挡影响。其次，完全绕过脆弱的运动恢复结构，我们提出一种鲁棒的锚定-跟踪策略：利用基础模型在单个交互起始帧初始化物体姿态，并通过生成资产与视频观测间的强视觉相似性进行时序传播。最后，通过接触感知优化整合语义、几何与交互稳定性约束，确保物理合理性。在HO3D、DexYCB及野外视频上的大量实验表明，AGILE在全局几何精度上超越基线方法，并在现有方法常失效的挑战性序列中展现出卓越的鲁棒性。通过优先保证物理有效性，我们的方法可生成可直接用于仿真的资产，并已通过真实到仿真的重定向在机器人应用中验证。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

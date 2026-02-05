@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>When LLaVA Meets Objects: Token Composition for Vision-Language-Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Current autoregressive Vision Language Models (VLMs) usually rely on a large number of visual tokens to represent images, resulting in a need for more compute especially at inference time. To address this problem, we propose Mask-LLaVA, a framework that leverages different levels of visual features to create a compact yet information-rich visual representation for autoregressive VLMs. Namely, we combine mask-based object representations together with global tokens and local patch tokens. While all tokens are used during training, it shows that the resulting model can flexibly drop especially the number of mask-based object-tokens at test time, allowing to adapt the number of tokens during inference without the need to retrain the model and without a significant drop in performance. We evaluate the proposed approach on a suite of standard benchmarks showing results competitive to current token efficient methods and comparable to the original LLaVA baseline using only a fraction of visual tokens. Our analysis demonstrates that combining multi-level features enables efficient learning with fewer tokens while allowing dynamic token selection at test time for good performance.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>当前的自回归视觉语言模型通常依赖大量视觉令牌来表示图像，导致在推理时尤其需要更多计算资源。为解决这一问题，我们提出了Mask-LLaVA框架，该框架利用不同层级的视觉特征，为自回归视觉语言模型创建紧凑且信息丰富的视觉表示。具体而言，我们将基于掩码的物体表示与全局令牌和局部补丁令牌相结合。尽管训练时使用所有令牌，但结果表明，所得模型在测试时能够灵活地减少特别是基于掩码的物体令牌数量，从而允许在推理过程中调整令牌数量，而无需重新训练模型且性能不会显著下降。我们在标准基准测试套件上评估了所提方法，结果显示其与当前令牌高效方法竞争激烈，且仅使用一小部分视觉令牌即可达到与原始LLaVA基线相当的性能。我们的分析表明，结合多层级特征能够以更少的令牌实现高效学习，同时允许在测试时动态选择令牌以保持良好的性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
