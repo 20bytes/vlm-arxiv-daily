@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>MVISTA-4D: View-Consistent 4D World Model with Test-Time Action Inference for Robotic Manipulation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>World-model-based imagine-then-act becomes a promising paradigm for robotic manipulation, yet existing approaches typically support either purely image-based forecasting or reasoning over partial 3D geometry, limiting their ability to predict complete 4D scene dynamics. This work proposes a novel embodied 4D world model that enables geometrically consistent, arbitrary-view RGBD generation: given only a single-view RGBD observation as input, the model imagines the remaining viewpoints, which can then be back-projected and fused to assemble a more complete 3D structure across time. To efficiently learn the multi-view, cross-modality generation, we explicitly design cross-view and cross-modality feature fusion that jointly encourage consistency between RGB and depth and enforce geometric alignment across views. Beyond prediction, converting generated futures into actions is often handled by inverse dynamics, which is ill-posed because multiple actions can explain the same transition. We address this with a test-time action optimization strategy that backpropagates through the generative model to infer a trajectory-level latent best matching the predicted future, and a residual inverse dynamics model that turns this trajectory prior into accurate executable actions. Experiments on three datasets demonstrate strong performance on both 4D scene generation and downstream manipulation, and ablations provide practical insights into the key design choices.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>基于世界模型的“先想象后行动”范式已成为机器人操作领域的一个有前景的方向，但现有方法通常仅支持纯图像预测或对部分3D几何进行推理，限制了其预测完整4D场景动态的能力。本文提出了一种新颖的具身4D世界模型，能够实现几何一致的任意视角RGBD生成：仅以单视角RGBD观测作为输入，该模型可想象剩余视角，进而通过反投影与融合，跨时间组装出更完整的3D结构。为高效学习多视角跨模态生成，我们显式设计了跨视角与跨模态特征融合机制，共同促进RGB与深度间的一致性，并强制实现跨视角的几何对齐。除预测外，将生成的未来状态转化为动作通常通过逆动力学处理，但由于同一状态转移可由多种动作解释，该问题具有不适定性。我们通过一种测试时动作优化策略解决此问题：该策略通过生成模型反向传播，推断出与预测未来最匹配的轨迹级潜在变量，并配合一个残差逆动力学模型，将这一轨迹先验转化为精确可执行的动作。在三个数据集上的实验表明，该方法在4D场景生成与下游操作任务中均表现优异，消融研究则为关键设计选择提供了实用见解。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

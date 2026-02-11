@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SAKED: Mitigating Hallucination in Large Vision-Language Models via Stability-Aware Knowledge Enhanced Decoding</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Hallucinations in Large Vision-Language Models (LVLMs) pose significant security and reliability risks in real-world applications. Inspired by the observation that humans are more error-prone when uncertain or hesitant, we investigate how instability in a model &#x27;s internal knowledge contributes to LVLM hallucinations. We conduct extensive empirical analyses from three perspectives, namely attention heads, model layers, and decoding tokens, and identify three key hallucination patterns: (i) visual activation drift across attention heads, (ii) pronounced knowledge fluctuations across layers, and (iii) visual focus distraction between neighboring output tokens. Building on these findings, we propose Stability-Aware Knowledge-Enhanced Decoding (SAKED), which introduces a layer-wise Knowledge Stability Score (KSS) to quantify knowledge stability throughout the model. By contrasting the most stability-aware and stability-agnostic layers, SAKED suppresses decoding noise and dynamically leverages the most reliable internal knowledge for faithful token generation. Moreover, SAKED is training-free and can be seamlessly integrated into different architectures. Extensive experiments demonstrate that SAKED achieves state-of-the-art performance for hallucination mitigation on various models, tasks, and benchmarks.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>大型视觉语言模型（LVLMs）中的幻觉问题在实际应用中带来了显著的安全性和可靠性风险。受人类在不确定或犹豫时更容易出错的观察启发，我们研究了模型内部知识的不稳定性如何导致LVLM产生幻觉。我们从注意力头、模型层和解码标记三个角度进行了广泛的实证分析，并识别出三种关键的幻觉模式：(i) 注意力头间的视觉激活漂移，(ii) 跨层的显著知识波动，以及(iii) 相邻输出标记间的视觉焦点分散。基于这些发现，我们提出了稳定性感知的知识增强解码（SAKED），该方法引入了层级的知识稳定性分数（KSS）来量化整个模型中的知识稳定性。通过对比最具稳定性感知和最不具稳定性感知的层，SAKED抑制了解码噪声，并动态利用最可靠的内部知识来生成忠实的标记。此外，SAKED无需训练，可以无缝集成到不同的架构中。大量实验表明，SAKED在各种模型、任务和基准测试中实现了最先进的幻觉缓解性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

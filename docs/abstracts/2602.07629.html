@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>LCLA: Language-Conditioned Latent Alignment for Vision-Language Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>We propose LCLA (Language-Conditioned Latent Alignment), a framework for vision-language navigation that learns modular perception-action interfaces by aligning sensory observations to a latent representation of an expert policy. The expert is first trained with privileged state information, inducing a latent space sufficient for control, after which its latent interface and action head are frozen. A lightweight adapter is then trained to map raw visual-language observations, via a frozen vision-language model, into the expert&#x27;s latent space, reducing the problem of visuomotor learning to supervised latent alignment rather than end-to-end policy optimization. This decoupling enforces a stable contract between perception and control, enabling expert behavior to be reused across sensing modalities and environmental variations. We instantiate LCLA and evaluate it on a vision-language indoor navigation task, where aligned latent spaces yield strong in-distribution performance and robust zero-shot generalization to unseen environments, lighting conditions, and viewpoints while remaining lightweight at inference time.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>我们提出了LCLA（语言条件化潜在对齐），一种用于视觉语言导航的框架，通过学习将感知观察对齐到专家策略的潜在表示，构建模块化的感知-动作接口。首先利用特权状态信息训练专家策略，生成一个足以支持控制的潜在空间，随后冻结其潜在接口和动作头部。接着训练一个轻量级适配器，通过冻结的视觉语言模型将原始视觉-语言观察映射到专家的潜在空间中，从而将视觉运动学习问题简化为监督式潜在对齐，而非端到端的策略优化。这种解耦强化了感知与控制之间的稳定契约，使得专家行为能够在不同感知模态和环境变化中复用。我们在视觉语言室内导航任务中实例化LCLA并进行评估，结果表明对齐的潜在空间在分布内任务上表现优异，且能零样本泛化至未见过的环境、光照条件和视角，同时在推理阶段保持轻量化。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

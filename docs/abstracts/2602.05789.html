@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Allocentric Perceiver: Disentangling Allocentric Reasoning from Egocentric Visual Priors via Frame Instantiation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>With the rising need for spatially grounded tasks such as Vision-Language Navigation/Action, allocentric perception capabilities in Vision-Language Models (VLMs) are receiving growing focus. However, VLMs remain brittle on allocentric spatial queries that require explicit perspective shifts, where the answer depends on reasoning in a target-centric frame rather than the observed camera view. Thus, we introduce Allocentric Perceiver, a training-free strategy that recovers metric 3D states from one or more images with off-the-shelf geometric experts, and then instantiates a query-conditioned allocentric reference frame aligned with the instruction&#x27;s semantic intent. By deterministically transforming reconstructed geometry into the target frame and prompting the backbone VLM with structured, geometry-grounded representations, Allocentric Perceriver offloads mental rotation from implicit reasoning to explicit computation. We evaluate Allocentric Perciver across multiple backbone families on spatial reasoning benchmarks, observing consistent and substantial gains ($\sim$10%) on allocentric tasks while maintaining strong egocentric performance, and surpassing both spatial-perception-finetuned models and state-of-the-art open-source and proprietary models.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>随着视觉语言导航/动作等空间基础任务需求的日益增长，视觉语言模型（VLMs）中的他者中心感知能力正受到越来越多的关注。然而，在处理需要显式视角转换的他者中心空间查询时，VLMs仍显脆弱——这类查询的答案依赖于目标中心框架而非观察相机视角的推理。为此，我们提出了他者中心感知器，一种无需训练的策略：利用现成的几何专家从单张或多张图像中恢复度量三维状态，随后实例化一个与指令语义意图对齐的查询条件化他者中心参考框架。通过将重建的几何结构确定性地转换至目标框架，并以结构化、几何基础的表征提示骨干VLM，他者中心感知器将心理旋转从隐式推理卸载至显式计算。我们在多个空间推理基准上评估了不同骨干系列的他者中心感知器，观察到在他者中心任务上取得了一致且显著的提升（约10%），同时保持了强大的自我中心性能，并超越了经过空间感知微调的模型以及最先进的开源与专有模型。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

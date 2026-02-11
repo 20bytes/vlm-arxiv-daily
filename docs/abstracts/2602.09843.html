@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Kelix Technique Report</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Autoregressive large language models (LLMs) scale well by expressing diverse tasks as sequences of discrete natural-language tokens and training with next-token prediction, which unifies comprehension and generation under self-supervision. Extending this paradigm to multimodal data requires a shared, discrete representation across modalities. However, most vision-language models (VLMs) still rely on a hybrid interface: discrete text tokens paired with continuous Vision Transformer (ViT) features. Because supervision is largely text-driven, these models are often biased toward understanding and cannot fully leverage large-scale self-supervised learning on non-text data. Recent work has explored discrete visual tokenization to enable fully autoregressive multimodal modeling, showing promising progress toward unified understanding and generation. Yet existing discrete vision tokens frequently lose information due to limited code capacity, resulting in noticeably weaker understanding than continuous-feature VLMs. We present Kelix, a fully discrete autoregressive unified model that closes the understanding gap between discrete and continuous visual representations.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>自回归大型语言模型（LLMs）通过将多样化任务表达为离散自然语言标记序列，并采用下一标记预测进行训练，实现了良好的扩展性，从而在自监督下统一了理解与生成能力。将这一范式扩展至多模态数据，需要跨模态的共享离散表示。然而，大多数视觉语言模型（VLMs）仍依赖混合接口：离散文本标记与连续的视觉变换器（ViT）特征配对。由于监督主要基于文本驱动，这些模型往往偏向于理解任务，无法充分利用非文本数据的大规模自监督学习。近期研究探索了离散视觉标记化，以实现完全自回归的多模态建模，在统一理解与生成方面展现出有前景的进展。然而，现有离散视觉标记常因编码容量有限而丢失信息，导致其理解能力明显弱于基于连续特征的VLMs。本文提出Kelix，一种完全离散的自回归统一模型，它弥合了离散与连续视觉表示之间的理解差距。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

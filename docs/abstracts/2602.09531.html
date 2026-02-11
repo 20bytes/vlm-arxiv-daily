@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>DR.Experts: Differential Refinement of Distortion-Aware Experts for Blind Image Quality Assessment</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Blind Image Quality Assessment, aiming to replicate human perception of visual quality without reference, plays a key role in vision tasks, yet existing models often fail to effectively capture subtle distortion cues, leading to a misalignment with human subjective judgments. We identify that the root cause of this limitation lies in the lack of reliable distortion priors, as methods typically learn shallow relationships between unified image features and quality scores, resulting in their insensitive nature to distortions and thus limiting their performance. To address this, we introduce DR.Experts, a novel prior-driven BIQA framework designed to explicitly incorporate distortion priors, enabling a reliable quality assessment. DR.Experts begins by leveraging a degradation-aware vision-language model to obtain distortion-specific priors, which are further refined and enhanced by the proposed Distortion-Saliency Differential Module through distinguishing them from semantic attentions, thereby ensuring the genuine representations of distortions. The refined priors, along with semantics and bridging representation, are then fused by a proposed mixture-of-experts style module named the Dynamic Distortion Weighting Module. This mechanism weights each distortion-specific feature as per its perceptual impact, ensuring that the final quality prediction aligns with human perception. Extensive experiments conducted on five challenging BIQA benchmarks demonstrate the superiority of DR.Experts over current methods and showcase its excellence in terms of generalization and data efficiency.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>盲图像质量评估旨在无需参考图像的情况下模拟人类对视觉质量的感知，在视觉任务中扮演关键角色。然而，现有模型往往难以有效捕捉细微的失真线索，导致其与人类主观判断存在偏差。我们发现，这一局限的根本原因在于缺乏可靠的失真先验知识，现有方法通常仅学习统一图像特征与质量分数之间的浅层关联，使其对失真不敏感，从而限制了性能。为解决此问题，我们提出了DR.Experts——一种新颖的先验驱动盲图像质量评估框架，旨在显式地融入失真先验，实现可靠的质量评估。DR.Experts首先利用退化感知的视觉语言模型获取失真特异性先验，随后通过提出的失真显著性差分模块，通过区分失真与语义注意力，进一步细化和增强这些先验，从而确保失真的真实表征。接着，通过提出的动态失真加权模块（一种专家混合风格模块），将细化后的先验与语义及桥接表征进行融合。该机制根据每种失真特异性特征的感知影响进行加权，确保最终的质量预测与人类感知一致。在五个具有挑战性的盲图像质量评估基准上进行的广泛实验表明，DR.Experts优于当前方法，并在泛化能力和数据效率方面展现出卓越性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Nipping the Drift in the Bud: Retrospective Rectification for Robust Vision-Language Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language Navigation (VLN) requires embodied agents to interpret natural language instructions and navigate through complex continuous 3D environments. However, the dominant imitation learning paradigm suffers from exposure bias, where minor deviations during inference lead to compounding errors. While DAgger-style approaches attempt to mitigate this by correcting error states, we identify a critical limitation: Instruction-State Misalignment. Forcing an agent to learn recovery actions from off-track states often creates supervision signals that semantically conflict with the original instruction. In response to these challenges, we introduce BudVLN, an online framework that learns from on-policy rollouts by constructing supervision to match the current state distribution. BudVLN performs retrospective rectification via counterfactual re-anchoring and decision-conditioned supervision synthesis, using a geodesic oracle to synthesize corrective trajectories that originate from valid historical states, ensuring semantic consistency. Experiments on the standard R2R-CE and RxR-CE benchmarks demonstrate that BudVLN consistently mitigates distribution shift and achieves state-of-the-art performance in both Success Rate and SPL.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉语言导航要求具身智能体理解自然语言指令并在复杂的连续三维环境中行进。然而，主流的模仿学习范式存在暴露偏差问题，即推理过程中的微小偏离会导致误差累积。尽管DAgger类方法试图通过纠正错误状态来缓解此问题，但我们发现一个关键局限：指令-状态失配。强制智能体从偏离路径的状态学习恢复动作，常会产生与原指令语义冲突的监督信号。针对这些挑战，我们提出BudVLN在线框架，该框架通过构建与当前状态分布匹配的监督信号，从策略滚动中学习。BudVLN通过反事实重锚定与决策条件监督合成实现回溯修正，利用测地线预言机合成源自有效历史状态的矫正轨迹，确保语义一致性。在标准R2R-CE和RxR-CE基准测试上的实验表明，BudVLN能持续缓解分布偏移，并在成功率和SPL指标上均达到最优性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
