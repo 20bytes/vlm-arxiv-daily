@@ -17,9 +17,9 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>GenSeg-R1: RL-Driven Vision-Language Grounding for Fine-Grained Referring Segmentation</h1>
+      <h1>GenSeg-R1: RL-Driven Vision-Language Grounding for Fine-Grained Referring Segmentation&lt;br&gt;GenSeg-R1：基于强化学习的视觉语言细粒度指代分割&lt;br&gt;[摘要](abstracts/2602.09701.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>We study fine-grained referring image segmentation via a decoupled reason-then-segment pipeline. A vision-language model (VLM) receives an image and a natural-language query, reasons about the scene, and emits structured spatial prompts: a bounding box plus two interior keypoints for every referred instance. A frozen promptable segmenter (SAM 2) converts these prompts into high-quality masks.   Within our GenSeg-R1 framework we finetune Qwen3-VL models (4B and 8B parameters) using Group Relative Policy Optimization (GRPO), requiring no supervised reasoning-chain annotations. On RefCOCOg validation our best model (GenSeg-R1-8B) achieves 0.7127 cIoU and 0.7382 mIoU, substantially outperforming the corresponding Qwen3-VL Instruct baselines (+15.3 and +21.9 points, respectively) and surpassing Seg-Zero-7B [3] by +3.3 cIoU under identical evaluation.   We further introduce GenSeg-R1-G, a variant trained on GRefCOCO [9] with a SAM 2 in-the-loop reward that directly optimizes mask quality. On GRefCOCO validation GenSeg-R1-G achieves 76.69% target mIoU with 82.40% accuracy on negative (no-target) prompts, substantially outperforming Seg-R1-7B and Seg-Zero-7B, which lack no-target detection capability. On ReasonSeg test, GenSeg-R1-4B reaches 68.40% mIoU, surpassing Seg-Zero-7B by +7.0 and Seg-R1-7B by +10.7 points.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
       <p>本文通过解耦的‘先推理后分割’流程研究细粒度指代图像分割。视觉语言模型接收图像和自然语言查询，对场景进行推理，并输出结构化空间提示：每个指代实例的边界框及两个内部关键点。冻结的可提示分割器将这些提示转换为高质量掩码。在GenSeg-R1框架中，我们使用组相对策略优化对Qwen3-VL模型进行微调，无需监督式推理链标注。在RefCOCOg验证集上，最佳模型达到0.7127 cIoU和0.7382 mIoU，显著超越基线模型，并在相同评估条件下优于Seg-Zero-7B。我们还提出GenSeg-R1-G变体，通过SAM 2在线奖励直接优化掩码质量，在GRefCOCO验证集上实现76.69%目标mIoU和82.40%负提示准确率，大幅超越现有模型。在ReasonSeg测试集上，GenSeg-R1-4B达到68.40% mIoU，领先Seg-Zero-7B和Seg-R1-7B。</p>
       <p><a href="../index.html">← Back</a></p>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Robot-DIFT: Distilling Diffusion Features for Geometrically Consistent Visuomotor Control</h1>
+      <h2>Abstract (EN)</h2>
+      <p>We hypothesize that a key bottleneck in generalizable robot manipulation is not solely data scale or policy capacity, but a structural mismatch between current visual backbones and the physical requirements of closed-loop control. While state-of-the-art vision encoders (including those used in VLAs) optimize for semantic invariance to stabilize classification, manipulation typically demands geometric sensitivity the ability to map millimeter-level pose shifts to predictable feature changes. Their discriminative objective creates a &quot;blind spot&quot; for fine-grained control, whereas generative diffusion models inherently encode geometric dependencies within their latent manifolds, encouraging the preservation of dense multi-scale spatial structure. However, directly deploying stochastic diffusion features for control is hindered by stochastic instability, inference latency, and representation drift during fine-tuning. To bridge this gap, we propose Robot-DIFT, a framework that decouples the source of geometric information from the process of inference via Manifold Distillation. By distilling a frozen diffusion teacher into a deterministic Spatial-Semantic Feature Pyramid Network (S2-FPN), we retain the rich geometric priors of the generative model while ensuring temporal stability, real-time execution, and robustness against drift. Pretrained on the large-scale DROID dataset, Robot-DIFT demonstrates superior geometric consistency and control performance compared to leading discriminative baselines, supporting the view that how a model learns to see dictates how well it can learn to act.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>我们假设，通用机器人操作的关键瓶颈不仅在于数据规模或策略容量，更在于当前视觉主干网络与闭环控制的物理需求之间的结构不匹配。虽然最先进的视觉编码器（包括用于视觉语言模型中的编码器）通过语义不变性优化以稳定分类，但操作通常需要几何敏感性——即能够将毫米级的姿态变化映射为可预测的特征变化。其判别性目标为细粒度控制创造了“盲点”，而生成式扩散模型则在其潜在流形中固有地编码了几何依赖性，促进了密集多尺度空间结构的保留。然而，直接将随机扩散特征用于控制受到随机不稳定性、推理延迟和微调期间表示漂移的阻碍。为弥合这一差距，我们提出了Robot-DIFT框架，该框架通过流形蒸馏将几何信息的来源与推理过程解耦。通过将冻结的扩散教师模型蒸馏为确定性的空间语义特征金字塔网络（S2-FPN），我们保留了生成模型的丰富几何先验，同时确保了时间稳定性、实时执行能力和对漂移的鲁棒性。在大规模DROID数据集上进行预训练后，Robot-DIFT相比领先的判别性基线展现出更优的几何一致性和控制性能，支持了“模型如何学习观察决定了其如何学习行动”的观点。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
