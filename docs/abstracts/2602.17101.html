@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Benchmarking the Effects of Object Pose Estimation and Reconstruction on Robotic Grasping Success</h1>
+      <h2>Abstract (EN)</h2>
+      <p>3D reconstruction serves as the foundational layer for numerous robotic perception tasks, including 6D object pose estimation and grasp pose generation. Modern 3D reconstruction methods for objects can produce visually and geometrically impressive meshes from multi-view images, yet standard geometric evaluations do not reflect how reconstruction quality influences downstream tasks such as robotic manipulation performance. This paper addresses this gap by introducing a large-scale, physics-based benchmark that evaluates 6D pose estimators and 3D mesh models based on their functional efficacy in grasping. We analyze the impact of model fidelity by generating grasps on various reconstructed 3D meshes and executing them on the ground-truth model, simulating how grasp poses generated with an imperfect model affect interaction with the real object. This assesses the combined impact of pose error, grasp robustness, and geometric inaccuracies from 3D reconstruction. Our results show that reconstruction artifacts significantly decrease the number of grasp pose candidates but have a negligible effect on grasping performance given an accurately estimated pose. Our results also reveal that the relationship between grasp success and pose error is dominated by spatial error, and even a simple translation error provides insight into the success of the grasping pose of symmetric objects. This work provides insight into how perception systems relate to object manipulation using robots.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>三维重建是机器人感知任务（如六维物体姿态估计与抓取姿态生成）的基础层。现代物体三维重建方法能够从多视角图像生成视觉与几何上均令人印象深刻的网格模型，然而标准的几何评估未能反映重建质量如何影响下游任务（如机器人操作性能）。本文通过引入一个大规模、基于物理的基准来填补这一空白，该基准根据六维姿态估计器与三维网格模型在抓取功能上的有效性进行评估。我们通过在不同重建三维网格上生成抓取姿态，并在真实模型上执行这些姿态，模拟了使用不完美模型生成的抓取姿态如何影响与真实物体的交互，从而评估了姿态误差、抓取鲁棒性以及三维重建几何不准确性的综合影响。结果表明，重建伪影显著减少了抓取姿态候选数量，但在姿态估计准确的情况下对抓取性能影响可忽略。此外，研究发现抓取成功率与姿态误差的关系主要受空间误差主导，即使是简单的平移误差也能为对称物体的抓取姿态成功率提供洞察。这项工作揭示了感知系统如何与机器人物体操作相关联。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Learning to Retrieve Navigable Candidates for Efficient Vision-and-Language Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-and-Language Navigation (VLN) requires an agent to follow natural-language instructions and navigate through previously unseen environments. Recent approaches increasingly employ large language models (LLMs) as high-level navigators due to their flexibility and reasoning capability. However, prompt-based LLM navigation often suffers from inefficient decision-making, as the model must repeatedly interpret instructions from scratch and reason over noisy and verbose navigable candidates at each step. In this paper, we propose a retrieval-augmented framework to improve the efficiency and stability of LLM-based VLN without modifying or fine-tuning the underlying language model. Our approach introduces retrieval at two complementary levels. At the episode level, an instruction-level embedding retriever selects semantically similar successful navigation trajectories as in-context exemplars, providing task-specific priors for instruction grounding. At the step level, an imitation-learned candidate retriever prunes irrelevant navigable directions before LLM inference, reducing action ambiguity and prompt complexity. Both retrieval modules are lightweight, modular, and trained independently of the LLM. We evaluate our method on the Room-to-Room (R2R) benchmark. Experimental results demonstrate consistent improvements in Success Rate, Oracle Success Rate, and SPL on both seen and unseen environments. Ablation studies further show that instruction-level exemplar retrieval and candidate pruning contribute complementary benefits to global guidance and step-wise decision efficiency. These results indicate that retrieval-augmented decision support is an effective and scalable strategy for enhancing LLM-based vision-and-language navigation.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉与语言导航（VLN）要求智能体遵循自然语言指令，在未见过的环境中进行导航。由于大型语言模型（LLM）的灵活性和推理能力，近期方法越来越多地将其用作高层导航器。然而，基于提示的LLM导航常因决策效率低下而受限，因为模型必须在每一步从头解释指令，并对嘈杂且冗长的可导航候选对象进行推理。本文提出一种检索增强框架，旨在不修改或微调底层语言模型的前提下，提升基于LLM的VLN的效率和稳定性。我们的方法在两个互补层面引入检索机制：在任务层面，通过指令级嵌入检索器选择语义相似的成功导航轨迹作为上下文示例，为指令落地提供任务特定的先验知识；在步骤层面，通过模仿学习训练的候选检索器在LLM推理前剪除无关的导航方向，从而减少动作歧义和提示复杂度。两个检索模块均设计为轻量级、模块化，且独立于LLM进行训练。我们在Room-to-Room（R2R）基准测试上评估了该方法，实验结果表明，在已见和未见环境中，成功率、最优成功率及SPL指标均获得持续提升。消融研究进一步显示，指令级示例检索与候选剪枝在全局引导和逐步决策效率方面具有互补优势。这些结果证明，检索增强的决策支持是提升基于LLM的视觉与语言导航的有效且可扩展策略。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

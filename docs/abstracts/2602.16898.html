@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>MALLVI: a multi agent framework for integrated generalized robotics manipulation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Task planning for robotic manipulation with large language models (LLMs) is an emerging area. Prior approaches rely on specialized models, fine tuning, or prompt tuning, and often operate in an open loop manner without robust environmental feedback, making them fragile in dynamic settings.We present MALLVi, a Multi Agent Large Language and Vision framework that enables closed loop feedback driven robotic manipulation. Given a natural language instruction and an image of the environment, MALLVi generates executable atomic actions for a robot manipulator. After action execution, a Vision Language Model (VLM) evaluates environmental feedback and decides whether to repeat the process or proceed to the next step.Rather than using a single model, MALLVi coordinates specialized agents, Decomposer, Localizer, Thinker, and Reflector, to manage perception, localization, reasoning, and high level planning. An optional Descriptor agent provides visual memory of the initial state. The Reflector supports targeted error detection and recovery by reactivating only relevant agents, avoiding full replanning.Experiments in simulation and real world settings show that iterative closed loop multi agent coordination improves generalization and increases success rates in zero shot manipulation tasks.Code available at https://github.com/iman1234ahmadi/MALLVI.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>利用大语言模型进行机器人操作任务规划是一个新兴领域。现有方法通常依赖专用模型、微调或提示调整，并以开环方式运行，缺乏鲁棒的环境反馈，导致其在动态环境中表现脆弱。本文提出MALLVi，一种多智能体大语言与视觉框架，实现了基于闭环反馈驱动的机器人操作。给定自然语言指令和环境图像，MALLVi为机器人操作器生成可执行的原子动作。动作执行后，视觉语言模型评估环境反馈，并决定重复该过程或进入下一步。MALLVi并非使用单一模型，而是协调分解器、定位器、思考器和反思器等多个专用智能体，分别处理感知、定位、推理和高级规划。可选的描述器智能体提供初始状态的视觉记忆。反思器通过仅重新激活相关智能体来支持针对性错误检测与恢复，避免了完全重新规划。仿真和真实环境实验表明，迭代式闭环多智能体协调提升了零样本操作任务的泛化能力与成功率。代码发布于https://github.com/iman1234ahmadi/MALLVI。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

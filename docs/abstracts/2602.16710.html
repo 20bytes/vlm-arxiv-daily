@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Human behavior is among the most scalable sources of data for learning physical intelligence, yet how to effectively leverage it for dexterous manipulation remains unclear. While prior work demonstrates human to robot transfer in constrained settings, it is unclear whether large scale human data can support fine grained, high degree of freedom dexterous manipulation. We present EgoScale, a human to dexterous manipulation transfer framework built on large scale egocentric human data. We train a Vision Language Action (VLA) model on over 20,854 hours of action labeled egocentric human video, more than 20 times larger than prior efforts, and uncover a log linear scaling law between human data scale and validation loss. This validation loss strongly correlates with downstream real robot performance, establishing large scale human data as a predictable supervision source. Beyond scale, we introduce a simple two stage transfer recipe: large scale human pretraining followed by lightweight aligned human robot mid training. This enables strong long horizon dexterous manipulation and one shot task adaptation with minimal robot supervision. Our final policy improves average success rate by 54% over a no pretraining baseline using a 22 DoF dexterous robotic hand, and transfers effectively to robots with lower DoF hands, indicating that large scale human motion provides a reusable, embodiment agnostic motor prior.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>人类行为是学习物理智能最具扩展性的数据来源之一，然而如何有效利用其实现灵巧操作仍不明确。尽管先前研究在受限环境中展示了人类到机器人的技能迁移，但大规模人类数据能否支持精细、高自由度的灵巧操作尚存疑问。我们提出EgoScale，一个基于大规模自我中心人类数据的人类到灵巧操作迁移框架。我们在超过20,854小时带有动作标注的自我中心人类视频上训练了一个视觉-语言-动作模型，数据规模是先前工作的20倍以上，并揭示了人类数据规模与验证损失之间的对数线性扩展规律。该验证损失与下游真实机器人性能强相关，从而确立大规模人类数据作为可预测的监督来源。除规模外，我们引入了一个简单的两阶段迁移方案：大规模人类预训练后接轻量级的人类-机器人对齐中期训练。这实现了强大的长时程灵巧操作能力，并能以极少的机器人监督进行单次任务适应。我们的最终策略在使用22自由度灵巧机械手时，相比无预训练基线平均成功率提升54%，并能有效迁移至低自由度机械手，表明大规模人类运动数据提供了一个可重用、与具体形态无关的运动先验。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

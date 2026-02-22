@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Pushing the Frontier of Black-Box LVLM Attacks via Fine-Grained Detail Targeting</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Black-box adversarial attacks on Large Vision-Language Models (LVLMs) are challenging due to missing gradients and complex multimodal boundaries. While prior state-of-the-art transfer-based approaches like M-Attack perform well using local crop-level matching between source and target images, we find this induces high-variance, nearly orthogonal gradients across iterations, violating coherent local alignment and destabilizing optimization. We attribute this to (i) ViT translation sensitivity that yields spike-like gradients and (ii) structural asymmetry between source and target crops. We reformulate local matching as an asymmetric expectation over source transformations and target semantics, and build a gradient-denoising upgrade to M-Attack. On the source side, Multi-Crop Alignment (MCA) averages gradients from multiple independently sampled local views per iteration to reduce variance. On the target side, Auxiliary Target Alignment (ATA) replaces aggressive target augmentation with a small auxiliary set from a semantically correlated distribution, producing a smoother, lower-variance target manifold. We further reinterpret momentum as Patch Momentum, replaying historical crop gradients; combined with a refined patch-size ensemble (PE+), this strengthens transferable directions. Together these modules form M-Attack-V2, a simple, modular enhancement over M-Attack that substantially improves transfer-based black-box attacks on frontier LVLMs: boosting success rates on Claude-4.0 from 8% to 30%, Gemini-2.5-Pro from 83% to 97%, and GPT-5 from 98% to 100%, outperforming prior black-box LVLM attacks. Code and data are publicly available at: https://github.com/vila-lab/M-Attack-V2.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>针对大视觉语言模型（LVLM）的黑盒对抗攻击因梯度缺失和多模态边界复杂而极具挑战。尽管先前最先进的基于迁移的攻击方法（如M-Attack）通过源图像与目标图像之间的局部裁剪级匹配取得了良好效果，但我们发现这会导致迭代间产生高方差、近乎正交的梯度，破坏了连贯的局部对齐并导致优化不稳定。我们将此归因于：（i）ViT的平移敏感性产生尖峰状梯度；（ii）源与目标裁剪之间的结构不对称性。我们将局部匹配重新表述为源变换与目标语义的非对称期望，并构建了M-Attack的梯度去噪升级版本。在源端，多裁剪对齐（MCA）通过每轮迭代中对多个独立采样的局部视图梯度进行平均来降低方差。在目标端，辅助目标对齐（ATA）用来自语义相关分布的小型辅助集替代激进的目标增强，从而生成更平滑、低方差的目标流形。我们进一步将动量重新解释为补丁动量，通过重放历史裁剪梯度；结合改进的补丁尺寸集成（PE+），这增强了可迁移方向。这些模块共同构成了M-Attack-V2——一个对M-Attack的简单模块化增强方案，显著提升了针对前沿LVLM的基于迁移的黑盒攻击效果：在Claude-4.0上的成功率从8%提升至30%，Gemini-2.5-Pro从83%提升至97%，GPT-5从98%提升至100%，超越了先前的黑盒LVLM攻击方法。代码与数据已公开于：https://github.com/vila-lab/M-Attack-V2。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
