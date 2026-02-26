@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Seeing Through Words: Controlling Visual Retrieval Quality with Language Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Text-to-image retrieval is a fundamental task in vision-language learning, yet in real-world scenarios it is often challenged by short and underspecified user queries. Such queries are typically only one or two words long, rendering them semantically ambiguous, prone to collisions across diverse visual interpretations, and lacking explicit control over the quality of retrieved images. To address these issues, we propose a new paradigm of quality-controllable retrieval, which enriches short queries with contextual details while incorporating explicit notions of image quality. Our key idea is to leverage a generative language model as a query completion function, extending underspecified queries into descriptive forms that capture fine-grained visual attributes such as pose, scene, and aesthetics. We introduce a general framework that conditions query completion on discretized quality levels, derived from relevance and aesthetic scoring models, so that query enrichment is not only semantically meaningful but also quality-aware. The resulting system provides three key advantages: 1) flexibility, it is compatible with any pretrained vision-language model (VLMs) without modification; 2) transparency, enriched queries are explicitly interpretable by users; and 3) controllability, enabling retrieval results to be steered toward user-preferred quality levels. Extensive experiments demonstrate that our proposed approach significantly improves retrieval results and provides effective quality control, bridging the gap between the expressive capacity of modern VLMs and the underspecified nature of short user queries. Our code is available at https://github.com/Jianglin954/QCQC.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>文本到图像检索是视觉-语言学习中的一项基础任务，但在现实场景中，常因用户查询简短且定义不明确而面临挑战。此类查询通常仅有一到两个词长，导致其语义模糊、易在不同视觉解读间产生歧义，且缺乏对检索图像质量的显式控制。为解决这些问题，我们提出了一种质量可控检索的新范式，该范式通过丰富短查询的上下文细节，同时融入图像质量的显式概念。我们的核心思路是利用生成式语言模型作为查询补全函数，将定义不明确的查询扩展为描述性形式，捕捉如姿态、场景和美学等细粒度视觉属性。我们引入了一个通用框架，该框架基于从相关性和美学评分模型导出的离散化质量等级来条件化查询补全，从而使查询丰富不仅语义上有意义，还能感知质量。所构建的系统具备三大优势：1）灵活性，无需修改即可与任何预训练的视觉-语言模型兼容；2）透明性，丰富的查询对用户而言是显式可解释的；3）可控性，能够引导检索结果朝向用户偏好的质量水平。大量实验表明，我们提出的方法显著提升了检索效果，并提供了有效的质量控制，弥合了现代视觉-语言模型表达能力与简短用户查询定义不明确之间的鸿沟。代码已公开于https://github.com/Jianglin954/QCQC。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ActionReasoning: Robot Action Reasoning in 3D Space with LLM for Robotic Brick Stacking</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Classical robotic systems typically rely on custom planners designed for constrained environments. While effective in restricted settings, these systems lack generalization capabilities, limiting the scalability of embodied AI and general-purpose robots. Recent data-driven Vision-Language-Action (VLA) approaches aim to learn policies from large-scale simulation and real-world data. However, the continuous action space of the physical world significantly exceeds the representational capacity of linguistic tokens, making it unclear if scaling data alone can yield general robotic intelligence. To address this gap, we propose ActionReasoning, an LLM-driven framework that performs explicit action reasoning to produce physics-consistent, prior-guided decisions for robotic manipulation. ActionReasoning leverages the physical priors and real-world knowledge already encoded in Large Language Models (LLMs) and structures them within a multi-agent architecture. We instantiate this framework on a tractable case study of brick stacking, where the environment states are assumed to be already accurately measured. The environmental states are then serialized and passed to a multi-agent LLM framework that generates physics-aware action plans. The experiments demonstrate that the proposed multi-agent LLM framework enables stable brick placement while shifting effort from low-level domain-specific coding to high-level tool invocation and prompting, highlighting its potential for broader generalization. This work introduces a promising approach to bridging perception and execution in robotic manipulation by integrating physical reasoning with LLMs.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>传统机器人系统通常依赖为受限环境定制的规划器。尽管在受限场景中有效，这些系统缺乏泛化能力，限制了具身人工智能与通用机器人的可扩展性。近期数据驱动的视觉-语言-动作方法旨在从大规模仿真与现实数据中学习策略。然而，物理世界的连续动作空间远超语言符号的表征能力，仅靠数据扩展能否实现通用机器人智能尚不明确。为填补这一空白，我们提出ActionReasoning，一种基于大语言模型的框架，通过显式动作推理生成物理一致、先验引导的机器人操作决策。该框架利用大语言模型中已编码的物理先验与现实世界知识，并将其组织于多智能体架构中。我们在砖块堆叠这一可验证案例中实例化该框架，假设环境状态已精确测量。环境状态经序列化后输入多智能体大语言模型框架，生成具备物理感知的动作规划。实验表明，所提出的多智能体大语言模型框架能实现稳定的砖块放置，同时将工作重心从底层领域特定编码转向高层工具调用与提示设计，凸显了其广泛泛化的潜力。本研究通过将物理推理与大语言模型相结合，为机器人操作中感知与执行的衔接提供了一种前景广阔的新途径。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

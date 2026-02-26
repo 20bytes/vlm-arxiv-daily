@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>HALO: A Unified Vision-Language-Action Model for Embodied Multimodal Chain-of-Thought Reasoning</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language-Action (VLA) models have shown strong performance in robotic manipulation, but often struggle in long-horizon or out-of-distribution scenarios due to the lack of explicit mechanisms for multimodal reasoning and anticipating how the world will evolve under action. Recent works introduce textual chain-of-thought or visual subgoal prediction within VLA models to reason, but still fail to offer a unified human-like reasoning framework for joint textual reasoning, visual foresight, and action prediction. To this end, we propose HALO, a unified VLA model that enables embodied multimodal chain-of-thought (EM-CoT) reasoning through a sequential process of textual task reasoning, visual subgoal prediction for fine-grained guidance, and EM-CoT-augmented action prediction. We instantiate HALO with a Mixture-of-Transformers (MoT) architecture that decouples semantic reasoning, visual foresight, and action prediction into specialized experts while allowing seamless cross-expert collaboration. To enable HALO learning at scale, we introduce an automated pipeline to synthesize EM-CoT training data along with a carefully crafted training recipe. Extensive experiments demonstrate that: (1) HALO achieves superior performance in both simulated and real-world environments, surpassing baseline policy pi_0 by 34.1% on RoboTwin benchmark; (2) all proposed components of the training recipe and EM-CoT design help improve task success rate; and (3) HALO exhibits strong generalization capabilities under aggressive unseen environmental randomization with our proposed EM-CoT reasoning.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作（VLA）模型在机器人操作任务中展现出强大性能，但在长时程或分布外场景中常因缺乏显式的多模态推理机制以及对动作引发世界状态演变的预判能力而表现不佳。近期研究尝试在VLA模型中引入文本思维链或视觉子目标预测以增强推理能力，但仍未能构建一个统一的人类式推理框架，实现文本推理、视觉前瞻与动作预测的协同。为此，我们提出HALO模型，通过文本任务推理、细粒度视觉子目标预测及增强型具身多模态思维链（EM-CoT）动作预测的序列化流程，构建了支持具身多模态思维链推理的统一VLA架构。我们采用混合专家Transformer（MoT）结构实例化HALO，将语义推理、视觉前瞻与动作预测解耦为专业化专家模块，同时实现跨专家的无缝协作。为支持大规模训练，我们设计了自动化流水线合成EM-CoT训练数据，并构建了精细化的训练方案。大量实验表明：（1）HALO在仿真与真实环境中均取得卓越性能，在RoboTwin基准上超越基线策略π_0达34.1%；（2）训练方案与EM-CoT设计的所有组件均能有效提升任务成功率；（3）通过EM-CoT推理机制，HALO在极端未见过环境随机化条件下展现出强大的泛化能力。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
