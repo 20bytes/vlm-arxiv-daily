@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>When to Act, Ask, or Learn: Uncertainty-Aware Policy Steering</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Policy steering is an emerging way to adapt robot behaviors at deployment-time: a learned verifier analyzes low-level action samples proposed by a pre-trained policy (e.g., diffusion policy) and selects only those aligned with the task. While Vision-Language Models (VLMs) are promising general-purpose verifiers due to their reasoning capabilities, existing frameworks often assume these models are well-calibrated. In practice, the overconfident judgment from VLM can degrade the steering performance under both high-level semantic uncertainty in task specifications and low-level action uncertainty or incapability of the pre-trained policy. We propose uncertainty-aware policy steering (UPS), a framework that jointly reasons about semantic task uncertainty and low-level action feasibility, and selects an uncertainty resolution strategy: execute a high-confidence action, clarify task ambiguity via natural language queries, or ask for action interventions to correct the low-level policy when it is deemed incapable at the task. We leverage conformal prediction to calibrate the composition of the VLM and the pre-trained base policy, providing statistical assurances that the verifier selects the correct strategy. After collecting interventions during deployment, we employ residual learning to improve the capability of the pre-trained policy, enabling the system to learn continually but with minimal expensive human feedback. We demonstrate our framework through experiments in simulation and on hardware, showing that UPS can disentangle confident, ambiguous, and incapable scenarios and minimizes expensive user interventions compared to uncalibrated baselines and prior human- or robot-gated continual learning approaches. Videos can be found at https://jessie-yuan.github.io/ups/</p>
+      <h2>摘要 (ZH)</h2>
+      <p>策略引导是一种新兴的部署时机器人行为适应方法：通过学习验证器分析预训练策略（如扩散策略）提出的低层动作样本，并仅选择与任务对齐的动作。尽管视觉语言模型（VLM）因其推理能力被视为有前景的通用验证器，但现有框架常假设这些模型校准良好。实际上，VLM的过度自信判断会在任务规范的高层语义不确定性以及预训练策略的低层动作不确定性或能力不足时，降低引导性能。我们提出不确定性感知策略引导（UPS），这是一个联合推理语义任务不确定性和低层动作可行性的框架，并选择不确定性解决策略：执行高置信度动作、通过自然语言查询澄清任务歧义，或在预训练策略被认为无法胜任任务时请求动作干预以纠正低层策略。我们利用共形预测来校准VLM与预训练基础策略的组合，为验证器选择正确策略提供统计保证。在部署期间收集干预后，我们采用残差学习来提升预训练策略的能力，使系统能够持续学习，同时最小化昂贵的人工反馈。我们通过仿真和硬件实验展示了该框架，表明UPS能够区分自信、模糊和无法胜任的场景，并与未校准的基线及先前基于人或机器人门控的持续学习方法相比，最小化了昂贵的用户干预。视频可在 https://jessie-yuan.github.io/ups/ 查看。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

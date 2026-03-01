@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Efficient Encoder-Free Fourier-based 3D Large Multimodal Model</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Large Multimodal Models (LMMs) that process 3D data typically rely on heavy, pre-trained visual encoders to extract geometric features. While recent 2D LMMs have begun to eliminate such encoders for efficiency and scalability, extending this paradigm to 3D remains challenging due to the unordered and large-scale nature of point clouds. This leaves a critical unanswered question: How can we design an LMM that tokenizes unordered 3D data effectively and efficiently without a cumbersome encoder? We propose Fase3D, the first efficient encoder-free Fourier-based 3D scene LMM. Fase3D tackles the challenges of scalability and permutation invariance with a novel tokenizer that combines point cloud serialization and the Fast Fourier Transform (FFT) to approximate self-attention. This design enables an effective and computationally minimal architecture, built upon three key innovations: First, we represent large scenes compactly via structured superpoints. Second, our space-filling curve serialization followed by an FFT enables efficient global context modeling and graph-based token merging. Lastly, our Fourier-augmented LoRA adapters inject global frequency-aware interactions into the LLMs at a negligible cost. Fase3D achieves performance comparable to encoder-based 3D LMMs while being significantly more efficient in computation and parameters. Project website: https://tev-fbk.github.io/Fase3D.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>处理3D数据的大型多模态模型通常依赖繁重的预训练视觉编码器来提取几何特征。尽管最近的2D LMM已开始为提升效率和可扩展性而摒弃此类编码器，但由于点云的无序性和大规模特性，将这一范式扩展到3D领域仍具挑战性。这引出了一个关键未解问题：如何设计一种无需笨重编码器即可高效且有效对无序3D数据进行标记化的LMM？我们提出了Fase3D，首个高效无编码器的基于傅里叶变换的3D场景LMM。Fase3D通过一种新颖的标记化器应对可扩展性和排列不变性的挑战，该标记化器结合点云序列化和快速傅里叶变换来近似自注意力机制。这一设计实现了一种高效且计算成本极低的架构，其建立在三项关键创新之上：首先，我们通过结构化超点紧凑表示大规模场景；其次，采用空间填充曲线序列化后接FFT，实现了高效的全局上下文建模和基于图的标记合并；最后，我们的傅里叶增强LoRA适配器以可忽略的成本向大语言模型注入全局频率感知交互。Fase3D在性能上媲美基于编码器的3D LMM，同时在计算和参数量上显著更高效。项目网站：https://tev-fbk.github.io/Fase3D。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

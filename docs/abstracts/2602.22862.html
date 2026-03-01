@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>GraspLDP: Towards Generalizable Grasping Policy via Latent Diffusion</h1>
+      <h2>Abstract (EN)</h2>
+      <p>This paper focuses on enhancing the grasping precision and generalization of manipulation policies learned via imitation learning. Diffusion-based policy learning methods have recently become the mainstream approach for robotic manipulation tasks. As grasping is a critical subtask in manipulation, the ability of imitation-learned policies to execute precise and generalizable grasps merits particular attention. Existing imitation learning techniques for grasping often suffer from imprecise grasp executions, limited spatial generalization, and poor object generalization. To address these challenges, we incorporate grasp prior knowledge into the diffusion policy framework. In particular, we employ a latent diffusion policy to guide action chunk decoding with grasp pose prior, ensuring that generated motion trajectories adhere closely to feasible grasp configurations. Furthermore, we introduce a self-supervised reconstruction objective during diffusion to embed the graspness prior: at each reverse diffusion step, we reconstruct wrist-camera images back-projected the graspness from the intermediate representations. Both simulation and real robot experiments demonstrate that our approach significantly outperforms baseline methods and exhibits strong dynamic grasping capabilities.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>本文聚焦于提升通过模仿学习习得的操作策略的抓取精度与泛化能力。基于扩散的策略学习方法已成为机器人操作任务的主流方法。由于抓取是操作中的关键子任务，模仿学习策略执行精确且可泛化抓取的能力值得特别关注。现有抓取模仿学习技术常面临抓取执行不精确、空间泛化能力有限及物体泛化能力差等问题。为应对这些挑战，我们将抓取先验知识融入扩散策略框架。具体而言，我们采用潜在扩散策略，利用抓取姿态先验指导动作块解码，确保生成的运动轨迹紧密贴合可行的抓取构型。此外，我们在扩散过程中引入自监督重建目标以嵌入抓取性先验：在每一步反向扩散中，我们通过中间表示反投影抓取性，重建腕部相机图像。仿真与真实机器人实验均表明，本方法显著优于基线方法，并展现出强大的动态抓取能力。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

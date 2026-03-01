@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ArtPro: Self-Supervised Articulated Object Reconstruction with Adaptive Integration of Mobility Proposals</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Reconstructing articulated objects into high-fidelity digital twins is crucial for applications such as robotic manipulation and interactive simulation. Recent self-supervised methods using differentiable rendering frameworks like 3D Gaussian Splatting remain highly sensitive to the initial part segmentation. Their reliance on heuristic clustering or pre-trained models often causes optimization to converge to local minima, especially for complex multi-part objects. To address these limitations, we propose ArtPro, a novel self-supervised framework that introduces adaptive integration of mobility proposals. Our approach begins with an over-segmentation initialization guided by geometry features and motion priors, generating part proposals with plausible motion hypotheses. During optimization, we dynamically merge these proposals by analyzing motion consistency among spatial neighbors, while a collision-aware motion pruning mechanism prevents erroneous kinematic estimation. Extensive experiments on both synthetic and real-world objects demonstrate that ArtPro achieves robust reconstruction of complex multi-part objects, significantly outperforming existing methods in accuracy and stability.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>将关节物体重建为高保真数字孪生体，对于机器人操控和交互式仿真等应用至关重要。当前基于可微分渲染框架（如3D高斯泼溅）的自监督方法，仍高度依赖于初始部件分割结果。这些方法通常依赖启发式聚类或预训练模型，容易导致优化陷入局部最优，尤其对于复杂多部件物体。为突破这些局限，我们提出ArtPro——一种新颖的自监督框架，引入了运动提议的自适应集成机制。该方法首先通过几何特征与运动先验引导的过分割初始化，生成具有合理运动假设的部件提议。在优化过程中，我们通过分析空间邻域间的运动一致性动态合并这些提议，同时采用碰撞感知的运动剪枝机制以避免错误的运动学估计。在合成与真实物体数据集上的大量实验表明，ArtPro能够稳健地重建复杂多部件物体，在精度与稳定性上显著超越现有方法。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

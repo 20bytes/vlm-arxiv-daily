@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>MediX-R1: Open Ended Medical Reinforcement Learning</h1>
+      <h2>Abstract (EN)</h2>
+      <p>We introduce MediX-R1, an open-ended Reinforcement Learning (RL) framework for medical multimodal large language models (MLLMs) that enables clinically grounded, free-form answers beyond multiple-choice formats. MediX-R1 fine-tunes a baseline vision-language backbone with Group Based RL and a composite reward tailored for medical reasoning: an LLM-based accuracy reward that judges semantic correctness with a strict YES/NO decision, a medical embedding-based semantic reward to capture paraphrases and terminology variants, and lightweight format and modality rewards that enforce interpretable reasoning and modality recognition. This multi-signal design provides stable, informative feedback for open-ended outputs where traditional verifiable or MCQ-only rewards fall short. To measure progress, we propose a unified evaluation framework for both text-only and image+text tasks that uses a Reference-based LLM-as-judge in place of brittle string-overlap metrics, capturing semantic correctness, reasoning, and contextual alignment. Despite using only $\sim51$K instruction examples, MediX-R1 achieves excellent results across standard medical LLM (text-only) and VLM (image + text) benchmarks, outperforming strong open-source baselines and delivering particularly large gains on open-ended clinical tasks. Our results demonstrate that open-ended RL with comprehensive reward signals and LLM-based evaluation is a practical path toward reliable medical reasoning in multimodal models. Our trained models, curated datasets and source code are available at https://medix.cvmbzuai.com</p>
+      <h2>摘要 (ZH)</h2>
+      <p>我们推出MediX-R1，这是一个面向医学多模态大语言模型（MLLMs）的开放式强化学习（RL）框架，能够生成基于临床背景的自由形式答案，超越传统多项选择题的限制。MediX-R1通过基于分组的强化学习对基线视觉语言骨干模型进行微调，并采用专为医学推理设计的复合奖励机制：包括基于LLM的准确性奖励（通过严格的YES/NO决策判断语义正确性）、基于医学嵌入的语义奖励（以捕捉同义表达和术语变体），以及轻量级的格式和模态奖励（用于强化可解释推理和模态识别）。这种多信号设计为开放式输出提供了稳定且信息丰富的反馈，弥补了传统可验证或仅限多项选择题奖励的不足。为衡量进展，我们提出了一个统一的评估框架，适用于纯文本及图像+文本任务，采用基于参考的LLM作为评判者，替代脆弱的字符串重叠指标，以捕捉语义正确性、推理能力和上下文对齐。尽管仅使用约51K条指令示例，MediX-R1在标准医学LLM（纯文本）和VLM（图像+文本）基准测试中均取得优异成果，超越了强大的开源基线模型，并在开放式临床任务上实现了显著提升。我们的结果表明，结合全面奖励信号和基于LLM评估的开放式强化学习，是实现多模态模型中可靠医学推理的可行路径。训练后的模型、精选数据集及源代码已发布于https://medix.cvmbzuai.com。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Large Multimodal Models as General In-Context Classifiers</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Which multimodal model should we use for classification? Previous studies suggest that the answer lies in CLIP-like contrastive Vision-Language Models (VLMs), due to their remarkable performance in zero-shot classification. In contrast, Large Multimodal Models (LMM) are more suitable for complex tasks. In this work, we argue that this answer overlooks an important capability of LMMs: in-context learning. We benchmark state-of-the-art LMMs on diverse datasets for closed-world classification and find that, although their zero-shot performance is lower than CLIP&#x27;s, LMMs with a few in-context examples can match or even surpass contrastive VLMs with cache-based adapters, their &quot;in-context&quot; equivalent. We extend this analysis to the open-world setting, where the generative nature of LMMs makes them more suitable for the task. In this challenging scenario, LMMs struggle whenever provided with imperfect context information. To address this issue, we propose CIRCLE, a simple training-free method that assigns pseudo-labels to in-context examples, iteratively refining them with the available context itself. Through extensive experiments, we show that CIRCLE establishes a robust baseline for open-world classification, surpassing VLM counterparts and highlighting the potential of LMMs to serve as unified classifiers, and a flexible alternative to specialized models.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>我们应选择哪种多模态模型进行分类？先前的研究表明，答案在于CLIP类对比视觉语言模型（VLMs），因其在零样本分类中表现卓越。相比之下，大型多模态模型（LMMs）更适用于复杂任务。本文认为，这一答案忽略了LMMs的一项重要能力：上下文学习。我们在多样化数据集上对最先进的LMMs进行闭域分类基准测试，发现尽管其零样本性能低于CLIP，但配备少量上下文示例的LMMs能够匹配甚至超越带有缓存适配器的对比VLMs（即其“上下文内”等效模型）。我们将此分析扩展至开放世界场景，其中LMMs的生成特性使其更适应该任务。在这一挑战性情境下，当提供不完善的上下文信息时，LMMs表现受限。为解决此问题，我们提出CIRCLE——一种简单的无需训练的方法，为上下文示例分配伪标签，并利用可用上下文自身进行迭代优化。通过大量实验，我们证明CIRCLE为开放世界分类建立了稳健的基准，超越了VLM同类模型，并突显了LMMs作为统一分类器的潜力，成为专用模型的灵活替代方案。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

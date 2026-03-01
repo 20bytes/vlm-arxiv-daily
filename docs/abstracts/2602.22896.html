@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>DySL-VLA: Efficient Vision-Language-Action Model Inference via Dynamic-Static Layer-Skipping for Robot Manipulation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language-Action (VLA) models have shown remarkable success in robotic tasks like manipulation by fusing a language model&#x27;s reasoning with a vision model&#x27;s 3D understanding. However, their high computational cost remains a major obstacle for real-world applications that require real-time performance. We observe that the actions within a task have varying levels of importance: critical steps demand high precision, while less important ones can tolerate more variance. Leveraging this insight, we propose DySL-VLA, a novel framework that addresses computational cost by dynamically skipping VLA layers based on each action&#x27;s importance. DySL-VLA categorizes its layers into two types: informative layers, which are consistently executed, and incremental layers, which can be selectively skipped. To intelligently skip layers without sacrificing accuracy, we invent a prior-post skipping guidance mechanism to determine when to initiate layer-skipping. We also propose a skip-aware two-stage knowledge distillation algorithm to efficiently train a standard VLA into a DySL-VLA. Our experiments indicate that DySL-VLA achieves 2.1% improvement in success length over Deer-VLA on the Calvin dataset, while simultaneously reducing trainable parameters by a factor of 85.7 and providing a 3.75x speedup relative to the RoboFlamingo baseline at iso-accuracy. Our code is available on https://github.com/PKU-SEC-Lab/DYSL_VLA.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作（VLA）模型通过融合语言模型的推理能力与视觉模型的三维理解能力，在机器人操作等任务中展现出卓越性能。然而，其高昂的计算成本仍是实现实时性能现实应用的主要障碍。我们观察到，任务中的动作具有不同的重要性级别：关键步骤需要高精度，而次要步骤则可容忍更多变化。基于这一洞察，我们提出了DySL-VLA，一种新颖的框架，通过根据每个动作的重要性动态跳过VLA层来应对计算成本问题。DySL-VLA将其层分为两类：信息层（始终执行）和增量层（可选择性地跳过）。为了在不牺牲准确性的情况下智能跳过层，我们发明了一种先验-后验跳跃引导机制，以确定何时启动层跳跃。我们还提出了一种跳跃感知的两阶段知识蒸馏算法，用于高效地将标准VLA训练为DySL-VLA。实验结果表明，在Calvin数据集上，DySL-VLA相比Deer-VLA实现了2.1%的成功长度提升，同时将可训练参数减少了85.7倍，并在同等准确度下相对于RoboFlamingo基线提供了3.75倍的加速。我们的代码可在https://github.com/PKU-SEC-Lab/DYSL_VLA获取。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Residual Koopman Spectral Profiling for Predicting and Preventing Transformer Training Instability</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Training divergence in transformers wastes compute, yet practitioners discover instability only after expensive runs begin. They therefore need an expected probability of failure for a transformer before training starts. Our study of Residual Koopman Spectral Profiling (RKSP) provides such an estimate. From a single forward pass at initialization, RKSP extracts Koopman spectral features by applying whitened dynamic mode decomposition to layer-wise residual snapshots. Our central diagnostic, the near-unit spectral mass, quantifies the fraction of modes concentrated near the unit circle, which captures instability risk. For predicting divergence across extensive configurations, this estimator achieves an AUROC of 0.995, outperforming the best gradient baseline. We further make this diagnostic actionable through Koopman Spectral Shaping (KSS), which reshapes spectra during training. We empirically validate that our method works in practice: RKSP predicts divergence at initialization, and when RKSP flags high risk, turning on KSS successfully prevents divergence. In the challenging high learning rate regime without normalization layers, KSS reduces the divergence rate from 66.7% to 12.5% and enables learning rates that are 50% to 150% higher. These findings generalize to WikiText-103 language modeling, vision transformers on CIFAR-10, and pretrained language models, including GPT-2 and LLaMA-2 up to 7B, as well as emerging architectures such as MoE, Mamba-style SSMs, and KAN.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>Transformer训练过程中的发散问题会浪费大量计算资源，但实践者往往在昂贵的训练开始后才察觉到不稳定性。因此，在训练启动前，他们需要一种能够预估Transformer失败概率的方法。本研究提出的残差库普曼谱分析（RKSP）提供了此类估计。仅通过初始化阶段的单次前向传播，RKSP通过应用白化动态模态分解对逐层残差快照进行库普曼谱特征提取。我们的核心诊断指标——近单位谱质量，量化了集中在单位圆附近的模态比例，从而捕捉不稳定性风险。在广泛配置下预测训练发散时，该估计器的AUROC达到0.995，优于最佳梯度基线方法。我们进一步通过库普曼谱整形（KSS）使诊断具备可操作性，该方法在训练过程中重塑谱分布。我们通过实证验证了该方法的实用性：RKSP能在初始化阶段预测发散风险，当RKSP标记高风险时，启用KSS可成功防止发散。在无归一化层的高学习率挑战性场景中，KSS将发散率从66.7%降至12.5%，并使学习率提升50%至150%。这些发现可推广至WikiText-103语言建模、CIFAR-10上的视觉Transformer、预训练语言模型（包括GPT-2和LLaMA-2达70亿参数），以及新兴架构如混合专家模型（MoE）、Mamba风格状态空间模型（SSM）和Kolmogorov–Arnold网络（KAN）。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

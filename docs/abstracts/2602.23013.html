@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SubspaceAD: Training-Free Few-Shot Anomaly Detection via Subspace Modeling</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Detecting visual anomalies in industrial inspection often requires training with only a few normal images per category. Recent few-shot methods achieve strong results employing foundation-model features, but typically rely on memory banks, auxiliary datasets, or multi-modal tuning of vision-language models. We therefore question whether such complexity is necessary given the feature representations of vision foundation models. To answer this question, we introduce SubspaceAD, a training-free method, that operates in two simple stages. First, patch-level features are extracted from a small set of normal images by a frozen DINOv2 backbone. Second, a Principal Component Analysis (PCA) model is fit to these features to estimate the low-dimensional subspace of normal variations. At inference, anomalies are detected via the reconstruction residual with respect to this subspace, producing interpretable and statistically grounded anomaly scores. Despite its simplicity, SubspaceAD achieves state-of-the-art performance across one-shot and few-shot settings without training, prompt tuning, or memory banks. In the one-shot anomaly detection setting, SubspaceAD achieves image-level and pixel-level AUROC of 98.0% and 97.6% on the MVTec-AD dataset, and 93.3% and 98.3% on the VisA dataset, respectively, surpassing prior state-of-the-art results. Code and demo are available at https://github.com/CLendering/SubspaceAD.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>工业检测中的视觉异常检测通常仅需每类少量正常图像进行训练。近期少样本方法利用基础模型特征取得了显著成果，但通常依赖记忆库、辅助数据集或多模态视觉-语言模型调优。鉴于视觉基础模型的表征能力，我们质疑此类复杂性是否必要。为回答此问题，我们提出SubspaceAD，一种无训练方法，包含两个简单阶段：首先，通过冻结的DINOv2骨干网络从少量正常图像中提取块级特征；其次，利用主成分分析（PCA）模型拟合这些特征，以估计正常变化的低维子空间。在推理阶段，通过计算相对于该子空间的重构残差来检测异常，生成可解释且具有统计依据的异常分数。尽管方法简洁，SubspaceAD在无需训练、提示调优或记忆库的情况下，于单样本和少样本场景中均实现了最先进的性能。在单样本异常检测任务中，SubspaceAD在MVTec-AD数据集上取得图像级与像素级AUROC分别为98.0%和97.6%，在VisA数据集上分别为93.3%和98.3%，超越了先前的最佳结果。代码与演示见https://github.com/CLendering/SubspaceAD。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

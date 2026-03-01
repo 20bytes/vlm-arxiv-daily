@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>MovieTeller: Tool-augmented Movie Synopsis with ID Consistent Progressive Abstraction</h1>
+      <h2>Abstract (EN)</h2>
+      <p>With the explosive growth of digital entertainment, automated video summarization has become indispensable for applications such as content indexing, personalized recommendation, and efficient media archiving. Automatic synopsis generation for long-form videos, such as movies and TV series, presents a significant challenge for existing Vision-Language Models (VLMs). While proficient at single-image captioning, these general-purpose models often exhibit critical failures in long-duration contexts, primarily a lack of ID-consistent character identification and a fractured narrative coherence. To overcome these limitations, we propose MovieTeller, a novel framework for generating movie synopses via tool-augmented progressive abstraction. Our core contribution is a training-free, tool-augmented, fact-grounded generation process. Instead of requiring costly model fine-tuning, our framework directly leverages off-the-shelf models in a plug-and-play manner. We first invoke a specialized face recognition model as an external &quot;tool&quot; to establish Factual Groundings--precise character identities and their corresponding bounding boxes. These groundings are then injected into the prompt to steer the VLM&#x27;s reasoning, ensuring the generated scene descriptions are anchored to verifiable facts. Furthermore, our progressive abstraction pipeline decomposes the summarization of a full-length movie into a multi-stage process, effectively mitigating the context length limitations of current VLMs. Experiments demonstrate that our approach yields significant improvements in factual accuracy, character consistency, and overall narrative coherence compared to end-to-end baselines.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>随着数字娱乐的爆炸式增长，自动化视频摘要技术对于内容索引、个性化推荐和高效媒体归档等应用变得不可或缺。针对电影和电视剧等长视频的自动剧情摘要生成，对现有视觉语言模型（VLMs）构成了重大挑战。尽管这些通用模型擅长单图像描述，但在长时上下文环境中常表现出关键缺陷，主要是缺乏ID一致的角色识别和叙事连贯性断裂。为克服这些限制，我们提出了MovieTeller，一种通过工具增强渐进式抽象生成电影摘要的新框架。我们的核心贡献是一个无需训练、工具增强且基于事实的生成流程。该框架无需昂贵的模型微调，而是以即插即用的方式直接利用现成模型。我们首先调用专用人脸识别模型作为外部“工具”建立事实基础——精确的角色身份及其对应边界框。这些基础信息随后被注入提示词中以引导VLM的推理，确保生成的场景描述锚定于可验证的事实。此外，我们的渐进式抽象流程将全长电影的摘要分解为多阶段处理，有效缓解了当前VLMs的上下文长度限制。实验表明，与端到端基线方法相比，我们的方法在事实准确性、角色一致性和整体叙事连贯性方面均取得显著提升。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Rethinking the Practicality of Vision-language-action Model: A Comprehensive Benchmark and An Improved Baseline</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language-Action (VLA) models have emerged as a generalist robotic agent. However, existing VLAs are hindered by excessive parameter scales, prohibitive pre-training requirements, and limited applicability to diverse embodiments. To improve the practicality of VLAs, we propose a comprehensive benchmark and an improved baseline. First, we propose CEBench, a new benchmark spanning diverse embodiments in both simulation and the real world with consideration of domain randomization. We collect 14.4k simulated trajectories and 1.6k real-world expert-curated trajectories to support training on CEBench. Second, using CEBench as our testbed, we study three critical aspects of VLAs&#x27; practicality and offer several key findings. Informed by these findings, we introduce LLaVA-VLA, a lightweight yet powerful VLA designed for practical deployment on consumer-grade GPUs. Architecturally, it integrates a compact VLM backbone with multi-view perception, proprioceptive tokenization, and action chunking. To eliminate reliance on costly pre-training, LLaVA-VLA adopts a two-stage training paradigm including post-training and fine-tuning. Furthermore, LLaVA-VLA extends the action space to unify navigation and manipulation. Experiments across embodiments demonstrate the capabilities of generalization and versatility of LLaVA-VLA , while real-world mobile manipulation experiments establish it as the first end-to-end VLA model for mobile manipulation. We will open-source all datasets, codes, and checkpoints upon acceptance to foster reproducibility and future research.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作（VLA）模型已成为一种通用机器人智能体。然而，现有VLA模型受限于过大的参数量、高昂的预训练成本以及对多样化机器人形态的有限适应性。为提升VLA的实用性，我们提出了一个综合性基准与改进基线。首先，我们构建了CEBench基准测试集，涵盖仿真与真实世界的多样化机器人形态，并考虑了领域随机化因素。我们收集了14.4万条仿真轨迹与1.6万条专家标注的真实世界轨迹以支持CEBench的训练。其次，以CEBench为实验平台，我们研究了VLA实用性的三个关键维度，并得出若干重要发现。基于这些发现，我们提出了LLaVA-VLA——一个轻量级且功能强大的VLA模型，专为消费级GPU的实际部署设计。在架构上，它融合了紧凑的视觉语言模型骨干网络、多视角感知、本体感觉标记化与动作分块技术。为摆脱对昂贵预训练的依赖，LLaVA-VLA采用包含后训练与微调的两阶段训练范式。此外，该模型通过扩展动作空间实现了导航与操作任务的统一。跨形态实验证明了LLaVA-VLA的泛化能力与多功能性，而真实世界移动操作实验则使其成为首个端到端的移动操作VLA模型。我们将在论文录用后开源全部数据集、代码与模型权重，以促进可复现性与未来研究。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
