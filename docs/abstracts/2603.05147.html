@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Act, Think or Abstain: Complexity-Aware Adaptive Inference for Vision-Language-Action Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Current research on Vision-Language-Action (VLA) models predominantly focuses on enhancing generalization through established reasoning techniques. While effective, these improvements invariably increase computational complexity and inference latency. Furthermore, these mechanisms are typically applied indiscriminately, resulting in the inefficient allocation of resources for trivial tasks while simultaneously failing to provide the uncertainty estimation necessary to prevent catastrophic failure on out-of-distribution tasks. Inspired by human cognition, we propose an adaptive framework that dynamically routes VLA execution based on the complexity of the perceived state. Our approach transforms the VLA&#x27;s vision-language backbone into an active detection tool by projecting latent embeddings into an ensemble of parametric and non-parametric estimators. This allows the system to execute known tasks immediately (Act), reason about ambiguous scenarios (Think), and preemptively halt execution when encountering significant physical or semantic anomalies (Abstain). In our empirical analysis, we observe a phenomenon where visual embeddings alone are superior for inferring task complexity due to the semantic invariance of language. Evaluated on the LIBERO and LIBERO-PRO benchmarks as well as on a real robot, our vision-only configuration achieves 80% F1-Score using as little as 5% of training data, establishing itself as a reliable and efficient task complexity detector.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>当前针对视觉-语言-动作（VLA）模型的研究主要集中于通过成熟的推理技术提升泛化能力。尽管这些方法有效，但其改进不可避免地增加了计算复杂度与推理延迟。此外，这些机制通常被不加区分地应用，导致在简单任务上资源分配低效，同时未能提供必要的置信度估计以防范分布外任务带来的灾难性失败。受人类认知机制启发，我们提出一种自适应框架，能根据感知状态的复杂度动态路由VLA的执行流程。该方法通过将潜在嵌入投影至参数化与非参数化估计器的集成系统中，将VLA的视觉-语言主干转化为主动检测工具，从而使系统能够：对已知任务立即执行（行动），对模糊场景进行推理（思考），并在遇到显著物理或语义异常时预先中止执行（放弃）。在实证分析中，我们观察到一种现象：由于语言具有语义不变性，仅凭视觉嵌入在推断任务复杂度方面表现更优。在LIBERO和LIBERO-PRO基准测试及真实机器人上的评估表明，我们的纯视觉配置仅需5%的训练数据即可达到80%的F1分数，证明了其作为可靠高效的任务复杂度检测器的有效性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

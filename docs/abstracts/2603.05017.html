@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Direct Contact-Tolerant Motion Planning With Vision Language Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Navigation in cluttered environments often requires robots to tolerate contact with movable or deformable objects to maintain efficiency. Existing contact-tolerant motion planning (CTMP) methods rely on indirect spatial representations (e.g., prebuilt map, obstacle set), resulting in inaccuracies and a lack of adaptiveness to environmental uncertainties. To address this issue, we propose a direct contact-tolerant (DCT) planner, which integrates vision-language models (VLMs) into direct point perception and navigation, including two key components. The first one is VLM point cloud partitioner (VPP), which performs contact-tolerance reasoning in image space using VLM, caches inference masks, propagates them across frames using odometry, and projects them onto the current scan to generate a contact-aware point cloud. The second innovation is VPP guided navigation (VGN), which formulates CTMP as a perception-to-control optimization problem under direct contact-aware point cloud constraints, which is further solved by a specialized deep neural network (DNN). We implement DCT in Isaac Sim and a real car-like robot, demonstrating that DCT achieves robust and efficient navigation in cluttered environments with movable obstacles, outperforming representative baselines across diverse metrics. The code is available at: https://github.com/ChrisLeeUM/DCT.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在杂乱环境中导航通常要求机器人能够容忍与可移动或可变形物体的接触，以维持导航效率。现有的接触容忍运动规划（CTMP）方法依赖于间接的空间表示（如预建地图、障碍物集合），导致精度不足且难以适应环境的不确定性。为解决这一问题，我们提出了一种直接接触容忍（DCT）规划器，它将视觉语言模型（VLMs）集成到直接点云感知与导航中，包含两个关键组件。首先是VLM点云分割器（VPP），它利用VLM在图像空间进行接触容忍推理，缓存推理掩码，通过里程计跨帧传播，并将其投影到当前扫描中以生成接触感知点云。第二个创新是VPP引导导航（VGN），它将CTMP建模为在直接接触感知点云约束下的感知到控制优化问题，并通过专门的深度神经网络（DNN）求解。我们在Isaac Sim仿真环境和真实类车机器人上实现了DCT，实验表明DCT在包含可移动障碍物的杂乱环境中实现了鲁棒且高效的导航，在多项指标上优于代表性基线方法。代码已开源：https://github.com/ChrisLeeUM/DCT。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>TagaVLM: Topology-Aware Global Action Reasoning for Vision-Language Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language Navigation (VLN) presents a unique challenge for Large Vision-Language Models (VLMs) due to their inherent architectural mismatch: VLMs are primarily pretrained on static, disembodied vision-language tasks, which fundamentally clash with the dynamic, embodied, and spatially-structured nature of navigation. Existing large-model-based methods often resort to converting rich visual and spatial information into text, forcing models to implicitly infer complex visual-topological relationships or limiting their global action capabilities. To bridge this gap, we propose TagaVLM (Topology-Aware Global Action reasoning), an end-to-end framework that explicitly injects topological structures into the VLM backbone. To introduce topological edge information, Spatial Topology Aware Residual Attention (STAR-Att) directly integrates it into the VLM&#x27;s self-attention mechanism, enabling intrinsic spatial reasoning while preserving pretrained knowledge. To enhance topological node information, an Interleaved Navigation Prompt strengthens node-level visual-text alignment. Finally, with the embedded topological graph, the model is capable of global action reasoning, allowing for robust path correction. On the R2R benchmark, TagaVLM achieves state-of-the-art performance among large-model-based methods, with a Success Rate (SR) of 51.09% and SPL of 47.18 in unseen environments, outperforming prior work by 3.39% in SR and 9.08 in SPL. This demonstrates that, for embodied spatial reasoning, targeted enhancements on smaller open-source VLMs can be more effective than brute-force model scaling. The code will be released upon publication.Project page: https://apex-bjut.github.io/Taga-VLM</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉语言导航（VLN）对大型视觉语言模型（VLMs）提出了独特挑战，源于其固有的架构不匹配：VLMs主要基于静态、非具身的视觉语言任务进行预训练，这与导航的动态性、具身性及空间结构化特性存在根本冲突。现有基于大模型的方法常将丰富的视觉与空间信息转换为文本，迫使模型隐式推断复杂的视觉-拓扑关系，或限制其全局动作能力。为弥合这一差距，我们提出了TagaVLM（拓扑感知全局动作推理），一种端到端框架，显式地将拓扑结构注入VLM主干。为引入拓扑边信息，空间拓扑感知残差注意力（STAR-Att）将其直接集成到VLM的自注意力机制中，在保持预训练知识的同时实现内在的空间推理。为增强拓扑节点信息，交错导航提示强化了节点级的视觉-文本对齐。最终，借助嵌入的拓扑图，模型能够进行全局动作推理，实现鲁棒的路径修正。在R2R基准测试中，TagaVLM在基于大模型的方法中取得了最先进的性能，在未见环境中成功率（SR）达51.09%，SPL为47.18，分别以3.39%的SR和9.08的SPL超越先前工作。这表明，对于具身空间推理，针对小型开源VLMs的针对性增强比暴力模型缩放更为有效。代码将在发表后开源。项目页面：https://apex-bjut.github.io/Taga-VLM</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

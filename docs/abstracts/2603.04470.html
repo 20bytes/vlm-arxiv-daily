@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Efficient Autonomous Navigation of a Quadruped Robot in Underground Mines on Edge Hardware</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Embodied navigation in underground mines faces significant challenges, including narrow passages, uneven terrain, near-total darkness, GPS-denied conditions, and limited communication infrastructure. While recent learning-based approaches rely on GPU-accelerated inference and extensive training data, we present a fully autonomous navigation stack for a Boston Dynamics Spot quadruped robot that runs entirely on a low-power Intel NUC edge computer with no GPU and no network connectivity requirements. The system integrates LiDAR-inertial odometry, scan-matching localization against a prior map, terrain segmentation, and visibility-graph global planning with a velocity-regulated local path follower, achieving real-time perception-to-action at consistent control rates. After a single mapping pass of the environment, the system handles arbitrary goal locations within the known map without any environment-specific training or learned components. We validate the system through repeated field trials using four target locations of varying traversal difficulty in an experimental underground mine, accumulating over 700 m of fully autonomous traverse with a 100% success rate across all 20 trials (5 repetitions x 4 targets) and an overall Success weighted by Path Length (SPL) of 0.73 \pm 0.09.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>地下矿井中的具身导航面临重大挑战，包括狭窄通道、不平坦地形、近乎全黑暗环境、GPS信号缺失以及通信基础设施有限。尽管近期基于学习的方法依赖于GPU加速推理和大量训练数据，我们提出了一种完全自主的导航系统，专为波士顿动力Spot四足机器人设计，该系统完全运行在低功耗的英特尔NUC边缘计算机上，无需GPU且不依赖网络连接。该系统集成了激光雷达-惯性里程计、基于先验地图的扫描匹配定位、地形分割、可见性图全局规划以及速度调节的局部路径跟随器，实现了在稳定控制速率下的实时感知到动作转换。在单次环境地图构建后，系统能够处理已知地图内任意目标位置，无需任何环境特定训练或学习组件。我们通过在实验性地下矿井中，针对四个不同穿越难度的目标位置进行重复现场试验来验证该系统，累计完成超过700米的完全自主穿越，所有20次试验（每个目标重复5次）的成功率达到100%，整体基于路径长度的加权成功率（SPL）为0.73 ± 0.09。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

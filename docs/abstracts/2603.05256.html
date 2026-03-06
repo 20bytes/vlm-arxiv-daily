@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Wiki-R1: Incentivizing Multimodal Reasoning for Knowledge-based VQA via Data and Sampling Curriculum</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Knowledge-Based Visual Question Answering (KB-VQA) requires models to answer questions about an image by integrating external knowledge, posing significant challenges due to noisy retrieval and the structured, encyclopedic nature of the knowledge base. These characteristics create a distributional gap from pretrained multimodal large language models (MLLMs), making effective reasoning and domain adaptation difficult in the post-training stage. In this work, we propose \textit{Wiki-R1}, a data-generation-based curriculum reinforcement learning framework that systematically incentivizes reasoning in MLLMs for KB-VQA. Wiki-R1 constructs a sequence of training distributions aligned with the model&#x27;s evolving capability, bridging the gap from pretraining to the KB-VQA target distribution. We introduce \textit{controllable curriculum data generation}, which manipulates the retriever to produce samples at desired difficulty levels, and a \textit{curriculum sampling strategy} that selects informative samples likely to yield non-zero advantages during RL updates. Sample difficulty is estimated using observed rewards and propagated to unobserved samples to guide learning. Experiments on two KB-VQA benchmarks, Encyclopedic VQA and InfoSeek, demonstrate that Wiki-R1 achieves new state-of-the-art results, improving accuracy from 35.5\% to 37.1\% on Encyclopedic VQA and from 40.1\% to 44.1\% on InfoSeek. The project page is available at https://artanic30.github.io/project_pages/WikiR1/.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>基于知识的视觉问答（KB-VQA）要求模型通过整合外部知识来回答关于图像的问题，由于检索噪声以及知识库的结构化与百科全书特性，这带来了显著挑战。这些特征与预训练的多模态大语言模型（MLLMs）存在分布差异，使得在后续训练阶段难以进行有效的推理和领域适应。在本研究中，我们提出了《Wiki-R1》，一种基于数据生成的课程强化学习框架，系统性地激励MLLMs在KB-VQA中进行推理。Wiki-R1构建了一系列与模型能力演进相匹配的训练分布，弥合了从预训练到KB-VQA目标分布之间的差距。我们引入了《可控课程数据生成》，通过操纵检索器生成指定难度级别的样本，以及一种《课程采样策略》，选择在强化学习更新中可能产生非零优势的信息丰富样本。样本难度通过观测到的奖励进行估计，并传播到未观测样本以指导学习。在两个KB-VQA基准测试——百科全书VQA和InfoSeek上的实验表明，Wiki-R1取得了新的最先进成果，将百科全书VQA的准确率从35.5%提升至37.1%，InfoSeek的准确率从40.1%提升至44.1%。项目页面可在https://artanic30.github.io/project_pages/WikiR1/访问。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

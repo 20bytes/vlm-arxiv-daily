@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SeedPolicy: Horizon Scaling via Self-Evolving Diffusion Policy for Robot Manipulation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Imitation Learning (IL) enables robots to acquire manipulation skills from expert demonstrations. Diffusion Policy (DP) models multi-modal expert behaviors but suffers performance degradation as observation horizons increase, limiting long-horizon manipulation. We propose Self-Evolving Gated Attention (SEGA), a temporal module that maintains a time-evolving latent state via gated attention, enabling efficient recurrent updates that compress long-horizon observations into a fixed-size representation while filtering irrelevant temporal information. Integrating SEGA into DP yields Self-Evolving Diffusion Policy (SeedPolicy), which resolves the temporal modeling bottleneck and enables scalable horizon extension with moderate overhead. On the RoboTwin 2.0 benchmark with 50 manipulation tasks, SeedPolicy outperforms DP and other IL baselines. Averaged across both CNN and Transformer backbones, SeedPolicy achieves 36.8% relative improvement in clean settings and 169% relative improvement in randomized challenging settings over the DP. Compared to vision-language-action models such as RDT with 1.2B parameters, SeedPolicy achieves competitive performance with one to two orders of magnitude fewer parameters, demonstrating strong efficiency and scalability. These results establish SeedPolicy as a state-of-the-art imitation learning method for long-horizon robotic manipulation. Code is available at: https://github.com/Youqiang-Gui/SeedPolicy.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>模仿学习（IL）使机器人能够从专家演示中学习操作技能。扩散策略（DP）能够建模多模态专家行为，但随着观察水平增加，其性能会下降，限制了长水平操作。我们提出了自演化门控注意力（SEGA），这是一种通过门控注意力维持时间演化潜在状态的时序模块，能够实现高效的循环更新，将长水平观察压缩为固定大小的表示，同时过滤无关的时序信息。将SEGA集成到DP中，形成了自演化扩散策略（SeedPolicy），它解决了时序建模瓶颈，并以适度的开销实现了可扩展的水平延伸。在包含50个操作任务的RoboTwin 2.0基准测试中，SeedPolicy优于DP和其他IL基线。在CNN和Transformer骨干网络的平均表现上，SeedPolicy在干净设置中实现了36.8%的相对改进，在随机化挑战设置中实现了169%的相对改进。与拥有12亿参数的视觉-语言-动作模型（如RDT）相比，SeedPolicy以少一到两个数量级的参数实现了竞争性性能，展示了强大的效率和可扩展性。这些结果确立了SeedPolicy作为长水平机器人操作的最先进模仿学习方法。代码可在以下网址获取：https://github.com/Youqiang-Gui/SeedPolicy。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
