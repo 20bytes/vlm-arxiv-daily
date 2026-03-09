@@ -17,9 +17,9 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Do Foundation Models Know Geometry? Probing Frozen Features for Continuous Physical Measurement</h1>
+      <h1>Do Foundation Models Know Geometry? Probing Frozen Features for Continuous Physical Measurement&lt;br&gt;基础模型懂几何吗？探究冻结特征在连续物理测量中的应用&lt;br&gt;[摘要](abstracts/2603.06459.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Vision-language models encode continuous geometry that their text pathway fails to express: a 6,000-parameter linear probe extracts hand joint angles at 6.1 degrees MAE from frozen features, while the best text output achieves only 20.0 degrees -- a 3.3x bottleneck. LoRA fine-tuning (r=16, 2,000 images) narrows this gap to 6.5 degrees, providing evidence for a pathway-training deficit rather than a representational one. Training objective determines accuracy more than architecture: five encoders spanning self-supervised, contrastive, and hybrid paradigms converge to statistically equivalent accuracy (R^2 approximately 0.55, TOST-equivalent at delta=0.03) despite sharing as little as CKA=0.41 representational similarity -- functional convergence without representational convergence. Autoregressive generation damages geometric fidelity, but the damage originates in the generation process, not in language alignment: Qwen2.5-VL&#x27;s LLM layers actually improve probe accuracy over its raw vision encoder. Layer-wise analysis reveals a universal mid-network accuracy peak across all architectures, with attention heads in layers 18-22 carrying disproportionate geometric signal. These findings enable a single frozen backbone to function as a multi-task geometric sensor through lightweight probes, without fine-tuning or text generation.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
       <p>视觉语言模型编码了其文本路径无法表达的连续几何信息：一个包含6,000个参数的线性探针从冻结特征中提取手部关节角度，平均绝对误差仅为6.1度，而最佳文本输出的误差高达20.0度——存在3.3倍的瓶颈。通过LoRA微调（秩r=16，使用2,000张图像），这一差距缩小至6.5度，证明问题在于路径训练缺陷而非表征缺陷。训练目标对准确性的影响大于架构：五种编码器涵盖自监督、对比学习和混合范式，尽管表征相似度最低仅为CKA=0.41，但均收敛到统计上等效的准确性（R^2约0.55，TOST等效性检验δ=0.03）——实现了功能收敛而非表征收敛。自回归生成会损害几何保真度，但损害源于生成过程而非语言对齐：Qwen2.5-VL的大语言模型层实际上比其原始视觉编码器提升了探针准确性。分层分析显示，所有架构均在网络中层出现普遍准确性峰值，其中第18至22层的注意力头承载了不成比例的几何信号。这些发现使得单个冻结主干网络能够通过轻量级探针实现多任务几何感知，无需微调或文本生成。</p>
       <p><a href="../index.html">← Back</a></p>
