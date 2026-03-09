@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>K-MaT: Knowledge-Anchored Manifold Transport for Cross-Modal Prompt Learning in Medical Imaging</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Large-scale biomedical vision-language models (VLMs) adapted on high-end imaging (e.g., CT) often fail to transfer to frontline low-end modalities (e.g., radiography), collapsing into modality-specific shortcuts. We propose K-MaT (Knowledge-Anchored Manifold Transport), a prompt-learning framework that transfers decision structures to low-end modalities without requiring low-end training images. K-MaT factorizes prompts, anchors them to clinical text descriptions, and aligns the low-end prompt manifold to the visually-grounded high-end space using Fused Gromov-Wasserstein optimal transport. We evaluate K-MaT on four cross-modal benchmarks, including dermoscopy, mammography to ultrasound, and CT to chest X-ray. K-MaT achieves state-of-the-art results, improving the average harmonic mean of accuracy to 44.1% (from BiomedCoOp&#x27;s 42.0%) and macro-F1 to 36.2%. Notably, on the challenging breast imaging task, it mitigates the catastrophic forgetting seen in standard methods like CoOp (which drops to 27.0% accuracy on the low-end), preserving robust performance across modalities. Aligning prompt manifolds via optimal transport provides a highly effective route for the zero-shot cross-modal deployment of medical VLMs.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在高端成像（如CT）上适应的大规模生物医学视觉-语言模型（VLMs）往往难以迁移至前线低端模态（如放射成像），易陷入模态特定的捷径学习。我们提出K-MaT（基于知识锚定的流形迁移），一种提示学习框架，可在无需低端训练图像的情况下，将决策结构迁移至低端模态。K-MaT通过分解提示、将其锚定于临床文本描述，并利用融合Gromov-Wasserstein最优传输对齐低端提示流形至视觉基础的高端空间。我们在四个跨模态基准上评估K-MaT，包括皮肤镜、乳腺X光到超声，以及CT到胸部X光。K-MaT取得了最先进的结果，将平均准确率的调和均值提升至44.1%（对比BiomedCoOp的42.0%），宏F1分数提升至36.2%。值得注意的是，在具有挑战性的乳腺成像任务中，它缓解了标准方法（如CoOp在低端模态上准确率降至27.0%）所见的灾难性遗忘，保持了跨模态的稳健性能。通过最优传输对齐提示流形，为医学VLMs的零样本跨模态部署提供了一条高效路径。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

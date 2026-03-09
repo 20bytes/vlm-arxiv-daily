@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Learning Next Action Predictors from Human-Computer Interaction</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Truly proactive AI systems must anticipate what we will do next. This foresight demands far richer information than the sparse signals we type into our prompts -- it demands reasoning over the entire context of what we see and do. We formalize this as next action prediction (NAP): given a sequence of a user&#x27;s multimodal interactions with a computer (screenshots, clicks, sensor data), predict that user&#x27;s next action. Progress on this task requires both new data and modeling approaches. To scale data, we annotate longitudinal, naturalistic computer use with vision-language models. We release an open-source pipeline for performing this labeling on private infrastructure, and label over 360K actions across one month of continuous phone usage from 20 users, amounting to 1,800 hours of screen time. We then introduce LongNAP, a user model that combines parametric and in-context learning to reason over long interaction histories. LongNAP is trained via policy gradient methods to generate user-specific reasoning traces given some context; retrieve relevant traces from a library of past traces; and then apply retrieved traces in-context to predict future actions. Using an LLM-as-judge evaluation metric (0-1 similarity to ground truth), LongNAP significantly outperforms supervised finetuning and prompted baselines on held-out data (by 79% and 39% respectively). Additionally, LongNAP generalizes to held out users when trained across individuals. The space of next actions a user might take at any moment is unbounded, spanning thousands of possible outcomes. Despite this, 17.1% of LongNAP&#x27;s predicted trajectories are well-aligned with what a user does next (LLM-judge score $\geq$ 0.5). This rises to 26% when we filter to highly confident predictions. In sum, we argue that learning from the full context of user behavior to anticipate user needs is now a viable task with substantial opportunity.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>真正主动的人工智能系统必须能够预测我们下一步将做什么。这种预见性需要的远不止我们输入提示中的稀疏信号——它要求对我们所见所行的完整上下文进行推理。我们将此形式化为下一个动作预测（NAP）：给定用户与计算机的多模态交互序列（屏幕截图、点击、传感器数据），预测该用户的下一个动作。在这一任务上取得进展需要新的数据与建模方法。为扩大数据规模，我们利用视觉语言模型对纵向、自然的计算机使用情况进行标注。我们发布了一个开源流程，可在私有基础设施上执行此标注，并对20名用户连续一个月的手机使用情况标注了超过36万个动作，总计1,800小时的屏幕使用时间。接着，我们提出了LongNAP——一种结合参数化学习与上下文学习的用户模型，用于对长交互历史进行推理。LongNAP通过策略梯度方法训练，能够根据特定上下文生成用户专属的推理轨迹；从历史轨迹库中检索相关轨迹；并在上下文中应用检索到的轨迹来预测未来动作。使用基于大语言模型的评判指标（与真实情况的相似度0-1分），LongNAP在保留数据上显著优于监督微调和提示基线（分别提升79%和39%）。此外，当跨个体训练时，LongNAP能够泛化到未见过的用户。用户在任意时刻可能采取的下一个动作空间是无限的，涵盖数千种可能结果。尽管如此，LongNAP预测的轨迹中有17.1%与用户后续行为高度吻合（大语言模型评判得分≥0.5）。若筛选高置信度预测，这一比例可提升至26%。总之，我们认为通过学习用户行为的完整上下文来预判用户需求，已成为一项具有巨大潜力的可行任务。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

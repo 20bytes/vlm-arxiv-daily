@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Restoring Linguistic Grounding in VLA Models via Train-Free Attention Recalibration</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language-Action (VLA) models enable robots to perform manipulation tasks directly from natural language instructions and are increasingly viewed as a foundation for generalist robotic policies. However, their reliability under Out-of-Distribution (OOD) instructions remains underexplored. In this paper, we reveal a critical failure mode in which VLA policies continue executing visually plausible actions even when the language instruction contradicts the scene. We refer to this phenomenon as linguistic blindness, where VLA policies prioritize visual priors over instruction semantics during action generation. To systematically analyze this issue, we introduce ICBench, a diagnostic benchmark constructed from the LIBERO dataset that probes language-action coupling by injecting controlled OOD instruction contradictions while keeping the visual environment unchanged. Evaluations on three representative VLA architectures, including Pi0, Pi0.5 and OpenVLA OFT, show that these models frequently succeed at tasks despite logically impossible instructions, revealing a strong visual bias in action generation. To mitigate this issue, we propose Instruction-Guided Attention Recalibration (IGAR), a train-free inference-time mechanism that rebalances attention distributions to restore the influence of language instructions. IGAR operates without retraining or architectural modification and can be directly applied to existing VLA models. Experiments across 30 LIBERO tasks demonstrate that IGAR substantially reduces erroneous execution under OOD contradictory instructions while preserving baseline task performance. We additionally validate the approach on a real Franka robotic arm, where IGAR effectively prevents manipulation triggered by inconsistent instructions.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作（VLA）模型使机器人能够直接根据自然语言指令执行操作任务，并日益被视为通用机器人策略的基础。然而，其在分布外（OOD）指令下的可靠性仍未得到充分探索。本文揭示了一种关键失效模式：即使语言指令与场景相矛盾，VLA策略仍会继续执行视觉上合理的动作。我们将此现象称为语言盲视，即VLA策略在动作生成过程中优先考虑视觉先验而非指令语义。为系统分析此问题，我们引入了ICBench，这是一个基于LIBERO数据集构建的诊断基准，通过注入受控的OOD指令矛盾（同时保持视觉环境不变）来探测语言-动作耦合。对三种代表性VLA架构（包括Pi0、Pi0.5和OpenVLA OFT）的评估表明，这些模型即使在逻辑上不可能的指令下仍能频繁完成任务，揭示了动作生成中存在强烈的视觉偏差。为缓解此问题，我们提出了指令引导注意力重校准（IGAR），这是一种免训练的推理时机制，通过重新平衡注意力分布来恢复语言指令的影响。IGAR无需重新训练或修改架构，可直接应用于现有VLA模型。在30个LIBERO任务上的实验表明，IGAR显著减少了在OOD矛盾指令下的错误执行，同时保持了基线任务性能。我们还在真实Franka机械臂上验证了该方法，其中IGAR有效防止了由不一致指令触发的误操作。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

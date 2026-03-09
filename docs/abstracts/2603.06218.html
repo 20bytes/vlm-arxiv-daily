@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Few-Shot Neural Differentiable Simulator: Real-to-Sim Rigid-Contact Modeling</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Accurate physics simulation is essential for robotic learning and control, yet analytical simulators often fail to capture complex contact dynamics, while learning-based simulators typically require large amounts of costly real-world data. To bridge this gap, we propose a few-shot real-to-sim approach that combines the physical consistency of analytical formulations with the representational capacity of graph neural network (GNN)-based models. Using only a small amount of real-world data, our method calibrates analytical simulators to generate large-scale synthetic datasets that capture diverse contact interactions. On this foundation, we introduce a mesh-based GNN that implicitly models rigid-body forward dynamics and derive surrogate gradients for collision detection, achieving full differentiability. Experimental results demonstrate that our approach enables learning-based simulators to outperform differentiable baselines in replicating real-world trajectories. In addition, the differentiable design supports gradient-based optimization, which we validate through simulation-based policy learning in multi-object interaction scenarios. Extensive experiments show that our framework not only improves simulation fidelity with minimal supervision but also increases the efficiency of policy learning. Taken together, these findings suggest that differentiable simulation with few-shot real-world grounding provides a powerful direction for advancing future robotic manipulation and control.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>精确的物理模拟对于机器人学习与控制至关重要，然而解析模拟器往往难以捕捉复杂的接触动力学，而基于学习的模拟器通常需要大量昂贵的真实世界数据。为弥合这一差距，我们提出了一种少样本真实到仿真方法，该方法将解析公式的物理一致性与基于图神经网络（GNN）模型的表征能力相结合。仅使用少量真实数据，我们的方法便能校准解析模拟器，生成捕捉多样化接触交互的大规模合成数据集。在此基础上，我们引入了一种基于网格的GNN，该网络隐式建模刚体前向动力学，并为碰撞检测推导了替代梯度，实现了完全可微性。实验结果表明，我们的方法使基于学习的模拟器在复现真实世界轨迹方面优于可微基线。此外，可微设计支持基于梯度的优化，我们通过多物体交互场景中的仿真策略学习验证了这一点。大量实验表明，我们的框架不仅以最小监督提升了仿真保真度，还提高了策略学习的效率。综上所述，这些发现表明，基于少样本真实世界基础的可微模拟为推进未来机器人操作与控制提供了强有力的方向。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
