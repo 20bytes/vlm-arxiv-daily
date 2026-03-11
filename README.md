@@ -9,7 +9,7 @@
 
 > 🚀 每日自动追踪 **Vision-Language-Action (VLA)**, **Vision-Language Navigation (VLN)** 和 **Vision-Language Models (VLM)** 的最新 Arxiv 论文。
 
-## 📅 Updated on 2026.03.09
+## 📅 Updated on 2026.03.11
 <details>
   <summary>点击查看目录 (Table of Contents)</summary>
   <ol>
@@ -23,6 +23,16 @@
 
 |Publish Date (YYYY-MM-DD)|Title|Authors|PDF|HJFY|
 |---|---|---|---|---|
+|**2026-03-10**|**NS-VLA: Towards Neuro-Symbolic Vision-Language-Action Models<br>NS-VLA：迈向神经符号视觉-语言-动作模型<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09542.html)**|Haoran Luo Team|[2603.09542](http://arxiv.org/abs/2603.09542)|[HJFY](https://hjfy.top/arxiv/2603.09542v1)|
+|**2026-03-10**|**Beyond Short-Horizon: VQ-Memory for Robust Long-Horizon Manipulation in Non-Markovian Simulation Benchmarks<br>超越短视界：面向非马尔可夫仿真基准中鲁棒长视界操作的VQ记忆方法<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09513.html)**|Bai Chenjia Team|[2603.09513](http://arxiv.org/abs/2603.09513)|[HJFY](https://hjfy.top/arxiv/2603.09513v1)|
+|**2026-03-10**|**StyleVLA: Driving Style-Aware Vision Language Action Model for Autonomous Driving<br>StyleVLA：面向自动驾驶的驾驶风格感知视觉语言动作模型<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09482.html)**|Johannes Betz Team|[2603.09482](http://arxiv.org/abs/2603.09482)|[HJFY](https://hjfy.top/arxiv/2603.09482v1)|
+|**2026-03-10**|**EvoDriveVLA: Evolving Autonomous Driving Vision-Language-Action Model via Collaborative Perception-Planning Distillation<br>EvoDriveVLA：通过协同感知-规划蒸馏进化自动驾驶视觉-语言-动作模型<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09465.html)**|Shanghang Zhang Team|[2603.09465](http://arxiv.org/abs/2603.09465)|[HJFY](https://hjfy.top/arxiv/2603.09465v1)|
+|**2026-03-10**|**From Flow to One Step: Real-Time Multi-Modal Trajectory Policies via Implicit Maximum Likelihood Estimation-based Distribution Distillation<br>从流匹配到单步生成：基于隐式最大似然估计分布蒸馏的实时多模态轨迹策略<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09415.html)**|Jianwei Zhang Team|[2603.09415](http://arxiv.org/abs/2603.09415)|[HJFY](https://hjfy.top/arxiv/2603.09415v1)|
+|**2026-03-10**|**CORAL: Scalable Multi-Task Robot Learning via LoRA Experts<br>CORAL：基于LoRA专家的可扩展多任务机器人学习框架<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09298.html)**|Zhenguo Li Team|[2603.09298](http://arxiv.org/abs/2603.09298)|[HJFY](https://hjfy.top/arxiv/2603.09298v1)|
+|**2026-03-10**|**See, Plan, Rewind: Progress-Aware Vision-Language-Action Models for Robust Robotic Manipulation<br>观察、规划、回溯：面向鲁棒机器人操作的进度感知视觉-语言-动作模型<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09292.html)**|Xiaojun Chang Team|[2603.09292](http://arxiv.org/abs/2603.09292)|[HJFY](https://hjfy.top/arxiv/2603.09292v1)|
+|**2026-03-10**|**Implicit Geometry Representations for Vision-and-Language Navigation from Web Videos<br>基于网络视频的视觉语言导航隐式几何表征<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09259.html)**|Ivan Laptev Team|[2603.09259](http://arxiv.org/abs/2603.09259)|[HJFY](https://hjfy.top/arxiv/2603.09259v1)|
+|**2026-03-10**|**SPAN-Nav: Generalized Spatial Awareness for Versatile Vision-Language Navigation<br>SPAN-Nav：面向通用视觉语言导航的广义空间感知<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09163.html)**|He Wang Team|[2603.09163](http://arxiv.org/abs/2603.09163)|[HJFY](https://hjfy.top/arxiv/2603.09163v1)|
+|**2026-03-10**|**DexHiL: A Human-in-the-Loop Framework for Vision-Language-Action Model Post-Training in Dexterous Manipulation<br>DexHiL：一种用于灵巧操作中视觉-语言-动作模型后训练的人机协同框架<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09121.html)**|Wenzhao Lian Team|[2603.09121](http://arxiv.org/abs/2603.09121)|[HJFY](https://hjfy.top/arxiv/2603.09121v1)|
 |**2026-03-06**|**Unified Learning of Temporal Task Structure and Action Timing for Bimanual Robot Manipulation<br>面向双臂机器人操作的时间任务结构与动作时序统一学习<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.06538.html)**|Tamim Asfour Team|[2603.06538](http://arxiv.org/abs/2603.06538)|[HJFY](https://hjfy.top/arxiv/2603.06538v1)|
 |**2026-03-06**|**History-Conditioned Spatio-Temporal Visual Token Pruning for Efficient Vision-Language Navigation<br>面向高效视觉语言导航的历史条件时空视觉令牌剪枝方法<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.06480.html)**|Christopher Rasmussen Team|[2603.06480](http://arxiv.org/abs/2603.06480)|[HJFY](https://hjfy.top/arxiv/2603.06480v1)|
 |**2026-03-06**|**Data Analogies Enable Efficient Cross-Embodiment Transfer<br>数据类比实现高效跨具身迁移<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.06450.html)**|Dorsa Sadigh Team|[2603.06450](http://arxiv.org/abs/2603.06450)|[HJFY](https://hjfy.top/arxiv/2603.06450v1)|
@@ -133,12 +143,21 @@
 |**2026-01-29**|**AIR-VLA: Vision-Language-Action Systems for Aerial Manipulation**|Jianli Sun et.al.|[2601.21602](http://arxiv.org/abs/2601.21602)|
 |**2026-01-29**|**EmboCoach-Bench: Benchmarking AI Agents on Developing Embodied Robots**|Zixing Lei et.al.|[2601.21570](http://arxiv.org/abs/2601.21570)|
 
-<p align=right>(<a href=#updated-on-20260309>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260311>back to top</a>)</p>
 
 ### 📌 VLN
 
 |Publish Date (YYYY-MM-DD)|Title|Authors|PDF|HJFY|
 |---|---|---|---|---|
+|**2026-03-10**|**Implicit Geometry Representations for Vision-and-Language Navigation from Web Videos<br>基于网络视频的视觉语言导航隐式几何表征<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09259.html)**|Ivan Laptev Team|[2603.09259](http://arxiv.org/abs/2603.09259)|[HJFY](https://hjfy.top/arxiv/2603.09259v1)|
+|**2026-03-10**|**SPAN-Nav: Generalized Spatial Awareness for Versatile Vision-Language Navigation<br>SPAN-Nav：面向通用视觉语言导航的广义空间感知<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09163.html)**|He Wang Team|[2603.09163](http://arxiv.org/abs/2603.09163)|[HJFY](https://hjfy.top/arxiv/2603.09163v1)|
+|**2026-03-10**|**PM-Nav: Priori-Map Guided Embodied Navigation in Functional Buildings<br>PM-Nav：基于先验地图引导的功能性建筑内具身导航<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09113.html)**|Xiaoguang Ma Team|[2603.09113](http://arxiv.org/abs/2603.09113)|[HJFY](https://hjfy.top/arxiv/2603.09113v1)|
+|**2026-03-09**|**From Reactive to Map-Based AI: Tuned Local LLMs for Semantic Zone Inference in Object-Goal Navigation<br>从反应式到基于地图的人工智能：利用微调本地大语言模型实现目标导向导航中的语义区域推断<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.08086.html)**|Kanji Tanaka Team|[2603.08086](http://arxiv.org/abs/2603.08086)|[HJFY](https://hjfy.top/arxiv/2603.08086v1)|
+|**2026-03-09**|**ViSA-Enhanced Aerial VLN: A Visual-Spatial Reasoning Enhanced Framework for Aerial Vision-Language Navigation<br>ViSA增强的空中视觉语言导航：一种视觉空间推理增强的空中视觉语言导航框架<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.08007.html)**|Chenghao Lin Team|[2603.08007](http://arxiv.org/abs/2603.08007)|[HJFY](https://hjfy.top/arxiv/2603.08007v1)|
+|**2026-03-09**|**CMMR-VLN: Vision-and-Language Navigation via Continual Multimodal Memory Retrieval<br>CMMR-VLN：基于持续多模态记忆检索的视觉与语言导航<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.07997.html)**|Xiaoguang Ma Team|[2603.07997](http://arxiv.org/abs/2603.07997)|[HJFY](https://hjfy.top/arxiv/2603.07997v1)|
+|**2026-03-08**|**MWM: Mobile World Models for Action-Conditioned Consistent Prediction<br>MWM：面向动作条件一致预测的移动世界模型<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.07799.html)**|Hao Tang Team|[2603.07799](http://arxiv.org/abs/2603.07799)|[HJFY](https://hjfy.top/arxiv/2603.07799v1)|
+|**2026-03-07**|**FreeFly-Thinking : Aligning Chain-of-Thought Reasoning with Continuous UAV Navigation<br>自由飞行思维：将思维链推理与连续无人机导航对齐<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.07181.html)**|Tao Li Team|[2603.07181](http://arxiv.org/abs/2603.07181)|[HJFY](https://hjfy.top/arxiv/2603.07181v1)|
+|**2026-03-10**|**VLN-Cache: Enabling Token Caching for VLN Models with Visual/Semantic Dynamics Awareness<br>VLN-Cache：基于视觉/语义动态感知的视觉语言导航模型令牌缓存技术<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.07080.html)**|Xiang Chen Team|[2603.07080](http://arxiv.org/abs/2603.07080)|[HJFY](https://hjfy.top/arxiv/2603.07080v2)|
 |**2026-03-06**|**History-Conditioned Spatio-Temporal Visual Token Pruning for Efficient Vision-Language Navigation<br>面向高效视觉语言导航的历史条件时空视觉令牌剪枝方法<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.06480.html)**|Christopher Rasmussen Team|[2603.06480](http://arxiv.org/abs/2603.06480)|[HJFY](https://hjfy.top/arxiv/2603.06480v1)|
 |**2026-03-06**|**Lifelong Embodied Navigation Learning<br>终身具身导航学习<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.06073.html)**|Zhi Han Team|[2603.06073](http://arxiv.org/abs/2603.06073)|[HJFY](https://hjfy.top/arxiv/2603.06073v1)|
 |**2026-03-05**|**OpenFrontier: General Navigation with Visual-Language Grounded Frontiers<br>OpenFrontier：基于视觉-语言锚定前沿的通用导航<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.05377.html)**|Hermann Blum Team|[2603.05377](http://arxiv.org/abs/2603.05377)|[HJFY](https://hjfy.top/arxiv/2603.05377v1)|
@@ -178,12 +197,22 @@
 |**2026-01-13**|**VLingNav: Embodied Navigation with Adaptive Reasoning and Visual-Assisted Linguistic Memory**|Shaoan Wang et.al.|[2601.08665](http://arxiv.org/abs/2601.08665)|
 |**2026-01-12**|**GROKE: Vision-Free Navigation Instruction Evaluation via Graph Reasoning on OpenStreetMap**|Farzad Shami et.al.|[2601.07375](http://arxiv.org/abs/2601.07375)|
 
-<p align=right>(<a href=#updated-on-20260309>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260311>back to top</a>)</p>
 
 ### 📌 VLM
 
 |Publish Date (YYYY-MM-DD)|Title|Authors|PDF|HJFY|
 |---|---|---|---|---|
+|**2026-03-10**|**X-GS: An Extensible Open Framework Unifying 3DGS Architectures with Downstream Multimodal Models<br>X-GS：一个可扩展的开放框架，统一3DGS架构与下游多模态模型<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09632.html)**|Irwin King Team|[2603.09632](http://arxiv.org/abs/2603.09632)|[HJFY](https://hjfy.top/arxiv/2603.09632v1)|
+|**2026-03-10**|**Speech-Omni-Lite: Portable Speech Interfaces for Vision-Language Models<br>Speech-Omni-Lite：面向视觉语言模型的便携式语音接口<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09627.html)**|Xiao Chen Team|[2603.09627](http://arxiv.org/abs/2603.09627)|[HJFY](https://hjfy.top/arxiv/2603.09627v1)|
+|**2026-03-10**|**More than the Sum: Panorama-Language Models for Adverse Omni-Scenes<br>超越简单叠加：面向全景恶劣场景的全景语言模型<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09573.html)**|Rainer Stiefelhagen Team|[2603.09573](http://arxiv.org/abs/2603.09573)|[HJFY](https://hjfy.top/arxiv/2603.09573v1)|
+|**2026-03-10**|**GeoSolver: Scaling Test-Time Reasoning in Remote Sensing with Fine-Grained Process Supervision<br>GeoSolver：通过细粒度过程监督扩展遥感领域的测试时推理能力<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09551.html)**|Bo Yang Team|[2603.09551](http://arxiv.org/abs/2603.09551)|[HJFY](https://hjfy.top/arxiv/2603.09551v1)|
+|**2026-03-10**|**Towards Unified Multimodal Interleaved Generation via Group Relative Policy Optimization<br>通过分组相对策略优化实现统一的多模态交错生成<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09538.html)**|Li Zhang Team|[2603.09538](http://arxiv.org/abs/2603.09538)|[HJFY](https://hjfy.top/arxiv/2603.09538v1)|
+|**2026-03-10**|**Probing the Reliability of Driving VLMs: From Inconsistent Responses to Grounded Temporal Reasoning<br>探究驾驶视觉语言模型的可靠性：从响应不一致到基于时序的推理<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09512.html)**|Alain Pagani Team|[2603.09512](http://arxiv.org/abs/2603.09512)|[HJFY](https://hjfy.top/arxiv/2603.09512v1)|
+|**2026-03-10**|**Evolving Prompt Adaptation for Vision-Language Models<br>面向视觉语言模型的演化提示适应方法<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09493.html)**|Yang Li Team|[2603.09493](http://arxiv.org/abs/2603.09493)|[HJFY](https://hjfy.top/arxiv/2603.09493v1)|
+|**2026-03-10**|**StyleVLA: Driving Style-Aware Vision Language Action Model for Autonomous Driving<br>StyleVLA：面向自动驾驶的驾驶风格感知视觉语言动作模型<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09482.html)**|Johannes Betz Team|[2603.09482](http://arxiv.org/abs/2603.09482)|[HJFY](https://hjfy.top/arxiv/2603.09482v1)|
+|**2026-03-10**|**Prune Redundancy, Preserve Essence: Vision Token Compression in VLMs via Synergistic Importance-Diversity<br>剪除冗余，保留精髓：基于协同重要性-多样性原则的视觉语言模型视觉令牌压缩<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09480.html)**|Wenjie Pei Team|[2603.09480](http://arxiv.org/abs/2603.09480)|[HJFY](https://hjfy.top/arxiv/2603.09480v1)|
+|**2026-03-10**|**MORE-R1: Guiding LVLM for Multimodal Object-Entity Relation Extraction via Stepwise Reasoning with Reinforcement Learning<br>MORE-R1：通过强化学习引导大型视觉语言模型进行多模态对象-实体关系提取的逐步推理<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.09478.html)**|Tong Mo Team|[2603.09478](http://arxiv.org/abs/2603.09478)|[HJFY](https://hjfy.top/arxiv/2603.09478v1)|
 |**2026-03-06**|**Multimodal Large Language Models as Image Classifiers<br>多模态大语言模型作为图像分类器<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.06578.html)**|Jiri Matas Team|[2603.06578](http://arxiv.org/abs/2603.06578)|[HJFY](https://hjfy.top/arxiv/2603.06578v1)|
 |**2026-03-06**|**Omni-Diffusion: Unified Multimodal Understanding and Generation with Masked Discrete Diffusion<br>Omni-Diffusion：基于掩码离散扩散的统一多模态理解与生成<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.06577.html)**|Chaoyou Fu Team|[2603.06577](http://arxiv.org/abs/2603.06577)|[HJFY](https://hjfy.top/arxiv/2603.06577v1)|
 |**2026-03-06**|**SUREON: A Benchmark and Vision-Language-Model for Surgical Reasoning<br>SUREON：一个用于外科推理的基准与视觉语言模型<br>[摘要](https://20bytes.github.io/vlm-arxiv-daily/abstracts/2603.06570.html)**|Omid Mohareri Team|[2603.06570](http://arxiv.org/abs/2603.06570)|[HJFY](https://hjfy.top/arxiv/2603.06570v1)|
@@ -295,7 +324,7 @@
 |**2026-01-29**|**Clarity: The Flexibility-Interpretability Trade-Off in Sparsity-aware Concept Bottleneck Models**|Konstantinos P. Panousis et.al.|[2601.21944](http://arxiv.org/abs/2601.21944)|
 |**2026-01-29**|**VideoAesBench: Benchmarking the Video Aesthetics Perception Capabilities of Large Multimodal Models**|Yunhao Li et.al.|[2601.21915](http://arxiv.org/abs/2601.21915)|
 
-<p align=right>(<a href=#updated-on-20260309>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260311>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/20bytes/vlm-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/20bytes/vlm-arxiv-daily/graphs/contributors

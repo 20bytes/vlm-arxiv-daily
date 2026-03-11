@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>From Reactive to Map-Based AI: Tuned Local LLMs for Semantic Zone Inference in Object-Goal Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Object-Goal Navigation (ObjectNav) requires an agent to find and navigate to a target object category in unknown environments. While recent Large Language Model (LLM)-based agents exhibit zero-shot reasoning, they often rely on a &quot;reactive&quot; paradigm that lacks explicit spatial memory, leading to redundant exploration and myopic behaviors. To address these limitations, we propose a transition from reactive AI to &quot;Map-Based AI&quot; by integrating LLM-based semantic inference with a hybrid topological-grid mapping system. Our framework employs a fine-tuned Llama-2 model via Low-Rank Adaptation (LoRA) to infer semantic zone categories and target existence probabilities from verbalized object observations. In this study, a &quot;zone&quot; is defined as a functional area described by the set of observed objects, providing crucial semantic co-occurrence cues for finding the target. This semantic information is integrated into a topological graph, enabling the agent to prioritize high-probability areas and perform systematic exploration via Traveling Salesman Problem (TSP) optimization. Evaluations in the AI2-THOR simulator demonstrate that our approach significantly outperforms traditional frontier exploration and reactive LLM baselines, achieving a superior Success Rate (SR) and Success weighted by Path Length (SPL).</p>
+      <h2>摘要 (ZH)</h2>
+      <p>目标导向导航要求智能体在未知环境中寻找并导航至特定类别的目标物体。尽管近期基于大语言模型的智能体展现出零样本推理能力，但它们通常依赖“反应式”范式，缺乏明确的空间记忆，导致重复探索和短视行为。为克服这些局限，我们提出从反应式人工智能向“基于地图的人工智能”的转变，通过将基于大语言模型的语义推断与混合拓扑-栅格地图系统相结合。我们的框架采用经低秩自适应微调的Llama-2模型，从语言化的物体观测中推断语义区域类别及目标存在概率。在本研究中，“区域”被定义为由观测到的物体集合描述的功能性区域，为寻找目标提供关键的语义共现线索。该语义信息被整合到拓扑图中，使智能体能优先探索高概率区域，并通过旅行商问题优化实现系统化探索。在AI2-THOR模拟器中的评估表明，我们的方法显著优于传统前沿探索和反应式大语言模型基线，实现了更高的成功率以及路径长度加权的成功率。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

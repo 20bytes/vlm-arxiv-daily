@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>MWM: Mobile World Models for Action-Conditioned Consistent Prediction</h1>
+      <h2>Abstract (EN)</h2>
+      <p>World models enable planning in imagined future predicted space, offering a promising framework for embodied navigation. However, existing navigation world models often lack action-conditioned consistency, so visually plausible predictions can still drift under multi-step rollout and degrade planning. Moreover, efficient deployment requires few-step diffusion inference, but existing distillation methods do not explicitly preserve rollout consistency, creating a training-inference mismatch. To address these challenges, we propose MWM, a mobile world model for planning-based image-goal navigation. Specifically, we introduce a two-stage training framework that combines structure pretraining with Action-Conditioned Consistency (ACC) post-training to improve action-conditioned rollout consistency. We further introduce Inference-Consistent State Distillation (ICSD) for few-step diffusion distillation with improved rollout consistency. Our experiments on benchmark and real-world tasks demonstrate consistent gains in visual fidelity, trajectory accuracy, planning success, and inference efficiency. Code: https://github.com/AIGeeksGroup/MWM. Website: https://aigeeksgroup.github.io/MWM.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>世界模型能够在想象的未来预测空间中进行规划，为具身导航提供了一个有前景的框架。然而，现有的导航世界模型往往缺乏动作条件一致性，导致视觉上看似合理的预测在多步推演中仍可能发生漂移，从而影响规划效果。此外，高效部署需要少步扩散推理，但现有的蒸馏方法未能明确保持推演一致性，造成了训练与推理之间的不匹配。为解决这些挑战，我们提出了MWM，一种用于基于规划的图像目标导航的移动世界模型。具体而言，我们引入了一个两阶段训练框架，结合了结构预训练与动作条件一致性后训练，以提升动作条件下的推演一致性。我们进一步提出了推理一致状态蒸馏方法，用于实现具有更好推演一致性的少步扩散蒸馏。在基准测试和真实世界任务上的实验表明，我们的方法在视觉保真度、轨迹准确性、规划成功率及推理效率方面均取得了持续提升。代码：https://github.com/AIGeeksGroup/MWM。项目网站：https://aigeeksgroup.github.io/MWM。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
