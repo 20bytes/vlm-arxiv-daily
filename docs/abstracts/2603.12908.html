@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>GoalSwarm: Multi-UAV Semantic Coordination for Open-Vocabulary Object Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Cooperative visual semantic navigation is a foundational capability for aerial robot teams operating in unknown environments. However, achieving robust open-vocabulary object-goal navigation remains challenging due to the computational constraints of deploying heavy perception models onboard and the complexity of decentralized multi-agent coordination. We present GoalSwarm, a fully decentralized multi-UAV framework for zero-shot semantic object-goal navigation. Each UAV collaboratively constructs a shared, lightweight 2D top-down semantic occupancy map by projecting depth observations from aerial vantage points, eliminating the computational burden of full 3D representations while preserving essential geometric and semantic structure. The core contributions of GoalSwarm are threefold: (1) integration of zero-shot foundation model -- SAM3 for open vocabulary detection and pixel-level segmentation, enabling open-vocabulary target identification without task-specific training; (2) a Bayesian Value Map that fuses multi-viewpoint detection confidences into a per-pixel goal-relevance distribution, enabling informed frontier scoring via Upper Confidence Bound (UCB) exploration; and (3) a decentralized coordination strategy combining semantic frontier extraction, cost-utility bidding with geodesic path costs, and spatial separation penalties to minimize redundant exploration across the swarm.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>协作视觉语义导航是无人机群在未知环境中运行的基础能力。然而，由于在机载设备上部署重型感知模型的计算限制以及去中心化多智能体协调的复杂性，实现稳健的开放词汇目标导向导航仍具挑战。本文提出GoalSwarm，一种完全去中心化的多无人机零样本语义目标导航框架。每架无人机通过从空中视角投影深度观测，协作构建共享的轻量级二维俯视语义占据地图，在保留关键几何与语义结构的同时，避免了完整三维表示的计算负担。GoalSwarm的核心贡献包含三方面：(1) 集成零样本基础模型SAM3进行开放词汇检测与像素级分割，无需任务特定训练即可实现开放词汇目标识别；(2) 提出贝叶斯价值图，将多视角检测置信度融合为逐像素目标关联分布，通过上置信界探索实现智能前沿区域评分；(3) 设计去中心化协调策略，结合语义前沿提取、基于测地路径成本的成本-效用竞价以及空间分离惩罚机制，以最小化集群内的冗余探索。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Topo-R1: Detecting Topological Anomalies via Vision-Language Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Topological correctness is crucial for tubular structures such as blood vessels, nerve fibers, and road networks. Existing topology-preserving methods rely on domain-specific ground truth, which is costly and rarely transfers across domains. When deployed to a new domain without annotations, a key question arises: how can we detect topological anomalies without ground-truth supervision? We reframe this as topological anomaly detection, a structured visual reasoning task requiring a model to locate and classify topological errors in predicted segmentation masks. Vision-Language Models (VLMs) are natural candidates; however, we find that state-of-the-art VLMs perform nearly at random, lacking the fine-grained, topology-aware perception needed to identify sparse connectivity errors in dense structures. To bridge this gap, we develop an automated data-curation pipeline that synthesizes diverse topological anomalies with verifiable annotations across progressively difficult levels, thereby constructing the first large-scale, multi-domain benchmark for this task. We then introduce Topo-R1, a framework that endows VLMs with topology-aware perception via two-stage training: supervised fine-tuning followed by reinforcement learning with Group Relative Policy Optimization (GRPO). Central to our approach is a topology-aware composite reward that integrates type-aware Hungarian matching for structured error classification, spatial localization scoring, and a centerline Dice (clDice) reward that directly penalizes connectivity disruptions, thereby jointly incentivizing semantic precision and structural fidelity. Extensive experiments demonstrate that Topo-R1 establishes a new paradigm for annotation-free topological quality assessment, consistently outperforming general-purpose VLMs and supervised baselines across all evaluation protocols.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>拓扑正确性对于血管、神经纤维和道路网络等管状结构至关重要。现有的拓扑保持方法依赖于特定领域的真实标注，成本高昂且难以跨领域迁移。当部署到缺乏标注的新领域时，一个关键问题随之浮现：如何在无真实标注监督的情况下检测拓扑异常？我们将此重新定义为拓扑异常检测任务，即一种结构化的视觉推理任务，要求模型在预测的分割掩码中定位并分类拓扑错误。视觉语言模型（VLMs）是天然的候选方案；然而，我们发现当前最先进的VLMs表现近乎随机，缺乏识别密集结构中稀疏连通性错误所需的细粒度、拓扑感知能力。为弥补这一差距，我们开发了一个自动数据生成流程，通过合成具有可验证标注的多样化拓扑异常，并逐步提升难度级别，从而构建了首个面向该任务的大规模、多领域基准。随后，我们提出了Topo-R1框架，该框架通过两阶段训练赋予VLMs拓扑感知能力：首先进行监督微调，然后采用基于组相对策略优化（GRPO）的强化学习。我们方法的核心在于一个拓扑感知的复合奖励机制，该机制整合了用于结构化错误分类的类型感知匈牙利匹配、空间定位评分，以及直接惩罚连通性中断的中心线Dice（clDice）奖励，从而共同激励语义精确性和结构保真度。大量实验表明，Topo-R1为无标注的拓扑质量评估建立了新范式，在所有评估协议中均持续优于通用VLMs及有监督基线方法。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

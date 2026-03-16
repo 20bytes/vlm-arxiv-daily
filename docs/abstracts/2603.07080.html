@@ -17,9 +17,9 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>VLN-Cache: Enabling Token Caching for VLN Models with Visual/Semantic Dynamics Awareness</h1>
+      <h1>VLN-Cache: Enabling Token Caching for VLN Models with Visual/Semantic Dynamics Awareness&lt;br&gt;VLN-Cache：基于视觉/语义动态感知的视觉语言导航模型令牌缓存技术&lt;br&gt;[摘要](abstracts/2603.07080.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Vision-and-Language Navigation (VLN) increasingly relies on large vision-language models, but their inference cost conflicts with real-time deployment. Token caching is a promising training-free strategy that avoids redundant computation by reusing stable visual tokens across frames. However, existing methods assume a static camera and fixed semantic focus, assumptions that VLN fundamentally violates. We identify two failure modes: (1) visual dynamics, where viewpoint shift displaces token positions across frames, causing position-wise matching to pair misaligned content; (2) semantic dynamics, where token relevance shifts across task stages as navigation progresses, making cached states stale. We propose VLN-Cache, a visual-dynamic-aware and semantic-dynamic-aware caching framework that introduces view-aligned remapping to recover geometric correspondences and a task-relevance saliency filter to veto reuse at semantic transitions. A layer-adaptive entropy policy further balances the per-layer reuse budget. Experiments on the R2R-CE simulation benchmark show up to 1.52x speedup while maintaining competitive navigation success rates.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
       <p>视觉语言导航（VLN）日益依赖大型视觉语言模型，但其推理成本与实时部署需求存在冲突。令牌缓存作为一种无需重新训练的策略，通过跨帧复用稳定的视觉令牌来避免冗余计算，具有广阔前景。然而，现有方法假设相机静止且语义焦点固定，这与VLN的基本特性相悖。我们识别出两种失效模式：（1）视觉动态性：视角变化导致令牌在帧间位置偏移，使基于位置的匹配关联到未对齐的内容；（2）语义动态性：随着导航进程推进，令牌相关性在不同任务阶段发生转移，导致缓存状态过时。为此，我们提出VLN-Cache——一个兼具视觉动态感知与语义动态感知的缓存框架，其通过视图对齐重映射恢复几何对应关系，并引入任务相关性显著度过滤器以在语义转换时否决复用。此外，层级自适应熵策略进一步平衡了各层的复用预算。在R2R-CE仿真基准上的实验表明，该方法在保持导航成功率竞争力的同时，最高可实现1.52倍的加速效果。</p>
       <p><a href="../index.html">← Back</a></p>

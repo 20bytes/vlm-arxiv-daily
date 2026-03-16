@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Towards Spatio-Temporal World Scene Graph Generation from Monocular Videos</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Spatio-temporal scene graphs provide a principled representation for modeling evolving object interactions, yet existing methods remain fundamentally frame-centric: they reason only about currently visible objects, discard entities upon occlusion, and operate in 2D. To address this, we first introduce ActionGenome4D, a dataset that upgrades Action Genome videos into 4D scenes via feed-forward 3D reconstruction, world-frame oriented bounding boxes for every object involved in actions, and dense relationship annotations including for objects that are temporarily unobserved due to occlusion or camera motion. Building on this data, we formalize World Scene Graph Generation (WSGG), the task of constructing a world scene graph at each timestamp that encompasses all interacting objects in the scene, both observed and unobserved. We then propose three complementary methods, each exploring a different inductive bias for reasoning about unobserved objects: PWG (Persistent World Graph), which implements object permanence via a zero-order feature buffer; MWAE (Masked World Auto-Encoder), which reframes unobserved-object reasoning as masked completion with cross-view associative retrieval; and 4DST (4D Scene Transformer), which replaces the static buffer with differentiable per-object temporal attention enriched by 3D motion and camera-pose features. We further design and evaluate the performance of strong open-source Vision-Language Models on the WSGG task via a suite of Graph RAG-based approaches, establishing baselines for unlocalized relationship prediction. WSGG thus advances video scene understanding toward world-centric, temporally persistent, and interpretable scene reasoning.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>时空场景图为建模动态物体交互提供了结构化表示，但现有方法仍局限于帧中心范式：仅推理当前可见物体，丢弃被遮挡实体，并基于二维空间操作。为应对此问题，我们首先引入ActionGenome4D数据集，该数据集通过前馈式三维重建将Action Genome视频升级为四维场景，为动作涉及的每个物体提供世界坐标系下的定向边界框，并包含密集关系标注（涵盖因遮挡或相机运动暂时不可见的物体）。基于此数据，我们形式化定义了世界场景图生成任务，即在每个时间戳构建涵盖场景中所有交互物体（包括可见与不可见）的世界场景图。随后提出三种互补方法，分别探索不同归纳偏置以推理不可见物体：PWG（持久世界图）通过零阶特征缓冲区实现物体恒存性；MWAE（掩码世界自编码器）将不可见物体推理重构为基于跨视图关联检索的掩码补全任务；4DST（四维场景变换器）则用可微分逐物体时序注意力替代静态缓冲区，并融入三维运动与相机位姿特征。我们进一步通过一套基于图检索增强生成的方法，设计并评估了开源视觉语言模型在WSGG任务上的性能，为无定位关系预测建立基线。WSGG由此推动视频场景理解向世界中心化、时序持久化与可解释的场景推理迈进。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

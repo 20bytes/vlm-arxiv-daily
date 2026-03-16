@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>MotionAnymesh: Physics-Grounded Articulation for Simulation-Ready Digital Twins</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Converting static 3D meshes into interactable articulated assets is crucial for embodied AI and robotic simulation. However, existing zero-shot pipelines struggle with complex assets due to a critical lack of physical grounding. Specifically, ungrounded Vision-Language Models (VLMs) frequently suffer from kinematic hallucinations, while unconstrained joint estimation inevitably leads to catastrophic mesh inter-penetration during physical simulation. To bridge this gap, we propose MotionAnymesh, an automated zero-shot framework that seamlessly transforms unstructured static meshes into simulation-ready digital twins. Our method features a kinematic-aware part segmentation module that grounds VLM reasoning with explicit SP4D physical priors, effectively eradicating kinematic hallucinations. Furthermore, we introduce a geometry-physics joint estimation pipeline that combines robust type-aware initialization with physics-constrained trajectory optimization to rigorously guarantee collision-free articulation. Extensive experiments demonstrate that MotionAnymesh significantly outperforms state-of-the-art baselines in both geometric precision and dynamic physical executability, providing highly reliable assets for downstream applications.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>将静态3D网格转换为可交互的关节化资产对于具身人工智能和机器人仿真至关重要。然而，现有零样本流程因严重缺乏物理基础而在处理复杂资产时面临挑战。具体而言，未基于物理的视觉语言模型常出现运动学幻觉，而无约束的关节估计则不可避免地导致物理仿真中的灾难性网格穿透。为弥补这一差距，我们提出MotionAnymesh——一种自动化零样本框架，能将非结构化静态网格无缝转换为仿真就绪的数字孪生。该方法采用具备运动学感知的部件分割模块，通过显式的SP4D物理先验为视觉语言模型推理提供物理基础，从而有效消除运动学幻觉。此外，我们提出几何-物理联合估计流程，将鲁棒的类型感知初始化与物理约束轨迹优化相结合，严格保证无碰撞的关节运动。大量实验表明，MotionAnymesh在几何精度和动态物理可执行性方面均显著优于现有先进基线，为下游应用提供了高度可靠的资产。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

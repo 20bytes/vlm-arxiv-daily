@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>HaltNav: Reactive Visual Halting over Lightweight Topological Priors for Robust Vision-Language Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-and-Language Navigation (VLN) is shifting from rigid, step-by-step instruction following toward open-vocabulary, goal-oriented autonomy. Achieving this transition without exhaustive routing prompts requires agents to leverage structural priors. While prior work often assumes computationally heavy 2D/3D metric maps, we instead exploit a lightweight, text-based osmAG (OpenStreetMap Area Graph), a floorplan-level topological representation that is easy to obtain and maintain. However, global planning over a prior map alone is brittle in real-world deployments, where local connectivity can change (e.g., closed doors or crowded passages), leading to execution-time failures. To address this gap, we propose a hierarchical navigation framework HaltNav that couples the robust global planning of osmAG with the local exploration and instruction-grounding capability of VLN. Our approach features an MLLM-based brain module, which is capable of high-level task grounding and obstruction awareness. Conditioned on osmAG, the brain converts the global route into a sequence of localized execution snippets, providing the VLN executor with prior-grounded, goal-centric sub-instructions. Meanwhile, it detects local anomalies via a mechanism we term Reactive Visual Halting (RVH), which interrupts the local control loop, updates osmAG by invalidating the corresponding topology, and triggers replanning to orchestrate a viable detour. To train this halting capability efficiently, we introduce a data synthesis pipeline that leverages generative models to inject realistic obstacles into otherwise navigable scenes, substantially enriching hard negative samples. Extensive experiments demonstrate that our hierarchical framework outperforms several baseline methods without tedious language instructions, and significantly improves robustness for long-horizon vision-language navigation under environmental changes.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉语言导航（VLN）正从僵化的逐步指令跟随转向开放词汇、目标导向的自主导航。要在无需详尽路径提示的情况下实现这一转变，智能体需利用结构先验。先前研究通常依赖计算量大的2D/3D度量地图，而本文则采用一种轻量级、基于文本的osmAG（OpenStreetMap区域图）——一种易于获取和维护的平面图级拓扑表示。然而，在现实部署中，仅依赖先验地图进行全局规划具有脆弱性，因为局部连通性可能发生变化（如关闭的门或拥挤通道），导致执行时失败。为填补这一空白，我们提出了一种分层导航框架HaltNav，它将osmAG的鲁棒全局规划与VLN的局部探索及指令接地能力相结合。我们的方法采用基于MLLM的“大脑”模块，具备高层次任务接地和障碍感知能力。在osmAG条件下，该大脑将全局路径转换为一系列局部化执行片段，为VLN执行器提供基于先验、以目标为中心的子指令。同时，它通过我们称为“响应式视觉停顿”（RVH）的机制检测局部异常，该机制会中断局部控制循环，通过使相应拓扑失效来更新osmAG，并触发重新规划以协调可行的绕行路径。为高效训练这种停顿能力，我们引入了一种数据合成流程，利用生成模型在原本可导航的场景中注入逼真障碍物，从而大幅丰富困难负样本。大量实验表明，我们的分层框架在无需冗长语言指令的情况下优于多种基线方法，并显著提升了环境变化下长视程视觉语言导航的鲁棒性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

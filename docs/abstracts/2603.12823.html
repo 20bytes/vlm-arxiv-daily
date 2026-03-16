@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Adaptive Vision-Language Model Routing for Computer Use Agents</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Computer Use Agents (CUAs) translate natural-language instructions into Graphical User Interface (GUI) actions such as clicks, keystrokes, and scrolls by relying on a Vision-Language Model (VLM) to interpret screenshots and predict grounded tool calls. However, grounding accuracy varies dramatically across VLMs, while current CUA systems typically route every action to a single fixed model regardless of difficulty. We propose \textbf{Adaptive VLM Routing} (AVR), a framework that inserts a lightweight semantic routing layer between the CUA orchestrator and a pool of VLMs. For each tool call, AVR estimates action difficulty from multimodal embeddings, probes a small VLM to measure confidence, and routes the action to the cheapest model whose predicted accuracy satisfies a target reliability threshold. For \textit{warm} agents with memory of prior UI interactions, retrieved context further narrows the capability gap between small and large models, allowing many actions to be handled without escalation. We formalize routing as a cost--accuracy trade-off, derive a threshold-based policy for model selection, and evaluate AVR using ScreenSpot-Pro grounding data together with the OpenClaw agent routing benchmark. Across these settings, AVR projects inference cost reductions of up to 78\% while staying within 2 percentage points of an all-large-model baseline. When combined with the Visual Confused Deputy guardrail, AVR also escalates high-risk actions directly to the strongest available model, unifying efficiency and safety within a single routing framework. Materials are also provided Model, benchmark, and code: https://github.com/vllm-project/semantic-router.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>计算机使用代理（CUAs）通过依赖视觉语言模型（VLM）来解读屏幕截图并预测基础工具调用，从而将自然语言指令转换为图形用户界面（GUI）操作，如点击、按键和滚动。然而，不同VLM的基础准确性差异显著，而当前的CUA系统通常将所有操作路由至单一固定模型，无论操作难度如何。我们提出了\textbf{自适应VLM路由}（AVR）框架，该框架在CUA协调器与VLM池之间插入一个轻量级语义路由层。对于每个工具调用，AVR从多模态嵌入中估计操作难度，探测小型VLM以测量置信度，并将操作路由至预测准确性满足目标可靠性阈值的最经济模型。对于具有先前用户界面交互记忆的\textit{热启动}代理，检索到的上下文进一步缩小了小型与大型模型之间的能力差距，使得许多操作无需升级即可处理。我们将路由形式化为成本与准确性的权衡，推导出基于阈值的模型选择策略，并使用ScreenSpot-Pro基础数据及OpenClaw代理路由基准对AVR进行评估。在这些设置中，AVR预计可将推理成本降低高达78%，同时保持在全部使用大型模型基线的2个百分点误差范围内。当与视觉混淆代理防护栏结合时，AVR还将高风险操作直接升级至最强可用模型，在单一路由框架内统一了效率与安全性。相关材料（模型、基准和代码）已提供：https://github.com/vllm-project/semantic-router。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

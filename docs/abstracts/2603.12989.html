@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Test-Time Attention Purification for Backdoored Large Vision Language Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Despite the strong multimodal performance, large vision-language models (LVLMs) are vulnerable during fine-tuning to backdoor attacks, where adversaries insert trigger-embedded samples into the training data to implant behaviors that can be maliciously activated at test time. Existing defenses typically rely on retraining backdoored parameters (e.g., adapters or LoRA modules) with clean data, which is computationally expensive and often degrades model performance. In this work, we provide a new mechanistic understanding of backdoor behaviors in LVLMs: the trigger does not influence prediction through low-level visual patterns, but through abnormal cross-modal attention redistribution, where trigger-bearing visual tokens steal attention away from the textual context - a phenomenon we term attention stealing. Motivated by this, we propose CleanSight, a training-free, plug-and-play defense that operates purely at test time. CleanSight (i) detects poisoned inputs based on the relative visual-text attention ratio in selected cross-modal fusion layers, and (ii) purifies the input by selectively pruning the suspicious high-attention visual tokens to neutralize the backdoor activation. Extensive experiments show that CleanSight significantly outperforms existing pixel-based purification defenses across diverse datasets and backdoor attack types, while preserving the model&#x27;s utility on both clean and poisoned samples.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>尽管大型视觉语言模型（LVLMs）在多模态任务上表现出色，但其在微调过程中易受后门攻击的威胁，攻击者通过向训练数据中嵌入触发器样本来植入恶意行为，这些行为可在测试时被激活。现有防御方法通常依赖于使用干净数据重新训练被后门污染的模型参数（如适配器或LoRA模块），这不仅计算成本高昂，还常导致模型性能下降。本研究为LVLMs中的后门行为提供了新的机制性理解：触发器并非通过低层视觉模式影响预测，而是通过异常的跨模态注意力重新分配发挥作用，即携带触发器的视觉标记会窃取文本上下文的注意力——我们称之为注意力窃取现象。基于此，我们提出了CleanSight，一种无需训练、即插即用的防御方法，完全在测试时运行。CleanSight（i）通过分析选定跨模态融合层中的视觉-文本注意力相对比例来检测中毒输入，并（ii）通过选择性剪枝可疑的高注意力视觉标记来净化输入，从而中和后门激活。大量实验表明，CleanSight在不同数据集和后门攻击类型上均显著优于现有的基于像素的净化防御方法，同时在干净样本和中毒样本上均能保持模型的实用性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

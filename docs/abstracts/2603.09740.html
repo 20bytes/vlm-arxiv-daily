@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Let&#x27;s Reward Step-by-Step: Step-Aware Contrastive Alignment for Vision-Language Navigation in Continuous Environments</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language Navigation in Continuous Environments (VLN-CE) requires agents to learn complex reasoning from long-horizon human interactions. While Multi-modal Large Language Models (MLLMs) have driven recent progress, current training paradigms struggle to balance generalization capability, error recovery and training stability. Specifically, (i) policies derived from SFT suffer from compounding errors, struggling to recover from out-of-distribution states, and (ii) Reinforcement Fine-Tuning (RFT) methods e.g. GRPO are bottlenecked by sparse outcome rewards. Their binary feedback fails to assign credit to individual steps, leading to gradient signal collapse in failure dominant batches. To address these challenges, we introduce Step-Aware Contrastive Alignment (SACA), a framework designed to extract dense supervision from imperfect trajectories. At its core, the Perception-Grounded Step-Aware auditor evaluates progress step-by-step, disentangling failed trajectories into valid prefixes and exact divergence points. Leveraging these signals, Scenario-Conditioned Group Construction mechanism dynamically routes batches to specialized resampling and optimization strategies. Extensive experiments on VLN-CE benchmarks demonstrate that SACA achieves state-of-the-art performance.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>连续环境中的视觉语言导航（VLN-CE）要求智能体从长程人类交互中学习复杂推理。尽管多模态大语言模型（MLLMs）推动了近期进展，但当前训练范式难以平衡泛化能力、错误恢复和训练稳定性。具体而言：（i）基于监督微调（SFT）的策略易受累积误差影响，难以从分布外状态中恢复；（ii）强化微调（RFT）方法（如GRPO）受限于稀疏结果奖励，其二元反馈无法为单一步骤分配信用，导致失败主导批次中的梯度信号崩溃。为解决这些挑战，我们提出了步骤感知对比对齐（SACA）框架，旨在从非完美轨迹中提取密集监督。其核心是感知基础的步骤感知审核器，可逐步评估进展，将失败轨迹分解为有效前缀和精确分歧点。利用这些信号，场景条件分组构建机制动态将批次路由至专用重采样和优化策略。在VLN-CE基准上的大量实验表明，SACA实现了最先进的性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
