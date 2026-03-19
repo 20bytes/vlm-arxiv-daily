@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Feeling the Space: Egomotion-Aware Video Representation for Efficient and Accurate 3D Scene Understanding</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Recent Multimodal Large Language Models (MLLMs) have shown high potential for spatial reasoning within 3D scenes. However, they typically rely on computationally expensive 3D representations like point clouds or reconstructed Bird&#x27;s-Eye View (BEV) maps, or lack physical grounding to resolve ambiguities in scale and size. This paper significantly enhances MLLMs with egomotion modality data, captured by Inertial Measurement Units (IMUs) concurrently with the video. In particular, we propose a novel framework, called Motion-MLLM, introducing two key components: (1) a cascaded motion-visual keyframe filtering module that leverages both IMU data and visual features to efficiently select a sparse yet representative set of keyframes, and (2) an asymmetric cross-modal fusion module where motion tokens serve as intermediaries that channel egomotion cues and cross-frame visual context into the visual representation. By grounding visual content in physical egomotion trajectories, Motion-MLLM can reason about absolute scale and spatial relationships across the scene. Our extensive evaluation shows that Motion-MLLM makes significant improvements in various tasks related to 3D scene understanding and spatial reasoning. Compared to state-of-the-art (SOTA) methods based on video frames and explicit 3D data, Motion-MLLM exhibits similar or even higher accuracy with significantly less overhead (i.e., 1.40$\times$ and 1.63$\times$ higher cost-effectiveness, respectively).</p>
+      <h2>摘要 (ZH)</h2>
+      <p>近年来，多模态大语言模型（MLLMs）在三维场景的空间推理方面展现出巨大潜力。然而，这些模型通常依赖于计算成本高昂的三维表征（如点云或重建的鸟瞰图），或缺乏物理基础来消除尺度与尺寸上的模糊性。本文通过引入与视频同步采集的惯性测量单元（IMU）自我运动模态数据，显著增强了MLLMs的能力。具体而言，我们提出了一种名为Motion-MLLM的新框架，其包含两个核心组件：（1）级联运动-视觉关键帧筛选模块，该模块综合利用IMU数据与视觉特征，高效选取一组稀疏但具代表性的关键帧；（2）非对称跨模态融合模块，其中运动令牌作为中介，将自我运动线索与跨帧视觉上下文注入视觉表征。通过将视觉内容锚定于物理自我运动轨迹，Motion-MLLM能够推理场景中的绝对尺度与空间关系。大量实验表明，Motion-MLLM在多种三维场景理解与空间推理任务上取得显著提升。与基于视频帧和显式三维数据的当前最优方法相比，Motion-MLLM在显著降低计算开销的同时（即成本效益分别提高1.40倍和1.63倍），实现了相当甚至更高的准确度。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

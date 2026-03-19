@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Generative Control as Optimization: Time Unconditional Flow Matching for Adaptive and Robust Robotic Control</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Diffusion models and flow matching have become a cornerstone of robotic imitation learning, yet they suffer from a structural inefficiency where inference is often bound to a fixed integration schedule that is agnostic to state complexity. This paradigm forces the policy to expend the same computational budget on trivial motions as it does on complex tasks. We introduce Generative Control as Optimization (GeCO), a time-unconditional framework that transforms action synthesis from trajectory integration into iterative optimization. GeCO learns a stationary velocity field in the action-sequence space where expert behaviors form stable attractors. Consequently, test-time inference becomes an adaptive process that allocates computation based on convergence--exiting early for simple states while refining longer for difficult ones. Furthermore, this stationary geometry yields an intrinsic, training-free safety signal, as the field norm at the optimized action serves as a robust out-of-distribution (OOD) detector, remaining low for in-distribution states while significantly increasing for anomalies. We validate GeCO on standard simulation benchmarks and demonstrate seamless scaling to pi0-series Vision-Language-Action (VLA) models. As a plug-and-play replacement for standard flow-matching heads, GeCO improves success rates and efficiency with an optimization-native mechanism for safe deployment. Video and code can be found at https://hrh6666.github.io/GeCO/</p>
+      <h2>摘要 (ZH)</h2>
+      <p>扩散模型与流匹配已成为机器人模仿学习的基石，但其存在结构性低效问题：推理过程通常受限于固定的积分调度，而该调度对状态复杂性不敏感。这种范式迫使策略在简单动作与复杂任务上消耗相同的计算资源。我们提出了生成式控制即优化（GeCO），一种无时间条件的框架，将动作合成从轨迹积分转化为迭代优化。GeCO在动作序列空间中学习一个静态速度场，其中专家行为形成稳定吸引子。因此，测试时的推理成为一个自适应过程，根据收敛情况分配计算资源——对简单状态提前退出，而对困难状态则进行更长时间的优化。此外，这种静态几何结构产生了一种内在的、无需训练的安全信号：优化后动作处的场范数可作为鲁棒的分布外（OOD）检测器，在分布内状态下保持较低值，而在异常状态下显著升高。我们在标准仿真基准上验证了GeCO，并展示了其可无缝扩展至pi0系列视觉-语言-动作（VLA）模型。作为标准流匹配头的即插即用替代方案，GeCO通过优化原生机制提升了成功率与效率，并支持安全部署。视频与代码详见：https://hrh6666.github.io/GeCO/</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

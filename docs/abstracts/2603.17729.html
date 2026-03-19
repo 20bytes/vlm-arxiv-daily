@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SARE: Sample-wise Adaptive Reasoning for Training-free Fine-grained Visual Recognition</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Recent advances in Large Vision-Language Models (LVLMs) have enabled training-free Fine-Grained Visual Recognition (FGVR). However, effectively exploiting LVLMs for FGVR remains challenging due to the inherent visual ambiguity of subordinate-level categories. Existing methods predominantly adopt either retrieval-oriented or reasoning-oriented paradigms to tackle this challenge, but both are constrained by two fundamental limitations:(1) They apply the same inference pipeline to all samples without accounting for uneven recognition difficulty, thereby leading to suboptimal accuracy and efficiency; (2) The lack of mechanisms to consolidate and reuse error-specific experience causes repeated failures on similar challenging cases. To address these limitations, we propose SARE, a Sample-wise Adaptive textbfREasoning framework for training-free FGVR. Specifically, SARE adopts a cascaded design that combines fast candidate retrieval with fine-grained reasoning, invoking the latter only when necessary. In the reasoning process, SARE incorporates a self-reflective experience mechanism that leverages past failures to provide transferable discriminative guidance during inference, without any parameter updates. Extensive experiments across 14 datasets substantiate that SARE achieves state-of-the-art performance while substantially reducing computational overhead.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>大型视觉语言模型（LVLMs）的最新进展已实现免训练的细粒度视觉识别（FGVR）。然而，由于下属类别固有的视觉模糊性，有效利用LVLMs进行FGVR仍面临挑战。现有方法主要采用检索导向或推理导向的范式应对此挑战，但两者均受限于两个基本缺陷：（1）它们对所有样本应用相同的推理流程，未考虑识别难度的不均衡性，导致准确性和效率均未达最优；（2）缺乏整合与复用错误特定经验的机制，导致在类似困难案例上反复失败。为解决这些局限，我们提出SARE，一种用于免训练FGVR的样本自适应推理框架。具体而言，SARE采用级联设计，将快速候选检索与细粒度推理相结合，仅在必要时调用后者。在推理过程中，SARE引入了一种自反思经验机制，利用过往失败案例在推理时提供可迁移的判别性指导，且无需任何参数更新。在14个数据集上的大量实验证实，SARE在显著降低计算开销的同时，实现了最先进的性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

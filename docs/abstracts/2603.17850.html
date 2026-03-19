@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ProbeFlow: Training-Free Adaptive Flow Matching for Vision-Language-Action Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Recent Vision-Language-Action (VLA) models equipped with Flow Matching (FM) action heads achieve state-of-the-art performance in complex robot manipulation. However, the multi-step iterative ODE solving required by FM introduces inference latency that precludes responsive physical control. While current acceleration efforts optimize the Vision-Language Model (VLM) backbone, the action head bottleneck remains overlooked. To address this, we propose ProbeFlow, a training-free adaptive inference framework tai- lored for continuous robotic control. By evaluating geometric trajectory complexity via the cosine similarity between initial and lookahead velocity vectors, ProbeFlow dynamically sched- ules integration steps to prune redundant network evaluations. On the MetaWorld benchmark, it accelerates action decoding by 14.8x (reducing average steps from N = 50 to 2.6) and cuts end-to-end system latency by 2.8x without compromising the manipulation success rate. On the long-horizon LIBERO benchmark, the probe automatically allocates a denser schedule to navigate semantic bottlenecks, effectively resolving the flow solver delay. Real-world physical deployments confirm that ProbeFlow successfully mitigates action decoding latency while ensuring execution stability, offering a highly practical solution for low-latency continuous generative policies.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>近期配备流匹配动作头的视觉-语言-动作模型在复杂机器人操作任务中取得了最先进的性能。然而，流匹配所需的多步迭代常微分方程求解会引入推理延迟，阻碍了响应式物理控制的实现。当前加速研究主要针对视觉-语言模型主干进行优化，而动作头的计算瓶颈尚未得到充分关注。为此，我们提出ProbeFlow——一种专为连续机器人控制设计的无训练自适应推理框架。该方法通过计算初始速度向量与前瞻速度向量之间的余弦相似度来评估轨迹几何复杂度，从而动态调度积分步数以剪枝冗余的网络评估计算。在MetaWorld基准测试中，该方法将动作解码速度提升14.8倍（平均步数从N=50降至2.6），端到端系统延迟降低2.8倍，且未影响操作成功率。在长时程LIBERO基准测试中，探针机制自动分配更密集的调度以穿越语义瓶颈，有效解决了流求解器的延迟问题。真实物理部署实验证实，ProbeFlow在确保执行稳定性的同时成功降低了动作解码延迟，为低延迟连续生成策略提供了极具实用性的解决方案。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

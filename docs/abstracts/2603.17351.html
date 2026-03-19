@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>OmniVLN: Omnidirectional 3D Perception and Token-Efficient LLM Reasoning for Visual-Language Navigation across Air and Ground Platforms</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Language-guided embodied navigation requires an agent to interpret object-referential instructions, search across multiple rooms, localize the referenced target, and execute reliable motion toward it. Existing systems remain limited in real indoor environments because narrow field-of-view sensing exposes only a partial local scene at each step, often forcing repeated rotations, delaying target discovery, and producing fragmented spatial understanding; meanwhile, directly prompting LLMs with dense 3D maps or exhaustive object lists quickly exceeds the context budget. We present OmniVLN, a zero-shot visual-language navigation framework that couples omnidirectional 3D perception with token-efficient hierarchical reasoning for both aerial and ground robots. OmniVLN fuses a rotating LiDAR and panoramic vision into a hardware-agnostic mapping stack, incrementally constructs a five-layer Dynamic Scene Graph (DSG) from mesh geometry to room- and building-level structure, and stabilizes high-level topology through persistent-homology-based room partitioning and hybrid geometric/VLM relation verification. For navigation, the global DSG is transformed into an agent-centric 3D octant representation with multi-resolution spatial attention prompting, enabling the LLM to progressively filter candidate rooms, infer egocentric orientation, localize target objects, and emit executable navigation primitives while preserving fine local detail and compact long-range memory. Experiments show that the proposed hierarchical interface improves spatial referring accuracy from 77.27\% to 93.18\%, reduces cumulative prompt tokens by up to 61.7\% in cluttered multi-room settings, and improves navigation success by up to 11.68\% over a flat-list baseline. We will release the code and an omnidirectional multimodal dataset to support reproducible research.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>语言引导的具身导航要求智能体能够解析涉及对象的指令，在多个房间中搜索，定位参考目标，并执行可靠的运动接近目标。现有系统在真实室内环境中仍存在局限，因为狭窄视场感知仅能在每一步暴露局部场景片段，常迫使机器人反复旋转，延迟目标发现，并导致空间理解碎片化；同时，直接向大语言模型输入密集三维地图或详尽物体列表会迅速超出上下文预算。本文提出OmniVLN，一种零样本视觉语言导航框架，它结合了全向三维感知与令牌高效的层次化推理，适用于空中和地面机器人。OmniVLN将旋转激光雷达与全景视觉融合为硬件无关的建图栈，从网格几何到房间及建筑层级结构逐步构建五层动态场景图（DSG），并通过基于持续同调的房间划分和几何/视觉语言模型混合关系验证来稳定高层拓扑。在导航过程中，全局DSG被转换为以智能体为中心的三维八分体表示，结合多分辨率空间注意力提示，使大语言模型能够逐步筛选候选房间、推断以自我为中心的朝向、定位目标物体，并输出可执行的导航基元，同时保留精细的局部细节和紧凑的长程记忆。实验表明，所提出的层次化接口将空间指代准确率从77.27%提升至93.18%，在杂乱多房间环境中累计提示令牌减少高达61.7%，导航成功率较扁平列表基线提升最高达11.68%。我们将发布代码和一个全向多模态数据集，以支持可复现的研究。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

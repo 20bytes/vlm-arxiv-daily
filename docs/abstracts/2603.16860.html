@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>DreamPlan: Efficient Reinforcement Fine-Tuning of Vision-Language Planners via Video World Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Robotic manipulation requires sophisticated commonsense reasoning, a capability naturally possessed by large-scale Vision-Language Models (VLMs). While VLMs show promise as zero-shot planners, their lack of grounded physical understanding often leads to compounding errors and low success rates when deployed in complex real-world environments, particularly for challenging tasks like deformable object manipulation. Although Reinforcement Learning (RL) can adapt these planners to specific task dynamics, directly fine-tuning VLMs via real-world interaction is prohibitively expensive, unsafe, and sample-inefficient. To overcome this bottleneck, we introduce DreamPlan, a novel framework for the reinforcement fine-tuning of VLM planners via video world models. Instead of relying on costly physical rollouts, DreamPlan first leverages the zero-shot VLM to collect exploratory interaction data. We demonstrate that this sub-optimal data is sufficient to train an action-conditioned video generation model, which implicitly captures complex real-world physics. Subsequently, the VLM planner is fine-tuned entirely within the &quot;imagination&quot; of this video world model using Odds Ratio Policy Optimization (ORPO). By utilizing these virtual rollouts, physical and task-specific knowledge is efficiently injected into the VLM. Our results indicate that DreamPlan bridges the gap between semantic reasoning and physical grounding, significantly improving manipulation success rates without the need for large-scale real-world data collection. Our project page is https://psi-lab.ai/DreamPlan/.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>机器人操作需要复杂的常识推理能力，这是大规模视觉语言模型（VLMs）天然具备的。虽然VLMs作为零样本规划器展现出潜力，但它们在复杂现实环境（尤其是如可变形物体操作等挑战性任务）中部署时，由于缺乏对物理世界的接地理解，常导致错误累积和成功率低下。尽管强化学习（RL）可以调整这些规划器以适应特定任务动态，但通过现实交互直接微调VLMs成本极高、不安全且样本效率低。为突破这一瓶颈，我们提出了DreamPlan，一个通过视频世界模型对VLM规划器进行强化微调的新框架。DreamPlan不依赖昂贵的物理部署，而是首先利用零样本VLM收集探索性交互数据。我们证明，这些次优数据足以训练一个动作条件视频生成模型，该模型能隐式捕捉复杂的现实物理规律。随后，使用几率比策略优化（ORPO）在视频世界模型的“想象”中完全微调VLM规划器。通过利用这些虚拟部署，物理和任务特定知识被高效注入VLM。我们的结果表明，DreamPlan弥合了语义推理与物理接地之间的差距，无需大规模现实数据收集即可显著提升操作成功率。项目页面为 https://psi-lab.ai/DreamPlan/。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

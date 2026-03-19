@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>EmergeNav: Structured Embodied Inference for Zero-Shot Vision-and-Language Navigation in Continuous Environments</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Zero-shot vision-and-language navigation in continuous environments (VLN-CE) remains challenging for modern vision-language models (VLMs). Although these models encode useful semantic priors, their open-ended reasoning does not directly translate into stable long-horizon embodied execution. We argue that the key bottleneck is not missing knowledge alone, but missing an execution structure for organizing instruction following, perceptual grounding, temporal progress, and stage verification. We propose EmergeNav, a zero-shot framework that formulates continuous VLN as structured embodied inference. EmergeNav combines a Plan--Solve--Transition hierarchy for stage-structured execution, GIPE for goal-conditioned perceptual extraction, contrastive dual-memory reasoning for progress grounding, and role-separated Dual-FOV sensing for time-aligned local control and boundary verification. On VLN-CE, EmergeNav achieves strong zero-shot performance using only open-source VLM backbones and no task-specific training, explicit maps, graph search, or waypoint predictors, reaching 30.00 SR with Qwen3-VL-8B and 37.00 SR with Qwen3-VL-32B. These results suggest that explicit execution structure is a key ingredient for turning VLM priors into stable embodied navigation behavior.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>连续环境下的零样本视觉语言导航（VLN-CE）对现代视觉语言模型（VLMs）仍具挑战。尽管这些模型编码了有用的语义先验，但其开放式推理无法直接转化为稳定的长时程具身执行。我们认为关键瓶颈不仅在于知识缺失，更在于缺乏组织指令跟随、感知定位、时序进度与阶段验证的执行结构。本文提出EmergeNav——一个将连续VLN建模为结构化具身推理的零样本框架。该框架融合了面向阶段化执行的“规划-求解-转换”层级结构、目标条件感知提取模块GIPE、用于进度定位的对比双记忆推理机制，以及角色分离的双视场感知系统以实现时间对齐的局部控制与边界验证。在VLN-CE任务中，EmergeNav仅使用开源VLM骨干网络，无需任务特定训练、显式地图、图搜索或航点预测器，即取得显著零样本性能：基于Qwen3-VL-8B模型达到30.00%的成功率（SR），基于Qwen3-VL-32B模型达到37.00% SR。这些结果表明，显式执行结构是将VLM先验转化为稳定具身导航行为的关键要素。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
