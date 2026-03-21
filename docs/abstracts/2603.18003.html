@@ -17,9 +17,9 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Universal Skeleton Understanding via Differentiable Rendering and MLLMs</h1>
+      <h1>Universal Skeleton Understanding via Differentiable Rendering and MLLMs&lt;br&gt;基于可微分渲染与多模态大语言模型的通用骨架理解&lt;br&gt;[摘要](abstracts/2603.18003.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Multimodal large language models (MLLMs) exhibit strong visual-language reasoning, yet remain confined to their native modalities and cannot directly process structured, non-visual data such as human skeletons. Existing methods either compress skeleton dynamics into lossy feature vectors for text alignment, or quantize motion into discrete tokens that generalize poorly across heterogeneous skeleton formats. We present SkeletonLLM, which achieves universal skeleton understanding by translating arbitrary skeleton sequences into the MLLM&#x27;s native visual modality. At its core is DrAction, a differentiable, format-agnostic renderer that converts skeletal kinematics into compact image sequences. Because the pipeline is end-to-end differentiable, MLLM gradients can directly guide the rendering to produce task-informative visual tokens. To further enhance reasoning capabilities, we introduce a cooperative training strategy: Causal Reasoning Distillation transfers structured, step-by-step reasoning from a teacher model, while Discriminative Finetuning sharpens decision boundaries between confusable actions. SkeletonLLM demonstrates strong generalization on diverse tasks including recognition, captioning, reasoning, and cross-format transfer -- suggesting a viable path for applying MLLMs to non-native modalities. Code will be released upon acceptance.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
       <p>多模态大语言模型（MLLMs）展现出强大的视觉-语言推理能力，但仍受限于其原生模态，无法直接处理如人体骨架这类结构化、非视觉数据。现有方法要么将骨架动态压缩为有损特征向量以对齐文本，要么将动作量化为离散标记，但在异构骨架格式间泛化能力较差。我们提出SkeletonLLM，通过将任意骨架序列转换为MLLM的原生视觉模态，实现通用骨架理解。其核心是DrAction——一个可微分、格式无关的渲染器，可将骨骼运动学转化为紧凑的图像序列。由于该流程端到端可微分，MLLM的梯度可直接指导渲染过程，生成具有任务信息量的视觉标记。为进一步增强推理能力，我们引入协同训练策略：因果推理蒸馏从教师模型迁移结构化的逐步推理，而判别性微调则锐化易混淆动作间的决策边界。SkeletonLLM在识别、描述、推理及跨格式迁移等多种任务上表现出强大的泛化能力，为将MLLMs应用于非原生模态提供了可行路径。代码将在论文录用后开源。</p>
       <p><a href="../index.html">← Back</a></p>

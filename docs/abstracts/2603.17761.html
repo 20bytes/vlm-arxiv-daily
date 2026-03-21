@@ -17,9 +17,9 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Evidence Packing for Cross-Domain Image Deepfake Detection with LVLMs</h1>
+      <h1>Evidence Packing for Cross-Domain Image Deepfake Detection with LVLMs&lt;br&gt;基于大型视觉语言模型的跨域图像深度伪造检测证据包方法&lt;br&gt;[摘要](abstracts/2603.17761.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Image Deepfake Detection (IDD) separates manipulated images from authentic ones by spotting artifacts of synthesis or tampering. Although large vision-language models (LVLMs) offer strong image understanding, adapting them to IDD often demands costly fine-tuning and generalizes poorly to diverse, evolving manipulations. We propose the Semantic Consistent Evidence Pack (SCEP), a training-free LVLM framework that replaces whole-image inference with evidence-driven reasoning. SCEP mines a compact set of suspicious patch tokens that best reveal manipulation cues. It uses the vision encoder&#x27;s CLS token as a global reference, clusters patch features into coherent groups, and scores patches with a fused metric combining CLS-guided semantic mismatch with frequency-and noise-based anomalies. To cover dispersed traces and avoid redundancy, SCEP samples a few high-confidence patches per cluster and applies grid-based NMS, producing an evidence pack that conditions a frozen LVLM for prediction. Experiments on diverse benchmarks show SCEP outperforms strong baselines without LVLM fine-tuning.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
       <p>图像深度伪造检测通过识别合成或篡改痕迹来区分伪造图像与真实图像。尽管大型视觉语言模型具备强大的图像理解能力，但将其应用于检测任务通常需要昂贵的微调，且难以泛化至多样且不断演变的篡改手法。本文提出语义一致证据包，一种无需训练的大型视觉语言模型框架，以证据驱动推理替代全图推断。该方法挖掘一组紧凑的可疑图像块标记，以最大程度揭示篡改线索：利用视觉编码器的CLS标记作为全局参考，将图像块特征聚类为语义连贯的组别，并通过融合度量对图像块进行评分——该度量结合了CLS引导的语义失配与基于频率及噪声的异常分析。为覆盖分散的篡改痕迹并避免冗余，该方法从每个聚类中采样少量高置信度图像块，并应用基于网格的非极大值抑制，最终生成一个证据包，用于指导冻结的大型视觉语言模型进行预测。在多样化基准测试上的实验表明，该方法在无需微调大型视觉语言模型的情况下，性能优于现有强基线模型。</p>
       <p><a href="../index.html">← Back</a></p>

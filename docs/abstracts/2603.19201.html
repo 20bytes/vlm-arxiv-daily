@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>OmniVTA: Visuo-Tactile World Modeling for Contact-Rich Robotic Manipulation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Contact-rich manipulation tasks, such as wiping and assembly, require accurate perception of contact forces, friction changes, and state transitions that cannot be reliably inferred from vision alone. Despite growing interest in visuo-tactile manipulation, progress is constrained by two persistent limitations: existing datasets are small in scale and narrow in task coverage, and current methods treat tactile signals as passive observations rather than using them to model contact dynamics or enable closed-loop control explicitly. In this paper, we present \textbf{OmniViTac}, a large-scale visuo-tactile-action dataset comprising $21{,}000+$ trajectories across $86$ tasks and $100+$ objects, organized into six physics-grounded interaction patterns. Building on this dataset, we propose \textbf{OmniVTA}, a world-model-based visuo-tactile manipulation framework that integrates four tightly coupled modules: a self-supervised tactile encoder, a two-stream visuo-tactile world model for predicting short-horizon contact evolution, a contact-aware fusion policy for action generation, and a 60Hz reflexive controller that corrects deviations between predicted and observed tactile signals in a closed loop. Real-robot experiments across all six interaction categories show that OmniVTA outperforms existing methods and generalizes well to unseen objects and geometric configurations, confirming the value of combining predictive contact modeling with high-frequency tactile feedback for contact-rich manipulation. All data, models, and code will be made publicly available on the project website at https://mrsecant.github.io/OmniVTA.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>接触密集型操作任务，如擦拭和装配，需要准确感知接触力、摩擦力变化和状态转换，这些信息仅靠视觉无法可靠推断。尽管视觉-触觉操作日益受到关注，但进展仍受限于两个长期存在的制约因素：现有数据集规模小、任务覆盖范围窄，且现有方法将触觉信号视为被动观测，而非用于显式建模接触动力学或实现闭环控制。本文提出\textbf{OmniViTac}，一个大规模的视觉-触觉-动作数据集，包含超过21,000条轨迹，涵盖86个任务和100多个物体，并按六种基于物理的交互模式组织。基于此数据集，我们提出\textbf{OmniVTA}，一种基于世界模型的视觉-触觉操作框架，集成了四个紧密耦合的模块：自监督触觉编码器、用于预测短期接触演化的双流视觉-触觉世界模型、用于动作生成的接触感知融合策略，以及一个60Hz的反射式控制器，可在闭环中校正预测与观测触觉信号间的偏差。在所有六类交互任务上的真实机器人实验表明，OmniVTA优于现有方法，并能良好泛化到未见过的物体和几何配置，证实了将预测性接触建模与高频触觉反馈相结合对于接触密集型操作的价值。所有数据、模型和代码将在项目网站https://mrsecant.github.io/OmniVTA上公开。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

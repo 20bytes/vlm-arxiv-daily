@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>TAU-R1: Visual Language Model for Traffic Anomaly Understanding</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Traffic Anomaly Understanding (TAU) is important for traffic safety in Intelligent Transportation Systems. Recent vision-language models (VLMs) have shown strong capabilities in video understanding. However, progress on TAU remains limited due to the lack of benchmarks and task-specific methodologies. To address this limitation, we introduce Roundabout-TAU, a dataset constructed from real-world roundabout videos collected in collaboration with the City of Carmel, Indiana. The dataset contains 342 clips and is annotated with more than 2,000 question-answer pairs covering multiple aspects of traffic anomaly understanding. Building on this benchmark, we propose TAU-R1, a two-layer vision-language framework for TAU. The first layer is a lightweight anomaly classifier that performs coarse anomaly categorisation, while the second layer is a larger anomaly reasoner that generates detailed event summaries. To improve task-specific reasoning, we introduce a two-stage training strategy consisting of decomposed-QA-enhanced supervised fine-tuning followed by TAU-GRPO, a GRPO-based post-training method with TAU-specific reward functions. Experimental results show that TAU-R1 achieves strong performance on both anomaly classification and reasoning tasks while maintaining deployment efficiency. The dataset and code are available at: https://github.com/siri-rouser/TAU-R1</p>
+      <h2>摘要 (ZH)</h2>
+      <p>交通异常理解（TAU）对于智能交通系统中的交通安全至关重要。近年来，视觉语言模型（VLMs）在视频理解方面展现出强大能力。然而，由于缺乏基准数据集和任务专用方法，TAU领域的研究进展仍受限。为应对这一局限，我们引入了Roundabout-TAU数据集，该数据集基于与印第安纳州卡梅尔市合作采集的真实世界环岛交通视频构建，包含342个视频片段，并标注了超过2000个涵盖交通异常理解多维度的问题-答案对。基于此基准，我们提出了TAU-R1——一个双层视觉语言框架用于TAU任务。第一层为轻量级异常分类器，执行粗略的异常分类；第二层为大型异常推理器，生成详细的事件摘要。为提升任务专用推理能力，我们设计了一种两阶段训练策略：先进行分解式问答增强的监督微调，再采用TAU-GRPO——一种基于GRPO的后训练方法，并配备TAU专用奖励函数。实验结果表明，TAU-R1在异常分类与推理任务上均表现出色，同时保持了部署效率。数据集与代码已开源：https://github.com/siri-rouser/TAU-R1</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

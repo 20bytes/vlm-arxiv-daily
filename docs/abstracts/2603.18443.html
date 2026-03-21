@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SR-Nav: Spatial Relationships Matter for Zero-shot Object Goal Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Zero-shot object-goal navigation aims to find target objects in unseen environments using only egocentric observation. Recent methods leverage foundation models&#x27; comprehension and reasoning capabilities to enhance navigation performance. However, when faced with poor viewpoints or weak semantic cues, foundation models often fail to support reliable reasoning in both perception and planning, resulting in inefficient or failed navigation. We observe that inherent relationships among objects and regions encode structured scene priors, which help agents infer plausible target locations even under partial observations. Motivated by this insight, we propose Spatial Relation-aware Navigation (SR-Nav), a framework that models both observed and experience-based spatial relationships to enhance both perception and planning. Specifically, SR-Nav first constructs a Dynamic Spatial Relationship Graph (DSRG) that encodes the target-centered spatial relationships through the foundation models and updates dynamically with real-time observations. We then introduce a Relation-aware Matching Module. It utilizes relationship matching instead of naive detection, leveraging diverse relationships in the DSRG to verify and correct errors, enhancing visual perception robustness. Finally, we design a Dynamic Relationship Planning Module to reduce the planning search space by dynamically computing the optimal paths based on the DSRG from the current position, thereby guiding planning and reducing exploration redundancy. Experiments on HM3D show that our method achieves state-of-the-art performance in both success rate and navigation efficiency. The code will be publicly available at https://github.com/Mzyw-1314/SR-Nav</p>
+      <h2>摘要 (ZH)</h2>
+      <p>零样本目标导向导航旨在仅利用自我中心视角的观测，在未知环境中寻找目标物体。现有方法通常依赖基础模型的理解与推理能力来提升导航性能。然而，当面临视角不佳或语义线索薄弱时，基础模型往往难以在感知与规划环节提供可靠推理，导致导航效率低下或失败。我们观察到，物体与区域之间固有的关系编码了结构化的场景先验，即使基于部分观测，也能帮助智能体推断出合理的目标位置。受此启发，本文提出空间关系感知导航框架（SR-Nav），该框架通过建模观测到的及基于经验的空间关系，同时增强感知与规划能力。具体而言，SR-Nav首先构建动态空间关系图（DSRG），利用基础模型编码以目标为中心的空间关系，并随实时观测动态更新。随后，我们引入关系感知匹配模块，该模块通过关系匹配而非简单检测，利用DSRG中的多样化关系进行错误验证与校正，从而提升视觉感知的鲁棒性。最后，我们设计了动态关系规划模块，通过基于DSRG从当前位置动态计算最优路径，有效缩小规划搜索空间，以此指导规划并减少探索冗余。在HM3D数据集上的实验表明，我们的方法在成功率和导航效率上均达到了最先进的性能。代码将在https://github.com/Mzyw-1314/SR-Nav公开。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

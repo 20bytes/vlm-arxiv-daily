@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>GoalVLM: VLM-driven Object Goal Navigation for Multi-Agent System</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Object-goal navigation has traditionally been limited to ground robots with closed-set object vocabularies. Existing multi-agent approaches depend on precomputed probabilistic graphs tied to fixed category sets, precluding generalization to novel goals at test time.   We present GoalVLM, a cooperative multi-agent framework for zero-shot, open-vocabulary object navigation. GoalVLM integrates a Vision-Language Model (VLM) directly into the decision loop, SAM3 for text-prompted detection and segmentation, and SpaceOM for spatial reasoning, enabling agents to interpret free-form language goals and score frontiers via zero-shot semantic priors without retraining. Each agent builds a BEV semantic map from depth-projected voxel splatting, while a Goal Projector back-projects detections through calibrated depth into the map for reliable goal localization. A constraint-guided reasoning layer evaluates frontiers through a structured prompt chain (scene captioning, room-type classification, perception gating, multi-frontier ranking), injecting commonsense priors into exploration.   We evaluate GoalVLM on GOAT-Bench val_unseen (360 multi-subtask episodes, 1032 sequential object-goal subtasks, HM3D scenes), where each episode requires navigating to a chain of 5-7 open-vocabulary targets. GoalVLM with N=2 agents achieves 55.8% subtask SR and 18.3% SPL, competitive with state-of-the-art methods while requiring no task-specific training. Ablation studies confirm the contributions of VLM-guided frontier reasoning and depth-projected goal localization.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>目标物体导航传统上局限于地面机器人及封闭式物体词汇集。现有的多智能体方法依赖于与固定类别集绑定的预计算概率图，导致在测试时无法泛化至新目标。本文提出GoalVLM，一种用于零样本、开放词汇目标导航的协作式多智能体框架。GoalVLM将视觉语言模型直接集成到决策循环中，结合SAM3进行文本提示检测与分割，以及SpaceOM进行空间推理，使智能体能够理解自由形式的语言目标，并通过零样本语义先验对前沿区域进行评分，无需重新训练。每个智能体通过深度投影体素喷洒构建BEV语义地图，同时目标投影器通过校准深度将检测结果反向投影至地图中，实现可靠的目标定位。约束引导推理层通过结构化提示链（场景描述、房间类型分类、感知门控、多前沿区域排序）评估前沿区域，将常识先验注入探索过程。我们在GOAT-Bench val_unseen数据集（包含360个多子任务场景、1032个顺序目标物体子任务、HM3D场景）上评估GoalVLM，每个场景需导航至5-7个开放词汇目标链。采用N=2智能体的GoalVLM实现了55.8%的子任务成功率和18.3%的路径长度加权成功率，与最先进方法表现相当，且无需任务特定训练。消融研究证实了视觉语言模型引导的前沿推理和深度投影目标定位的贡献。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

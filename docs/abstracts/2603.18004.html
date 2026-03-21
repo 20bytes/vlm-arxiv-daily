@@ -17,9 +17,9 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Unified Spatio-Temporal Token Scoring for Efficient Video VLMs</h1>
+      <h1>Unified Spatio-Temporal Token Scoring for Efficient Video VLMs&lt;br&gt;统一时空令牌评分：面向高效视频视觉语言模型&lt;br&gt;[摘要](abstracts/2603.18004.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Token pruning is essential for enhancing the computational efficiency of vision-language models (VLMs), particularly for video-based tasks where temporal redundancy is prevalent. Prior approaches typically prune tokens either (1) within the vision transformer (ViT) exclusively for unimodal perception tasks such as action recognition and object segmentation, without adapting to downstream vision-language tasks; or (2) only within the LLM while leaving the ViT output intact, often requiring complex text-conditioned token selection mechanisms. In this paper, we introduce Spatio-Temporal Token Scoring (STTS), a simple and lightweight module that prunes vision tokens across both the ViT and the LLM without text conditioning or token merging, and is fully compatible with end-to-end training. By learning how to score temporally via an auxiliary loss and spatially via LLM downstream gradients, aided by our efficient packing algorithm, STTS prunes 50% of vision tokens throughout the entire architecture, resulting in a 62% improvement in efficiency during both training and inference with only a 0.7% drop in average performance across 13 short and long video QA tasks. Efficiency gains increase with more sampled frames per video. Applying test-time scaling for long-video QA further yields performance gains of 0.5-1% compared to the baseline. Overall, STTS represents a novel, simple yet effective technique for unified, architecture-wide vision token pruning.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
       <p>令牌剪枝对于提升视觉语言模型的计算效率至关重要，尤其在视频任务中，时间冗余现象普遍存在。先前方法通常仅在视觉变换器内剪枝令牌，适用于动作识别和物体分割等单模态感知任务，但未适配下游视觉语言任务；或仅在大型语言模型内剪枝，而保持视觉变换器输出不变，常需复杂的文本条件令牌选择机制。本文提出时空令牌评分，这是一种简单轻量的模块，可在无需文本条件或令牌合并的情况下，跨视觉变换器和大型语言模型剪枝视觉令牌，并完全兼容端到端训练。通过辅助损失学习时间评分，并借助大型语言模型下游梯度实现空间评分，辅以我们高效的打包算法，该模块能在整个架构中剪枝50%的视觉令牌，在训练和推理阶段提升62%的效率，同时在13个长短视频问答任务中平均性能仅下降0.7%。随着视频采样帧数增加，效率增益进一步提升。在长视频问答任务中应用测试时缩放技术，相比基线模型可获得0.5-1%的性能提升。总体而言，时空令牌评分代表了一种新颖、简单而有效的统一全架构视觉令牌剪枝技术。</p>
       <p><a href="../index.html">← Back</a></p>
