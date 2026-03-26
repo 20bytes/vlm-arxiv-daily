@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>IGV-RRT: Prior-Real-Time Observation Fusion for Active Object Search in Changing Environments</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Object Goal Navigation (ObjectNav) in temporally changing indoor environments is challenging because object relocation can invalidate historical scene knowledge. To address this issue, we propose a probabilistic planning framework that combines uncertainty-aware scene priors with online target relevance estimates derived from a Vision Language Model (VLM). The framework contains a dual-layer semantic mapping module and a real-time planner. The mapping module includes an Information Gain Map (IGM) built from a 3D scene graph (3DSG) during prior exploration to model object co-occurrence relations and provide global guidance on likely target regions. It also maintains a VLM score map (VLM-SM) that fuses confidence-weighted semantic observations into the map for local validation of the current scene. Based on these two cues, we develop a planner that jointly exploits information gain and semantic evidence for online decision making. The planner biases tree expansion toward semantically salient regions with high prior likelihood and strong online relevance (IGV-RRT), while preserving kinematic feasibility through gradient-based analysis. Simulation and real-world experiments demonstrate that the proposed method effectively mitigates the impact of object rearrangement, achieving higher search efficiency and success rates than representative baselines in complex indoor environments.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在时间变化的室内环境中进行目标导向导航（ObjectNav）具有挑战性，因为物体位置的变动可能使历史场景知识失效。为解决此问题，我们提出了一种概率规划框架，该框架将不确定性感知的场景先验与基于视觉语言模型（VLM）的在线目标相关性估计相结合。该框架包含一个双层语义建图模块和一个实时规划器。建图模块包括一个在先前探索阶段基于三维场景图（3DSG）构建的信息增益地图（IGM），用于建模物体共现关系，并为可能的目标区域提供全局引导；同时维护一个VLM评分地图（VLM-SM），将置信度加权的语义观测融合到地图中，以对当前场景进行局部验证。基于这两个线索，我们开发了一个规划器，该规划器联合利用信息增益和语义证据进行在线决策。该规划器通过梯度分析保持运动学可行性，同时将树扩展偏向于具有高先验可能性和强在线相关性的语义显著区域（IGV-RRT）。仿真和真实世界实验表明，所提出的方法有效减轻了物体重新排列的影响，在复杂室内环境中实现了比代表性基线更高的搜索效率和成功率。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ViHOI: Human-Object Interaction Synthesis with Visual Priors</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Generating realistic and physically plausible 3D Human-Object Interactions (HOI) remains a key challenge in motion generation. One primary reason is that describing these physical constraints with words alone is difficult. To address this limitation, we propose a new paradigm: extracting rich interaction priors from easily accessible 2D images. Specifically, we introduce ViHOI, a novel framework that enables diffusion-based generative models to leverage rich, task-specific priors from 2D images to enhance generation quality. We utilize a large Vision-Language Model (VLM) as a powerful prior-extraction engine and adopt a layer-decoupled strategy to obtain visual and textual priors. Concurrently, we design a Q-Former-based adapter that compresses the VLM&#x27;s high-dimensional features into compact prior tokens, which significantly facilitates the conditional training of our diffusion model. Our framework is trained on motion-rendered images from the dataset to ensure strict semantic alignment between visual inputs and motion sequences. During inference, it leverages reference images synthesized by a text-to-image generation model to improve generalization to unseen objects and interaction categories. Experimental results demonstrate that ViHOI achieves state-of-the-art performance, outperforming existing methods across multiple benchmarks and demonstrating superior generalization.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>生成真实且物理合理的三维人-物交互（HOI）仍然是运动生成领域的关键挑战。主要原因之一是仅用语言描述这些物理约束十分困难。为突破这一局限，我们提出一种新范式：从易于获取的二维图像中提取丰富的交互先验。具体而言，我们引入了ViHOI——一个创新框架，使基于扩散的生成模型能够利用二维图像中丰富、任务特定的先验知识来提升生成质量。我们采用大型视觉语言模型（VLM）作为强大的先验提取引擎，并通过分层解耦策略获取视觉与文本先验。同时，我们设计了一个基于Q-Former的适配器，将VLM的高维特征压缩为紧凑的先验令牌，这极大促进了扩散模型的条件训练。我们的框架在数据集中的运动渲染图像上进行训练，以确保视觉输入与运动序列之间严格的语义对齐。在推理阶段，它利用文本到图像生成模型合成的参考图像，以提升对未见过的物体和交互类别的泛化能力。实验结果表明，ViHOI实现了最先进的性能，在多个基准测试中超越现有方法，并展现出卓越的泛化性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

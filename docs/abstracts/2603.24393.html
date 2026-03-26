@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>3D-Mix for VLA: A Plug-and-Play Module for Integrating VGGT-based 3D Information into Vision-Language-Action Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language-Action (VLA) models leverage Multimodal Large Language Models (MLLMs) for robotic control, but recent studies reveal that MLLMs exhibit limited spatial intelligence due to training predominantly on 2D data, resulting in inadequate 3D perception for manipulation tasks. While recent approaches incorporate specialized 3D vision models such as VGGT to enhance spatial understanding, they employ diverse integration mechanisms without systematic investigation, leaving the optimal fusion strategy unclear. We conduct a comprehensive pilot study comparing nine VGGT integration schemes on standardized benchmarks and find that semantic-conditioned gated fusion, which adaptively balances 2D semantic and 3D geometric features based on task context, achieved the strongest performance among all nine evaluated fusion schemes in our pilot study. We present 3D-Mix, a plug-and-play module that integrates into diverse VLA architectures (GR00T-style and $π$-style) without modifying existing MLLM or action expert components. Experiments across six MLLM series (nine model variants, 2B--8B parameters) on SIMPLER and LIBERO show that 3D-Mix delivers consistent performance gains, averaging +7.0% on the out-of-domain (OOD) SIMPLER benchmark across all nine GR00T-style variants, establishing a principled approach for enhancing spatial intelligence in VLA systems.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作（VLA）模型利用多模态大语言模型（MLLMs）实现机器人控制，但近期研究表明，由于主要基于二维数据进行训练，MLLMs的空间智能存在局限，导致在操作任务中三维感知能力不足。尽管现有方法通过引入VGGT等专用三维视觉模型来增强空间理解能力，但其集成机制多样且缺乏系统研究，最优融合策略尚不明确。我们通过对照实验系统比较了九种VGGT集成方案，发现语义条件门控融合方法——能根据任务上下文自适应平衡二维语义特征与三维几何特征——在九种融合方案中表现最优。本文提出3D-Mix模块，该即插即用模块可无缝集成至多种VLA架构（GR00T型与π型），无需修改现有MLLM或动作专家组件。在SIMPLER和LIBERO基准测试中，对六个MLLM系列（九种模型变体，参数量2B-8B）的实验表明：3D-Mix能带来稳定的性能提升，在九种GR00T型变体上，其跨域（OOD）SIMPLER基准测试平均提升达+7.0%，为增强VLA系统的空间智能提供了系统化解决方案。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

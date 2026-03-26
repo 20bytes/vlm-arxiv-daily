@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>LensWalk: Agentic Video Understanding by Planning How You See in Videos</h1>
+      <h2>Abstract (EN)</h2>
+      <p>The dense, temporal nature of video presents a profound challenge for automated analysis. Despite the use of powerful Vision-Language Models, prevailing methods for video understanding are limited by the inherent disconnect between reasoning and perception: they rely on static, pre-processed information and cannot actively seek raw evidence from video as their understanding evolves. To address this, we introduce LensWalk, a flexible agentic framework that empowers a Large Language Model reasoner to control its own visual observation actively. LensWalk establishes a tight reason-plan-observe loop where the agent dynamically specifies, at each step, the temporal scope and sampling density of the video it observes. Using a suite of versatile, Vision-Language Model based tools parameterized by these specifications, the agent can perform broad scans for cues, focus on specific segments for fact extraction, and stitch evidence from multiple moments for holistic verification. This design allows for progressive, on-demand evidence gathering that directly serves the agent&#x27;s evolving chain of thought. Without requiring any model fine-tuning, LensWalk delivers substantial, plug-and-play performance gains on multiple model recipes, boosting their accuracy by over 5\% on challenging long-video benchmarks like LVBench and Video-MME. Our analysis reveals that enabling an agent to control how it sees is key to unlocking more accurate, robust, and interpretable video reasoning.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视频的密集时序特性给自动化分析带来了巨大挑战。尽管采用了强大的视觉语言模型，当前视频理解方法仍受限于推理与感知之间的固有脱节：它们依赖静态的预处理信息，无法在理解演进过程中主动从视频中获取原始证据。为此，我们提出LensWalk——一种灵活的智能体框架，使大型语言模型推理器能够主动控制其视觉观察过程。该框架构建了紧密的推理-规划-观察循环，智能体可在每一步动态指定观察视频的时间范围与采样密度。通过调用由这些参数配置的多样化视觉语言模型工具集，智能体能够执行线索的广泛扫描、聚焦特定片段进行事实提取，并整合多时刻证据以实现整体验证。这种设计支持直接服务于智能体思维链演进的渐进式按需证据收集。无需任何模型微调，LensWalk在多种模型方案上实现了显著的即插即用性能提升，在LVBench和Video-MME等长视频基准测试中将准确率提高超过5%。我们的分析表明，赋予智能体控制其观察方式的能力，是解锁更精准、鲁棒且可解释视频推理的关键。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

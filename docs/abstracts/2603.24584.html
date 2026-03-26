@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>TAG: Target-Agnostic Guidance for Stable Object-Centric Inference in Vision-Language-Action Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision--Language--Action (VLA) policies have shown strong progress in mapping language instructions and visual observations to robotic actions, yet their reliability degrades in cluttered scenes with distractors. By analyzing failure cases, we find that many errors do not arise from infeasible motions, but from instance-level grounding failures: the policy often produces a plausible grasp trajectory that lands slightly off-target or even on the wrong object instance. To address this issue, we propose TAG (Target-Agnostic Guidance), a simple inference-time guidance mechanism that explicitly reduces distractor- and appearance-induced bias in VLA policies. Inspired by classifier-free guidance (CFG), TAG contrasts policy predictions under the original observation and an object-erased observation, and uses their difference as a residual steering signal that strengthens the influence of object evidence in the decision process. TAG does not require modifying the policy architecture and can be integrated with existing VLA policies with minimal training and inference changes. We evaluate TAG on standard manipulation benchmarks, including LIBERO, LIBERO-Plus, and VLABench, where it consistently improves robustness under clutter and reduces near-miss and wrong-object executions.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作（VLA）策略在将语言指令和视觉观察映射到机器人动作方面取得了显著进展，但在存在干扰物的杂乱场景中，其可靠性会下降。通过分析失败案例，我们发现许多错误并非源于不可行的运动，而是由实例级定位失败引起的：策略常生成看似合理的抓取轨迹，却略微偏离目标或甚至错误地作用于其他对象实例。为解决这一问题，我们提出了TAG（目标无关引导），一种简单的推理时引导机制，旨在显式减少VLA策略中由干扰物和外观引起的偏差。受无分类器引导（CFG）启发，TAG对比了原始观察和对象擦除观察下的策略预测，并利用其差异作为残差引导信号，以增强决策过程中对象证据的影响。TAG无需修改策略架构，且能以最小的训练和推理改动与现有VLA策略集成。我们在标准操作基准测试（包括LIBERO、LIBERO-Plus和VLABench）上评估了TAG，结果显示其能持续提升在杂乱环境下的鲁棒性，并减少近失误和错误对象执行的情况。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

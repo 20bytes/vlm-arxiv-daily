@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>GeoRouter: Dynamic Paradigm Routing for Worldwide Image Geolocalization</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Worldwide image geolocalization aims to predict precise GPS coordinates for images captured anywhere on Earth, which is challenging due to the large visual and geographic diversity. Recent methods mainly follow two paradigms: retrieval-based approaches that match queries against a reference database, and generation-based approaches that directly predict coordinates using Large Vision-Language Models (LVLMs). However, we observe distinct error profiles between them: retrieval excels at fine-grained instance matching, while generation offers robust semantic reasoning. This complementary heterogeneity suggests that no single paradigm is universally superior. To harness this potential, we propose GeoRouter, a dynamic routing framework that adaptively assigns each query to the optimal paradigm. GeoRouter leverages an LVLM backbone to analyze visual content and provide routing decisions. To optimize GeoRouter, we introduce a distance-aware preference objective that converts the distance gap between paradigms into a continuous supervision signal, explicitly reflecting relative performance differences. Furthermore, we construct GeoRouting, the first large-scale dataset tailored for training routing policies with independent paradigm predictions. Extensive experiments on IM2GPS3k and YFCC4k demonstrate that GeoRouter significantly outperforms state-of-the-art baselines.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>全球图像地理定位旨在为地球上任意地点拍摄的图像预测精确的GPS坐标，由于视觉和地理多样性巨大，这一任务极具挑战性。现有方法主要遵循两种范式：基于检索的方法，通过将查询与参考数据库进行匹配；以及基于生成的方法，利用大型视觉语言模型（LVLM）直接预测坐标。然而，我们观察到两者存在明显的误差特征：检索方法擅长细粒度的实例匹配，而生成方法则提供鲁棒的语义推理能力。这种互补的异质性表明，单一范式并非普遍最优。为充分利用这一潜力，我们提出了GeoRouter，一种动态路由框架，能够自适应地为每个查询分配最优范式。GeoRouter利用LVLM主干网络分析视觉内容并提供路由决策。为优化GeoRouter，我们引入了一种距离感知的偏好目标，将范式间的距离差距转化为连续的监督信号，从而明确反映相对性能差异。此外，我们构建了GeoRouting，这是首个专为训练具有独立范式预测的路由策略而设计的大规模数据集。在IM2GPS3k和YFCC4k上的大量实验表明，GeoRouter显著优于当前最先进的基线方法。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
