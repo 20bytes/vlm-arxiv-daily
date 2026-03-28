@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>LaMP: Learning Vision-Language-Action Policies with 3D Scene Flow as Latent Motion Prior</h1>
+      <h2>Abstract (EN)</h2>
+      <p>We introduce \textbf{LaMP}, a dual-expert Vision-Language-Action framework that embeds dense 3D scene flow as a latent motion prior for robotic manipulation. Existing VLA models regress actions directly from 2D semantic visual features, forcing them to learn complex 3D physical interactions implicitly. This implicit learning strategy degrades under unfamiliar spatial dynamics. LaMP addresses this limitation by aligning a flow-matching \emph{Motion Expert} with a policy-predicting \emph{Action Expert} through gated cross-attention. Specifically, the Motion Expert generates a one-step partially denoised 3D scene flow, and its hidden states condition the Action Expert without full multi-step reconstruction. We evaluate LaMP on the LIBERO, LIBERO-Plus, and SimplerEnv-WidowX simulation benchmarks as well as real-world experiments. LaMP consistently outperforms evaluated VLA baselines across LIBERO, LIBERO-Plus, and SimplerEnv-WidowX benchmarks, achieving the highest reported average success rates under the same training budgets. On LIBERO-Plus OOD perturbations, LaMP shows improved robustness with an average 9.7% gain over the strongest prior baseline. Our project page is available at https://summerwxk.github.io/lamp-project-page/.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>我们提出了\textbf{LaMP}，一种双专家视觉-语言-动作框架，通过将稠密三维场景流嵌入为潜在运动先验来支持机器人操作。现有的VLA模型直接从二维语义视觉特征回归动作，迫使它们隐式学习复杂的三维物理交互。这种隐式学习策略在不熟悉的空间动态下性能会下降。LaMP通过门控交叉注意力将流匹配的\emph{运动专家}与策略预测的\emph{动作专家}对齐，以解决这一局限。具体而言，运动专家生成一步部分去噪的三维场景流，其隐藏状态在无需完整多步重建的情况下条件化动作专家。我们在LIBERO、LIBERO-Plus和SimplerEnv-WidowX仿真基准以及真实世界实验中评估了LaMP。在相同训练预算下，LaMP在LIBERO、LIBERO-Plus和SimplerEnv-WidowX基准上始终优于所评估的VLA基线，实现了报告中最高的平均成功率。在LIBERO-Plus的分布外扰动测试中，LaMP表现出更强的鲁棒性，相比先前最强基线平均提升9.7%。项目页面详见：https://summerwxk.github.io/lamp-project-page/。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

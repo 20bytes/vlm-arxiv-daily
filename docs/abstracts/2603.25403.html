@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Shape and Substance: Dual-Layer Side-Channel Attacks on Local Vision-Language Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>On-device Vision-Language Models (VLMs) promise data privacy via local execution. However, we show that the architectural shift toward Dynamic High-Resolution preprocessing (e.g., AnyRes) introduces an inherent algorithmic side-channel. Unlike static models, dynamic preprocessing decomposes images into a variable number of patches based on their aspect ratio, creating workload-dependent inputs. We demonstrate a dual-layer attack framework against local VLMs. In Tier 1, an unprivileged attacker can exploit significant execution-time variations using standard unprivileged OS metrics to reliably fingerprint the input&#x27;s geometry. In Tier 2, by profiling Last-Level Cache (LLC) contention, the attacker can resolve semantic ambiguity within identical geometries, distinguishing between visually dense (e.g., medical X-rays) and sparse (e.g., text documents) content. By evaluating state-of-the-art models such as LLaVA-NeXT and Qwen2-VL, we show that combining these signals enables reliable inference of privacy-sensitive contexts. Finally, we analyze the security engineering trade-offs of mitigating this vulnerability, reveal substantial performance overhead with constant-work padding, and propose practical design recommendations for secure Edge AI deployments.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>设备端视觉语言模型通过本地执行承诺了数据隐私保护。然而，我们发现，向动态高分辨率预处理（如AnyRes）的架构转变引入了一种固有的算法侧信道。与静态模型不同，动态预处理根据图像的长宽比将其分解为数量可变的图像块，从而创建依赖于工作负载的输入。我们展示了一种针对本地视觉语言模型的双层攻击框架。在第一层，未授权攻击者可以利用标准的无特权操作系统指标，通过显著的执行时间差异可靠地识别输入图像的几何特征。在第二层，通过分析末级缓存争用情况，攻击者能够解析相同几何形状内的语义模糊性，区分视觉密集（如医学X射线）与稀疏（如文本文档）内容。通过评估LLaVA-NeXT和Qwen2-VL等先进模型，我们证明结合这些信号能够可靠地推断隐私敏感场景。最后，我们分析了缓解此漏洞的安全工程权衡，揭示了恒定工作填充带来的显著性能开销，并为安全的边缘人工智能部署提出了实用的设计建议。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
