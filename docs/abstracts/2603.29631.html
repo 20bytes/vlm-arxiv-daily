@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Storing Less, Finding More: How Novelty Filtering Improves Cross-Modal Retrieval on Edge Cameras</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Always-on edge cameras generate continuous video streams where redundant frames degrade cross-modal retrieval by crowding correct results out of top-k search. This paper presents a streaming retrieval architecture: an on-device epsilon-net filter retains only semantically novel frames, building a denoised embedding index; a cross-modal adapter and cloud re-ranker compensate for the compact encoder&#x27;s weak alignment. A single-pass streaming filter outperforms offline alternatives (k-means, farthest-point, uniform, random) across eight vision-language models (8M-632M) on two egocentric datasets (AEA, EPIC-KITCHENS). Combined, the architecture reaches 45.6% Hit@5 on held-out data using an 8M on-device encoder at an estimated 2.7 mW.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>常开边缘摄像头持续生成视频流，其中冗余帧会挤占正确结果在top-k搜索中的位置，从而降低跨模态检索性能。本文提出一种流式检索架构：设备端epsilon-net过滤器仅保留语义新颖的帧，构建去噪嵌入索引；跨模态适配器和云端重排序器则补偿紧凑编码器在模态对齐上的不足。在两种第一人称视角数据集（AEA、EPIC-KITCHENS）上，针对八种视觉-语言模型（8M-632M参数规模），单次流式过滤器的表现均优于离线替代方案（k均值、最远点采样、均匀采样、随机采样）。该架构结合8M参数的设备端编码器，在预估功耗2.7 mW的条件下，于预留数据集上实现了45.6%的Hit@5检索准确率。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>DIAL: Decoupling Intent and Action via Latent World Modeling for End-to-End VLA</h1>
+      <h2>Abstract (EN)</h2>
+      <p>The development of Vision-Language-Action (VLA) models has been significantly accelerated by pre-trained Vision-Language Models (VLMs). However, most existing end-to-end VLAs treat the VLM primarily as a multimodal encoder, directly mapping vision-language features to low-level actions. This paradigm underutilizes the VLM&#x27;s potential in high-level decision making and introduces training instability, frequently degrading its rich semantic representations. To address these limitations, we introduce DIAL, a framework bridging high-level decision making and low-level motor execution through a differentiable latent intent bottleneck. Specifically, a VLM-based System-2 performs latent world modeling by synthesizing latent visual foresight within the VLM&#x27;s native feature space; this foresight explicitly encodes intent and serves as the structural bottleneck. A lightweight System-1 policy then decodes this predicted intent together with the current observation into precise robot actions via latent inverse dynamics. To ensure optimization stability, we employ a two-stage training paradigm: a decoupled warmup phase where System-2 learns to predict latent futures while System-1 learns motor control under ground-truth future guidance within a unified feature space, followed by seamless end-to-end joint optimization. This enables action-aware gradients to refine the VLM backbone in a controlled manner, preserving pre-trained knowledge. Extensive experiments on the RoboCasa GR1 Tabletop benchmark show that DIAL establishes a new state-of-the-art, achieving superior performance with 10x fewer demonstrations than prior methods. Furthermore, by leveraging heterogeneous human demonstrations, DIAL learns physically grounded manipulation priors and exhibits robust zero-shot generalization to unseen objects and novel configurations during real-world deployment on a humanoid robot.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>预训练视觉语言模型（VLM）的快速发展显著推动了视觉语言动作（VLA）模型的进步。然而，现有大多数端到端VLA模型仅将VLM视为多模态编码器，直接将视觉语言特征映射为低层动作。这种范式未能充分利用VLM在高层决策中的潜力，并导致训练不稳定，常常损害其丰富的语义表征能力。为应对这些局限，我们提出DIAL框架，通过可微分的潜在意图瓶颈桥接高层决策与低层运动执行。具体而言，基于VLM的System-2通过在其原生特征空间内合成潜在视觉前瞻来执行潜在世界建模；这种前瞻显式编码意图并构成结构化瓶颈。随后，轻量级System-1策略通过潜在逆动力学，将预测意图与当前观测共同解码为精确的机器人动作。为确保优化稳定性，我们采用两阶段训练范式：解耦预热阶段中，System-2学习在统一特征空间内预测潜在未来状态，而System-1在真实未来状态指导下学习运动控制；随后进行无缝的端到端联合优化。该方法使动作感知梯度能以受控方式优化VLM骨干网络，同时保留预训练知识。在RoboCasa GR1桌面基准测试中的大量实验表明，DIAL实现了新的最优性能，仅需先前方法十分之一的演示数据即可获得更优效果。此外，通过利用异构人类演示数据，DIAL学习了物理基础的操作先验知识，并在人形机器人真实场景部署中，对未见物体及新配置展现出强大的零样本泛化能力。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

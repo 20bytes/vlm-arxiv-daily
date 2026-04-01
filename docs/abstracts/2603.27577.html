@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Structured Observation Language for Efficient and Generalizable Vision-Language Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language Navigation (VLN) requires an embodied agent to navigate complex environments by following natural language instructions, which typically demands tight fusion of visual and language modalities. Existing VLN methods often convert raw images into visual tokens or implicit features, requiring large-scale visual pre-training and suffering from poor generalization under environmental variations (e.g., lighting, texture). To address these issues, we propose SOL-Nav (Structured Observation Language for Navigation), a novel framework that translates egocentric visual observations into compact structured language descriptions for efficient and generalizable navigation. Specifically, we divide RGB-D images into a N*N grid, extract representative semantic, color, and depth information for each grid cell to form structured text, and concatenate this with the language instruction as pure language input to a pre-trained language model (PLM). Experimental results on standard VLN benchmarks (R2R, RxR) and real-world deployments demonstrate that SOL-Nav significantly reduces the model size and training data dependency, fully leverages the reasoning and representation capabilities of PLMs, and achieves strong generalization to unseen environments.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉语言导航要求具身智能体依据自然语言指令在复杂环境中导航，这通常需要视觉与语言模态的紧密融合。现有方法常将原始图像转换为视觉标记或隐式特征，这需要大规模视觉预训练，且在环境变化（如光照、纹理）下泛化能力较差。为解决这些问题，我们提出了SOL-Nav（面向导航的结构化观察语言），这是一种新颖框架，将自我中心视觉观察转化为紧凑的结构化语言描述，以实现高效且可泛化的导航。具体而言，我们将RGB-D图像划分为N*N网格，为每个网格单元提取代表性语义、颜色和深度信息以形成结构化文本，并将其与语言指令拼接作为纯语言输入，馈送至预训练语言模型。在标准VLN基准测试（R2R、RxR）和实际部署中的实验结果表明，SOL-Nav显著减小了模型规模和对训练数据的依赖，充分利用了预训练语言模型的推理与表征能力，并在未见环境中实现了强大的泛化性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

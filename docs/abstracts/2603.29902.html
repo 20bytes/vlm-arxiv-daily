@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Interleaved text-and-image generation represents a significant frontier for Multimodal Large Language Models (MLLMs), offering a more intuitive way to convey complex information. Current paradigms rely on either image generation or retrieval augmentation, yet they typically treat the two as mutually exclusive paths, failing to unify factuality with creativity. We argue that the next milestone in this field is Agentic Tool Planning, where the model serves as a central controller that autonomously determines when, where, and which tools to invoke to produce interleaved responses for visual-critical queries. To systematically evaluate this paradigm, we introduce ATP-Bench, a novel benchmark comprising 7,702 QA pairs (including 1,592 VQA pairs) across eight categories and 25 visual-critical intents, featuring human-verified queries and ground truths. Furthermore, to evaluate agentic planning independent of end-to-end execution and changing tool backends, we propose a Multi-Agent MLLM-as-a-Judge (MAM) system. MAM evaluates tool-call precision, identifies missed opportunities for tool use, and assesses overall response quality without requiring ground-truth references. Our extensive experiments on 10 state-of-the-art MLLMs reveal that models struggle with coherent interleaved planning and exhibit significant variations in tool-use behavior, highlighting substantial room for improvement and providing actionable guidance for advancing interleaved generation. Dataset and code are available at https://github.com/Qwen-Applications/ATP-Bench.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>交错式文本与图像生成是多模态大语言模型（MLLMs）的一个重要前沿领域，为传达复杂信息提供了更直观的方式。当前范式主要依赖图像生成或检索增强，但通常将两者视为互斥路径，未能统一事实性与创造性。我们认为该领域的下一个里程碑是智能体工具规划，即模型作为中央控制器，自主决定何时、何处以及调用何种工具，以针对视觉关键查询生成交错式响应。为系统评估这一范式，我们引入了ATP-Bench，这是一个包含7,702个问答对（含1,592个视觉问答对）的新基准，涵盖八个类别和25种视觉关键意图，并配备人工验证的查询与真实答案。此外，为独立于端到端执行和可变工具后端评估智能体规划，我们提出了多智能体MLLM即评判系统。该系统无需真实参考，即可评估工具调用精度、识别工具使用的遗漏机会，并评判整体响应质量。我们在10个先进MLLMs上的广泛实验表明，模型在连贯的交错规划方面存在困难，且工具使用行为差异显著，凸显了巨大的改进空间，并为推进交错生成提供了可操作的指导。数据集与代码发布于https://github.com/Qwen-Applications/ATP-Bench。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

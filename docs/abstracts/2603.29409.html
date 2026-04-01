@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>CLaD: Planning with Grounded Foresight via Cross-Modal Latent Dynamics</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Robotic manipulation involves kinematic and semantic transitions that are inherently coupled via underlying actions. However, existing approaches plan within either semantic or latent space without explicitly aligning these cross-modal transitions. To address this, we propose CLaD, a framework that models how proprioceptive and semantic states jointly evolve under actions through asymmetric cross-attention that allows kinematic transitions to query semantic ones. CLaD predicts grounded latent foresights via self-supervised objectives with EMA target encoders and auxiliary reconstruction losses, preventing representation collapse while anchoring predictions to observable states. Predicted foresights are modulated with observations to condition a diffusion policy for action generation. On LIBERO-LONG benchmark, CLaD achieves 94.7\% success rate, competitive with large VLAs with significantly fewer parameters.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>机器人操作涉及运动学和语义状态的转换，这些转换通过底层动作固有地耦合在一起。然而，现有方法仅在语义空间或潜在空间内进行规划，而未显式对齐这些跨模态转换。为解决此问题，我们提出了CLaD框架，该框架通过非对称交叉注意力机制建模本体感知状态和语义状态如何在动作作用下共同演化，使得运动学转换能够查询语义转换。CLaD通过采用指数移动平均目标编码器和辅助重建损失的自监督目标，预测接地的潜在前瞻，既防止表征崩溃，又将预测锚定于可观测状态。预测的前瞻与观测值进行调制，进而为扩散策略的动作生成提供条件。在LIBERO-LONG基准测试中，CLaD实现了94.7%的成功率，与参数规模显著更大的大型视觉语言动作模型相比具有竞争力。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
