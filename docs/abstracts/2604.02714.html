@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ExploreVLA: Dense World Modeling and Exploration for End-to-End Autonomous Driving</h1>
+      <h2>Abstract (EN)</h2>
+      <p>End-to-end autonomous driving models based on Vision-Language-Action (VLA) architectures have shown promising results by learning driving policies through behavior cloning on expert demonstrations. However, imitation learning inherently limits the model to replicating observed behaviors without exploring diverse driving strategies, leaving it brittle in novel or out-of-distribution scenarios. Reinforcement learning (RL) offers a natural remedy by enabling policy exploration beyond the expert distribution. Yet VLA models, typically trained on offline datasets, lack directly observable state transitions, necessitating a learned world model to anticipate action consequences. In this work, we propose a unified understanding-and-generation framework that leverages world modeling to simultaneously enable meaningful exploration and provide dense supervision. Specifically, we augment trajectory prediction with future RGB and depth image generation as dense world modeling objectives, requiring the model to learn fine-grained visual and geometric representations that substantially enrich the planning backbone. Beyond serving as a supervisory signal, the world model further acts as a source of intrinsic reward for policy exploration: its image prediction uncertainty naturally measures a trajectory&#x27;s novelty relative to the training distribution, where high uncertainty indicates out-of-distribution scenarios that, if safe, represent valuable learning opportunities. We incorporate this exploration signal into a safety-gated reward and optimize the policy via Group Relative Policy Optimization (GRPO). Experiments on the NAVSIM and nuScenes benchmarks demonstrate the effectiveness of our approach, achieving a state-of-the-art PDMS score of 93.7 and an EPDMS of 88.8 on NAVSIM. The code and demo will be publicly available at https://zihaosheng.github.io/ExploreVLA/.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>基于视觉-语言-动作（VLA）架构的端到端自动驾驶模型通过行为克隆学习专家演示中的驾驶策略，已展现出有前景的结果。然而，模仿学习本质上限制了模型只能复现已观察到的行为，无法探索多样化的驾驶策略，导致其在新颖或分布外场景中表现脆弱。强化学习（RL）提供了一种自然的解决方案，它允许策略在专家分布之外进行探索。但通常基于离线数据集训练的VLA模型缺乏直接可观测的状态转移，因此需要借助学习得到的世界模型来预测动作的后果。在本研究中，我们提出了一种统一的理解与生成框架，该框架利用世界建模来同时实现有意义的探索并提供密集监督。具体而言，我们通过未来RGB图像和深度图像的生成作为密集世界建模目标来增强轨迹预测，要求模型学习细粒度的视觉与几何表征，从而显著丰富规划主干。除了作为监督信号外，世界模型还进一步充当策略探索的内在奖励来源：其图像预测的不确定性自然地衡量了轨迹相对于训练分布的新颖性，其中高不确定性指示了分布外场景——若这些场景是安全的，则代表了宝贵的学习机会。我们将这一探索信号整合到安全门控奖励中，并通过组相对策略优化（GRPO）来优化策略。在NAVSIM和nuScenes基准测试上的实验证明了我们方法的有效性，在NAVSIM上实现了93.7的PDMS分数和88.8的EPDMS分数，达到了当前最佳水平。代码与演示将在https://zihaosheng.github.io/ExploreVLA/公开提供。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

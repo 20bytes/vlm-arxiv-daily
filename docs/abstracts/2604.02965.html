@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Open-Loop Planning, Closed-Loop Verification: Speculative Verification for VLA</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language-Action (VLA) models, as large foundation models for embodied control, have shown strong performance in manipulation tasks. However, their performance comes at high inference cost. To improve efficiency, recent methods adopt action chunking, which predicts a sequence of future actions for open-loop execution. Although effective for reducing computation, open-loop execution is sensitive to environmental changes and prone to error accumulation due to the lack of close-loop feedback. To address this limitation, we propose Speculative Verification for VLA Control (SV-VLA), a framework that combines efficient open-loop long-horizon planning with lightweight closed-loop online verification. Specifically, SV-VLA uses a heavy VLA as a low-frequency macro-planner to generate an action chunk together with a planning context, while a lightweight verifier continuously monitors execution based on the latest observations. Conditioned on both the current observation and the planning context, the verifier compares the planned action against a closed-loop reference action and triggers replanning only when necessary. Experiments demonstrate that SV-VLA combines the efficiency of chunked prediction with the robustness of closed-loop control, enabling efficient and reliable VLA-based control in dynamic environments. Code is available: https://github.com/edsad122/SV-VLA.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作（VLA）模型作为具身控制的大型基础模型，在操作任务中展现出强大性能，但其推理成本高昂。为提高效率，现有方法采用动作分块预测，即预测未来动作序列进行开环执行。尽管开环执行能有效减少计算量，但由于缺乏闭环反馈，其对环境变化敏感且易产生误差累积。为克服这一局限，本文提出面向VLA控制的推测性验证框架（SV-VLA），该框架将高效的开环长时程规划与轻量级闭环在线验证相结合。具体而言，SV-VLA采用重型VLA作为低频宏观规划器，生成动作块及规划上下文；同时，轻量级验证器基于最新观测持续监控执行过程。验证器结合当前观测与规划上下文，将规划动作与闭环参考动作进行比对，仅在必要时触发重新规划。实验表明，SV-VLA融合了分块预测的高效性与闭环控制的鲁棒性，能在动态环境中实现高效可靠的VLA控制。代码已开源：https://github.com/edsad122/SV-VLA。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

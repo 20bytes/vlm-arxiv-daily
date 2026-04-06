@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ARM: Advantage Reward Modeling for Long-Horizon Manipulation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Long-horizon robotic manipulation remains challenging for reinforcement learning (RL) because sparse rewards provide limited guidance for credit assignment. Practical policy improvement thus relies on richer intermediate supervision, such as dense progress rewards, which are costly to obtain and ill-suited to non-monotonic behaviors such as backtracking and recovery. To address this, we propose Advantage Reward Modeling (ARM), a framework that shifts from hard-to-quantify absolute progress to estimating relative advantage. We introduce a cost-effective tri-state labeling strategy -- Progressive, Regressive, and Stagnant -- that reduces human cognitive overhead while ensuring high cross-annotator consistency. By training on these intuitive signals, ARM enables automated progress annotation for both complete demonstrations and fragmented DAgger-style data. Integrating ARM into an offline RL pipeline allows for adaptive action-reward reweighting, effectively filtering suboptimal samples. Our approach achieves a 99.4% success rate on a challenging long-horizon towel-folding task, demonstrating improved stability and data efficiency over current VLA baselines with near-zero human intervention during policy training.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>长时程机器人操作对强化学习（RL）而言仍具挑战性，因为稀疏奖励在信用分配上提供的指导有限。实际策略改进因此依赖于更丰富的中间监督，如密集进度奖励，但这些奖励获取成本高昂，且不适用于回溯、恢复等非单调行为。为解决此问题，我们提出优势奖励建模（ARM）框架，该框架从难以量化的绝对进度评估转向估计相对优势。我们引入一种低成本的三态标注策略——前进、后退与停滞——在确保高标注者间一致性的同时降低人工认知负荷。通过基于这些直观信号进行训练，ARM能够为完整演示和碎片化的DAgger风格数据实现自动化进度标注。将ARM整合至离线RL流程中，可实现自适应动作-奖励重加权，有效过滤次优样本。我们的方法在具有挑战性的长时程毛巾折叠任务上达到了99.4%的成功率，相较于当前视觉语言动作基线，在策略训练期间近乎零人工干预的情况下，展现出更高的稳定性和数据效率。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

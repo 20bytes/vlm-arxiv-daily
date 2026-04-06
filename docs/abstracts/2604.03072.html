@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>MI-Pruner: Crossmodal Mutual Information-guided Token Pruner for Efficient MLLMs</h1>
+      <h2>Abstract (EN)</h2>
+      <p>For multimodal large language models (MLLMs), visual information is relatively sparse compared with text. As a result, research on visual pruning emerges for efficient inference. Current approaches typically measure token importance based on the attention scores in the visual encoder or in the LLM decoder, then select visual tokens with high attention scores while pruning others. In this paper, we pursue a different and more surgical approach. Instead of relying on mechanism-specific signals, we directly compute Mutual Information (MI) between visual and textual features themselves, prior to their interaction. This allows us to explicitly measure crossmodal dependency at the feature levels. Our MI-Pruner is simple, efficient and non-intrusive, requiring no access to internal attention maps or architectural modifications. Experimental results demonstrate that our approach outperforms previous attention-based pruning methods with minimal latency.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在多模态大语言模型（MLLMs）中，视觉信息相较于文本信息较为稀疏。因此，为提升推理效率，视觉令牌剪枝研究应运而生。当前方法通常基于视觉编码器或大语言模型解码器中的注意力分数来衡量令牌重要性，进而选择高注意力分数的视觉令牌并剪除其余部分。本文提出了一种不同且更为精细的方法。我们不依赖特定机制信号，而是直接在视觉与文本特征交互前计算它们之间的互信息（MI），从而在特征层面显式度量跨模态依赖关系。我们的MI-Pruner方法简洁高效且无需侵入模型，既不依赖内部注意力图，也无需修改模型架构。实验结果表明，该方法以极低的延迟超越了以往基于注意力的剪枝方法。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>CoME-VL: Scaling Complementary Multi-Encoder Vision-Language Learning</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Recent vision-language models (VLMs) typically rely on a single vision encoder trained with contrastive image-text objectives, such as CLIP-style pretraining. While contrastive encoders are effective for cross-modal alignment and retrieval, self-supervised visual encoders often capture richer dense semantics and exhibit stronger robustness on recognition and understanding tasks. In this work, we investigate how to scale the fusion of these complementary visual representations for vision-language modeling. We propose CoME-VL: Complementary Multi-Encoder Vision-Language, a modular fusion framework that integrates a contrastively trained vision encoder with a self-supervised DINO encoder. Our approach performs representation-level fusion by (i) entropy-guided multi-layer aggregation with orthogonality-constrained projections to reduce redundancy, and (ii) RoPE-enhanced cross-attention to align heterogeneous token grids and produce compact fused visual tokens. The fused tokens can be injected into a decoder-only LLM with minimal changes to standard VLM pipelines. Extensive experiments across diverse vision-language benchmarks demonstrate that CoME-VL consistently outperforms single-encoder baselines. In particular, we observe an average improvement of 4.9% on visual understanding tasks and 5.4% on grounding tasks. Our method achieves state-of-the-art performance on RefCOCO for detection while improving over the baseline by a large margin. Finally, we conduct ablation studies on layer merging, non-redundant feature mixing, and fusion capacity to evaluate how complementary contrastive and self-supervised signals affect VLM performance.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>当前的视觉-语言模型通常依赖单一视觉编码器，并采用对比式图像-文本目标（如CLIP风格预训练）进行训练。尽管对比编码器在跨模态对齐与检索任务中表现优异，但自监督视觉编码器往往能捕捉更丰富的密集语义，并在识别与理解任务中展现出更强的鲁棒性。本研究探索如何扩展这两种互补视觉表征的融合以优化视觉-语言建模。我们提出CoME-VL（互补多编码器视觉-语言模型），这是一个模块化融合框架，通过整合对比训练的视觉编码器与自监督DINO编码器实现互补。我们的方法在表征层面进行融合，具体包括：（1）采用熵引导的多层聚合与正交约束投影以减少冗余；（2）通过RoPE增强的交叉注意力对齐异构令牌网格，生成紧凑的融合视觉令牌。融合后的令牌可注入仅解码器架构的大语言模型中，且对标准视觉-语言模型流程改动极小。在多样化的视觉-语言基准测试中，CoME-VL始终优于单编码器基线模型。特别地，我们在视觉理解任务中平均提升4.9%，在定位任务中平均提升5.4%。本方法在RefCOCO检测任务上达到最先进性能，且较基线模型有显著提升。最后，我们通过消融实验对层级融合、非冗余特征混合及融合容量进行分析，以评估对比学习与自监督信号的互补性如何影响视觉-语言模型性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
