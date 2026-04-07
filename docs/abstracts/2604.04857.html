@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>The Blind Spot of Adaptation: Quantifying and Mitigating Forgetting in Fine-tuned Driving Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>The integration of Vision-Language Models (VLMs) into autonomous driving promises to solve long-tail scenarios, but this paradigm faces the critical and unaddressed challenge of catastrophic forgetting. The very fine-tuning process used to adapt these models to driving-specific data simultaneously erodes their invaluable pre-trained world knowledge, creating a self-defeating paradox that undermines the core reason for their use. This paper provides the first systematic investigation into this phenomenon. We introduce a new large-scale dataset of 180K scenes, which enables the first-ever benchmark specifically designed to quantify catastrophic forgetting in autonomous driving. Our analysis reveals that existing methods suffer from significant knowledge degradation. To address this, we propose the Drive Expert Adapter (DEA), a novel framework that circumvents this trade-off by shifting adaptation from the weight space to the prompt space. DEA dynamically routes inference through different knowledge experts based on scene-specific cues, enhancing driving-task performance without corrupting the model&#x27;s foundational parameters. Extensive experiments demonstrate that our approach not only achieves state-of-the-art results on driving tasks but also effectively mitigates catastrophic forgetting, preserving the essential generalization capabilities that make VLMs a transformative force for autonomous systems. Data and model are released at FidelityDrivingBench.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>将视觉语言模型（VLMs）集成到自动驾驶中，有望解决长尾场景问题，但这一范式面临着灾难性遗忘这一关键且尚未解决的挑战。用于使这些模型适应驾驶特定数据的微调过程，同时侵蚀了其宝贵的预训练世界知识，形成了一个自我挫败的悖论，削弱了其使用的核心原因。本文首次对这一现象进行了系统性研究。我们引入了一个包含18万个场景的新大规模数据集，首次构建了专门用于量化自动驾驶中灾难性遗忘的基准。我们的分析表明，现有方法存在显著的知识退化问题。为解决这一问题，我们提出了驾驶专家适配器（DEA），这是一种新颖的框架，通过将适应从权重空间转移到提示空间来规避这种权衡。DEA根据场景特定线索动态路由推理，通过不同的知识专家，提升驾驶任务性能，同时不破坏模型的基础参数。大量实验证明，我们的方法不仅在驾驶任务上取得了最先进的结果，而且有效缓解了灾难性遗忘，保留了使VLMs成为自动驾驶系统变革力量的关键泛化能力。数据和模型已在FidelityDrivingBench发布。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

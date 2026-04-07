@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Veo-Act: How Far Can Frontier Video Models Advance Generalizable Robot Manipulation?</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Video generation models have advanced rapidly and are beginning to show a strong understanding of physical dynamics. In this paper, we investigate how far an advanced video generation model such as Veo-3 can support generalizable robotic manipulation. We first study a zero-shot approach in which Veo-3 predicts future image sequences from current robot observations, while an inverse dynamics model IDM recovers the corresponding robot actions. The IDM is trained solely on random-play data, requiring neither human supervision nor expert demonstrations. The key intuition is that, if a video model can generate physically plausible future motions in image space, an IDM can translate those visual trajectories into executable robot actions. We evaluate this &quot;Veo-3+IDM&quot; approach in both simulation and the real world using a high-dimensional dexterous hand. We find that, owing to the strong generalization capability of frontier video models, Veo-3+IDM can consistently generate approximately correct task-level trajectories. However, its low-level control accuracy remains insufficient to solve most tasks reliably. Motivated by this observation, we develop a hierarchical framework, Veo-Act, which uses Veo-3 as a high-level motion planner and a VLA policy as the low-level executor, significantly improving the instruction-following performance of a state-of-the-art vision-language-action policy. Overall, our results suggest that, as video generation models continue to improve, video models can be a valuable component for generalizable robot learning.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视频生成模型发展迅速，已开始展现出对物理动态的深刻理解。本文探讨了如Veo-3这样的先进视频生成模型能在多大程度上支持通用机器人操作。我们首先研究了一种零样本方法，其中Veo-3根据当前机器人观测预测未来图像序列，而逆动力学模型IDM则恢复相应的机器人动作。IDM仅通过随机游戏数据进行训练，无需人类监督或专家演示。核心直觉在于，如果视频模型能在图像空间中生成物理上合理的未来运动，IDM就能将这些视觉轨迹转化为可执行的机器人动作。我们在仿真和现实世界中，使用高自由度灵巧手评估了这种“Veo-3+IDM”方法。研究发现，得益于前沿视频模型的强大泛化能力，Veo-3+IDM能够持续生成大致正确的任务级轨迹。然而，其底层控制精度仍不足以可靠地完成大多数任务。基于这一观察，我们开发了一个分层框架——Veo-Act，该框架使用Veo-3作为高层运动规划器，并采用视觉语言动作策略作为底层执行器，从而显著提升了当前最先进的视觉语言动作策略的指令跟随性能。总体而言，我们的结果表明，随着视频生成模型的不断进步，视频模型有望成为通用机器人学习中的宝贵组成部分。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

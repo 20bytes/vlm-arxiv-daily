@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>From Prompt to Physical Action: Structured Backdoor Attacks on LLM-Mediated Robotic Control Systems</h1>
+      <h2>Abstract (EN)</h2>
+      <p>The integration of large language models (LLMs) into robotic control pipelines enables natural language interfaces that translate user prompts into executable commands. However, this digital-to-physical interface introduces a critical and underexplored vulnerability: structured backdoor attacks embedded during fine-tuning. In this work, we experimentally investigate LoRA-based supply-chain backdoors in LLM-mediated ROS2 robotic control systems and evaluate their impact on physical robot execution. We construct two poisoned fine-tuning strategies targeting different stages of the command generation pipeline and reveal a key systems-level insight: back-doors embedded at the natural-language reasoning stage do not reliably propagate to executable control outputs, whereas backdoors aligned directly with structured JSON command formats successfully survive translation and trigger physical actions. In both simulation and real-world experiments, backdoored models achieve an average Attack Success Rate of 83% while maintaining over 93% Clean Performance Accuracy (CPA) and sub-second latency, demonstrating both reliability and stealth. We further implement an agentic verification defense using a secondary LLM for semantic consistency checking. Although this reduces the Attack Success Rate (ASR) to 20%, it increases end-to-end latency to 8-9 seconds, exposing a significant security-responsiveness trade-off in real-time robotic systems. These results highlight structural vulnerabilities in LLM-mediated robotic control architectures and underscore the need for robotics-aware defenses for embodied AI systems.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>将大型语言模型（LLMs）集成到机器人控制流程中，实现了自然语言接口，可将用户提示转换为可执行命令。然而，这种数字到物理的接口引入了一个关键且尚未充分探索的漏洞：在微调过程中嵌入的结构化后门攻击。本研究通过实验探究了基于LoRA的供应链后门在LLM介导的ROS2机器人控制系统中的应用，并评估了其对物理机器人执行的影响。我们构建了两种针对命令生成流程不同阶段的中毒微调策略，并揭示了一个关键的系统级洞见：嵌入在自然语言推理阶段的后门无法可靠地传播至可执行控制输出，而与结构化JSON命令格式直接对齐的后门则能成功存活于翻译过程并触发物理动作。在仿真和真实世界实验中，后门模型实现了平均83%的攻击成功率，同时保持超过93%的清洁性能准确率和亚秒级延迟，证明了其可靠性和隐蔽性。我们进一步实施了一种基于辅助LLM的语义一致性检查的代理验证防御机制。尽管该机制将攻击成功率降低至20%，但将端到端延迟增加至8-9秒，暴露了实时机器人系统中安全性与响应性之间的显著权衡。这些结果凸显了LLM介导的机器人控制架构中的结构性漏洞，并强调了为具身AI系统开发机器人感知防御的必要性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

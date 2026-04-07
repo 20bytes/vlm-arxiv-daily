@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Vero: An Open RL Recipe for General Visual Reasoning</h1>
+      <h2>Abstract (EN)</h2>
+      <p>What does it take to build a visual reasoner that works across charts, science, spatial understanding, and open-ended tasks? The strongest vision-language models (VLMs) show such broad visual reasoning is within reach, but the recipe behind them remains unclear, locked behind proprietary reinforcement learning (RL) pipelines with non-public data. We introduce Vero, a family of fully open VLMs that matches or exceeds existing open-weight models across diverse visual reasoning tasks. We scale RL data and rewards across six broad task categories, constructing Vero-600K, a 600K-sample dataset from 59 datasets, and designing task-routed rewards that handle heterogeneous answer formats. Vero achieves state-of-the-art performance, improving over four base models by 3.7-5.5 points on average across VeroEval, our suite of 30 challenging benchmarks. Starting from Qwen3-VL-8B-Instruct, Vero outperforms Qwen3-VL-8B-Thinking on 23 of 30 benchmarks without additional proprietary thinking data. When trained from the same base model, Vero-600K exceeds existing RL datasets across task categories. Systematic ablations reveal that different task categories elicit qualitatively distinct reasoning patterns that transfer poorly in isolation, suggesting that broad data coverage is the primary driver of strong RL scaling. All data, code, and models are released.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>构建一个能够跨越图表、科学、空间理解和开放式任务的视觉推理系统需要什么？最强大的视觉语言模型（VLMs）表明，这种广泛的视觉推理能力已触手可及，但其实现方案仍不明确，被封闭在非公开数据与专有强化学习（RL）流程中。我们推出了Vero，一个完全开源的视觉语言模型家族，在多样化的视觉推理任务中达到或超越了现有开源权重模型的性能。我们扩展了六大任务类别的强化学习数据与奖励机制，构建了包含59个数据集、60万样本的Vero-600K数据集，并设计了能够处理异构答案格式的任务路由奖励。Vero在性能上达到领先水平，在我们包含30个挑战性基准的评估套件VeroEval上，相比四个基础模型平均提升3.7至5.5分。以Qwen3-VL-8B-Instruct为起点，Vero在30个基准中的23个上超越了Qwen3-VL-8B-Thinking，且未使用额外的专有思维数据。当从相同基础模型训练时，Vero-600K在所有任务类别上均优于现有强化学习数据集。系统性消融实验表明，不同任务类别会引发性质各异的推理模式，这些模式在孤立情况下迁移效果较差，这提示广泛的数据覆盖是强化学习扩展效果的主要驱动力。所有数据、代码和模型均已开源发布。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

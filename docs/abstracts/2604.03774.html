@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>When Does Multimodal AI Help? Diagnostic Complementarity of Vision-Language Models and CNNs for Spectrum Management in Satellite-Terrestrial Networks</h1>
+      <h2>Abstract (EN)</h2>
+      <p>The adoption of vision-language models (VLMs) for wireless network management is accelerating, yet no systematic understanding exists of where these large foundation models outperform lightweight convolutional neural networks (CNNs) for spectrum-related tasks. This paper presents the first diagnostic comparison of VLMs and CNNs for spectrum heatmap understanding in non-terrestrial network and terrestrial network (NTN-TN) cooperative systems. We introduce SpectrumQA, a benchmark comprising 108K visual question-answer pairs across four granularity levels: scene classification (L1), regional reasoning (L2), spatial localization (L3), and semantic reasoning (L4). Our experiments on three NTN-TN scenarios with a frozen Qwen2-VL-7B and a trained ResNet-18 reveal a clear taskdependent complementarity: CNN achieves 72.9% accuracy at severity classification (L1) and 0.552 IoU at spatial localization (L3), while VLM uniquely enables semantic reasoning (L4) with F1=0.576 using only three in-context examples-a capability fundamentally absent in CNN architectures. Chain-of-thought (CoT) prompting further improves VLM reasoning by 12.6% (F1: 0.209-&gt;0.233) while having zero effect on spatial tasks, confirming that the complementarity is rooted in architectural differences rather than prompting limitations. A deterministic task-type router that delegates supervised tasks to CNN and reasoning tasks to VLM achieves a composite score of 0.616, a 39.1% improvement over CNN alone. We further show that VLM representations exhibit stronger cross-scenario robustness, with smaller performance degradation in 5 out of 6 transfer directions. These findings provide actionable guidelines: deploy CNNs for spatial localization and VLMs for semantic spectrum reasoning, rather than treating them as substitutes.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉语言模型（VLM）在无线网络管理中的应用正加速推进，但对于这些大型基础模型在频谱相关任务中何处优于轻量级卷积神经网络（CNN），目前尚缺乏系统性理解。本文首次针对非地面网络与地面网络（NTN-TN）协作系统中的频谱热图理解任务，对VLM与CNN进行了诊断性比较。我们提出了SpectrumQA基准数据集，包含跨越四个粒度层次的10.8万个视觉问答对：场景分类（L1）、区域推理（L2）、空间定位（L3）和语义推理（L4）。通过在三种NTN-TN场景下使用冻结参数的Qwen2-VL-7B模型和训练后的ResNet-18模型进行实验，我们发现了清晰的任务依赖性互补规律：CNN在严重程度分类（L1）任务中达到72.9%准确率，在空间定位（L3）任务中达到0.552交并比；而VLM仅需三个上下文示例即可实现语义推理（L4）任务（F1=0.576）——这种能力在CNN架构中根本不存在。思维链（CoT）提示策略将VLM推理性能提升12.6%（F1：0.209→0.233），但对空间任务毫无影响，这证实了互补性源于架构差异而非提示策略限制。采用确定性任务路由机制（监督任务分配至CNN、推理任务分配至VLM）可获得0.616的综合评分，较单独使用CNN提升39.1%。我们进一步发现VLM表征具有更强的跨场景鲁棒性，在6个迁移方向中有5个方向性能下降更小。这些发现提供了可操作的指导原则：应部署CNN处理空间定位任务，而将VLM用于语义频谱推理，而非将二者视为相互替代的方案。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

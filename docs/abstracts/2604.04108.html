@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Hypothesis Graph Refinement: Hypothesis-Driven Exploration with Cascade Error Correction for Embodied Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Embodied agents must explore partially observed environments while maintaining reliable long-horizon memory. Existing graph-based navigation systems improve scalability, but they often treat unexplored regions as semantically unknown, leading to inefficient frontier search. Although vision-language models (VLMs) can predict frontier semantics, erroneous predictions may be embedded into memory and propagate through downstream inferences, causing structural error accumulation that confidence attenuation alone cannot resolve. These observations call for a framework that can leverage semantic predictions for directed exploration while systematically retracting errors once new evidence contradicts them. We propose Hypothesis Graph Refinement (HGR), a framework that represents frontier predictions as revisable hypothesis nodes in a dependency-aware graph memory. HGR introduces (1) semantic hypothesis module, which estimates context-conditioned semantic distributions over frontiers and ranks exploration targets by goal relevance, travel cost, and uncertainty, and (2) verification-driven cascade correction, which compares on-site observations against predicted semantics and, upon mismatch, retracts the refuted node together with all its downstream dependents. Unlike additive map-building, this allows the graph to contract by pruning erroneous subgraphs, keeping memory reliable throughout long episodes. We evaluate HGR on multimodal lifelong navigation (GOAT-Bench) and embodied question answering (A-EQA, EM-EQA). HGR achieves 72.41% success rate and 56.22% SPL on GOAT-Bench, and shows consistent improvements on both QA benchmarks. Diagnostic analysis reveals that cascade correction eliminates approximately 20% of structurally redundant hypothesis nodes and reduces revisits to erroneous regions by 4.5x, with specular and transparent surfaces accounting for 67% of corrected prediction errors.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>具身智能体必须在部分可观测环境中进行探索，同时保持可靠的长时程记忆。现有的基于图的导航系统提升了可扩展性，但通常将未探索区域视为语义未知，导致前沿搜索效率低下。尽管视觉语言模型（VLMs）能够预测前沿语义，但错误的预测可能被嵌入记忆并通过下游推理传播，引发结构性的错误累积，仅靠置信度衰减无法解决这一问题。这些观察表明，需要一个既能利用语义预测进行定向探索，又能在新证据与预测矛盾时系统性地撤回错误的框架。我们提出了假设图优化（HGR），该框架将前沿预测表示为依赖感知图记忆中的可修正假设节点。HGR包含两个核心模块：（1）语义假设模块，用于估计前沿的上下文条件语义分布，并根据目标相关性、移动成本和不确定性对探索目标进行排序；（2）验证驱动的级联纠正，通过现场观测与预测语义的对比，一旦发现不匹配，便撤回被证伪的节点及其所有下游依赖节点。与累加式地图构建不同，该方法允许图通过剪除错误子图进行收缩，从而在整个长时程任务中保持记忆的可靠性。我们在多模态终身导航（GOAT-Bench）和具身问答（A-EQA、EM-EQA）任务上评估了HGR。HGR在GOAT-Bench上取得了72.41%的成功率和56.22%的SPL，并在两个问答基准上均表现出持续改进。诊断分析表明，级联纠正消除了约20%的结构冗余假设节点，并将错误区域的重复访问减少了4.5倍，其中镜面和透明表面导致的预测错误占纠正总数的67%。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

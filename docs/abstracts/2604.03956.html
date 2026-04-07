@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>VLA-Forget: Vision-Language-Action Unlearning for Embodied Foundation Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-language-action (VLA) models are emerging as embodied foundation models for robotic manipulation, but their deployment introduces a new unlearning challenge: removing unsafe, spurious, or privacy-sensitive behaviors without degrading perception, language grounding, and action control. In OpenVLA-style policies, behavior is produced through a fused visual encoder, a cross-modal projector, and a language backbone that predicts tokenized robot actions, so undesirable knowledge can be distributed across perception, alignment, and reasoning/action layers rather than confined to a single module. Consequently, partial unlearning applied only to the vision stack or only to the language backbone is often insufficient, while conventional unlearning baselines designed for standalone vision or language models may leave residual forgetting or incur unnecessary utility loss in embodied settings. We propose VLA-Forget, a hybrid unlearning framework that combines ratio-aware selective editing for perception and cross-modal specificity with layer-selective reasoning/action unlearning for utility-preserving forgetting. VLA-Forget jointly optimizes three objectives: targeted forgetting, perceptual preservation, and reasoning retention, through staged updates over the visual encoder, projector, and upper action-generating transformer blocks. Across forget-set behavior probes and retain-task evaluations, VLA-Forget improves forgetting efficacy by 10%, preserves perceptual specificity by 22%, retains reasoning and task success by 9%, and reduces post-quantization recovery by 55% relative to strong unlearning baselines.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作（VLA）模型正逐渐成为机器人操控领域的具身基础模型，但其部署带来了新的遗忘挑战：如何在移除不安全、虚假或隐私敏感行为的同时，不损害感知、语言接地和动作控制能力。在OpenVLA类策略中，行为通过融合视觉编码器、跨模态投影器和预测分词化机器人动作的语言主干生成，因此不良知识可能分散在感知层、对齐层以及推理/动作层中，而非局限于单一模块。这导致仅针对视觉栈或仅针对语言主干的部分遗忘往往效果不足，而传统为独立视觉或语言模型设计的遗忘基线在具身场景中可能残留遗忘痕迹或造成不必要的性能损失。我们提出VLA-遗忘，一种混合遗忘框架，结合了面向感知与跨模态特异性的比率感知选择性编辑，以及面向推理/动作层的分层选择性遗忘，以实现效用保持的遗忘。VLA-遗忘通过分阶段更新视觉编码器、投影器和上层动作生成变换器块，联合优化三个目标：定向遗忘、感知保持与推理保留。在遗忘集行为探测和保留任务评估中，相较于强遗忘基线，VLA-遗忘将遗忘效能提升10%，感知特异性保持提高22%，推理与任务成功率保留提升9%，并将后量化恢复率降低55%。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
