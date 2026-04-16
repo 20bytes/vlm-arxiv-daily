@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>HiRO-Nav: Hybrid ReasOning Enables Efficient Embodied Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Embodied navigation agents built upon large reasoning models (LRMs) can handle complex, multimodal environmental input and perform grounded reasoning per step to improve sequential decision-making for long-horizon tasks. However, a critical question remains: \textit{how can the reasoning capabilities of LRMs be harnessed intelligently and efficiently for long-horizon navigation tasks?} In simple scenes, agents are expected to act reflexively, while in complex ones they should engage in deliberate reasoning before acting.To achieve this, we introduce \textbf{H}ybr\textbf{i}d \textbf{R}eas\textbf{O}ning \textbf{Nav}igation (\textbf{HiRO-Nav}) agent, the first kind of agent capable of adaptively determining whether to perform thinking at every step based on its own action entropy. Specifically, by examining how the agent&#x27;s action entropy evolves over the navigation trajectories, we observed that only a small fraction of actions exhibit high entropy, and these actions often steer the agent toward novel scenes or critical objects. Furthermore, studying the relationship between action entropy and task completion (i.e., Q-value) reveals that improving high-entropy actions contributes more positively to task success.Hence, we propose a tailored training pipeline comprising hybrid supervised fine-tuning as a cold start, followed by online reinforcement learning with the proposed hybrid reasoning strategy to explicitly activate reasoning only for high-entropy actions, significantly reducing computational overhead while improving decision quality. Extensive experiments on the \textsc{CHORES}-$\mathbb{S}$ ObjectNav benchmark showcases that HiRO-Nav achieves a better trade-off between success rates and token efficiency than both dense-thinking and no-thinking baselines.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>基于大型推理模型（LRMs）构建的具身导航代理能够处理复杂的多模态环境输入，并在每一步执行基于场景的推理，以改善长时程任务的序列决策。然而，一个关键问题依然存在：如何智能且高效地利用LRMs的推理能力来完成长时程导航任务？在简单场景中，代理应能反射性地行动，而在复杂场景中则需在行动前进行深思熟虑。为此，我们提出了混合推理导航代理（HiRO-Nav），这是首类能够根据自身动作熵自适应决定每一步是否执行推理的代理。具体而言，通过分析代理动作熵在导航轨迹上的演变，我们发现仅有少量动作表现出高熵，而这些动作往往引导代理进入新场景或接近关键物体。进一步研究动作熵与任务完成度（即Q值）的关系表明，改进高熵动作对任务成功有更积极的贡献。因此，我们设计了一个定制化的训练流程，包括作为冷启动的混合监督微调，以及结合所提混合推理策略的在线强化学习，以明确仅在高熵动作时激活推理，从而在提升决策质量的同时显著降低计算开销。在CHORES-S ObjectNav基准测试上的大量实验表明，HiRO-Nav在成功率和令牌效率之间取得了比密集推理和无推理基线更好的平衡。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

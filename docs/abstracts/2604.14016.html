@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>MAny: Merge Anything for Multimodal Continual Instruction Tuning</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Multimodal Continual Instruction Tuning (MCIT) is essential for sequential task adaptation of Multimodal Large Language Models (MLLMs) but is severely restricted by catastrophic forgetting. While existing literature focuses on the reasoning language backbone, in this work, we expose a critical yet neglected dual-forgetting phenomenon across both perception drift in Cross-modal Projection Space and reasoning collapse in Low-rank Parameter Space. To resolve this, we present \textbf{MAny} (\textbf{M}erge \textbf{Any}thing), a framework that merges task-specific knowledge through \textbf{C}ross-modal \textbf{P}rojection \textbf{M}erging (\textbf{CPM}) and \textbf{L}ow-rank \textbf{P}arameter \textbf{M}erging (\textbf{LPM}). Specifically, CPM recovers perceptual alignment by adaptively merging cross-modal visual representations via visual-prototype guidance, ensuring accurate feature recovery during inference. Simultaneously, LPM eliminates mutual interference among task-specific low-rank modules by recursively merging low-rank weight matrices. By leveraging recursive least squares, LPM provides a closed-form solution that mathematically guarantees an optimal fusion trajectory for reasoning stability. Notably, MAny operates as a training-free paradigm that achieves knowledge merging via efficient CPU-based algebraic operations, eliminating additional gradient-based optimization beyond initial tuning. Our extensive evaluations confirm the superior performance and robustness of MAny across multiple MLLMs and benchmarks. Specifically, on the UCIT benchmark, MAny achieves significant leads of up to 8.57\% and 2.85\% in final average accuracy over state-of-the-art methods across two different MLLMs, respectively.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>多模态持续指令调优（MCIT）对于多模态大语言模型（MLLMs）的序列任务适应至关重要，但受到灾难性遗忘的严重制约。现有研究主要关注推理语言主干，而本文揭示了一个关键但被忽视的双重遗忘现象：既存在于跨模态投影空间中的感知漂移，也存在于低秩参数空间中的推理崩溃。为解决此问题，我们提出 **MAny**（**M**erge **Any**thing）框架，通过 **跨模态投影合并（CPM）** 与 **低秩参数合并（LPM）** 来融合任务特定知识。具体而言，CPM 通过视觉原型引导自适应地合并跨模态视觉表征，恢复感知对齐，确保推理过程中特征的准确重建；同时，LPM 通过递归合并低秩权重矩阵，消除任务特定低秩模块间的相互干扰。利用递归最小二乘法，LPM 提供了闭式解，从数学上保证了推理稳定性的最优融合轨迹。值得注意的是，MAny 作为一种免训练范式，仅通过高效的基于CPU的代数运算实现知识合并，无需在初始调优之外进行额外的基于梯度的优化。我们的大量实验验证了MAny在多种MLLMs和基准测试中的卓越性能与鲁棒性。具体而言，在UCIT基准上，MAny在两种不同MLLMs上分别以高达8.57%和2.85%的最终平均准确率领先于现有最先进方法。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

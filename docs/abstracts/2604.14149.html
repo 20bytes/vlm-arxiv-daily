@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>One Token per Highly Selective Frame: Towards Extreme Compression for Long Video Understanding</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Long video understanding is inherently challenging for vision-language models (VLMs) because of the extensive number of frames. With each video frame typically expanding into tens or hundreds of tokens, the limited context length of large language models (LLMs) forces the VLMs to perceive the frames sparsely and lose temporal information. To address this, we explore extreme video token compression towards \emph{one token per frame} at the final LLM layer. Our key insight is that heuristic-based compression, widely adopted by previous methods, is prone to information loss, and this necessitates supervising LLM layers into \emph{learnable} and \emph{progressive} modules for \emph{token-level compression} (LP-Comp). Such compression enables our VLM to digest 2x-4x more frames with improved performance. To further increase the token efficiency, we investigate \emph{frame-level compression}, which selects the frames most relevant to the queries via the internal attention scores of the LLM layers, named \emph{question-conditioned compression} (QC-Comp). As a notable distinction from previous studies, we mitigate the position bias of LLM attention in long contexts, \emph{i.e.}, the over-concentration on the beginning and end of a sequence, by splitting long videos into short segments and employing local attention. Collectively, our combined \emph{token-level} and \emph{frame-level} leads to an e\textbf{x}treme compression model for long video understanding, named \textbf{\name}, achieving a significantly larger compression ratio and enabling denser frame sampling. Our \name is finetuned from VideoChat-Flash with a data-efficient \emph{supervised compression tuning} stage that only requires 2.5\% of the supervised fine-tuning data, yet boosts the accuracy from 42.9\% to 46.2\% on LVBench and enhances multiple other long video benchmarks.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>长视频理解对于视觉语言模型（VLMs）而言本质上是具有挑战性的，因为其涉及大量的视频帧。每帧视频通常会被扩展为数十或数百个令牌，而大型语言模型（LLMs）有限的上下文长度迫使VLMs稀疏地感知帧并丢失时间信息。为解决这一问题，我们探索了在最终LLM层实现每帧仅一个令牌的极致视频令牌压缩。我们的核心见解是，先前方法广泛采用的基于启发式的压缩容易导致信息丢失，这需要将LLM层监督为可学习的、渐进式的令牌级压缩模块（LP-Comp）。这种压缩使我们的VLM能够处理2至4倍更多的帧，同时提升性能。为进一步提高令牌效率，我们研究了帧级压缩，即通过LLM层的内部注意力分数选择与查询最相关的帧，称为问题条件压缩（QC-Comp）。与先前研究的一个显著区别是，我们通过将长视频分割为短片段并采用局部注意力，缓解了LLM注意力在长上下文中的位置偏差，即过度集中于序列开头和结尾的问题。综合来看，我们的令牌级和帧级压缩相结合，形成了一个用于长视频理解的极致压缩模型，命名为\name，实现了显著更大的压缩比，并支持更密集的帧采样。我们的\name模型基于VideoChat-Flash进行微调，通过一个数据高效的监督压缩调优阶段，仅需2.5%的监督微调数据，便在LVBench上将准确率从42.9%提升至46.2%，并在其他多个长视频基准测试中表现出增强性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

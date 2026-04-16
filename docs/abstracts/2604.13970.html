@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>MApLe: Multi-instance Alignment of Diagnostic Reports and Large Medical Images</h1>
+      <h2>Abstract (EN)</h2>
+      <p>In diagnostic reports, experts encode complex imaging data into clinically actionable information. They describe subtle pathological findings that are meaningful in their anatomical context. Reports follow relatively consistent structures, expressing diagnostic information with few words that are often associated with tiny but consequential image observations. Standard vision language models struggle to identify the associations between these informative text components and small locations in the images. Here, we propose &quot;MApLe&quot;, a multi-task, multi-instance vision language alignment approach that overcomes these limitations. It disentangles the concepts of anatomical region and diagnostic finding, and links local image information to sentences in a patch-wise approach. Our method consists of a text embedding trained to capture anatomical and diagnostic concepts in sentences, a patch-wise image encoder conditioned on anatomical structures, and a multi-instance alignment of these representations. We demonstrate that MApLe can successfully align different image regions and multiple diagnostic findings in free-text reports. We show that our model improves the alignment performance compared to state-of-the-art baseline models when evaluated on several downstream tasks. The code is available at https://github.com/cirmuw/MApLe.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在诊断报告中，专家将复杂的影像数据编码为具有临床指导意义的信息。他们描述细微的病理发现，这些发现在其解剖学背景下具有重要意义。报告遵循相对一致的结构，用寥寥数语表达诊断信息，这些信息常与微小但关键的图像观察点相关联。标准的视觉语言模型难以识别这些信息丰富的文本成分与图像中微小位置之间的关联。为此，我们提出“MApLe”，一种多任务、多实例的视觉语言对齐方法，以克服这些限制。它解耦了解剖区域与诊断发现的概念，并以分块方式将局部图像信息与句子关联起来。我们的方法包括一个经过训练以捕捉句子中解剖和诊断概念的文本嵌入模型、一个基于解剖结构进行条件编码的分块图像编码器，以及这些表示的多实例对齐机制。我们证明MApLe能够成功对齐自由文本报告中的不同图像区域和多个诊断发现。实验表明，在多项下游任务评估中，我们的模型相较于最先进的基线模型，对齐性能显著提升。代码可在https://github.com/cirmuw/MApLe获取。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

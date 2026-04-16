@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Jump-Start Reinforcement Learning with Vision-Language-Action Regularization</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Reinforcement learning (RL) enables high-frequency, closed-loop control for robotic manipulation, but scaling to long-horizon tasks with sparse or imperfect rewards remains difficult due to inefficient exploration and poor credit assignment. Vision-Language-Action (VLA) models leverage large-scale multimodal pretraining to provide generalist, task-level reasoning, but current limitations hinder their direct use in fast and precise manipulation. In this paper, we propose Vision-Language-Action Jump-Starting (VLAJS), a method that bridges sparse VLA guidance with on-policy RL to improve exploration and learning efficiency. VLAJS treats VLAs as transient sources of high-level action suggestions that bias early exploration and improve credit assignment, while preserving the high-frequency, state-based control of RL. Our approach augments Proximal Policy Optimization (PPO) with a directional action-consistency regularization that softly aligns the RL agent&#x27;s actions with VLA guidance during early training, without enforcing strict imitation, requiring demonstrations, or relying on continuous teacher queries. VLA guidance is applied sparsely and annealed over time, allowing the agent to adapt online and ultimately surpass the guiding policy. We evaluate VLAJS on six challenging manipulation tasks: lifting, pick-and-place, peg reorientation, peg insertion, poking, and pushing in simulation, and validate a subset on a real Franka Panda robot. VLAJS consistently outperforms PPO and distillation-style baselines in sample efficiency, reducing required environment interactions by over 50% in several tasks. Real-world experiments demonstrate zero-shot sim-to-real transfer and robust execution under clutter, object variation, and external perturbations.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>强化学习（RL）能够实现机器人操作的高频闭环控制，但由于探索效率低下和信用分配不佳，在稀疏或不完善奖励的长时程任务中难以扩展。视觉-语言-动作（VLA）模型通过大规模多模态预训练提供通用任务级推理，但现有局限阻碍了其在快速精确操作中的直接应用。本文提出视觉-语言-动作快速启动（VLAJS）方法，通过将稀疏VLA指导与在线策略RL相结合，以提升探索和学习效率。VLAJS将VLA视为高层动作建议的临时来源，用于引导早期探索并改善信用分配，同时保留RL基于状态的高频控制特性。该方法通过方向性动作一致性正则化增强近端策略优化（PPO），在训练初期将RL智能体的动作与VLA指导进行软对齐，无需强制严格模仿、依赖演示或持续查询教师策略。VLA指导以稀疏方式应用并随时间衰减，使智能体能够在线适应并最终超越指导策略。我们在六项具有挑战性的仿真操作任务（提升、抓放、钉孔重定向、钉孔插入、戳动和推动）上评估VLAJS，并在真实Franka Panda机器人上验证了部分任务。VLAJS在样本效率上持续优于PPO和蒸馏式基线方法，在多项任务中减少超过50%的环境交互需求。真实世界实验展示了零仿真到现实迁移能力，以及在杂乱环境、物体变化和外部干扰下的鲁棒执行性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
