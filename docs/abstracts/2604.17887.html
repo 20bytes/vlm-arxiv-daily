@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>StableIDM: Stabilizing Inverse Dynamics Model against Manipulator Truncation via Spatio-Temporal Refinement</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Inverse Dynamics Models (IDMs) map visual observations to low-level action commands, serving as central components for data labeling and policy execution in embodied AI. However, their performance degrades severely under manipulator truncation, a common failure mode that makes state recovery ill-posed and leads to unstable control. We present StableIDM, a spatio-temporal framework that refines features from visual inputs to stabilize action predictions under such partial observability. StableIDM integrates three complementary components: (1) auxiliary robot-centric masking to suppress background clutter, (2) Directional Feature Aggregation (DFA) for geometry-aware spatial reasoning, which extracts anisotropic features along directions inferred from the visible arm and (3) Temporal Dynamics Refinement (TDR) to smooth and correct predictions via motion continuity. Extensive evaluations validate our approach: StableIDM improves strict action accuracy by 12.1% under severe truncation on the AgiBot benchmark, and increases average task success by 9.7% in real-robot replay. Moreover, it boosts end-to-end grasp success by 11.5% when decoding video-generated plans, and improves downstream VLA real-robot success by 17.6% when functioning as an automatic annotator. These results demonstrate that StableIDM provides a robust and scalable backbone for both policy execution and data generation in embodied artificial intelligence.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>逆动力学模型（IDMs）将视觉观测映射为低层动作指令，是具身人工智能中数据标注与策略执行的核心组件。然而，在机械臂截断这一常见故障模式下，其性能会严重下降，导致状态恢复问题不适定并引发控制不稳定。本文提出StableIDM，一种时空框架，通过精炼视觉输入的特征，以在此类部分可观测性下稳定动作预测。StableIDM整合了三个互补组件：（1）辅助性以机器人为中心的掩码机制，以抑制背景干扰；（2）方向性特征聚合（DFA），用于几何感知的空间推理，该组件沿可见机械臂推断的方向提取各向异性特征；（3）时序动态精炼（TDR），通过运动连续性平滑并校正预测。广泛的评估验证了我们的方法：在AgiBot基准测试中，StableIDM在严重截断情况下将严格动作准确率提升了12.1%，并在真实机器人回放中将平均任务成功率提高了9.7%。此外，在解码视频生成计划时，它将端到端抓取成功率提升了11.5%；当作为自动标注器使用时，下游视觉语言动作（VLA）真实机器人任务成功率提高了17.6%。这些结果表明，StableIDM为具身人工智能的策略执行与数据生成提供了一个鲁棒且可扩展的骨干框架。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

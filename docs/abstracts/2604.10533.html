@@ -17,9 +17,9 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>VLN-NF: Feasibility-Aware Vision-and-Language Navigation with False-Premise Instructions&lt;br&gt;VLN-NF：具备可行性感知的视觉语言导航与虚假前提指令处理&lt;br&gt;[摘要](abstracts/2604.10533.html)</h1>
+      <h1>VLN-NF: Feasibility-Aware Vision-and-Language Navigation with False-Premise Instructions</h1>
       <h2>Abstract (EN)</h2>
-      <p>Abstract not available.</p>
+      <p>Conventional Vision-and-Language Navigation (VLN) benchmarks assume instructions are feasible and the referenced target exists, leaving agents ill-equipped to handle false-premise goals. We introduce VLN-NF, a benchmark with false-premise instructions where the target is absent from the specified room and agents must navigate, gather evidence through in-room exploration, and explicitly output NOT-FOUND. VLN-NF is constructed via a scalable pipeline that rewrites VLN instructions using an LLM and verifies target absence with a VLM, producing plausible yet factually incorrect goals. We further propose REV-SPL to jointly evaluate room reaching, exploration coverage, and decision correctness. To address this challenge, we present ROAM, a two-stage hybrid that combines supervised room-level navigation with LLM/VLM-driven in-room exploration guided by a free-space clearance prior. ROAM achieves the best REV-SPL among compared methods, while baselines often under-explore and terminate prematurely under unreliable instructions. VLN-NF project page can be found at https://vln-nf.github.io/.</p>
       <h2>摘要 (ZH)</h2>
       <p>传统的视觉语言导航（VLN）基准假设指令是可行的且参考目标存在，导致智能体难以应对虚假前提的目标。我们提出了VLN-NF，这是一个包含虚假前提指令的基准，其中目标在指定房间中缺失，智能体必须进行导航、通过室内探索收集证据，并明确输出“未找到”。VLN-NF通过一个可扩展的流程构建，该流程使用大型语言模型（LLM）重写VLN指令，并借助视觉语言模型（VLM）验证目标缺失，从而生成看似合理但事实错误的目标。我们进一步提出了REV-SPL方法，以联合评估房间到达、探索覆盖率和决策正确性。为应对这一挑战，我们提出了ROAM，一种两阶段混合方法，结合了监督式的房间级导航与由空闲空间清除先验引导的LLM/VLM驱动室内探索。在对比方法中，ROAM实现了最佳的REV-SPL性能，而基线方法在不可靠指令下往往探索不足并过早终止。VLN-NF项目页面可在https://vln-nf.github.io/找到。</p>
       <p><a href="../index.html">← Back</a></p>

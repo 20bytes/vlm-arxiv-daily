@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ST-$π$: Structured SpatioTemporal VLA for Robotic Manipulation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-language-action (VLA) models have achieved great success on general robotic tasks, but still face challenges in fine-grained spatiotemporal manipulation. Typically, existing methods mainly embed spatiotemporal knowledge into visual and action representations, and directly perform a cross-modal mapping for step-level action prediction. However, such spatiotemporal reasoning remains largely implicit, making it difficult to handle multiple sequential behaviors with explicit spatiotemporal boundaries. In this work, we propose ST-$π$, a structured spatiotemporal VLA model for robotic manipulation. Our model is guided by two key designs: 1) Spatiotemporal VLM. We encode 4D observations and task instructions into latent spaces, and feed them into the LLM to generate a sequence of causally ordered chunk-level action prompts consisting of sub-tasks, spatial grounding and temporal grounding. 2) Spatiotemporal action expert. Conditioned on chunk-level action prompts, we design a structured dual-generator guidance to jointly model spatial dependencies and temporal causality, thus predicting step-level action parameters. Within this structured framework, the VLM explicitly plans global spatiotemporal behavior, and the action expert further refines local spatiotemporal control. In addition, we propose a real-world robotic dataset with structured spatiotemporal annotations for fine-tuning. Extensive experiments have been conducted to demonstrate the effectiveness of our model. Our code link: https://github.com/chuanhaoma/ST-pi.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作（VLA）模型在通用机器人任务上已取得显著成功，但在细粒度时空操作方面仍面临挑战。现有方法通常将时空知识嵌入视觉与动作表征中，并通过跨模态映射直接进行步骤级动作预测。然而，这种时空推理在很大程度上仍是隐式的，难以处理具有明确时空边界的多序列行为。为此，本文提出ST-π，一种用于机器人操作的结构化时空VLA模型。我们的模型基于两个核心设计：1）时空视觉语言模型（VLM）。我们将四维观测数据与任务指令编码至潜在空间，并输入大语言模型以生成由子任务、空间定位与时间定位构成的因果有序块级动作提示序列。2）时空动作专家。在块级动作提示的引导下，我们设计了一种结构化双生成器指导机制，以联合建模空间依赖性与时间因果性，从而预测步骤级动作参数。在此结构化框架内，VLM显式规划全局时空行为，动作专家则进一步细化局部时空控制。此外，我们提出了一个带有结构化时空标注的真实世界机器人数据集用于微调。大量实验验证了模型的有效性。代码链接：https://github.com/chuanhaoma/ST-pi。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

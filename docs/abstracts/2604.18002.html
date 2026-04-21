@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Neural Garbage Collection: Learning to Forget while Learning to Reason</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Chain-of-thought reasoning has driven striking advances in language model capability, yet every reasoning step grows the KV cache, creating a bottleneck to scaling this paradigm further. Current approaches manage these constraints on the model&#x27;s behalf using hand-designed criteria. A more scalable approach would let end-to-end learning subsume this design choice entirely, following a broader pattern in deep learning. After all, if a model can learn to reason, why can&#x27;t it learn to forget? We introduce Neural Garbage Collection (NGC), in which a language model learns to forget while learning to reason, trained end-to-end from outcome-based task reward alone. As the model reasons, it periodically pauses, decides which KV cache entries to evict, and continues to reason conditioned on the remaining cache. By treating tokens in a chain-of-thought and cache-eviction decisions as discrete actions sampled from the language model, we can use reinforcement learning to jointly optimize how the model reasons and how it manages its own memory: what the model evicts shapes what it remembers, what it remembers shapes its reasoning, and the correctness of that reasoning determines its reward. Crucially, the model learns this behavior entirely from a single learning signal - the outcome-based task reward - without supervised fine-tuning or proxy objectives. On Countdown, AMC, and AIME tasks, NGC maintains strong accuracy relative to the full-cache upper bound at 2-3x peak KV cache size compression and substantially outperforms eviction baselines. Our results are a first step towards a broader vision where end-to-end optimization drives both capability and efficiency in language models.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>思维链推理推动了语言模型能力的显著进步，但每个推理步骤都会增大键值缓存（KV cache），成为进一步扩展该范式的瓶颈。当前方法通过人工设计的标准来代表模型管理这些约束。一种更具可扩展性的方法将让端到端学习完全吸收这一设计选择，遵循深度学习中更广泛的模式。毕竟，如果模型能学会推理，为何不能学会遗忘？我们引入了神经垃圾回收（NGC），其中语言模型在学会推理的同时学会遗忘，仅通过基于结果的任务奖励进行端到端训练。当模型推理时，它会周期性地暂停，决定驱逐哪些KV缓存条目，并在剩余缓存条件下继续推理。通过将思维链中的令牌和缓存驱逐决策视为从语言模型中采样的离散动作，我们可以使用强化学习来联合优化模型的推理方式及其自身内存管理：模型驱逐的内容决定了它记住什么，记住的内容又塑造其推理，而推理的正确性则决定其奖励。关键在于，模型完全从单一学习信号——基于结果的任务奖励——中学习此行为，无需监督微调或代理目标。在Countdown、AMC和AIME任务中，NGC在实现2-3倍峰值KV缓存大小压缩的同时，相对于全缓存上限保持了较高的准确率，并显著优于驱逐基线方法。我们的成果是迈向更广阔愿景的第一步：端到端优化将同时驱动语言模型的能力与效率。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

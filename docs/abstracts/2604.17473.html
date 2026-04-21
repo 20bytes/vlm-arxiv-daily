@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Dual-Anchoring: Addressing State Drift in Vision-Language Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language Navigation(VLN) requires an agent to navigate through 3D environments by following natural language instructions. While recent Video Large Language Models(Video-LLMs) have largely advanced VLN, they remain highly susceptible to State Drift in long scenarios. In these cases, the agent&#x27;s internal state drifts away from the true task execution state, leading to aimless wandering and failure to execute essential maneuvers in the instruction. We attribute this failure to two distinct cognitive deficits: Progress Drift, where the agent fails to distinguish completed sub-goals from remaining ones, and Memory Drift, where the agent&#x27;s history representations degrade, making it lose track of visited landmarks. In this paper, we propose a Dual-Anchoring Framework that explicitly anchors the instruction progress and history representations. First, to address progress drift, we introduce Instruction Progress Anchoring, which supervises the agent to generate structured text tokens that delineate completed versus remaining sub-goals. Second, to mitigate memory drift, we propose Memory Landmark Anchoring, which utilizes a Landmark-Centric World Model to retrospectively predict object-centric embeddings extracted by the Segment Anything Model, compelling the agent to explicitly verify past observations and preserve distinct representations of visited landmarks. Facilitating this framework, we curate two extensive datasets: 3.6 million samples with explicit progress descriptions, and 937k grounded landmark data for retrospective verification. Extensive experiments in both simulation and real-world environments demonstrate the superiority of our method, achieving a 15.2% improvement in Success Rate and a remarkable 24.7% gain on long-horizon trajectories. To facilitate further research, we will release our code, data generation pipelines, and the collected datasets.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉语言导航要求智能体通过遵循自然语言指令在三维环境中进行导航。尽管近期的视频大语言模型已显著推动了该领域的发展，但在长场景任务中，它们仍极易受到状态漂移的影响。这种情况下，智能体的内部状态会逐渐偏离真实的任务执行状态，导致漫无目的的徘徊，并无法执行指令中的关键动作。我们将此失败归因于两种不同的认知缺陷：进度漂移（智能体无法区分已完成与待完成的子目标）和记忆漂移（智能体的历史表征退化，使其难以追踪已访问的地标）。本文提出一种双重锚定框架，旨在显式地锚定指令进度与历史表征。首先，为应对进度漂移，我们引入指令进度锚定机制，监督智能体生成结构化文本标记，以清晰划分已完成与待完成的子目标。其次，为缓解记忆漂移，我们提出记忆地标锚定方法，利用地标中心世界模型回顾性地预测由Segment Anything模型提取的以对象为中心的嵌入表示，迫使智能体显式验证过往观察并保留已访问地标的独特表征。为支持该框架，我们构建了两个大规模数据集：包含360万条带有显式进度描述的样本，以及93.7万条用于回顾性验证的接地地标数据。在仿真和真实环境中的大量实验证明了我们方法的优越性，其成功率提升了15.2%，在长视距轨迹上更实现了24.7%的显著增益。为促进进一步研究，我们将公开代码、数据生成流程及所收集的数据集。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

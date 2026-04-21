@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>PBSBench: A Multi-Level Vision-Language Framework and Benchmark for Hematopathology Whole Slide Image Interpretation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Peripheral Blood Smear (PBS) is a critical microscopic examination in hematopathology that yields whole-slide imaging (WSI). Unlike solid tissue pathology, PBS interpretation focuses on individual cell morphologies rather than tissue architecture, making it distinct in both visual characteristics and diagnostic reasoning. However, current multimodal large language models (MLLMs) for pathology are primarily developed on solid-tissue WSIs and struggle to generalize to PBS. To bridge this gap, we construct PBSInstr, the first vision-language dataset for PBS interpretation, comprising 353 PBS WSIs paired with microscopic impression paragraphs and 29k cell-level image crops annotated with cell type labels and morphological descriptions. To facilitate instruction tuning, PBSInstr further includes 27k question-answer (QA) pairs for cell crops and 1,286 QA pairs for PBS slides. Building upon PBSInstr, we develop PBS-VL, a hematopathology-tailored vision-language model for multi-level PBS interpretation at both cell and slide levels. To comprehensively evaluate PBS understanding, we construct PBSBench, a visual question answering (VQA) benchmark featuring four question categories and six PBS interpretation tasks. Experiments show that PBS-VL outperforms existing general-purpose and pathology MLLMs, underscoring the value of PBS-specific data. We release our code, datasets, and model weights to facilitate future research. Our proposed framework lays the foundation for developing practical AI assistants supporting decision-making in hematopathology.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>外周血涂片（PBS）是血液病理学中一项关键的显微镜检查，可生成全玻片图像（WSI）。与实体组织病理学不同，PBS解读侧重于单个细胞的形态而非组织结构，因此在视觉特征和诊断推理上均具有独特性。然而，当前用于病理学的多模态大语言模型（MLLMs）主要基于实体组织WSI开发，难以泛化至PBS。为填补这一空白，我们构建了首个用于PBS解读的视觉-语言数据集PBSInstr，包含353张PBS WSI及其对应的显微镜印象段落，以及29,000个标注有细胞类型标签和形态描述的细胞级图像裁剪。为促进指令调优，PBSInstr进一步包含了27,000个针对细胞裁剪的问答对和1,286个针对PBS玻片的问答对。基于PBSInstr，我们开发了PBS-VL，这是一个专为血液病理学定制的视觉-语言模型，能够在细胞和玻片两个层次进行多级PBS解读。为全面评估PBS理解能力，我们构建了PBSBench，一个视觉问答（VQA）基准，涵盖四个问题类别和六项PBS解读任务。实验表明，PBS-VL在性能上优于现有的通用及病理学MLLMs，突显了PBS专用数据的价值。我们公开了代码、数据集和模型权重，以促进未来研究。所提出的框架为开发支持血液病理学决策的实用AI助手奠定了基础。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

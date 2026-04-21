@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>AeroRAG: Structured Multimodal Retrieval-Augmented LLM for Fine-Grained Aerial Visual Reasoning</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Despite recent progress in multimodal large language models (MLLMs), reliable visual question answering in aerial scenes remains challenging. In such scenes, task-critical evidence is often carried by small objects, explicit quantities, coarse locations, and inter-object relations, whereas conventional dense visual-token representations are not well aligned with these structured semantics. To address this interface mismatch, we propose AeroRAG, a scene-graph-guided multimodal retrieval-augmented generation framework for visual question answering. The framework first converts an input image into structured visual knowledge, including object categories, quantities, spatial locations, and semantic relations, and then retrieves query-relevant semantic chunks to construct compact prompts for a text-based large language model. Rather than relying on direct reasoning over dense visual tokens, our method introduces a more explicit intermediate interface between perception and language reasoning. Experiments on the AUG aerial dataset and the general-domain VG-150 benchmark show consistent improvements over six strong MLLM baselines, with the largest gains observed in dense aerial scenes and relation-sensitive reasoning. We further evaluate the framework on VQAv2 to verify that the proposed interface remains compatible with standard visual reasoning settings. These results suggest that structured retrieval is a practical design direction for deployment-oriented and grounded visual reasoning systems.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>尽管多模态大语言模型（MLLMs）近期取得了进展，但在航空场景中实现可靠的视觉问答仍面临挑战。此类场景中，任务关键证据常由小物体、明确数量、粗略位置及物体间关系承载，而传统的密集视觉标记表示与这些结构化语义未能良好对齐。为解决这一接口不匹配问题，本文提出AeroRAG——一种基于场景图引导的多模态检索增强生成框架，用于视觉问答。该框架首先将输入图像转换为结构化视觉知识，包括物体类别、数量、空间位置及语义关系，随后检索与查询相关的语义片段以构建简洁提示，供基于文本的大语言模型使用。相较于直接对密集视觉标记进行推理，本方法在感知与语言推理之间引入了更明确的中间接口。在AUG航空数据集和通用领域VG-150基准上的实验表明，相较于六个强基线MLLM模型，本方法取得了持续的性能提升，且在密集航空场景和关系敏感推理任务中增益最为显著。我们进一步在VQAv2数据集上评估该框架，验证了所提接口仍兼容标准视觉推理场景。这些结果表明，结构化检索是面向实际部署与具身视觉推理系统的一种实用设计方向。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
