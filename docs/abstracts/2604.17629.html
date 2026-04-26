@@ -17,9 +17,9 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>BioVLM: Routing Prompts, Not Parameters, for Cross-Modality Generalization in Biomedical VLMs</h1>
+      <h1>BioVLM: Routing Prompts, Not Parameters, for Cross-Modality Generalization in Biomedical VLMs&lt;br&gt;BioVLM：通过路由提示而非参数实现生物医学视觉语言模型的跨模态泛化&lt;br&gt;[摘要](abstracts/2604.17629.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Pretrained biomedical vision-language models (VLMs) such as BioMedCLIP perform well on average but often degrade on challenging modalities where inter-class margins are small and acquisition-specific variations are pronounced, especially under few-shot supervision and when modality priors differ from pretraining corpora substantially. We propose BioVLM, a prompt-learning framework that improves cross-domain generalization without extensive backbone fine-tuning. BioVLM learns a diverse prompt bank and introduces dynamic prompt selection: for each input, it selects the most discriminative prompts via a low-entropy criterion on the predictive distribution, effectively coupling sparse few-shot evidence with rich LLM semantic priors. To strengthen this coupling, we distill high-confidence LLM-derived attributes and enforce robust knowledge transfer through strong/weak augmentation consistency. At test time, BioVLM adapts by choosing modality-appropriate prompts, enabling transfer to unseen categories and domains, while keeping training lightweight and inference efficient. On 11 MedMNIST+ 2D datasets, BioVLM achieves new state of the art across three distinct generalization settings. Codes are available at https://github.com/mainaksingha01/BioVLM.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
       <p>预训练的视觉语言模型（如BioMedCLIP）在生物医学领域通常表现良好，但在挑战性模态上性能常会下降，这些模态中类间差异小且采集特异性变化显著，尤其是在少样本监督下，以及当模态先验与预训练语料差异较大时。我们提出了BioVLM，一种提示学习框架，无需大量主干网络微调即可提升跨域泛化能力。BioVLM学习一个多样化的提示库，并引入动态提示选择机制：针对每个输入，通过预测分布的低熵准则选择最具区分性的提示，从而有效将稀疏的少样本证据与丰富的语言模型语义先验相结合。为加强这种结合，我们蒸馏出高置信度的语言模型衍生属性，并通过强/弱数据增强一致性来强制执行稳健的知识迁移。在测试时，BioVLM通过选择适合模态的提示进行自适应，实现向未见类别和领域的迁移，同时保持训练轻量化和推理高效性。在11个MedMNIST+ 2D数据集上，BioVLM在三种不同的泛化设置中均达到了新的最优性能。代码可在https://github.com/mainaksingha01/BioVLM获取。</p>
       <p><a href="../index.html">← Back</a></p>

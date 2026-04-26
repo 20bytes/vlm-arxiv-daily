@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>The Essence of Balance for Self-Improving Agents in Vision-and-Language Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>In vision-and-language navigation (VLN), self-improvement from policy-induced experience, using only standard VLN action supervision, critically depends on balancing behavioral diversity and learning stability, which governs whether the agent can extract a reliable learning signal for improvement. Increasing behavioral diversity is necessary to expose alternative action hypotheses but can destabilize policy-induced learning signals, whereas overly conservative stability constraints suppress exploration and induce early commitment, making reliable self-improvement difficult. To address this challenge, we propose Stability-Diversity Balance (SDB), a plug-and-play mechanism for balanced self-improvement in VLN. SDB expands each decision step into multiple latent behavioral hypotheses by applying controlled shifts in the instruction-conditioned hidden states, and then performs reliability-aware soft evaluation and aggregation to retain diverse yet instruction-consistent alternatives during learning. An explicit regularizer further constrains hypothesis interactions, preventing excessive drift or premature collapse of hypothesis diversity and stabilizing self-improvement without discarding training signals. Experiments on R2R, SOON, and REVERIE show consistent improvements; for example, on REVERIE val-unseen, SDB improves SPL from 33.73 to 35.93 and OSR from 51.07 to 54.25.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>在视觉-语言导航（VLN）中，仅使用标准VLN动作监督从策略生成的经验中进行自我改进，关键取决于行为多样性与学习稳定性之间的平衡，这决定了智能体能否提取出可靠的改进学习信号。增加行为多样性对于暴露替代动作假设是必要的，但可能破坏策略驱动的学习信号的稳定性；而过保守的稳定性约束则会抑制探索并导致过早固化，使可靠的自我改进变得困难。为应对这一挑战，我们提出稳定性-多样性平衡（SDB），这是一种即插即用的机制，用于VLN中的平衡自我改进。SDB通过对指令条件隐藏状态施加受控偏移，将每个决策步骤扩展为多个潜在行为假设，然后在学习过程中执行可靠性感知的软评估与聚合，以保留多样且与指令一致的替代方案。一个显式正则化器进一步约束假设之间的交互，防止假设多样性的过度漂移或过早坍缩，从而在不丢弃训练信号的情况下稳定自我改进。在R2R、SOON和REVERIE上的实验显示了一致性的改进；例如，在REVERIE的val-unseen上，SDB将SPL从33.73提升至35.93，将OSR从51.07提升至54.25。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

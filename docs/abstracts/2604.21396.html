@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>VG-CoT: Towards Trustworthy Visual Reasoning via Grounded Chain-of-Thought</h1>
+      <h2>Abstract (EN)</h2>
+      <p>The advancement of Large Vision-Language Models (LVLMs) requires precise local region-based reasoning that faithfully grounds the model&#x27;s logic in actual visual evidence. However, existing datasets face limitations in scalability due to extensive manual annotation and lack of explicit alignment between multi-step reasoning and corresponding image regions, which constrains the evaluation of model trustworthiness. To address these challenges, we propose the Visual Grounding Chain-of-Thought (VG-CoT) dataset, which explicitly links each reasoning step to real visual evidence within the image through a fully automated three-stage pipeline. The pipeline first extracts object- and text-level visual evidence using state-of-the-art detection and OCR models, then generates step-by-step grounded reasoning with GPT-4o, and finally refines the grounding through a rationale-driven open-set detection process. In addition, we introduce a new benchmark that comprehensively evaluates LVLMs reasoning across three complementary dimensions: Rationale Quality, Answer Accuracy, and Reasoning-Answer Alignment. Experiments with representative LVLMs, including LLaVA-1.5 and Qwen2-VL, demonstrate consistent improvements on most evaluation metrics, confirming that VG-CoT effectively enhances trustworthy, evidence-based reasoning while maintaining scalable and cost-efficient dataset construction. The dataset and code will be released publicly upon acceptance to facilitate further research.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>大型视觉语言模型（LVLMs）的进步要求精确的局部区域推理，使模型逻辑忠实地基于实际视觉证据。然而，现有数据集因大量人工标注而面临可扩展性限制，且缺乏多步推理与对应图像区域之间的显式对齐，这制约了模型可信度的评估。为解决这些问题，我们提出视觉接地链式思维（VG-CoT）数据集，通过完全自动化的三阶段流程，将每个推理步骤与图像中的真实视觉证据显式关联。该流程首先利用最先进的检测和OCR模型提取物体级和文本级视觉证据，随后借助GPT-4o生成逐步接地的推理过程，最后通过基于理由的开放集检测优化接地。此外，我们引入了一个新基准，从三个互补维度全面评估LVLMs的推理能力：理由质量、答案准确性以及推理-答案对齐。对代表性LVLMs（包括LLaVA-1.5和Qwen2-VL）的实验表明，其在大多数评估指标上均有一致性提升，证实VG-CoT在保持数据集构建可扩展性和成本效益的同时，有效增强了可信的、基于证据的推理。数据集和代码将在接收后公开发布，以促进进一步研究。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

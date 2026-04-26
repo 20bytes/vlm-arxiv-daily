@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Latent Denoising Improves Visual Alignment in Large Multimodal Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Large Multimodal Models (LMMs) such as LLaVA are typically trained with an autoregressive language modeling objective, providing only indirect supervision to visual tokens. This often yields weak internal visual representations and brittle behavior under distribution shift. Inspired by recent progress on latent denoising for learning high-quality visual tokenizers, we show that the same principle provides an effective form of visual supervision for improving internal visual feature alignment and multimodal understanding in LMMs. We propose a latent denoising framework that corrupts projected visual tokens using a saliency-aware mixture of masking and Gaussian noising. The LMM is trained to denoise these corrupted tokens by recovering clean teacher patch features from hidden states at a selected intermediate LLM layer using a decoder. To prevent representation collapse, our framework also preserves the teacher&#x27;s intra-image similarity structure and applies intra-image contrastive patch distillation. During inference, corruption and auxiliary heads are disabled, introducing no additional inference-time overhead. Across a broad suite of standard multimodal benchmarks, our method consistently improves visual understanding and reasoning over strong baselines, and yields clear gains on compositional robustness benchmarks (e.g., NaturalBench). Moreover, under ImageNet-C-style non-adversarial common corruptions applied to benchmark images, our method maintains higher accuracy and exhibits reduced degradation at both moderate and severe corruption levels. Our code is available at https://github.com/dhruvashp/latent-denoising-for-lmms.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>大型多模态模型（如LLaVA）通常通过自回归语言建模目标进行训练，这对视觉令牌仅提供间接监督。这常导致内部视觉表示较弱，并在分布偏移下表现脆弱。受最近在潜在去噪用于学习高质量视觉令牌化方面的进展启发，我们展示了相同的原理为改善LMM中内部视觉特征对齐和多模态理解提供了一种有效的视觉监督形式。我们提出了一种潜在去噪框架，该框架使用显著性感知的掩码与高斯噪声混合来破坏投影的视觉令牌。LMM通过一个解码器从选定的大语言模型中间层的隐藏状态中恢复干净的教师补丁特征，从而训练去噪这些被破坏的令牌。为防止表示坍塌，我们的框架还保留了教师的图像内相似性结构，并应用图像内对比补丁蒸馏。在推理时，破坏和辅助头部被禁用，不引入额外的推理开销。在一系列标准多模态基准测试中，我们的方法在视觉理解和推理上持续优于强基线，并在组合稳健性基准测试（如NaturalBench）上取得了明显增益。此外，在基准图像上应用类似ImageNet-C的非对抗性常见损坏时，我们的方法在中等和严重损坏水平下均保持更高准确性，并表现出更低的性能衰减。我们的代码可在https://github.com/dhruvashp/latent-denoising-for-lmms获取。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

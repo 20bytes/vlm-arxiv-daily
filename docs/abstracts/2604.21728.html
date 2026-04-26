@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Ramen: Robust Test-Time Adaptation of Vision-Language Models with Active Sample Selection</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Pretrained vision-language models such as CLIP exhibit strong zero-shot generalization but remain sensitive to distribution shifts. Test-time adaptation adapts models during inference without access to source data or target labels, offering a practical way to handle such shifts. However, existing methods typically assume that test samples come from a single, consistent domain, while in practice, test data often include samples from mixed domains with distinct characteristics. Consequently, their performance degrades under mixed-domain settings. To address this, we present Ramen, a framework for robust test-time adaptation through active sample selection. For each incoming test sample, Ramen retrieves a customized batch of relevant samples from previously seen data based on two criteria: domain consistency, which ensures that adaptation focuses on data from similar domains, and prediction balance, which mitigates adaptation bias caused by skewed predictions. To improve efficiency, Ramen employs an embedding-gradient cache that stores the embeddings and sample-level gradients of past test images. The stored embeddings are used to retrieve relevant samples, and the corresponding gradients are aggregated for model updates, eliminating the need for any additional forward or backward passes. Our theoretical analysis provides insight into why the proposed adaptation mechanism is effective under mixed-domain shifts. Experiments on multiple image corruption and domain-shift benchmarks demonstrate that Ramen achieves strong and consistent performance, offering robust and efficient adaptation in complex mixed-domain scenarios. Our code is available at https://github.com/baowenxuan/Ramen .</p>
+      <h2>摘要 (ZH)</h2>
+      <p>预训练的视觉-语言模型（如CLIP）展现出强大的零样本泛化能力，但对分布变化仍然敏感。测试时自适应方法在推理过程中无需访问源数据或目标标签即可调整模型，为处理此类变化提供了一种实用方案。然而，现有方法通常假设测试样本来自单一、一致的域，而实际测试数据往往包含来自不同混合域的样本，具有各自独特的特征。因此，这些方法在混合域场景下的性能会下降。为了解决这一问题，我们提出了Ramen，一个通过主动样本选择实现鲁棒测试时自适应的框架。对于每个输入的测试样本，Ramen基于两个标准从先前见过的数据中检索定制化的相关样本批次：域一致性，确保自适应聚焦于相似域的数据；以及预测平衡性，减轻因预测倾斜导致的自适应偏差。为提升效率，Ramen采用嵌入-梯度缓存，存储过去测试图像的嵌入和样本级梯度。存储的嵌入用于检索相关样本，相应的梯度则被聚合用于模型更新，从而无需额外的正向或反向传播。我们的理论分析揭示了所提出的自适应机制在混合域变化下有效的原因。在多个图像损坏和域偏移基准上的实验表明，Ramen实现了强大且一致的性能，在复杂的混合域场景中提供了鲁棒且高效的自适应。我们的代码可在https://github.com/baowenxuan/Ramen获取。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

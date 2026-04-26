@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Prototype-Based Test-Time Adaptation of Vision-Language Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Test-time adaptation (TTA) has emerged as a promising paradigm for vision-language models (VLMs) to bridge the distribution gap between pre-training and test data. Recent works have focused on backpropagation-free TTA methods that rely on cache-based designs, but these introduce two key limitations. First, inference latency increases as the cache grows with the number of classes, leading to inefficiencies in large-scale settings. Second, suboptimal performance occurs when the cache contains insufficient or incorrect samples. In this paper, we present Prototype-Based Test-Time Adaptation (PTA), an efficient and effective TTA paradigm that uses a set of class-specific knowledge prototypes to accumulate knowledge from test samples. Particularly, knowledge prototypes are adaptively weighted based on the zero-shot class confidence of each test sample, incorporating the sample&#x27;s visual features into the corresponding class-specific prototype. It is worth highlighting that the knowledge from past test samples is integrated and utilized solely in the prototypes, eliminating the overhead of cache population and retrieval that hinders the efficiency of existing TTA methods. This endows PTA with extremely high efficiency while achieving state-of-the-art performance on 15 image recognition benchmarks and 4 robust point cloud analysis benchmarks. For example, PTA improves CLIP&#x27;s accuracy from 65.64% to 69.38% on 10 cross-domain benchmarks, while retaining 92% of CLIP&#x27;s inference speed on large-scale ImageNet-1K. In contrast, the cache-based TDA achieves a lower accuracy of 67.97% and operates at only 50% of CLIP&#x27;s inference speed.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>测试时自适应（TTA）已成为视觉语言模型（VLM）弥合预训练数据与测试数据分布差异的有效范式。现有研究聚焦于基于缓存的无反向传播TTA方法，但此类方法存在两大局限：首先，随着类别数量增加，缓存规模扩大会导致推理延迟上升，在大规模场景下效率低下；其次，当缓存包含不足或错误样本时，模型性能会显著下降。本文提出基于原型的测试时自适应方法（PTA），这是一种高效且有效的TTA范式，通过维护一组类别特定知识原型来累积测试样本知识。具体而言，知识原型根据每个测试样本的零样本类别置信度进行自适应加权，将样本视觉特征融合到对应类别的原型表示中。值得强调的是，过往测试样本的知识仅通过原型进行整合与利用，彻底消除了现有TTA方法中缓存填充与检索带来的计算开销。这使得PTA在保持极高效率的同时，在15个图像识别基准和4个鲁棒点云分析基准上均取得了最优性能。例如，在10个跨域基准测试中，PTA将CLIP的准确率从65.64%提升至69.38%，同时在大规模ImageNet-1K上保持了CLIP 92%的推理速度。相比之下，基于缓存的TDA方法仅达到67.97%的准确率，且推理速度仅为CLIP的50%。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

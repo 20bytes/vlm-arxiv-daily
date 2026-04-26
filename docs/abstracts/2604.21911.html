@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>When Prompts Override Vision: Prompt-Induced Hallucinations in LVLMs</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Despite impressive progress in capabilities of large vision-language models (LVLMs), these systems remain vulnerable to hallucinations, i.e., outputs that are not grounded in the visual input. Prior work has attributed hallucinations in LVLMs to factors such as limitations of the vision backbone or the dominance of the language component, yet the relative importance of these factors remains unclear. To resolve this ambiguity, We propose HalluScope, a benchmark to better understand the extent to which different factors induce hallucinations. Our analysis indicates that hallucinations largely stem from excessive reliance on textual priors and background knowledge, especially information introduced through textual instructions. To mitigate hallucinations induced by textual instruction priors, we propose HalluVL-DPO, a framework for fine-tuning off-the-shelf LVLMs towards more visually grounded responses. HalluVL-DPO leverages preference optimization using a curated training dataset that we construct, guiding the model to prefer grounded responses over hallucinated ones. We demonstrate that our optimized model effectively mitigates the targeted hallucination failure mode, while preserving or improving performance on other hallucination benchmarks and visual capability evaluations. To support reproducibility and further research, we will publicly release our evaluation benchmark, preference training dataset, and code at https://pegah-kh.github.io/projects/prompts-override-vision/ .</p>
+      <h2>摘要 (ZH)</h2>
+      <p>尽管大型视觉语言模型（LVLMs）的能力取得了显著进展，但这些系统仍然容易产生幻觉，即输出不基于视觉输入。先前的研究将LVLMs中的幻觉归因于视觉骨干网络局限性或语言组件的主导地位等因素，但这些因素的相对重要性仍不清楚。为解决这一歧义，我们提出了HalluScope基准，以更好地理解不同因素诱导幻觉的程度。我们的分析表明，幻觉很大程度上源于过度依赖文本先验和背景知识，特别是通过文本指令引入的信息。为缓解文本指令先验诱导的幻觉，我们提出了HalluVL-DPO框架，用于对现成LVLMs进行微调，使其生成更基于视觉的响应。HalluVL-DPO利用我们构建的精心策划的训练数据集进行偏好优化，引导模型更倾向于基于视觉的响应而非幻觉响应。我们证明，优化后的模型有效缓解了目标幻觉失效模式，同时在其他幻觉基准和视觉能力评估上保持或提升了性能。为支持可重复性和进一步研究，我们将在https://pegah-kh.github.io/projects/prompts-override-vision/ 公开发布评估基准、偏好训练数据集和代码。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
