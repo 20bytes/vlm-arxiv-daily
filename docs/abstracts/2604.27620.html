@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SpaAct: Spatially-Activated Transition Learning with Curriculum Adaptation for Vision-Language Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-and-Language Navigation (VLN) aims to enable an embodied agent to follow natural-language instructions and navigate to a target location in unseen 3D environments. We argue that adapting VLMs to VLN requires endowing them with two complementary capabilities for acquiring such awareness, namely backward action reasoning (why) and forward transition prediction~(how). Based on this insight, we propose SpaAct, a simple yet effective training framework that activates the dynamic spatial awareness in VLMs. Specifically, SpaAct introduces two spatial activation tasks: Action Retrospection, which asks the model to infer the executed action sequence from visual transitions, and Future Frame Selection, which forces the model to predict the visual transitions conditioned on history and action. These two objectives provide lightweight supervision on both backward action reasoning and forward transition prediction, encouraging the model to build dynamic spatial awareness in a VLM-friendly way. To further stabilize adaptation, we design TriPA, a Tri-factor Progressive Adaptive curriculum learning method that organizes training samples from easy to hard, allowing the model to gradually acquire navigation skills from basic locomotion to long-horizon reasoning. Experiments on standard VLN-CE benchmarks show that SpaAct consistently improves VLM-based navigation and achieves state-of-the-art performance. We will release the code and models to support future research.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言导航（VLN）旨在使具身智能体能够遵循自然语言指令，在未见过的3D环境中导航至目标位置。我们认为，将视觉语言模型（VLM）适配至VLN需要赋予其两种互补能力以获取动态空间感知能力，即反向动作推理（为何）与前向状态转移预测（如何）。基于这一洞察，我们提出SpaAct——一种简单而有效的训练框架，可激活VLM中的动态空间感知能力。具体而言，SpaAct引入两类空间激活任务：动作回溯（Action Retrospection）要求模型从视觉状态转移中推断已执行的动作序列，未来帧选择（Future Frame Selection）则迫使模型基于历史观测与动作预测后续视觉状态转移。这两个目标通过对反向动作推理与前向状态转移预测提供轻量级监督，以VLM友好的方式促使模型建立动态空间感知。为稳定适配过程，我们设计TriPA（三因子渐进式自适应课程学习方法），按由易到难的顺序组织训练样本，使模型从基础运动逐步过渡到长程推理，渐进掌握导航技能。在标准VLN-CE基准上的实验表明，SpaAct能持续提升基于VLM的导航性能，并取得当前最佳结果。我们将开源代码与模型以支持后续研究。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

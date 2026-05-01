@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Echo-α: Large Agentic Multimodal Reasoning Model for Ultrasound Interpretation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Ultrasound interpretation requires both precise lesion localization and holistic clinical reasoning, yet existing methods typically excel at only one of these capabilities: specialized detectors offer strong localization but limited reasoning, whereas multimodal large language models (MLLMs) provide flexible reasoning but weak grounding in specialized medical domains. We present Echo-α, an agentic multimodal reasoning model for ultrasound interpretation that unifies these strengths within an invoke-and-reason framework. Echo-α is trained to coordinate organ-specific detector outputs, integrate them with global visual context, and convert the resulting evidence into grounded diagnostic decisions beyond detector-only inference. This behavior is established through a nine-task supervised curriculum and then refined by sequential reinforcement learning under different reward trade-offs, yielding Echo-α-Grounding for lesion anchoring and Echo-α-Diagnosis for final diagnosis. On multi-center renal and breast ultrasound benchmarks, Echo-α outperforms competitive baselines on both grounding and diagnosis. In particular, on cross-center test sets, Echo-α-Grounding attains 56.73%/43.78% F1@0.5 and Echo- α-Diagnosis reaches 74.90%/49.20% overall accuracy on renal/breast ultrasound. These results suggest that agentic multimodal reasoning can turn specialized detectors into verifiable clinical evidence, offering a practical route toward ultrasound AI systems that are more accurate, interpretable, and transferable. The repository is at https://github.com/MiliLab/Echo-Alpha.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>超声影像解读需要同时具备精确的病灶定位和全面的临床推理能力，但现有方法通常只能擅长其中一种：专用检测器定位能力强但推理能力有限，而多模态大语言模型（MLLMs）推理灵活但在专业医疗领域的根基薄弱。我们提出Echo-α，一种面向超声影像解读的智能多模态推理模型，在调用与推理框架中统一了这些优势。Echo-α经过训练，能够协调器官专用检测器的输出，将其与全局视觉背景整合，并将由此得到的证据转化为超越纯检测器推理的实证诊断决策。该行为通过一个包含九项任务的监督课程建立，随后在不同奖励权衡下通过序列强化学习进行优化，分别得到用于病灶锚定的Echo-α-Grounding和用于最终诊断的Echo-α-Diagnosis。在基于多中心肾脏和乳腺超声基准的测试中，Echo-α在锚定和诊断方面均优于竞争基线。尤其是在跨中心测试集上，Echo-α-Grounding在肾脏/乳腺超声上的F1@0.5分别达到56.73%/43.78%，Echo-α-Diagnosis的总体准确率分别达到74.90%/49.20%。这些结果表明，智能多模态推理可以将专用检测器转化为可验证的临床证据，为构建更准确、更具可解释性且更易迁移的超声人工智能系统提供了一条实用路径。代码仓库位于https://github.com/MiliLab/Echo-Alpha。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

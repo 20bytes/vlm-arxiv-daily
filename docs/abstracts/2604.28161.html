@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>RopeDreamer: A Kinematic Recurrent State Space Model for Dynamics of Flexible Deformable Linear Objects</h1>
+      <h2>Abstract (EN)</h2>
+      <p>The robotic manipulation of Deformable Linear Objects (DLOs) is a fundamental challenge due to the high-dimensional, non-linear dynamics of flexible structures and the complexity of maintaining topological integrity during contact-rich tasks. While recent data-driven methods have utilized Recurrent and Graph Neural Networks for dynamics modeling, they often struggle with self-intersections and non-physical deformations, such as tangling and link stretching. In this paper, we propose a latent dynamics framework that combines a Recurrent State Space Model with a Quaternionic Kinematic Chain representation to enable robust, long-term forecasting of DLO states. By encoding the DLO as a sequence of relative rotations (quaternions) rather than independent Cartesian positions, we inherently constrain the model to a physically valid manifold that preserves link-length constancy. Furthermore, we introduce a dual-decoder architecture that decouples state reconstruction from future-state prediction, forcing the latent space to capture the underlying physics of deformation. We evaluate our approach on a large-scale simulated dataset of complex pick-and-place trajectories involving self-intersections. Our results demonstrate that the proposed model achieves a 40.52% reduction in open-loop prediction error over 50-step horizons compared to the state-of-the-art baseline, while reducing inference time by 31.17%. Our model further maintains superior topological consistency in scenarios with multiple crossings, proving its efficacy as a compositional primitive for long-horizon manipulation planning.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>可变形线性物体（DLO）的机器人操作是一个基础性挑战，原因在于柔性结构的高维、非线性动力学特性，以及在接触密集任务中保持拓扑完整性的复杂性。尽管近期数据驱动方法已利用递归和图神经网络进行动力学建模，但这些方法在处理自交和非物理变形（如缠绕和连杆拉伸）时仍面临困难。本文提出一种潜动力学框架，将递归状态空间模型与四元数运动学链表示相结合，以实现DLO状态的稳健长期预测。通过将DLO编码为一系列相对旋转（四元数）而非独立笛卡尔位置，我们固有地将模型约束在物理有效的流形上，从而保持连杆长度恒定。此外，我们引入双解码器架构，将状态重构与未来状态预测解耦，迫使潜空间捕捉变形的底层物理规律。我们在包含复杂拾放轨迹（涉及自交）的大规模模拟数据集上评估了该方法。结果表明，与最先进基线相比，所提模型在50步预测范围内的开环预测误差降低了40.52%，同时推理时间减少了31.17%。在多交叉场景中，该模型进一步保持了优越的拓扑一致性，证明了其作为长时间跨度操作规划的组合基元的有效性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
