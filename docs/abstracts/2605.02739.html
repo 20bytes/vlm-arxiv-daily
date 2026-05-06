@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Latent Bridge: Feature Delta Prediction for Efficient Dual-System Vision-Language-Action Model Inference</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Dual-system Vision-Language-Action (VLA) models achieve state-of-the-art robotic manipulation but are bottlenecked by the VLM backbone, which must   execute at every control step while producing temporally redundant features. We propose Latent Bridge, a lightweight model that predicts VLM output   deltas between timesteps, enabling the action head to operate on predicted outputs while the expensive VLM backbone is called only periodically. We   instantiate Latent Bridge on two architecturally distinct VLAs: GR00T-N1.6 (feature-space bridge) and π0.5 (KV-cache bridge), demonstrating that the   approach generalizes across VLA designs. Our task-agnostic DAgger training pipeline transfers across benchmarks without modification. Across four   LIBERO suites, 24 RoboCasa kitchen tasks, and the ALOHA sim transfer-cube task, Latent Bridge achieves 95-100% performance retention while reducing   VLM calls by 50-75%, yielding 1.65-1.73x net per-episode speedup.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>双系统视觉-语言-动作（VLA）模型在机器人操作中达到了最先进的性能，但其VLM骨干网络成为瓶颈——该网络必须在每个控制步骤执行，同时产生时间上冗余的特征。我们提出潜在桥接（Latent Bridge），一种轻量级模型，用于预测不同时间步之间VLM输出的增量，使得动作头可以在预测输出上运行，而昂贵的VLM骨干网络仅周期性调用。我们在两个架构上截然不同的VLA上实例化潜在桥接：GR00T-N1.6（特征空间桥接）和π0.5（KV缓存桥接），证明该方法可泛化至不同VLA设计。我们任务无关的DAgger训练流程无需修改即可跨基准迁移。在四个LIBERO套件、24个RoboCasa厨房任务以及ALOHA仿真转移立方体任务中，潜在桥接在将VLM调用减少50-75%的同时实现了95-100%的性能保持，并带来了1.65-1.73倍的每回合净加速比。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

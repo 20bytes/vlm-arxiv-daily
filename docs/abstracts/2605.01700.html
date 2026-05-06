@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>TrajRAG: Retrieving Geometric-Semantic Experience for Zero-Shot Object Navigation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Existing zero-shot Object Goal Navigation (ObjectNav) methods often exploit commonsense knowledge from large language or vision-language models to guide navigation. However, such knowledge arises from internet-scale text rather than embodied 3D experience, and episodic observations collected during navigation are typically discarded, preventing the accumulation of lifelong experience. To this end, we propose Trajectory RAG (TrajRAG), a retrieval-augmented generation framework that enhances large-model reasoning by retrieving geometric-semantic experiences. TrajRAG incrementally accumulates episodic observations from past navigation episodes. To structure these observations, we propose a topological-polar (topo-polar) trajectory representation that compactly encodes spatial layouts and semantic contexts, effectively removing redundancies in raw episodic observations. A hierarchical chunking structure further organizes similar topo-polar trajectories into unified summaries, enabling coarse-to-fine retrieval. During navigation, candidate frontiers generate multiple trajectory hypotheses that query TrajRAG for similar past trajectories, guiding large-model reasoning for waypoint selection. New experiences are continually consolidated into TrajRAG, enabling the accumulation of lifelong navigation experience. Experiments on MP3D, HM3D-v1, and HM3D-v2 show that TrajRAG effectively retrieves relevant geometric-semantic experiences and improves zero-shot ObjectNav performance.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>现有的零样本目标导向导航方法通常利用大语言模型或视觉-语言模型中的常识知识来指导导航。然而，这类知识来源于互联网规模的文本而非具身3D经验，且导航过程中收集的片段化观测通常被丢弃，阻碍了终身经验的积累。为此，我们提出轨迹RAG（TrajRAG），这是一种检索增强生成框架，通过检索几何-语义经验来增强大模型推理能力。TrajRAG逐步积累来自过去导航片段的片段化观测。为结构化这些观测，我们提出一种拓扑-极坐标轨迹表示方法，该方法紧凑地编码空间布局和语义上下文，有效消除原始片段化观测中的冗余。进一步地，分层分块结构将相似的拓扑-极坐标轨迹组织为统一摘要，支持从粗到细的检索。在导航过程中，候选前沿点生成多个轨迹假设，这些假设查询TrajRAG以获取相似的过去轨迹，从而指导大模型进行航点选择的推理。新经验持续整合到TrajRAG中，实现终身导航经验的积累。在MP3D、HM3D-v1和HM3D-v2上的实验表明，TrajRAG有效检索相关的几何-语义经验，并提升零样本目标导向导航性能。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

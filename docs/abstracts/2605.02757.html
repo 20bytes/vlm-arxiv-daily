@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Seeing Realism from Simulation: Efficient Video Transfer for Vision-Language-Action Data Augmentation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-language-action (VLA) models typically rely on large-scale real-world videos, whereas simulated data, despite being inexpensive and highly parallelizable to collect, often suffers from a substantial visual domain gap and limited environmental diversity, resulting in weak real-world generalization. We present an efficient video augmentation framework that converts simulated VLA videos into realistic training videos while preserving task semantics and action trajectories. Our pipeline extracts structured conditions from simulation via video semantic segmentation and video captioning, rewrites captions to diversify environments, and uses a conditional video transfer model to synthesize realistic videos. To make augmentation practical at scale, we introduce a diffusion feature-reuse mechanism that reuses video tokens across adjacent timesteps to accelerate generation, and a coreset sampling strategy that identifies a compact, non-redundant subset for augmentation under limited computation. Extensive experiments on Robotwin 2.0, LIBERO, LIBERO-Plus, and a real robotic platform demonstrate consistent improvements. For example, our method improves RDT-1B by 8% on Robotwin 2.0, and boosts $π_0$ by 5.1% on the more challenging LIBERO-Plus benchmark. Code is available at: https://github.com/nanfangxiansheng/Seeing-Realism-from-Simulation.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作（VLA）模型通常依赖大规模真实世界视频，而仿真数据尽管采集成本低且易于并行化，却存在显著的视觉域差异和环境多样性不足的问题，导致其在真实世界中的泛化能力薄弱。我们提出一种高效的视频增强框架，可将仿真VLA视频转化为逼真的训练视频，同时保留任务语义和动作轨迹。该流程通过视频语义分割和视频描述技术从仿真中提取结构化条件，重写描述以增加环境多样性，并利用条件视频迁移模型合成逼真视频。为使增强方法具备大规模实用性，我们引入了扩散特征复用机制——通过跨相邻时间步复用视频令牌来加速生成，以及核心集采样策略——在有限计算资源下识别紧凑且无冗余的子集用于增强。在Robotwin 2.0、LIBERO、LIBERO-Plus及真实机器人平台上的大量实验均表明该方法具有持续改进效果。例如，我们的方法使RDT-1B在Robotwin 2.0上提升8%，使$π_0$在更具挑战性的LIBERO-Plus基准上提升5.1%。代码已开源：https://github.com/nanfangxiansheng/Seeing-Realism-from-Simulation。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

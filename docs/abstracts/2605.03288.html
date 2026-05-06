@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Neural Control: Adjoint Learning Through Equilibrium Constraints</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Many physical AI tasks are governed by implicit equilibrium: an agent actuates a subset of degrees of freedom (boundary DoFs), while the remaining free DoFs settle by minimizing a total potential energy. Even seemingly basic tasks such as bending a deformable linear object (DLO) to a target shape can exhibit strongly nonlinear behavior due to multi-stability: the same boundary conditions may yield multiple equilibrium shapes depending on the actuation trajectory. However, learning and control in such systems is brittle because the actuation-to-configuration map is defined only implicitly, and naive backpropagation through iterative equilibrium solvers is memory- and compute-intensive. We propose Neural Control, a boundary-control framework that computes trajectory-dependent, memory-efficient proxy gradients by differentiating equilibrium conditions via an adjoint formulation, avoiding unrolling of solver iterations. To improve robustness over long horizons, we integrate these sensitivities into a receding-horizon MPC scheme that repeatedly re-anchors optimization to realized equilibria and mitigates basin-switching in multi-stable regimes. We evaluate Neural Control in simulation and on physical robots manipulating DLOs, and show improved performance over gradient-free baselines such as SPSA and CEM.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>许多物理AI任务受隐式平衡约束：智能体驱动部分自由度（边界自由度），而其余自由自由度通过最小化总势能达到平衡。即使是弯曲可变形线性物体（DLO）至目标形状这类看似简单的任务，也可能因多稳定性表现出强非线性行为——相同的边界条件可能因驱动轨迹不同而产生多种平衡构型。然而，此类系统的学习与控制较为脆弱，因为驱动-构型映射仅隐式定义，且通过迭代平衡求解器进行朴素反向传播会导致内存与计算密集。我们提出神经控制（Neural Control），一种边界控制框架，通过伴随公式对平衡条件求导，计算轨迹依赖、内存高效的代理梯度，避免展开求解器迭代。为提升长时域控制的鲁棒性，我们将这些灵敏度集成到滚动时域MPC方案中，该方案反复将优化锚定到已实现的平衡点，并缓解多稳定状态下的势阱切换问题。我们在仿真和操作可变形线性物体的物理机器人上评估了神经控制，结果显示其性能优于SPSA和CEM等无梯度基线方法。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>AnchorD: Metric Grounding of Monocular Depth Using Factor Graphs</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Dense and accurate depth estimation is essential for robotic manipulation, grasping, and navigation, yet currently available depth sensors are prone to errors on transparent, specular, and general non-Lambertian surfaces. To mitigate these errors, large-scale monocular depth estimation approaches provide strong structural priors, but their predictions can be potentially skewed or mis-scaled in metric units, limiting their direct use in robotics. Thus, in this work, we propose a training-free depth grounding framework that anchors monocular depth estimation priors from a depth foundation model in raw sensor depth through factor graph optimization. Our method performs a patch-wise affine alignment, locally grounding monocular predictions in metric real-world depth while preserving fine-grained geometric structure and discontinuities. To facilitate evaluation in challenging real-world conditions, we introduce a benchmark dataset with dense scene-wide ground truth depth in the presence of non-Lambertian objects. Ground truth is obtained via matte reflection spray and multi-camera fusion, overcoming the reliance on object-only CAD-based annotations used in prior datasets. Extensive evaluations across diverse sensors and domains demonstrate consistent improvements in depth performance without any (re-)training. We make our implementation publicly available at https://anchord.cs.uni-freiburg.de.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>密集且精确的深度估计对于机器人操作、抓取及导航至关重要，然而当前可用的深度传感器在透明、镜面以及一般非朗伯表面上易产生误差。为缓解这些误差，大规模单目深度估计方法提供了强大的结构先验，但其预测结果可能在度量单位上存在偏差或尺度失准，限制了其在机器人领域的直接应用。因此，本文提出了一种无需训练的深度锚定框架，通过因子图优化将深度基础模型提供的单目深度估计先验与原始传感器深度进行锚定。该方法执行分块仿射对齐，在保留精细几何结构与不连续性前提下，将单目预测结果局部锚定至以米为单位的真实世界深度。为便于在具有挑战性的真实场景中进行评估，我们引入了一个在存在非朗伯物体时具有密集全场景真实深度数据的基准数据集。该真实深度数据通过哑光反射喷雾与多相机融合获取，克服了以往数据集仅依赖物体级CAD标注的局限性。在多种传感器与领域上的广泛评估表明，该方法无需任何（重新）训练即可持续提升深度估计性能。我们已在https://anchord.cs.uni-freiburg.de公开了实现代码。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
