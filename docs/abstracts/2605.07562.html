@@ -17,9 +17,9 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Beyond GSD-as-Token: Continuous Scale Conditioning for Remote Sensing VLMs</h1>
+      <h1>Beyond GSD-as-Token: Continuous Scale Conditioning for Remote Sensing VLMs&lt;br&gt;超越GSD即文本：遥感视觉语言模型的连续尺度条件化&lt;br&gt;[摘要](abstracts/2605.07562.html)</h1>
       <h2>Abstract (EN)</h2>
-      <p>Remote sensing vision-language models (RS-VLMs) face a fundamental mismatch with natural-image counterparts: the same geographic object exhibits radically different visual evidence across ground sampling distances (GSDs) spanning multiple orders of magnitude. Yet existing RS-VLMs often discard GSD or inject it as a discrete text token, forcing a single static parameter set to absorb the entire scale spectrum. We introduce ScaleEarth, a parameter-efficient fine-tuning framework built on Qwen3-VL that treats GSD as a continuous conditioning variable governing the model&#x27;s computation path. At its core, CS-HLoRA (Continuous Scale-Conditioned Hyper-LoRA) modulates the LoRA low-rank subspace through a GSD-driven gate, enabling the model to dynamically route computation by physical scale. To remove reliance on sensor metadata at deployment, we pair CS-HLoRA with SSE-U, a lightweight heteroscedastic sub-head that predicts GSD and its uncertainty from visual features. To provide matching supervision, we construct GeoScale-VQA, a 1.5M-sample scale-layered RS-VQA corpus whose question-answer generation is conditioned on the same physical scalar that drives CS-HLoRA, forming a closed method-data loop. Trained with QLoRA on an 8B backbone, ScaleEarth achieves state-of-the-art results on remote-sensing benchmarks covering diverse Earth-system tasks, including XLRS-Bench and OmniEarth-Bench.</p>
+      <p>Abstract not available.</p>
       <h2>摘要 (ZH)</h2>
       <p>遥感视觉语言模型（RS-VLMs）面临一个与自然图像模型根本性的错配：同一地理对象在跨越多个数量级的地面采样距离（GSD）下会呈现截然不同的视觉证据。然而现有RS-VLMs往往忽略GSD，或将其作为离散文本标记注入，迫使单一静态参数集吸收整个尺度谱。我们提出ScaleEarth，一种基于Qwen3-VL的参数高效微调框架，将GSD视为控制模型计算路径的连续条件变量。其核心CS-HLoRA（连续尺度条件超LoRA）通过GSD驱动门控调节LoRA低秩子空间，使模型能够依据物理尺度动态路由计算。为消除对部署时传感器元数据的依赖，我们将CS-HLoRA与SSE-U配对，该轻量级异方差子头可从视觉特征预测GSD及其不确定性。为提供匹配监督，我们构建GeoScale-VQA——一个150万样本的尺度分层遥感视觉问答语料库，其问答生成受驱动CS-HLoRA的同一物理标量条件约束，形成闭环方法与数据。在8B骨干网络上使用QLoRA训练后，ScaleEarth在涵盖多样化地球系统任务的遥感基准（包括XLRS-Bench和OmniEarth-Bench）上取得了最先进成果。</p>
       <p><a href="../index.html">← Back</a></p>
