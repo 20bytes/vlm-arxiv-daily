@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>One Token Per Frame: Reconsidering Visual Bandwidth in World Models for VLA Policy</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-language-action (VLA) models increasingly rely on auxiliary world modules to plan over long horizons, yet how such modules should be parameterized on top of a pretrained VLA remains an open design question. Existing world-model-augmented VLAs typically pass the per-frame visual stream into the world module at high visual bandwidth and treat its rollout as a side product of action prediction; under a constrained adaptation budget on a frozen backbone, this leaves both the per-frame representation and the latent action coupling under-examined. We introduce OneWM-VLA, which compresses each view into a single semantic token per frame through an Adaptive Attention Pooling, and produces the resulting latent stream and the action trajectory under a single flow-matching objective rather than connecting them through a separate decoder. Empirically, we find that per-frame visual bandwidth can be reduced to a single token without compromising long-horizon performance under our setup. Trained with 14.71M LoRA parameters on a $π_0$ (2B) backbone, OneWM-VLA improves the average success rate from 47.9% to 61.3% on MetaWorld~MT50, reaches 95.6% on LIBERO-Long (vs.85.2% for $π_0$), and reaches 60.0% on the long-horizon deformable task Fold Cloth on a real Piper arm (vs.20.0% for $π_0$).</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作模型日益依赖辅助世界模块进行长程规划，然而在预训练VLA基础上如何参数化此类模块仍是一个开放的设计问题。现有世界模型增强型VLA通常将每帧视觉流以高视觉带宽传入世界模块，并将其展开作为动作预测的副产品；在冻结主干网络的有限适配预算下，这导致每帧表示和潜在动作耦合均未得到充分研究。我们提出OneWM-VLA，通过自适应注意力池化将每帧视图压缩为单个语义token，并采用单一流匹配目标生成潜在流和动作轨迹，而非通过独立解码器连接二者。实验表明，在我们的设定下，每帧视觉带宽可缩减至单个token且不影响长程性能。OneWM-VLA在π₀（2B）主干网络上仅使用1471万LoRA参数进行训练，即可在MetaWorld MT50上将平均成功率从47.9%提升至61.3%，在LIBERO-Long上达到95.6%（π₀为85.2%），并在真实Piper机械臂的长程可变形任务Fold Cloth上达到60.0%（π₀为20.0%）。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

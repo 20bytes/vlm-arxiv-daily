@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>CSR: Infinite-Horizon Real-Time Policies with Massive Cached State Representations</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Deploying massive large language models (LLMs) as continuous cognitive engines for robotics is bottlenecked by the time-to-first-token (TTFT) latency required to process extensive state histories. Existing solutions like RAG or sliding windows compromise global context or incur prohibitive re-computation costs. We formalize the optimal task structure for minimizing latency and theoretically prove that prefix stability, incremental extensibility, and asynchronous state reconciliation are necessary conditions for real-time performance. Building on these proofs, we introduce the Cached State Representation (CSR) framework as the practical instantiation of these properties, ensuring optimal KV-cache reuse. To sustain these properties over infinite horizons, we further propose an Asynchronous State Reconciliation (ASR) algorithm that offloads state memory eviction to a parallel computational resource to eliminate latency spikes. On a physical robot wirelessly connected to an on-premise GPU server, CSR achieves a 26-fold latency reduction (14.67s to 0.56s) for 120K token contexts with a 235B parameter model compared to a standard baseline. On an embodied AI benchmark, we achieve SOTA recall (0.836 vs. 0.459) while maintaining RAG-level latency. ASR is validated to sustain bounded, spike-free TTFT over 10 eviction cycles in continuous real-world operation. Together, CSR and ASR enable massive LLMs to function as continuously operating, high-frequency (&gt; 2 Hz) embodied policies.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>将大规模大型语言模型作为机器人持续认知引擎的部署，受限于处理大量状态历史所需的首次令牌生成时间（TTFT）延迟。现有解决方案如RAG或滑动窗口会牺牲全局上下文，或导致高昂的重新计算成本。我们形式化了最小化延迟的最优任务结构，并从理论上证明前缀稳定性、增量可扩展性和异步状态协调是实现实时性能的必要条件。基于这些证明，我们提出了缓存状态表示（CSR）框架作为这些属性的实际实例化，确保了最优的KV缓存复用。为了在无限时域上维持这些属性，我们进一步提出了一种异步状态协调（ASR）算法，将状态内存驱逐卸载到并行计算资源上，以消除延迟尖峰。在一台与本地GPU服务器无线连接的物理机器人上，CSR在使用235B参数模型处理120K令牌上下文时，实现了26倍的延迟降低（从14.67秒降至0.56秒），相比于标准基线。在具身AI基准测试中，我们在保持RAG级延迟的同时达到了SOTA召回率（0.836对比0.459）。ASR在连续现实世界操作中，经过10次驱逐周期验证，能够维持有界、无尖峰的TTFT。CSR和ASR共同使大规模LLM能够作为持续运行、高频（&gt;2 Hz）的具身策略。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

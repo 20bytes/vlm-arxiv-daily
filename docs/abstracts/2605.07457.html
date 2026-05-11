@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>EditRefiner: A Human-Aligned Agentic Framework for Image Editing Refinement</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Recent text-guided image editing (TIE) models have made remarkable progress, yet edited images still frequently suffer from fine-grained issues such as unnatural objects, lighting mismatch, and unexpected changes. Existing refinement approaches either rely on costly iterative regeneration or employ vision-language models (VLMs) with weak spatial grounding, often resulting in semantic drift and unreliable local corrections. To address these limitations, we first construct EditFHF-15K, a dataset of fine-grained human feedback for edited images, comprising (1) 15K images from 12 TIE models spanning 43 editing tasks, (2) 60K annotated artifact regions and 80K editing failure regions, each accompanied by textual reasoning, and (3) 45K mean opinion scores (MOSs) assessing perceptual quality, instruction following, and visual consistency. Based on EditFHF-15K, we propose EditRefiner, a hierarchical, interpretable, and human-aligned agentic framework that reformulates post-editing correction as a human-like perception-reasoning-action-evaluation loop. Specifically, we introduce: (1) a perception agent that detects contextual saliency maps of artifacts and editing failures, (2) a reasoning agent that interprets these perceptual cues to perform human-aligned diagnostic inference, (3) an action agent that uses the reasoning output to plan and execute localized re-editing, and (4) an evaluation agent that assesses the re-edited image and guides the action agent on whether further refinements are required. Extensive experiments demonstrate that EditRefiner consistently outperforms state-of-the-art methods in distortion localization, diagnose accuracy and human perception alignment, establishing a new paradigm for self-corrective and perceptually reliable image editing. The code is available at https://github.com/IntMeGroup/EditRefiner.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>近年来，文本引导的图像编辑模型取得了显著进展，但编辑后的图像仍频繁出现诸如对象不自然、光照不匹配和意外修改等细粒度问题。现有的优化方法要么依赖代价高昂的迭代重新生成，要么采用空间定位能力较弱的视觉语言模型，常导致语义漂移和不可靠的局部修正。为解决这些局限，我们首先构建了EditFHF-15K数据集，这是一个针对编辑图像的细粒度人类反馈数据集，包含：(1) 来自12种图像编辑模型、覆盖43项编辑任务的15000张图像；(2) 60000个标注的伪影区域和80000个编辑失败区域，每个区域均附带文本解释；(3) 45000个平均意见得分，用于评估感知质量、指令遵循度和视觉一致性。基于EditFHF-15K，我们提出EditRefiner，一种层次化、可解释且符合人类认知的智能体框架，将后编辑修正重构为类人的感知-推理-行动-评估循环。具体而言，我们引入：(1) 感知智能体，检测伪影和编辑失败的上下文显著图；(2) 推理智能体，解读这些感知线索以进行符合人类认知的诊断推理；(3) 行动智能体，利用推理结果规划并执行局部重新编辑；(4) 评估智能体，评估重新编辑后的图像并指导行动智能体判断是否需要进一步优化。大量实验表明，EditRefiner在失真定位、诊断准确度和人类感知对齐方面持续优于现有最先进方法，为自修正和感知可靠的图像编辑建立了新范式。代码已开源至https://github.com/IntMeGroup/EditRefiner。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SphereVAD: Training-Free Video Anomaly Detection via Geodesic Inference on the Unit Hypersphere</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Video anomaly detection (VAD) aims to automatically identify events that deviate from normal patterns in untrimmed surveillance videos. Existing methods universally depend on large-scale annotations or task-specific training procedures, severely limiting their rapid deployment to novel scenes. We observe that intermediate-layer features of pre-trained multimodal large language models (MLLMs) already encode rich anomaly semantics, yet existing approaches rely on the language output pathway and fail to exploit the geometric discriminability latent in these representations. Based on this finding, we propose SphereVAD, a fully training-free, zero-shot VAD framework that recasts anomaly discrimination as von Mises-Fisher (vMF) likelihood-ratio geodesic inference on the unit hypersphere, unleashing latent discriminability through principled geometric reasoning rather than learning new representations. Specifically, SphereVAD first applies Frechet mean centering to unfold feature distributions and eliminate domain biases, then employs Holistic Scene Attention (HSA) to reinforce feature consistency using cross-video priors, and finally performs vMF-guided Spherical Geodesic Pulling (SGP) to align ambiguous segments with directional prototypes on the spherical manifold. This training-free pipeline requires only minimal synthetic images for calibration. SphereVAD establishes new state-of-the-art results among training-free approaches on three major benchmarks and remains competitive with fully supervised baselines. Code will be available upon acceptance.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视频异常检测（VAD）旨在自动识别未修剪监控视频中偏离正常模式的事件。现有方法普遍依赖大规模标注或特定任务的训练流程，严重限制了其在新场景中的快速部署。我们观察到，预训练多模态大语言模型（MLLMs）的中间层特征已编码了丰富的异常语义，但现有方法依赖于语言输出路径，未能利用这些表示中潜在的几何判别性。基于这一发现，我们提出SphereVAD，一种完全无需训练、零样本的VAD框架，将异常判别重新定义为单位超球面上的von Mises-Fisher（vMF）似然比测地线推理，通过原理性几何推理而非学习新表示来释放潜在判别性。具体而言，SphereVAD首先应用弗雷歇均值中心化来展开特征分布并消除领域偏差，然后采用整体场景注意力（HSA）利用跨视频先验增强特征一致性，最后执行vMF引导的球面测地线牵引（SGP）将模糊片段与球面流形上的方向原型对齐。这种无需训练的流程仅需极少量合成图像进行校准。SphereVAD在三大主流基准数据集上建立了无训练方法的最新水平，并与全监督基线保持竞争力。代码将在论文接收后公开。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

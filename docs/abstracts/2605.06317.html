@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>NavOne: One-Step Global Planning for Vision-Language Navigation on Top-Down Maps</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Existing Vision-Language Navigation (VLN) methods typically adopt an egocentric, step-by-step paradigm, which struggles with error accumulation and limits efficiency. While recent approaches attempt to leverage pre-built environment maps, they often rely on incrementally updating memory graphs or scoring discrete path proposals, which restricts continuous spatial reasoning and creates discrete bottlenecks. We propose Top-Down VLN (TD-VLN), reformulating navigation as a one-step global path planning problem on pre-built top-down maps, supported by our newly constructed R2R-TopDown dataset. To solve this, we introduce NavOne, a unified framework that directly predicts dense path probabilities over multi-modal maps in a single end-to-end forward pass. NavOne features a Top-Down Map Fuser for joint multi-modal map representation, and extends Attention Residuals for spatial-aware depth mixing. Extensive experiments on R2R-TopDown show that NavOne achieves state-of-the-art performance among map-based VLN methods, with a planning-stage speedup of 8x over existing map-based baselines and 80x over egocentric methods, enabling highly efficient global navigation.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>现有的视觉-语言导航（VLN）方法通常采用以自我为中心、逐步执行的范式，这种范式难以避免误差累积且效率受限。虽然近期有研究尝试利用预建的环境地图，但它们往往依赖于增量更新的记忆图或对离散路径候选进行评分，这限制了连续空间推理能力并形成了离散化瓶颈。本文提出俯视VLN（TD-VLN），将导航重新定义为在预建俯视地图上的一步全局路径规划问题，并以此为基础构建了全新的R2R-TopDown数据集。为解决该问题，我们引入统一框架NavOne，该框架通过单次端到端前向传播直接预测多模态地图上的密集路径概率。NavOne的核心组件包括用于联合多模态地图表征的俯视地图融合器（Top-Down Map Fuser），以及用于实现空间感知深度混合的注意力残差扩展模块（Attention Residuals）。在R2R-TopDown数据集上的大量实验表明，NavOne在基于地图的VLN方法中达到了最优性能，其规划阶段速度相比现有地图基线方法提升8倍，相比以自我为中心的方法提升80倍，从而实现了高效全局导航。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
