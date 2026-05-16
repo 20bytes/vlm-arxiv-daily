@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Slot-MPC: Goal-Conditioned Model Predictive Control with Object-Centric Representations</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Predictive world models enable agents to model scene dynamics and reason about the consequences of their actions. Inspired by human perception, object-centric world models capture scene dynamics using object-level representations, which can be used for downstream applications such as action planning. However, most object-centric world models and reinforcement learning (RL) approaches learn reactive policies that are fixed at inference time, limiting generalization to novel situations. We propose Slot-MPC, an object-centric world modeling framework that enables planning through Model Predictive Control (MPC). Slot-MPC leverages vision encoders to learn slot-based representations, which encode individual objects in the scene, and uses these structured representations to learn an action-conditioned object-centric dynamics model. At inference time, the learned dynamics model enables action planning via MPC, allowing agents to adapt to previously unseen situations. Since the learned world model is differentiable, we can use gradient-based MPC to directly optimize actions, which is computationally more efficient than relying on gradient-free, sampling-based MPC methods. Experiments on simulated robotic manipulation tasks show that Slot-MPC improves both task performance and planning efficiency compared to non-object-centric world model baselines. In the considered offline setting with limited state-action coverage, we find that gradient-based MPC performs better than gradient-free, sampling-based MPC. Our results demonstrate that explicitly structured, object-centric representations provide a strong inductive bias for controllable and generalizable decision-making. Code and additional results are available at https://slot-mpc.github.io.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>预测性世界模型使智能体能够对场景动态进行建模，并推理其行为的后果。受人类感知启发，以对象为中心的世界模型利用对象级表征捕捉场景动态，可用于动作规划等下游应用。然而，大多数以对象为中心的世界模型和强化学习方法学习的是推理时固定的反应式策略，限制了其对新颖情境的泛化能力。我们提出Slot-MPC，一种以对象为中心的世界建模框架，通过模型预测控制实现规划。Slot-MPC利用视觉编码器学习基于槽的表征，对场景中的个体对象进行编码，并利用这些结构化表征学习一个以动作为条件的对象中心动态模型。在推理时，学习到的动态模型通过MPC实现动作规划，使智能体能够适应之前未见过的情境。由于学习到的世界模型是可微的，我们可以使用基于梯度的MPC直接优化动作，这比依赖无梯度、基于采样的MPC方法在计算上更高效。在模拟机器人操作任务上的实验表明，与不以对象为中心的世界模型基线相比，Slot-MPC同时提升了任务性能和规划效率。在考虑的状态-动作覆盖有限的离线设置中，我们发现基于梯度的MPC优于无梯度、基于采样的MPC。我们的结果表明，显式结构化的对象中心表征为可控且可泛化的决策提供了强大的归纳偏置。代码和更多结果见https://slot-mpc.github.io。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

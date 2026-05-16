@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>DiffPhD: A Unified Differentiable Solver for Projective Heterogeneous Materials in Elastodynamics with Contact-Rich GPU-Acceleration</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Differentiable simulation of soft bodies is a foundation for system identification, trajectory optimization, and Real2Sim transfer. Yet, existing methods such as the differentiable Projective Dynamics (DiffPD) struggle when faced with heterogeneous materials with extreme stiffness contrasts, hyperelasticity under large deformations, and contact-rich interactions, which are common scenarios in the real world. We present DiffPhD, a unified GPU-accelerated differentiable Projective Dynamics framework for heterogeneous materials that tackles these intertwined challenges simultaneously. Our key insight is a careful integration of: (i) stiffness-aware projective weights to embed heterogeneity into the global system; (ii) trust-region eigenvalue filtering lifted to the backward pass for stable hyperelastic gradients and a type-II Anderson Acceleration scheme with dual-gate convergence to stabilize forward iteration under large stiffness contrasts; and (iii) a unified GPU pipeline that reuses a single sparse factor across forward, backward, and contact computations, with stiffness-amplified Rayleigh damping folded into the same factor for heterogeneity-aware dissipation at zero recurring cost. DiffPhD achieves strict gradient accuracy while delivering up to an order-of-magnitude speedup over prior differentiable solvers on heterogeneous, hyperelastic, contact-rich benchmarks. Crucially, this speedup does not come at the cost of stability: DiffPhD remains convergent on stiffness contrasts up to 100x where prior PD solvers degrade. This unlocks end-to-end gradient-based optimization on regimes previously bottlenecked by either solver fragility or per-iteration cost -- shell--joint composite creatures, soft characters wielding stiff weapons, and soft-gripper robotic manipulation -- all handled within a single forward--backward pass.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>软体可微模拟是系统辨识、轨迹优化和Real2Sim迁移的基础。然而，现有方法（如可微投影动力学DiffPD）在面对真实世界中常见的具有极端刚度对比的异构材料、大变形下的超弹性以及富含接触的交互时表现不佳。我们提出DiffPhD，一个统一的GPU加速可微投影动力学框架，用于同时应对这些相互交织的挑战。我们的关键洞察在于精心整合了以下技术：(i) 刚度感知投影权重，将异质性嵌入全局系统；(ii) 置信域特征值滤波提升至反向传播阶段以获得稳定的超弹性梯度，以及采用双门收敛的II型安德森加速方案来稳定大刚度对比下的前向迭代；(iii) 统一的GPU流水线，在前向、反向和接触计算中重用单一稀疏因子，并将刚度放大瑞利阻尼折叠到同一因子中，以实现零额外开销的异质性感知耗散。DiffPhD在保持严格梯度精度的同时，在异构、超弹性、富含接触的基准测试上相比先前的可微求解器实现了高达一个数量级的加速。关键在于，这种加速不以牺牲稳定性为代价：DiffPhD在刚度对比高达100倍（先前PD求解器性能退化）的情况下仍能保持收敛。这解锁了端到端基于梯度的优化在以往受限于求解器脆弱性或每步迭代成本的场景中的应用——例如壳-关节复合生物、挥舞刚性武器的柔软角色以及软体夹爪机器人操作——所有这些只需一个前向-反向传播过程即可完成。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning</h1>
+      <h2>Abstract (EN)</h2>
+      <p>LLM/VLM-based digital agents have advanced rapidly thanks to scalable sandboxes for coding, web navigation, and computer use, which provide rich interactive training grounds. In contrast, embodied agents still lack abundant, diverse, and automatically generated 3D environments for interactive learning. Existing embodied simulators rely on manually crafted scenes or procedural templates, while recent LLM-based 3D generation systems mainly produce static scenes rather than deployable environments with verifiable tasks and standard learning interfaces. We introduce SimWorld Studio, an open-source platform built on Unreal Engine 5 for generating evolving embodied learning environments. At its core is SimCoder, a tool/skill-augmented coding agent that writes and executes engine-level code to construct physically grounded 3D worlds from language/image instructions. SimCoder self-evolves by using verifier feedback (e.g., compilation errors, physics checks, VLM critiques) to revise environments and autonomously add reusable tools and skills to its library. Generated worlds are exported as Gym-style environments for embodied agent learning. SimWorld Studio further enables co-evolution between environment generation and embodied learning: agent performance feedback guides SimCoder to generate adaptive curricula near the learner&#x27;s capability frontier, so that environments become increasingly challenging as the embodied agent improves. Three case studies on embodied navigation show that self-evolution improves generation reliability, generated environments substantially improve embodied agent performance that generalizes to unseen benchmarks, and co-evolution yields an 18-point success-rate gain over fixed-environment learning and a 40-point gain over an untrained agent.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>基于大语言模型/视觉语言模型的数字智能体通过可扩展的沙盒环境（如编程、网页导航和计算机操作）取得了快速进展，这些环境提供了丰富的交互式训练平台。相比之下，具身智能体仍然缺乏丰富、多样且可自动生成的3D环境来进行交互式学习。现有的具身模拟器依赖人工构建的场景或程序化模板，而近期基于大语言模型的3D生成系统主要产生静态场景，而非具备可验证任务和标准学习接口的可部署环境。我们提出SimWorld Studio，一个基于Unreal Engine 5构建的开源平台，用于生成演化的具身学习环境。其核心是SimCoder，一个增强工具和技能的编码智能体，能够编写并执行引擎级代码，从语言/图像指令构建物理可行的3D世界。SimCoder通过使用验证器反馈（如编译错误、物理检查、视觉语言模型批判）自我演化，修正环境并自主向代码库添加可复用的工具和技能。生成的世界被导出为Gym风格的环境，供具身智能体学习。SimWorld Studio进一步实现了环境生成与具身学习之间的协同演化：智能体性能反馈引导SimCoder在接近学习者能力边界处生成自适应课程，使得环境随着具身智能体能力的提升而逐渐增加挑战难度。三项具身导航案例研究表明，自我演化提升了生成可靠性，生成的环境显著提升了具身智能体的性能并泛化到未见基准，协同演化相比固定环境学习带来了18个百分点的成功率提升，相比未训练智能体提升了40个百分点。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

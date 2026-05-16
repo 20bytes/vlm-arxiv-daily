@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Exploring Bottlenecks in VLM-LLM Navigation: How 3D Scene Understanding Capability Impacts Zero-Shot VLN</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Zero-shot vision-and-language navigation (VLN) has gained significant attention due to its minimal data collection costs and inherent generalization. This paradigm is typically driven by the integration of pre-trained Vision-Language Models (VLMs) and Large Language Models (LLMs), where VLMs construct 3D scene graphs while LLMs handle high-level reasoning and decision-making. However, a critical bottleneck exists in this system: current 3D perception models prioritize pixel-level accuracy, directly conflicting with the strict computational limits and real-time efficiency demanded by embodied navigation. To address this gap, this paper quantifies the actual impact of 3D scene understanding capability on VLN performance. Based on typical VLM-LLM frameworks, we propose statistical success rate (SR) upper bounds for two core subsystems: 1) the slow LLM planner, which relies on topological mapping semantics, and 2) the fast reactive navigator, which utilizes spatial coordinates and bounding boxes to execute LLM decisions. Evaluations using state-of-the-art 3D scene understanding models validate our proposed bounds and reveal a perception saturation phenomenon, indicating that improvements in perception accuracy beyond a certain threshold yield diminishing returns in navigation success. Our findings suggest that 3D scene understanding for VLN should pivot away from strict pixel-level precision, prioritizing instead navigation-relevant core vocabularies and accurate bounding box proportions.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>零样本视觉与语言导航（VLN）因其极低的数据收集成本和固有的泛化能力而受到广泛关注。该范式通常由预训练的视觉-语言模型（VLM）和大语言模型（LLM）集成驱动，其中VLM构建3D场景图，而LLM负责高级推理和决策。然而，该系统存在一个关键瓶颈：当前的3D感知模型优先考虑像素级精度，这与具身导航要求的严格计算限制和实时效率直接冲突。为弥补这一差距，本文量化了3D场景理解能力对VLN性能的实际影响。基于典型的VLM-LLM框架，我们为两个核心子系统提出了统计成功率上限：1）依赖拓扑映射语义的慢速LLM规划器，以及2）利用空间坐标和边界框执行LLM决策的快速反应型导航器。使用最先进的3D场景理解模型进行的评估验证了所提出的上限，并揭示了一种感知饱和现象，即感知精度的提升超过一定阈值后，对导航成功率的收益会递减。我们的发现表明，用于VLN的3D场景理解应摆脱严格的像素级精度，转而优先考虑导航相关的核心词汇和准确的边界框比例。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

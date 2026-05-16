@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>MemLens: Benchmarking Multimodal Long-Term Memory in Large Vision-Language Models</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Memory is essential for large vision-language models (LVLMs) to handle long, multimodal interactions, with two method directions providing this capability: long-context LVLMs and memory-augmented agents. However, no existing benchmark conducts a systematic comparison of the two on questions that genuinely require multimodal evidence. To close this gap, we introduce MEMLENS, a comprehensive benchmark for memory in multimodal multi-session conversations, comprising 789 questions across five memory abilities (information extraction, multi-session reasoning, temporal reasoning, knowledge update, and answer refusal) at four standard context lengths (32K-256K tokens) under a cross-modal token-counting scheme. An image-ablation study confirms that solving MEMLENS requires visual evidence: removing evidence images drops two frontier LVLMs below 2% accuracy on the 80.4% of questions whose evidence includes images. Evaluating 27 LVLMs and 7 memory-augmented agents, we find that long-context LVLMs achieve high short-context accuracy through direct visual grounding but degrade as conversations grow, whereas memory agents are length-stable but lose visual fidelity under storage-time compression. Multi-session reasoning caps most systems below 30%, and neither approach alone solves the task. These results motivate hybrid architectures that combine long-context attention with structured multimodal retrieval. Our code is available at https://github.com/xrenaf/MEMLENS.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>记忆能力对于大型视觉-语言模型处理长序列多模态交互至关重要，目前有两种主流方法提供此能力：长上下文LVLMs和记忆增强型智能体。然而，现有基准测试尚未在真正需要多模态证据的问题上对这两种方法进行系统性比较。为填补这一空白，我们提出了MEMLENS——一个用于多模态多轮会话记忆的综合基准测试。该基准包含789个问题，涵盖五种记忆能力（信息提取、跨会话推理、时序推理、知识更新和拒绝回答），在四种标准上下文长度（32K-256K tokens）下采用跨模态token计数方案进行评估。通过图像消融实验证实，解决MEMLENS问题需要视觉证据：移除证据图像后，在80.4%包含图像证据的问题上，前沿LVLMs的准确率降至2%以下。通过对27个LVLMs和7个记忆增强型智能体的评估，我们发现：长上下文LVLMs通过直接视觉定位在短上下文中表现出高准确率，但随会话增长性能下降；而记忆型智能体虽保持长度稳定性，但在存储时压缩会导致视觉保真度损失。多数系统在跨会话推理任务中的准确率低于30%，且单一方法均无法完全解决该任务。这些结果启发我们结合长上下文注意力机制与结构化多模态检索的混合架构。我们的代码已开源至https://github.com/xrenaf/MEMLENS。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

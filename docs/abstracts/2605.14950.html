@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Evo-Depth: A Lightweight Depth-Enhanced Vision-Language-Action Model</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-Language-Action models have emerged as a promising paradigm for robotic manipulation by unifying perception, language grounding, and action generation. However, they often struggle in scenarios requiring precise spatial understanding, as current VLA models primarily rely on 2D visual representations that lack depth information and detailed spatial relationships. While recent approaches incorporate explicit 3D inputs such as depth maps or point clouds to address this issue, they often increase system complexity, require additional sensors, and remain vulnerable to sensing noise and reconstruction errors. Another line of work explores implicit 3D-aware spatial modeling directly from RGB observations without extra sensors, but it often relies on large geometry foundation models, resulting in higher training and deployment costs. To address these challenges, we propose Evo-Depth, a lightweight depth-enhanced VLA framework that enhances spatially grounded manipulation without relying on additional sensing hardware or compromising deployment efficiency. Evo-Depth employs a lightweight Implicit Depth Encoding Module to extract compact depth features from multi-view RGB images. These features are incorporated into vision-language representations through a Spatial Enhancement Module via depth-aware modulation, enabling efficient spatial-semantic enhancement. A Progressive Alignment Training strategy is further introduced to align the resulting depth-enhanced representations with downstream action learning. With only 0.9B parameters, Evo-Depth achieves superior performance across four simulation benchmarks. In real-world experiments, Evo-Depth attains the highest average success rate while also exhibiting the smallest model size, lowest GPU memory usage, and highest inference frequency among compared methods.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言-动作模型通过统一感知、语言理解和动作生成，已成为机器人操作领域的一种有前景的范式。然而，它们往往在需要精确空间理解的场景中表现不佳，因为当前的VLA模型主要依赖缺乏深度信息和详细空间关系的2D视觉表征。虽然近期的方法通过引入显式3D输入（如深度图或点云）来解决这一问题，但这通常增加了系统复杂度、需要额外传感器，并且容易受到传感噪声和重建误差的影响。另一条研究路线则探索直接从RGB观测中实现隐式3D感知空间建模，而无需额外传感器，但往往依赖于大型几何基础模型，导致训练和部署成本较高。为应对这些挑战，我们提出了Evo-Depth，一种轻量级深度增强的VLA框架，它在不依赖额外传感硬件或牺牲部署效率的前提下，增强了空间相关操作能力。Evo-Depth采用轻量级隐式深度编码模块，从多视角RGB图像中提取紧凑的深度特征。通过空间增强模块中的深度感知调制，这些特征被融入视觉-语言表征中，从而实现高效的空间-语义增强。我们还引入了一种渐进对齐训练策略，将得到的深度增强表征与下游动作学习进行对齐。凭借仅0.9B的参数，Evo-Depth在四个仿真基准测试中取得了卓越性能。在真实世界实验中，Evo-Depth在达到最高平均成功率的同时，还展现出最小的模型尺寸、最低的GPU内存占用以及最高的推理频率。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

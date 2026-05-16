@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>VGGT-$Ω$</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Recent feed-forward reconstruction models, such as VGGT, have proven competitive with traditional optimization-based reconstructors while also providing geometry-aware features useful for other tasks. Here, we show that the quality of these models scales predictably with model and data size. We do so by introducing VGGT-$Ω$, which substantially improves reconstruction accuracy, efficiency, and capabilities for both static and dynamic scenes. To enable training this model at an unprecedented scale, we introduce architectural changes that improve training efficiency, a high-quality data annotation pipeline that supports dynamic scenes, and a self-supervised learning protocol. We simplify VGGT&#x27;s architecture by using a single dense prediction head with multi-task supervision and removing the expensive high-resolution convolutional layers. We also use registers to aggregate scene information into a compact representation and introduce register attention, which restricts inter-frame information exchange to these registers, in part replacing global attention. In this way, during training, VGGT-$Ω$ uses only about 30% of the GPU memory of its predecessor, allowing us to train with 15x more supervised data than prior work and to leverage vast amounts of unlabeled video data. VGGT-$Ω$ achieves strong results for reconstruction of static and dynamic scenes across multiple benchmarks, for example, improving over the previous best camera estimation accuracy on Sintel by 77%. We also show that the learned registers can improve vision-language-action models and support alignment with language, suggesting that reconstruction can be a powerful and scalable proxy task for spatial understanding. Project Page: http://vggt-omega.github.io/</p>
+      <h2>摘要 (ZH)</h2>
+      <p>前馈式重建模型（如VGGT）已被证明在性能上可与基于优化的传统重建方法相媲美，同时还能提供对其他任务有用的几何感知特征。本文表明，这类模型的质量会随模型和数据规模的扩大而呈现可预测的提升。为此，我们提出了VGGT-Ω，该模型在静态和动态场景的重建精度、效率及能力方面均有显著提升。为支撑这一前所未有的规模化训练，我们引入了若干改进：提升训练效率的架构变化、支持动态场景的高质量数据标注流程，以及一种自监督学习协议。我们简化了VGGT的架构，采用单一密集预测头配合多任务监督，并移除了代价高昂的高分辨率卷积层。此外，我们利用寄存器将场景信息聚合为紧凑表示，并引入寄存器注意力机制——该机制将帧间信息交换限制在这些寄存器内部，从而部分取代全局注意力。通过这种方式，VGGT-Ω在训练时仅需其前身约30%的GPU显存，使得我们能够使用较先前工作多15倍的监督数据进行训练，并能充分利用海量未标注视频数据。VGGT-Ω在多个基准测试中实现了静态与动态场景重建的优异结果，例如在Sintel数据集上，相机估计精度相较于此前最优方法提升了77%。我们还展示了学习到的寄存器能够增强视觉-语言-动作模型，并支持与语言的对齐，这表明重建可以成为空间理解的一种强大且可扩展的代理任务。项目页面：http://vggt-omega.github.io</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

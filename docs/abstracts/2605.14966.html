@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>MHSA: A Lightweight Framework for Mitigating Hallucinations via Steered Attention in LVLMs</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Large vision-language models (LVLMs) have achieved remarkable performance across diverse multimodal tasks, yet they continue to suffer from hallucinations, generating content that is inconsistent with the visual input. Prior work DHCP (Detecting Hallucinations by Cross-modal Attention Pattern) has explored hallucination detection from the perspective of cross-modal attention, but does not address hallucination mitigation. In this paper, we propose MHSA (Mitigating Hallucinations via Steered Attention), a lightweight framework that mitigates hallucinations by learning to correct cross-modal attention patterns in LVLMs. MHSA trains a simple three-layer MLP generator to produce corrected attention, guided by supervisory signals from the DHCP discriminator and the LVLM itself. During inference, MHSA mitigates both discriminative and generative hallucinations across various datasets and LVLMs by simply replacing the original cross-modal attention with the corrected one, without modifying any LVLM parameters. By extending cross-modal attention mechanisms from hallucination detection to hallucination mitigation, MHSA offers a novel perspective on hallucination research in LVLMs and helps enhance their reliability.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>大型视觉语言模型（LVLMs）在多种多模态任务中展现出卓越的性能，但始终存在幻觉问题，即生成与视觉输入不一致的内容。先前的工作DHCP（通过跨模态注意力模式检测幻觉）从跨模态注意力的角度探索了幻觉检测，但并未解决幻觉减轻问题。本文提出MHSA（通过引导注意力减轻幻觉），这是一种轻量级框架，通过学习纠正LVLMs中的跨模态注意力模式来减轻幻觉。MHSA训练一个简单的三层MLP生成器，以产生修正后的注意力，并通过来自DHCP鉴别器和LVLM自身的监督信号进行指导。在推理阶段，MHSA仅需将原始跨模态注意力替换为修正后的注意力，即可在多种数据集和LVLMs中同时减轻判别性幻觉和生成性幻觉，而无需修改任何LVLM参数。通过将跨模态注意力机制从幻觉检测扩展到幻觉减轻，MHSA为LVLMs中的幻觉研究提供了全新视角，并有助于提升其可靠性。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

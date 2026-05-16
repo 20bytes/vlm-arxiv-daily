@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>DSSP: Diffusion State Space Policy with Full-History Encoding</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Diffusion-based imitation learning has shown strong promise for robot manipulation. However, most existing policies condition only on the current observation or a short window of recent observations, limiting their ability to resolve history-dependent ambiguities in long-horizon tasks. To address this, we introduce DSSP, a history-conditioned Diffusion State Space Policy that enables efficient, full-history conditioning for robot manipulation. Leveraging the continuous sequence modeling properties of State Space Models (SSMs), our history encoder effectively compresses the entire observation stream into a compact context representation. To ensure this context preserves critical information regarding future state evolution, the encoder is optimized with a dynamics-aware auxiliary training objective. This high-level context representation is then seamlessly fused with recent state observations to form a hierarchical conditioning mechanism for action generation. Furthermore, to maintain architectural consistency and minimize GPU memory overhead, we also instantiate the diffusion backbone itself using an SSM. Extensive experiments across simulation benchmarks and real-world manipulation tasks show that DSSP achieves state-of-the-art performance with a significantly smaller model size, demonstrating superior efficiency of the hierarchical conditioning in capturing crucial information as the history length increases.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>基于扩散的模仿学习在机器人操作中展现出巨大潜力。然而，现有策略大多仅依赖当前观测或短时间窗口的近期观测，限制了其在长期任务中解决历史依赖歧义的能力。为此，我们提出DSSP——一种历史条件化的扩散状态空间策略，能够高效实现机器人操作的完整历史条件化。通过利用状态空间模型的连续序列建模特性，我们的历史编码器将整个观测流有效压缩为紧凑的上下文表征。为确保该上下文保留关于未来状态演化的关键信息，编码器通过动力学感知的辅助训练目标进行优化。这种高层上下文表征与近期状态观测无缝融合，形成用于动作生成的层次化条件化机制。此外，为保持架构一致性并降低GPU内存开销，我们同样采用状态空间模型实例化扩散主干网络。在仿真基准和真实世界操作任务上的大量实验表明，DSSP在显著减小模型规模的同时达到最先进性能，充分证明了层次化条件化机制在历史长度增加时捕获关键信息的卓越效率。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

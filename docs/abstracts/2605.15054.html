@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>LATERN: Test-Time Context-Aware Explainable Video Anomaly Detection</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Vision-language models (VLMs) have recently emerged as a promising paradigm for video anomaly detection (VAD) due to their strong visual reasoning ability and natural language-based explainability. In this paper, we aim to address a key limitation of such pipelines, which perform segment-level inference independently owing to token constraints and reason without structured temporal context, allowing VLMs to interpret anomalies as deviations from evolving video dynamics rather than producing fragmented predictions and explanations. To specify, we propose a context-aware framework named LATERN, which reformulates VAD as a temporal evidence aggregation process. LATERN consists of two complementary modules: Context-Aware Anomaly Scoring (CEA) and Recursive Evidence Aggregation (REA). CEA introduces a novel image-grounded memory mechanism, which selectively chooses historical content via frame diversity and visual-textual alignment as expanded context to help generate reliable anomaly scores. Building upon these scores, REA performs recursive temporal aggregation to identify coherent anomaly intervals and produce event-level decisions and explanations grounded in visual-textual evidence. Extensive experiments on challenging benchmarks, including UCF-Crime and XD-Violence, show that LATERN enhances detection accuracy and explanation consistency for frozen VLMs during test time, while generating temporally coherent and semantically grounded event-level explanations.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视觉-语言模型（VLMs）因其强大的视觉推理能力和基于自然语言的可解释性，近期已成为视频异常检测（VAD）的一种有前景的范式。本文旨在解决此类方法的一个关键局限：由于token约束，模型以片段为单位独立进行推理，且缺乏结构化的时序上下文，导致无法将异常解释为与动态视频演变的偏差，而是产生碎片化的预测和解释。具体而言，我们提出了一种名为LATERN的上下文感知框架，它将VAD重新表述为时序证据聚合过程。LATERN由两个互补模块组成：上下文感知异常评分（CEA）和递归证据聚合（REA）。CEA引入了一种新颖的图像锚定记忆机制，通过帧多样性和视觉-文本对齐选择性选取历史内容作为扩展上下文，以帮助生成可靠的异常分数。基于这些分数，REA执行递归时序聚合，以识别连贯的异常区间，并生成基于视觉-文本证据的事件级决策和解释。在包括UCF-Crime和XD-Violence在内的具有挑战性的基准测试上的大量实验表明，LATERN在测试时增强了冻结VLMs的检测准确性和解释一致性，同时生成了时序连贯且语义基础的事件级解释。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

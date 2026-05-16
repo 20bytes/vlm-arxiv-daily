@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Does Synthetic Layered Design Data Benefit Layered Design Decomposition?</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Recent advances in image generation have made it easy to produce high-quality images. However, these outputs are inherently flattened, entangling foreground elements, background, and text within a fixed canvas. As a result, flexible post-generation editing remains challenging, revealing a clear last-mile gap toward practical usability. Existing approaches either rely on scarce proprietary layered assets or construct partially synthetic data from limited structural priors. However, both strategies face fundamental challenges in scalability. In this work, we investigate whether pure synthetic layered data can improve graphic design decomposition. We make the assumption that, in graphic design, effective decomposition does not require modeling inter-layer dependencies as precisely as in natural-image composition, since design elements are often intentionally arranged as modular and semantically separable components. Concretely, we conduct a data-centric study based on CLD baseline, which is a state-of-the-art layer decomposition framework. Based on the baseline, we construct our own synthetic dataset, SynLayers, generate textual supervision using vision language models, and automate inference inputs with VLM-predicted bounding boxes. Our study reveals three key findings: (1) even training with purely synthetic data can outperform non-scalable alternatives such as the widely used PrismLayersPro dataset, demonstrating its viability as a scalable and effective substitute; (2) performance consistently improves with increased training data scale, while gains begin to saturate at around 50K samples; and (3) synthetic data enables balanced control over layer-count distributions, avoiding the layer-count imbalance commonly observed in real-world datasets. We hope this data-centric study encourages broader adoption of synthetic data as a practical foundation for layered design editing systems.</p>
+      <h2>摘要 (ZH)</h2>
+      <p>近年来图像生成技术的进步使得高质量图像的产出变得容易。然而，这些输出本质上是扁平化的，前景元素、背景和文本被固定在画布中纠缠在一起。因此，生成后的灵活编辑仍然具有挑战性，暴露出通往实际可用性的明显一英里差距。现有方法要么依赖稀缺的专有分层资产，要么从有限的结构先验中构建部分合成数据。但两种策略在可扩展性上都面临根本性挑战。本文研究纯合成分层数据能否改善图形设计分解。我们假设，在图形设计中，有效的分解不需要像自然图像合成那样精确建模层间依赖关系，因为设计元素通常被有意安排为模块化且语义可分离的组件。具体而言，我们基于最先进的分层分解框架CLD基线进行以数据为中心的研究。在基线基础上，我们构建了自有合成数据集SynLayers，使用视觉语言模型生成文本监督，并通过VLM预测的边界框自动生成推理输入。我们的研究揭示了三个关键发现：（1）即使仅使用纯合成数据训练，也能超越非可扩展的替代方案（如广泛使用的PrismLayersPro数据集），证明了其作为可扩展且有效替代方案的可行性；（2）性能随训练数据规模的增加持续提升，但在约5万个样本时开始饱和；（3）合成数据能实现层计数分布的平衡控制，避免了真实数据集中常见的层计数不平衡问题。我们希望这项以数据为中心的研究能鼓励更广泛地将合成数据用作分层设计编辑系统的实用基础。</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>

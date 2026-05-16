@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f7f7f5; color: #1f2937; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 24px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 20px 0 8px; }
+    p { line-height: 1.6; white-space: pre-wrap; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>SteerSeg: Attention Steering for Reasoning Video Segmentation</h1>
+      <h2>Abstract (EN)</h2>
+      <p>Video reasoning segmentation requires localizing objects across video frames from natural language expressions, often involving spatial reasoning and implicit references. Recent approaches leverage frozen large vision-language models (LVLMs) by extracting attention maps and using them as spatial priors for segmentation, enabling training-free grounding. However, these attention maps are optimized for text generation rather than spatial localization, often resulting in diffuse and ambiguous grounding signals. In this work, we introduce SteerSeg, a lightweight framework that identifies attention misalignment as the key bottleneck in attention-based grounding and proposes to steer attention at its source through input-level conditioning. SteerSeg combines learnable soft prompts with reasoning-guided Chain-of-Thought (CoT) prompting. The soft prompts reshape the attention distribution to produce more spatially concentrated maps, while CoT-derived attributes resolve ambiguity among similar objects by guiding attention toward the correct instance. The resulting attention maps are converted into point prompts across keyframes to guide a segmentation model, while candidate tracklets are ranked and selected using correlation-based scoring. Our approach freezes the LVLM and segmentation model parameters and learns only a small set of soft prompts, preserving the model&#x27;s pretrained reasoning capabilities while significantly improving grounding. Despite being trained only on Ref-YouTube-VOS, SteerSeg generalizes well across diverse benchmarks, significantly improving the spatial grounding capability of LVLMs. Project page: https://steerseg.github.io</p>
+      <h2>摘要 (ZH)</h2>
+      <p>视频推理分割需要根据自然语言表达在视频帧中定位对象，这通常涉及空间推理和隐含指代。近期方法利用冻结的大规模视觉语言模型（LVLMs），通过提取注意力图并将其作为分割的空间先验，实现了无需训练的定位能力。然而，这些注意力图是为文本生成而非空间定位优化的，常导致模糊和歧义的定位信号。本文提出SteerSeg，一个轻量级框架，将注意力错位识别为基于注意力定位的关键瓶颈，并通过输入级条件引导注意力源头。SteerSeg结合了可学习的软提示与推理引导的链式思维（CoT）提示。软提示重塑注意力分布以生成更集中的空间图，而CoT衍生的属性通过引导注意力指向正确实例，解决相似对象间的歧义。所得注意力图跨关键帧转换为点提示，以引导分割模型，同时基于相关性评分对候选轨迹进行排序和选择。我们的方法冻结LVLM和分割模型参数，仅学习少量软提示，在显著改善定位的同时保留模型的预训练推理能力。尽管仅在Ref-YouTube-VOS上训练，SteerSeg在多个基准上表现良好，显著提升了LVLMs的空间定位能力。项目页面：https://steerseg.github.io</p>
+      <p><a href="../index.html">← Back</a></p>
+    </div>
+  </div>
+</body>
+</html>
